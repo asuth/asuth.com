@@ -10,6 +10,18 @@ module.exports = {
       green: "#8BDAD5",
       yellowAccent: "#FAFF98",
     },
+    fontFamily: {
+      domaineSans: '"Domaine Sans Text", sans-serif',
+    },
+    gridTemplateColumns: {
+      headerGrid: "300px 1fr",
+    },
+    backgroundImage: {
+      chairHero: "url('/chairs.png')",
+    },
+    backgroundSize: {
+      500: "500px",
+    },
     extend: {},
   },
   variants: {

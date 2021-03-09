@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: "Domaine Sans Text";
+  src: url(/domaine-sans-text-web-medium.woff2) format("woff2");
+}
+
+.btn {
+  @apply bg-white py-2 px-4 border border-black border-double rounded-md transition text-sm hover:bg-yellowAccent justify-self-end;
+}
+
 @tailwind utilities;
