@@ -7,6 +7,8 @@ module.exports = {
       current: "currentColor",
       white: "#fff",
       black: "#000",
+      blue: "#A2DCF6",
+      purple: "#6F61A8",
       green: "#8BDAD5",
       yellowAccent: "#FAFF98",
     },
@@ -18,9 +20,12 @@ module.exports = {
     },
     backgroundImage: {
       chairHero: "url('/chairs.png')",
+      homesHero: "url('/homes.png')",
+      coffee: "url('/Coffee.png')",
     },
     backgroundSize: {
       500: "500px",
+      btn: "37px 32px",
     },
     extend: {},
   },
