@@ -9,6 +9,8 @@ module.exports = {
       black: "#000",
       blue: "#A2DCF6",
       purple: "#6F61A8",
+      breadPurple: "#D0ABC5",
+      salmon: "#F0999E",
       green: "#8BDAD5",
       yellowAccent: "#FAFF98",
     },
@@ -21,6 +23,9 @@ module.exports = {
     backgroundImage: {
       chairHero: "url('/chairs.png')",
       homesHero: "url('/homes.png')",
+      computersHero: "url('/computers.png')",
+      dogsHero: "url('/dogs.png')",
+      breadHero: "url('/bread.png')",
       coffee: "url('/Coffee.png')",
     },
     backgroundSize: {

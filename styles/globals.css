@@ -109,7 +109,7 @@
 }
 
 .btn {
-  @apply bg-white py-2 px-4 border border-purple border-double rounded-md transition text-sm  justify-self-end;
+  @apply bg-white py-2 px-4 border border-black border-double rounded-md transition text-sm  justify-self-end;
 }
 
 @tailwind utilities;

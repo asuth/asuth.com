@@ -16,17 +16,17 @@ export default function Header(props) {
           <Link href="/about">
             <a className="btn btn-a">ABOUT</a>
           </Link>
-          <Link href="/">
+          <Link href="/writing">
             <a className="btn btn-a">WRITING</a>
           </Link>
-          <Link href="/about">
+          <Link href="/speaking">
             <a className="btn btn-a">SPEAKING</a>
           </Link>
           <Link href="/">
             <a className="btn btn-a">INVESTING</a>
           </Link>
 
-          <Link href="/about">
+          <Link href="/contact">
             <a className="btn btn-b">CONTACT</a>
           </Link>
         </div>
