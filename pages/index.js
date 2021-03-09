@@ -18,7 +18,7 @@ export default function Home() {
               height="110"
               className=" absolute"
             />
-            <div className="col-start-2 col-end-2 row-start-1 row-end-1 space-x-10 flex justify-end">
+            <div className="col-start-2 col-end-2 row-start-1 row-end-1 space-x-6 flex justify-end">
               <a className="btn" href="#">
                 ABOUT
               </a>
