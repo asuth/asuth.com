@@ -7,14 +7,13 @@ export default function Home() {
     <>
       <Head>
         <title>Andrew Sutherland</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.webp" />
       </Head>
 
-      <Header classes="bg-blue border-purple"></Header>
-
-      <body>
+      <body class="homepage">
         {/* <div className="bg-green bg-chairHero bg-500 w-full h-96"></div> */}
-        <div className="bg-green bg-homesHero bg-500 w-full h-96"></div>
+        <div className="bg-homepage w-full"></div>
+        <Header classes="homepageNav bg-darkBlue border-purple"></Header>
       </body>
     </>
   );

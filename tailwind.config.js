@@ -8,6 +8,7 @@ module.exports = {
       white: "#fff",
       black: "#000",
       blue: "#A2DCF6",
+      darkBlue: "#4f80b5",
       purple: "#6F61A8",
       breadPurple: "#D0ABC5",
       salmon: "#F0999E",
@@ -27,6 +28,9 @@ module.exports = {
       dogsHero: "url('/dogs.png')",
       breadHero: "url('/bread.png')",
       coffee: "url('/Coffee.png')",
+      portrait: "url('/portrait.webp')",
+      yellowTexture: "url('/yellow-texture.png')",
+      homepage: "url('/home-night.webp')",
     },
     backgroundSize: {
       500: "500px",

@@ -10,11 +10,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header classes="bg-green border-black"></Header>
+      <Header classes="bg-blue border-black"></Header>
 
       <body>
-        <div className="bg-green bg-chairHero bg-500 w-full h-96"></div>
-        {/* <div className="bg-green bg-homesHero bg-500 w-full h-96"></div> */}
+        <div className="bg-blue bg-portrait bg-cover w-full flex align-items-center justify-content-center">
+          <h1 className="text-yellowAccent font-domaineSans ml-8 -mt-24 text-4xl">
+            Hey, I'm Andrew.
+          </h1>
+        </div>
+        <main className="h-96 bg-blue bg-yellowTexture bg-500">
+          faifawjefoawj foiwa jfaw
+        </main>
       </body>
     </>
   );
