@@ -123,7 +123,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left 0 bottom 0;
-  border-bottom: 40px solid #ccc;
+  border-bottom: 90px solid rgb(59, 59, 104);
+}
+
+:root {
+  --nav-bar-height: 90px;
+  --hp-img-width: 4001;
+  --hp-img-height: 2250;
+  --hp-height: 100vh; /*calc(100vh - var(--nav-bar-height));*/
+  --hp-width: 100vw;
+  --w-ratio: calc(100% / var(--hp-img-width));
+  --h-ratio: calc(100% / var(--hp-img-height));
+  --cover-ratio: max(var(--w-ratio), var(--h-ratio));
+}
+
+.dog-on-pillow {
+  --dog-height: 558;
+  --dog-width: 965;
+  --dog-offset-x: 2370;
+  --dog-offset-y: 3058;
+  --dog-offset-pct: calc(var(--dog-offset-x) / var(--hp-img-width));
+  position: absolute;
+  left: calc(150px * var(--cover-ratio));
+  width: 23vw;
 }
 
 .homepage .logo {
