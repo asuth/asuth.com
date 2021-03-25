@@ -35,10 +35,16 @@ function useOffsets() {
         offsetY: 142,
       },
       turbine: {
-        width: 545,
+        width: 548,
         height: 638,
         offsetX: 2668,
-        offsetY: 1182,
+        offsetY: 1180,
+      },
+      kids: {
+        width: 487,
+        height: 510,
+        offsetX: 1235,
+        offsetY: 587,
       },
     };
 
@@ -62,6 +68,7 @@ function useOffsets() {
   const [size, setSize] = useState({
     dog: { offsetX: 0, offsetY: 0, width: 0 },
     turbine: { offsetX: 0, offsetY: 0, width: 0 },
+    kids: { offsetX: 0, offsetY: 0, width: 0 },
   });
   useLayoutEffect(() => {
     window.addEventListener("resize", updateSize);
@@ -102,6 +109,16 @@ export default function Home() {
               position: "absolute",
             }}
             className="wind-turbine"
+          />
+          <img
+            src="kids.gif"
+            style={{
+              left: `${offsets.kids.offsetX}px`,
+              bottom: `${offsets.kids.offsetY}px`,
+              width: `${offsets.kids.width}px`,
+              position: "absolute",
+            }}
+            className="kids"
           />
         </div>
         <Header classes="homepageNav bg-500 border-purple"></Header>
