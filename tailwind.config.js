@@ -30,7 +30,7 @@ module.exports = {
       coffee: "url('/Coffee.png')",
       portrait: "url('/portrait.webp')",
       yellowTexture: "url('/yellow-texture.png')",
-      homepage: "url('/night@3x.webp')",
+      homepage: "url('/night@2x.webp')",
     },
     backgroundSize: {
       500: "500px",
