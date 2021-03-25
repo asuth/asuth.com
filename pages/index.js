@@ -80,7 +80,7 @@ export default function Home() {
             className="dog-on-pillow"
           />
         </div>
-        <Header classes="homepageNav  bg-yellowTexture bg-500 border-purple"></Header>
+        <Header classes="homepageNav bg-500 border-purple"></Header>
       </body>
     </>
   );
