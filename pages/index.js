@@ -6,19 +6,15 @@ import React, { useLayoutEffect, useState } from "react";
 
 function useOffsets() {
   function updateSize() {
-    let newDogOffsetX = 0,
-      newDogWidth = 0,
-      newDogOffsetY = 0;
+    const imgWidth = 4001;
+    const imgHeight = 2250;
 
-    let imgWidth = 4001;
-    let imgHeight = 2250;
+    const navHeight = 90;
+    const imgRatio = imgWidth / imgHeight;
 
-    let navHeight = 90;
-    let imgRatio = imgWidth / imgHeight;
-
-    let cWidth = window.innerWidth;
-    let cHeight = window.innerHeight - navHeight;
-    let cRatio = cWidth / cHeight;
+    const cWidth = window.innerWidth;
+    const cHeight = window.innerHeight - navHeight;
+    const cRatio = cWidth / cHeight;
 
     let naturalWidth = -1;
     let naturalHeight = -1;
@@ -27,28 +23,46 @@ function useOffsets() {
       naturalWidth = cWidth;
       naturalHeight = cWidth / imgRatio;
     } else {
-      naturalHeight = cHeight;
       naturalWidth = cHeight * imgRatio;
+      naturalHeight = cHeight;
     }
 
-    let dogWidth = 965;
-    let dogHeight = 558;
-    let dogOffsetX = 2375;
-    let dogOffsetY = 142;
-    let dogWidthRatio = dogWidth / imgWidth;
+    const animations = {
+      dog: {
+        width: 965,
+        height: 558,
+        offsetX: 2375,
+        offsetY: 142,
+      },
+      turbine: {
+        width: 545,
+        height: 638,
+        offsetX: 2668,
+        offsetY: 1182,
+      },
+    };
 
-    let dogOffsetXRatio = dogOffsetX / imgWidth;
-    let dogOffsetYRatio = dogOffsetY / imgHeight;
+    const offsets = {};
+    for (const obj in animations) {
+      const widthRatio = animations[obj].width / imgWidth;
+      const offsetXRatio = animations[obj].offsetX / imgWidth;
+      const offsetYRatio = animations[obj].offsetY / imgHeight;
 
-    newDogWidth = naturalWidth * dogWidthRatio;
+      offsets[obj] = {
+        offsetX: naturalWidth * offsetXRatio,
+        offsetY: naturalHeight * offsetYRatio + navHeight,
+        width: naturalWidth * widthRatio,
+      };
+    }
 
-    newDogOffsetX = naturalWidth * dogOffsetXRatio;
-    newDogOffsetY = naturalHeight * dogOffsetYRatio + navHeight;
-    setSize([newDogOffsetX, newDogOffsetY, newDogWidth]);
+    setSize(offsets);
   }
 
   // put the doggy offscreen in server side render
-  const [size, setSize] = useState([-9000, -9000, 0]);
+  const [size, setSize] = useState({
+    dog: { offsetX: 0, offsetY: 0, width: 0 },
+    turbine: { offsetX: 0, offsetY: 0, width: 0 },
+  });
   useLayoutEffect(() => {
     window.addEventListener("resize", updateSize);
     updateSize();
@@ -58,7 +72,7 @@ function useOffsets() {
 }
 
 export default function Home() {
-  const [newDogOffsetX, newDogOffsetY, newDogWidth] = useOffsets();
+  const offsets = useOffsets();
 
   return (
     <>
@@ -67,17 +81,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.webp" />
       </Head>
 
-      <body class="homepage">
+      <body className="homepage">
         {/* <div className="bg-green bg-chairHero bg-500 w-full h-96"></div> */}
         <div className="bg-homepage w-full">
           <img
             src="dog-on-pillow.gif"
             style={{
-              left: `${newDogOffsetX}px`,
-              bottom: `${newDogOffsetY}px`,
-              width: `${newDogWidth}px`,
+              left: `${offsets.dog.offsetX}px`,
+              bottom: `${offsets.dog.offsetY}px`,
+              width: `${offsets.dog.width}px`,
             }}
             className="dog-on-pillow"
+          />
+          <img
+            src="wind-turbine.gif"
+            style={{
+              left: `${offsets.turbine.offsetX}px`,
+              bottom: `${offsets.turbine.offsetY}px`,
+              width: `${offsets.turbine.width}px`,
+              position: "absolute",
+            }}
+            className="wind-turbine"
           />
         </div>
         <Header classes="homepageNav bg-500 border-purple"></Header>
