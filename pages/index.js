@@ -152,7 +152,7 @@ export default class Home extends Component {
           >
             {Object.entries(this.state.offsets).map(([key, gif]) => (
               <img
-                src={`${key}.gif`}
+                src={`${key}.webp`}
                 key={key}
                 style={{
                   left: `${gif.offsetX}px`,
