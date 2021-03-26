@@ -127,7 +127,7 @@
 }
 
 :root {
-  --nav-bar-height: 90px;
+  --nav-bar-height: 85px;
   --hp-img-width: 4001;
   --hp-img-height: 2250;
   --hp-height: 100vh; /*calc(100vh - var(--nav-bar-height));*/
@@ -181,7 +181,7 @@ body {
 }
 
 .btn {
-  @apply bg-white py-2 px-4 border border-black border-double rounded-md transition text-sm  justify-self-end;
+  @apply bg-white px-4 border border-black border-double rounded-md transition text-sm justify-self-end flex items-center;
 }
 
 @tailwind utilities;

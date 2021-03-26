@@ -45,7 +45,7 @@ export default class Home extends Component {
     const imgWidth = 4001;
     const imgHeight = 2250;
 
-    const navHeight = 90;
+    const navHeight = 85;
     const imgRatio = imgWidth / imgHeight;
 
     const cWidth = window.innerWidth;
@@ -130,7 +130,10 @@ export default class Home extends Component {
               />
             ))}
           </div>
-          <Header isHomepage={this.state.isHomepage}></Header>
+          <Header
+            isHomepage={this.state.isHomepage}
+            handleClick={this.handleClick.bind(this)}
+          ></Header>
           <div class="about" onClick={this.handleClick.bind(this)}>
             Hello i'm the about page
           </div>
