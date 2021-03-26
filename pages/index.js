@@ -167,9 +167,14 @@ export default class Home extends Component {
             isHomepage={this.state.isHomepage}
             handleClick={this.handleClick.bind(this)}
           ></Header>
-          <div class="about" onClick={this.handleClick.bind(this)}>
+
+          <div className="bg-green bg-chairHero bg-500 w-full about"></div>
+
+          <div className="about font-domaineSans text-4xl">Investing</div>
+
+          {/* <div class="about" onClick={this.handleClick.bind(this)}>
             Hello i'm the about page
-          </div>
+          </div> */}
         </body>
       </>
     );

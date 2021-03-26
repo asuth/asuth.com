@@ -140,7 +140,10 @@ body {
 
 .Page--homepage {
   background: rgb(59, 59, 104);
-  background: #3b5794;
+  /* background: #3b5794; */
+  /* background: #ffadc3; */
+  /* background: #303d64; */
+  /* background: #1f3a60; */
 }
 
 .Page--about {
@@ -158,7 +161,7 @@ body {
 
 .about {
   @apply bg-green;
-  height: calc(100vh - var(--nav-bar-height));
+  height: 45vh;
   text-align: center;
   padding: 80px;
 }
