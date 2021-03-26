@@ -1,11 +1,47 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "./header";
+import { Component } from "react";
 
 import React, { useLayoutEffect, useState } from "react";
 
-function useOffsets() {
-  function updateSize() {
+const animations = {
+  dog: {
+    width: 965,
+    height: 558,
+    offsetX: 2375,
+    offsetY: 142,
+  },
+  turbine: {
+    width: 548,
+    height: 638,
+    offsetX: 2668,
+    offsetY: 1180,
+  },
+  kids: {
+    width: 487,
+    height: 510,
+    offsetX: 1235,
+    offsetY: 587,
+  },
+};
+
+export default class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    const defaultOffsets = {};
+    for (const obj in animations) {
+      defaultOffsets[obj] = { offsetX: 0, offsetY: 0, width: 0 };
+    }
+
+    this.state = {
+      isHomepage: true,
+      offsets: defaultOffsets,
+    };
+  }
+
+  calculateSizes() {
     const imgWidth = 4001;
     const imgHeight = 2250;
 
@@ -27,27 +63,6 @@ function useOffsets() {
       naturalHeight = cHeight;
     }
 
-    const animations = {
-      dog: {
-        width: 965,
-        height: 558,
-        offsetX: 2375,
-        offsetY: 142,
-      },
-      turbine: {
-        width: 548,
-        height: 638,
-        offsetX: 2668,
-        offsetY: 1180,
-      },
-      kids: {
-        width: 487,
-        height: 510,
-        offsetX: 1235,
-        offsetY: 587,
-      },
-    };
-
     const offsets = {};
     for (const obj in animations) {
       const widthRatio = animations[obj].width / imgWidth;
@@ -56,73 +71,71 @@ function useOffsets() {
 
       offsets[obj] = {
         offsetX: naturalWidth * offsetXRatio,
-        offsetY: naturalHeight * offsetYRatio + navHeight,
+        offsetY: naturalHeight * offsetYRatio,
         width: naturalWidth * widthRatio,
       };
     }
 
-    setSize(offsets);
+    this.setState({ offsets: offsets });
   }
 
-  // put the doggy offscreen in server side render
-  const [size, setSize] = useState({
-    dog: { offsetX: 0, offsetY: 0, width: 0 },
-    turbine: { offsetX: 0, offsetY: 0, width: 0 },
-    kids: { offsetX: 0, offsetY: 0, width: 0 },
-  });
-  useLayoutEffect(() => {
-    window.addEventListener("resize", updateSize);
-    updateSize();
-    return () => window.removeEventListener("resize", updateSize);
-  }, []);
-  return size;
-}
+  handleClick() {
+    this.setState({ isHomepage: !this.state.isHomepage });
+  }
 
-export default function Home() {
-  const offsets = useOffsets();
+  componentDidMount() {
+    window.addEventListener("resize", this.calculateSizes.bind(this));
+  }
 
-  return (
-    <>
-      <Head>
-        <title>Andrew Sutherland</title>
-        <link rel="icon" href="/favicon.webp" />
-      </Head>
+  componentWillMount() {
+    if (typeof window !== "undefined") {
+      this.calculateSizes();
+    }
+  }
 
-      <body className="homepage">
-        {/* <div className="bg-green bg-chairHero bg-500 w-full h-96"></div> */}
-        <div className="bg-homepage w-full">
-          <img
-            src="dog-on-pillow.gif"
-            style={{
-              left: `${offsets.dog.offsetX}px`,
-              bottom: `${offsets.dog.offsetY}px`,
-              width: `${offsets.dog.width}px`,
-            }}
-            className="dog-on-pillow"
-          />
-          <img
-            src="wind-turbine.gif"
-            style={{
-              left: `${offsets.turbine.offsetX}px`,
-              bottom: `${offsets.turbine.offsetY}px`,
-              width: `${offsets.turbine.width}px`,
-              position: "absolute",
-            }}
-            className="wind-turbine"
-          />
-          <img
-            src="kids.gif"
-            style={{
-              left: `${offsets.kids.offsetX}px`,
-              bottom: `${offsets.kids.offsetY}px`,
-              width: `${offsets.kids.width}px`,
-              position: "absolute",
-            }}
-            className="kids"
-          />
-        </div>
-        <Header classes="homepageNav bg-500 border-purple"></Header>
-      </body>
-    </>
-  );
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.calculateSizes.bind(this));
+  }
+
+  componentDidM;
+
+  render() {
+    return (
+      <>
+        <Head>
+          <title>Andrew Sutherland</title>
+          <link rel="icon" href="/favicon.webp" />
+        </Head>
+
+        <body
+          className={this.state.isHomepage ? "Page--homepage" : "Page--about"}
+        >
+          <div
+            className={
+              (this.state.isHomepage ? "is-homepage " : " ") +
+              " bg-homepage w-full"
+            }
+          >
+            {Object.entries(this.state.offsets).map(([key, gif]) => (
+              <img
+                onClick={this.handleClick.bind(this)}
+                src={`${key}.gif`}
+                key={key}
+                style={{
+                  left: `${gif.offsetX}px`,
+                  bottom: `${gif.offsetY}px`,
+                  width: `${gif.width}px`,
+                  position: "absolute",
+                }}
+              />
+            ))}
+          </div>
+          <Header isHomepage={this.state.isHomepage}></Header>
+          <div class="about" onClick={this.handleClick.bind(this)}>
+            Hello i'm the about page
+          </div>
+        </body>
+      </>
+    );
+  }
 }

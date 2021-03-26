@@ -119,11 +119,11 @@
 
 .bg-homepage {
   background-size: 100%;
-  height: 100vh;
+  height: calc(100vh - var(--nav-bar-height));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left 0 bottom 0;
-  border-bottom: var(--nav-bar-height) solid rgb(59, 59, 104);
+  position: relative;
 }
 
 :root {
@@ -148,13 +148,36 @@
   width: 23vw;
 }
 
-.homepage .logo {
-  top: -2rem;
+.nav {
+  height: var(--nav-bar-height);
 }
 
-.homepageNav {
-  position: fixed;
-  bottom: 0;
+body {
+  transition: all 600ms ease 0s;
+}
+
+.Page--homepage {
+  background: rgb(59, 59, 104);
+}
+
+.Page--about {
+  @apply bg-green;
+}
+
+.bg-homepage {
+  transition: margin-top 750ms ease 0s;
+  margin-top: calc(-100vh + var(--nav-bar-height));
+}
+
+.is-homepage {
+  margin-top: 0;
+}
+
+.about {
+  @apply bg-green;
+  height: calc(100vh - var(--nav-bar-height));
+  text-align: center;
+  padding: 80px;
 }
 
 .btn {
