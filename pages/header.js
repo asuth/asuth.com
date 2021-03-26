@@ -14,7 +14,7 @@ export default class Header extends Component {
           <Link href="/">
             <a onClick={this.props.handleClick}>
               <img
-                src="/logo@3x.png"
+                src="/logo@2x.png"
                 width="230"
                 height="110"
                 className="absolute top-4 logo"
