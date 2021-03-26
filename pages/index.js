@@ -26,6 +26,36 @@ const animations = {
   },
 };
 
+// Returns a function, that, as long as it continues to be invoked, will not
+// be triggered. The function will be called after it stops being called for
+// `wait` milliseconds.
+const debounce = (func, wait) => {
+  let timeout;
+
+  // This is the function that is returned and will be executed many times
+  // We spread (...args) to capture any number of parameters we want to pass
+  return function executedFunction(...args) {
+    // The callback function to be executed after
+    // the debounce time has elapsed
+    const later = () => {
+      // null timeout to indicate the debounce ended
+      timeout = null;
+
+      // Execute the callback
+      func(...args);
+    };
+    // This will reset the waiting every function execution.
+    // This is the step that prevents the function from
+    // being executed because it will never reach the
+    // inside of the previous setTimeout
+    clearTimeout(timeout);
+
+    // Restart the debounce waiting period.
+    // setTimeout returns a truthy value (it differs in web vs Node)
+    timeout = setTimeout(later, wait);
+  };
+};
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -42,6 +72,7 @@ export default class Home extends Component {
   }
 
   calculateSizes() {
+    console.log("calcsi");
     const imgWidth = 4001;
     const imgHeight = 2250;
 
@@ -84,20 +115,23 @@ export default class Home extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener("resize", this.calculateSizes.bind(this));
-  }
+    this.calculateSizes();
 
-  componentWillMount() {
-    if (typeof window !== "undefined") {
-      this.calculateSizes();
-    }
+    window.addEventListener(
+      "resize",
+      this.calculateSizes.bind(this)
+
+      // debounce(() => this.calculateSizes(), 25)
+    );
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.calculateSizes.bind(this));
+    window.removeEventListener(
+      "resize",
+      this.calculateSizes.bind(this)
+      // debounce(() => this.calculateSizes(), 25)
+    );
   }
-
-  componentDidM;
 
   render() {
     return (
@@ -118,7 +152,6 @@ export default class Home extends Component {
           >
             {Object.entries(this.state.offsets).map(([key, gif]) => (
               <img
-                onClick={this.handleClick.bind(this)}
                 src={`${key}.gif`}
                 key={key}
                 style={{
