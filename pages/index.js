@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Header from "./header";
 import { Component } from "react";
 
@@ -26,36 +25,6 @@ const animations = {
   },
 };
 
-// Returns a function, that, as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// `wait` milliseconds.
-const debounce = (func, wait) => {
-  let timeout;
-
-  // This is the function that is returned and will be executed many times
-  // We spread (...args) to capture any number of parameters we want to pass
-  return function executedFunction(...args) {
-    // The callback function to be executed after
-    // the debounce time has elapsed
-    const later = () => {
-      // null timeout to indicate the debounce ended
-      timeout = null;
-
-      // Execute the callback
-      func(...args);
-    };
-    // This will reset the waiting every function execution.
-    // This is the step that prevents the function from
-    // being executed because it will never reach the
-    // inside of the previous setTimeout
-    clearTimeout(timeout);
-
-    // Restart the debounce waiting period.
-    // setTimeout returns a truthy value (it differs in web vs Node)
-    timeout = setTimeout(later, wait);
-  };
-};
-
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -71,8 +40,9 @@ export default class Home extends Component {
     };
   }
 
+  // this function re-creates background-size: cover logic
+  // so that we can figure out where the animated pieces should be placed
   calculateSizes() {
-    console.log("calcsi");
     const imgWidth = 4001;
     const imgHeight = 2250;
 
@@ -86,9 +56,11 @@ export default class Home extends Component {
     let naturalWidth = -1;
     let naturalHeight = -1;
 
+    // we are using the full width of the window, and cropping away some height
     if (cRatio > imgRatio) {
       naturalWidth = cWidth;
       naturalHeight = cWidth / imgRatio;
+      // we are using the full height of the window, and cropping away some width
     } else {
       naturalWidth = cHeight * imgRatio;
       naturalHeight = cHeight;
@@ -116,21 +88,11 @@ export default class Home extends Component {
 
   componentDidMount() {
     this.calculateSizes();
-
-    window.addEventListener(
-      "resize",
-      this.calculateSizes.bind(this)
-
-      // debounce(() => this.calculateSizes(), 25)
-    );
+    window.addEventListener("resize", this.calculateSizes.bind(this));
   }
 
   componentWillUnmount() {
-    window.removeEventListener(
-      "resize",
-      this.calculateSizes.bind(this)
-      // debounce(() => this.calculateSizes(), 25)
-    );
+    window.removeEventListener("resize", this.calculateSizes.bind(this));
   }
 
   render() {
