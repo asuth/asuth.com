@@ -108,9 +108,7 @@ export default class Home extends Component<{}, HomeState> {
   render() {
     return (
       <>
-        <body
-          className={this.state.isHomepage ? "Page--homepage" : "Page--about"}
-        >
+        <body>
           <div
             className={
               (this.state.isHomepage ? "is-homepage " : " ") +
@@ -132,6 +130,7 @@ export default class Home extends Component<{}, HomeState> {
           </div>
           <Header
             title="Andrew Sutherland"
+            backgroundColor="hpPurple"
             handleClick={this.handleClick.bind(this)}
           ></Header>
 

@@ -5,6 +5,7 @@ import Head from "next/head";
 
 type NodeProps = {
   title: string;
+  backgroundColor: string;
   handleClick: () => void;
 };
 
@@ -25,7 +26,7 @@ export default class Header extends Component<NodeProps, State> {
         >
           <style jsx>{`
             nav {
-              background: var(--blue);
+              background: var(--${this.props.backgroundColor});
               width: 100%;
               font-family: var(--headline-font);
               padding: 1.25rem;

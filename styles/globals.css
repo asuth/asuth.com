@@ -132,6 +132,7 @@
   --yellow: #faff98;
   --blue: #a2dcf6;
   --dark-blue: #91cbe4;
+  --hpPurple: rgb(59, 59, 104);
 }
 
 .MaxWidth {
@@ -145,18 +146,6 @@
 
 body {
   transition: all 600ms ease 0s;
-}
-
-.Page--homepage {
-  background: rgb(59, 59, 104);
-  /* background: #3b5794; */
-  /* background: #ffadc3; */
-  /* background: #303d64; */
-  /* background: #1f3a60; */
-}
-
-.Page--about {
-  @apply bg-green;
 }
 
 .bg-homepage {

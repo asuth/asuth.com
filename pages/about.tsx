@@ -4,7 +4,11 @@ import Header from "./header";
 export default function Home() {
   return (
     <>
-      <Header title="About Andrew" handleClick={() => {}} />
+      <Header
+        title="About Andrew"
+        backgroundColor="blue"
+        handleClick={() => {}}
+      />
       <div className="WallpaperHeader"></div>
       <div className="ContentBlock">
         <div className="Content">
