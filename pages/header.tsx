@@ -3,9 +3,14 @@ import { Component } from "react";
 import Image from "next/image";
 import Head from "next/head";
 
-import theme from "/css/theme";
+type NodeProps = {
+  title: string;
+  handleClick: () => void;
+};
 
-export default class Header extends Component {
+type State = {};
+
+export default class Header extends Component<NodeProps, State> {
   render() {
     return (
       <>

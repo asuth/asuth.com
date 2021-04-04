@@ -1,12 +1,12 @@
 import Image from "next/image";
-import Header from "../header";
+import Header from "./header";
 
 export default function Home() {
   return (
     <>
       <Header pageCategory="about" title="About Andrew" />
       <div className="WallpaperHeader"></div>
-      <div class="ContentBlock">
+      <div className="ContentBlock">
         <div className="Content">
           <div className="MaxWidth">
             {/* <h1 className="PageHeadline"> */}
