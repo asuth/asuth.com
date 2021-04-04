@@ -1,6 +1,5 @@
 import Header from "./header";
 import { Component } from "react";
-import Image from "next/image";
 
 const animations = {
   dog: {
@@ -132,7 +131,7 @@ export default class Home extends Component<{}, HomeState> {
             ))}
           </div>
           <Header
-            pageCategory={this.state.isHomepage ? "homepage" : "about"}
+            title="Andrew Sutherland"
             handleClick={this.handleClick.bind(this)}
           ></Header>
 
