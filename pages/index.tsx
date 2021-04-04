@@ -23,7 +23,20 @@ const animations = {
   },
 };
 
-export default class Home extends Component {
+type offsetType = {
+  offsetX: number;
+  offsetY: number;
+  width: number;
+};
+
+type HomeState = {
+  isHomepage: boolean;
+  offsets: {
+    [key: string]: offsetType;
+  };
+};
+
+export default class Home extends Component<{}, HomeState> {
   constructor(props) {
     super(props);
 
