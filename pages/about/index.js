@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Header pageCategory="about" title="About Andrew" />
-      {/* <div className="WallpaperHeader"></div> */}
+      <div className="WallpaperHeader"></div>
       <div class="ContentBlock">
         <div className="Content">
           <div className="MaxWidth">
@@ -92,6 +92,8 @@ export default function Home() {
           height: 45vh;
           width: 100%;
           background-size: 500px 500px;
+          border-bottom: 28px solid var(--yellow);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
         }
 
         .Content {
