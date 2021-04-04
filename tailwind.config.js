@@ -19,7 +19,7 @@ module.exports = {
       domaineSans: '"Domaine Sans Text", sans-serif',
     },
     gridTemplateColumns: {
-      headerGrid: "300px 1fr",
+      headerGrid: "1fr 1fr",
     },
     backgroundImage: {
       chairHero: "url('/chairs.png')",

@@ -128,6 +128,15 @@
 
 :root {
   --nav-bar-height: 85px;
+  --headline-font: "Domaine Sans Text", sans-serif;
+  --yellow: #faff98;
+  --blue: #a2dcf6;
+  --dark-blue: #91cbe4;
+}
+
+.MaxWidth {
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 .nav {

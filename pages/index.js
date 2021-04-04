@@ -1,8 +1,6 @@
-import Head from "next/head";
 import Header from "./header";
 import { Component } from "react";
-
-import React, { useLayoutEffect, useState } from "react";
+import Image from "next/image";
 
 const animations = {
   dog: {
@@ -98,11 +96,6 @@ export default class Home extends Component {
   render() {
     return (
       <>
-        <Head>
-          <title>Andrew Sutherland</title>
-          <link rel="icon" href="/favicon.webp" />
-        </Head>
-
         <body
           className={this.state.isHomepage ? "Page--homepage" : "Page--about"}
         >
@@ -126,13 +119,11 @@ export default class Home extends Component {
             ))}
           </div>
           <Header
-            isHomepage={this.state.isHomepage}
+            pageCategory={this.state.isHomepage ? "homepage" : "about"}
             handleClick={this.handleClick.bind(this)}
           ></Header>
 
-          <div className="bg-green bg-chairHero bg-500 w-full about"></div>
-
-          <div className="about font-domaineSans text-4xl">Investing</div>
+          <div className="about font-domaineSans text-4xl">About</div>
 
           {/* <div class="about" onClick={this.handleClick.bind(this)}>
             Hello i'm the about page
