@@ -1,7 +1,14 @@
 import Header from "./header";
 import { Component } from "react";
 
-const animations = {
+const animations: {
+  [key: string]: {
+    width: number;
+    height: number;
+    offsetX: number;
+    offsetY: number;
+  };
+} = {
   dog: {
     width: 965,
     height: 558,
@@ -22,24 +29,24 @@ const animations = {
   },
 };
 
-type offsetType = {
-  offsetX: number;
-  offsetY: number;
-  width: number;
+type OffsetType = {
+  [key: string]: {
+    offsetX: number;
+    offsetY: number;
+    width: number;
+  };
 };
 
 type HomeState = {
   isHomepage: boolean;
-  offsets: {
-    [key: string]: offsetType;
-  };
+  offsets: OffsetType;
 };
 
 export default class Home extends Component<{}, HomeState> {
-  constructor(props) {
+  constructor(props: {}) {
     super(props);
 
-    const defaultOffsets = {};
+    const defaultOffsets: OffsetType = {};
     for (const obj in animations) {
       defaultOffsets[obj] = { offsetX: 0, offsetY: 0, width: 0 };
     }
@@ -76,7 +83,7 @@ export default class Home extends Component<{}, HomeState> {
       naturalHeight = cHeight;
     }
 
-    const offsets = {};
+    const offsets: OffsetType = {};
     for (const obj in animations) {
       const widthRatio = animations[obj].width / imgWidth;
       const offsetXRatio = animations[obj].offsetX / imgWidth;

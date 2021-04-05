@@ -9,9 +9,7 @@ type NodeProps = {
   handleClick: () => void;
 };
 
-type State = {};
-
-export default class Header extends Component<NodeProps, State> {
+export default class Header extends Component<NodeProps, {}> {
   render() {
     return (
       <>
