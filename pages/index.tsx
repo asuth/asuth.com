@@ -12,6 +12,7 @@ export default class HomepageStub extends Component<{}, {}> {
           title="Andrew Sutherland Rules"
           backgroundColor="hpPurple"
           handleClick={this.handleClick.bind(this)}
+          homepageIsCurrent={true}
         ></Header>
       </>
     );

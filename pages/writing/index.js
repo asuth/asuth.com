@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header classes="bg-salmon border-black"></Header>
+      <Header backgroundColor="salmon" title="Writing"></Header>
 
       <body>
         <div className="bg-salmon bg-computersHero bg-500 w-full h-96"></div>

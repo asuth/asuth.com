@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header classes="bg-yellowAccent border-black"></Header>
+      <Header backgroundColor="blue" title="Contact Me"></Header>
 
       <body>
         <div className="bg-yellowAccent bg-dogsHero bg-500 w-full h-96"></div>

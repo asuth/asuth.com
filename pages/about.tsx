@@ -5,9 +5,10 @@ export default function Home() {
   return (
     <>
       <Header
-        title="About Andrew"
+        title="About Me"
         backgroundColor="blue"
         handleClick={() => {}}
+        homepageIsCurrent={false}
       />
 
       <div className="PageHeader Flex">

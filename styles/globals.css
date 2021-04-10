@@ -128,7 +128,7 @@
   margin-top: calc(-100vh + var(--nav-bar-height));
 }
 
-.HomepageBackground.is-homepage {
+.HomepageBackground.HomepageIsCurrent {
   background-image: url("/main_crop@0.5x.webp");
 }
 
@@ -136,6 +136,9 @@
   --nav-bar-height: 85px;
   --headline-font: "Domaine Sans Text", sans-serif;
   --yellow: #faff98;
+  --purple: #d0abc5;
+  --salmon: #f0999e;
+  --green: #8bdad5;
   --blue: #89aee0;
   --dark-blue: #6b8fbf;
   --hpPurple: rgb(59, 59, 104);
@@ -154,7 +157,7 @@ body {
   transition: all 600ms ease 0s;
 }
 
-.is-homepage {
+.HomepageIsCurrent {
   margin-top: 0;
 }
 

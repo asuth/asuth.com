@@ -119,8 +119,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       <>
         <div
           className={
-            (this.props.homepageIsCurrent ? "is-homepage " : " ") +
-            " HomepageBackground"
+            (this.props.homepageIsCurrent ? "HomepageIsCurrent " : " ") +
+            "HomepageBackground"
           }
         >
           {this.props.homepageIsCurrent ? (
