@@ -28,7 +28,7 @@ module.exports = {
       dogsHero: "url('/dogs.png')",
       breadHero: "url('/bread.png')",
       coffee: "url('/Coffee.png')",
-      portrait: "url('/portrait.webp')",
+      portrait: "url('/portrait-2.webp')",
       yellowTexture: "url('/yellow-texture.png')",
       homepage: "url('/main_crop@0.5x.webp')",
     },

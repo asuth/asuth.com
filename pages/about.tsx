@@ -9,34 +9,46 @@ export default function Home() {
         backgroundColor="blue"
         handleClick={() => {}}
       />
-      <div className="WallpaperHeader"></div>
+
+      <div className="PageHeader Flex">
+        <Image layout="fill" objectFit="cover" src="/portrait-2.webp" />
+        <div className="MaxWidth ContentBlock">
+          {/* <h1 className="HelloText">
+            Hey,
+            <br />
+            I'm Andrew
+          </h1> */}
+        </div>
+      </div>
+
+      {/* <div className="WallpaperHeader"></div> */}
       <div className="ContentBlock">
         <div className="Content">
-          <div className="MaxWidth">
-            {/* <h1 className="PageHeadline"> */}
-            {/* <Image
+          {/* <div className="MaxWidth">
+            <h1 className="PageHeadline">
+              <Image
                 className="Img"
                 src="/smallplant.png"
                 width="50"
                 height="55"
-              /> */}
-            {/* HEY, I'M ANDREW */}
-            {/* </h1> */}
-          </div>
+              />
+              HEY, I'M ANDREW
+            </h1>
+          </div> */}
           <div className="BlueTexture">
             <div className="MaxWidth">
-              <h1 className="RightCardText">
+              {/* <h1 className="RightCardText">
                 <span className="Hey">HEY</span>,
                 <br />
                 I'M ANDREW
-              </h1>
-              <div className="Card PortraitCard RightCard">
+              </h1> */}
+              {/* <div className="Card PortraitCard RightCard">
                 <Image
                   src="/portrait-normal.jpg"
                   objectFit="cover"
                   layout="fill"
                 />
-              </div>
+              </div> */}
               <div className="Card LeftCard">
                 <p>
                   I am passionate about teaching, learning, and improving our
@@ -77,16 +89,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className="PageHeader Flex">
-        <Image layout="fill" objectFit="cover" src="/portrait.webp" />
-        <div className="MaxWidth ContentBlock">
-          <h1 className="HelloText">
-            Hey,
-            <br />
-            I'm Andrew
-          </h1>
-        </div>
-      </div> */}
       <style jsx>{`
         :global(body) {
           background: var(--blue);
@@ -96,7 +98,6 @@ export default function Home() {
           height: 45vh;
           width: 100%;
           background-size: 500px 500px;
-          border-bottom: 28px solid var(--yellow);
           box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
         }
 
@@ -161,13 +162,14 @@ export default function Home() {
           background: var(--blue);
           font-size: 32px;
           font-family: var(--headline-font);
-          padding: 45px 0;
+          padding: 35px 0;
           text-align: center;
         }
         .PageHeader {
           width: 100%;
-          height: 60vh;
+          height: 55vh;
           position: relative;
+          border-bottom: 15px solid var(--blue);
         }
         .Flex {
           display: flex;

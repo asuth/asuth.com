@@ -1,11 +1,22 @@
 import { AppProps } from "next/app";
 import "../styles/globals.css";
+import Homepage from "../components/homepage";
+
+import { useRouter } from "next/router";
+import Home from "./about";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
+  const isHomepage = router.pathname === "/";
+
   return (
-    <div className="Derp">
-      <Component {...pageProps} />
-    </div>
+    <>
+      <Homepage />
+      <div className="Page">
+        <Component {...pageProps} />
+      </div>
+    </>
   );
 }
 
