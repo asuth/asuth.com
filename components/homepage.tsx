@@ -37,13 +37,16 @@ type OffsetType = {
   };
 };
 
+type HomeProps = {
+  homepageIsCurrent: boolean;
+};
+
 type HomeState = {
-  isHomepage: boolean;
   offsets: OffsetType;
 };
 
-export default class Homepage extends Component<{}, HomeState> {
-  constructor(props: {}) {
+export default class Homepage extends Component<HomeProps, HomeState> {
+  constructor(props: HomeProps) {
     super(props);
 
     const defaultOffsets: OffsetType = {};
@@ -52,7 +55,6 @@ export default class Homepage extends Component<{}, HomeState> {
     }
 
     this.state = {
-      isHomepage: true,
       offsets: defaultOffsets,
     };
   }
@@ -99,9 +101,9 @@ export default class Homepage extends Component<{}, HomeState> {
     this.setState({ offsets: offsets });
   }
 
-  handleClick() {
-    this.setState({ isHomepage: !this.state.isHomepage });
-  }
+  // handleClick() {
+  //   this.setState({ isHomepage: !this.props.isHomepage });
+  // }
 
   componentDidMount() {
     this.calculateSizes();
@@ -115,27 +117,25 @@ export default class Homepage extends Component<{}, HomeState> {
   render() {
     return (
       <>
-        <body>
-          <div
-            className={
-              (this.state.isHomepage ? "is-homepage " : " ") +
-              " bg-homepage w-full"
-            }
-          >
-            {Object.entries(this.state.offsets).map(([key, gif]) => (
-              <img
-                src={`${key}.webp`}
-                key={key}
-                style={{
-                  left: `${gif.offsetX}px`,
-                  bottom: `${gif.offsetY}px`,
-                  width: `${gif.width}px`,
-                  position: "absolute",
-                }}
-              />
-            ))}
-          </div>
-        </body>
+        <div
+          className={
+            (this.props.homepageIsCurrent ? "is-homepage " : " ") +
+            " bg-homepage w-full"
+          }
+        >
+          {Object.entries(this.state.offsets).map(([key, gif]) => (
+            <img
+              src={`${key}.webp`}
+              key={key}
+              style={{
+                left: `${gif.offsetX}px`,
+                bottom: `${gif.offsetY}px`,
+                width: `${gif.width}px`,
+                position: "absolute",
+              }}
+            />
+          ))}
+        </div>
       </>
     );
   }

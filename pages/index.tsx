@@ -1,7 +1,7 @@
 import Header from "../pages/header";
 import { Component } from "react";
 
-export default class Homepage extends Component<{}, {}> {
+export default class HomepageStub extends Component<{}, {}> {
   handleClick() {
     console.log("derp");
   }

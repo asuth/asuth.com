@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Homepage />
+      <Homepage homepageIsCurrent={isHomepage} />
       <div className="Page">
         <Component {...pageProps} />
       </div>
