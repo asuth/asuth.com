@@ -120,21 +120,32 @@ export default class Homepage extends Component<HomeProps, HomeState> {
         <div
           className={
             (this.props.homepageIsCurrent ? "is-homepage " : " ") +
-            " bg-homepage w-full"
+            " HomepageBackground"
           }
         >
-          {Object.entries(this.state.offsets).map(([key, gif]) => (
-            <img
-              src={`${key}.webp`}
-              key={key}
-              style={{
-                left: `${gif.offsetX}px`,
-                bottom: `${gif.offsetY}px`,
-                width: `${gif.width}px`,
-                position: "absolute",
-              }}
-            />
-          ))}
+          {this.props.homepageIsCurrent ? (
+            ""
+          ) : (
+            <link rel="preload" as="image" href="main_crop@0.5x.webp" />
+          )}
+          {Object.entries(this.state.offsets).map(([key, gif]) =>
+            // if we're actually on the homepage, render the gifs
+            this.props.homepageIsCurrent ? (
+              <img
+                src={`${key}.webp`}
+                key={key}
+                style={{
+                  left: `${gif.offsetX}px`,
+                  bottom: `${gif.offsetY}px`,
+                  width: `${gif.width}px`,
+                  position: "absolute",
+                }}
+              />
+            ) : (
+              // otherwise, just preload the gifs
+              <link rel="preload" as="image" href={`${key}.webp`} />
+            )
+          )}
         </div>
       </>
     );
