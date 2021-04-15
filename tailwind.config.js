@@ -22,11 +22,11 @@ module.exports = {
       headerGrid: "1fr 1fr",
     },
     backgroundImage: {
-      chairHero: "url('/chairs.png')",
+      chairHero: "url('/investing-hero.webp')",
       homesHero: "url('/homes.png')",
       computersHero: "url('/computers.png')",
       dogsHero: "url('/dogs.png')",
-      breadHero: "url('/bread.png')",
+      breadHero: "url('/speaking-hero.webp')",
       coffee: "url('/Coffee.png')",
       portrait: "url('/portrait-2.webp')",
       yellowTexture: "url('/yellow-texture.png')",

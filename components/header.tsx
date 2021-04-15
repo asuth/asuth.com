@@ -11,12 +11,20 @@ type NodeProps = {
 };
 
 type StateProps = {
-  preloadHero: string;
+  preloadHeroPath: string | null;
 };
 
 export default class Header extends Component<NodeProps, StateProps> {
+  constructor(props: HomeProps) {
+    super(props);
+
+    this.state = {
+      preloadHeroPath: null,
+    };
+  }
+
   preloadHero(pageName: string) {
-    this.setState({ preloadHero: `/${pageName}.webp` });
+    this.setState({ preloadHeroPath: `/${pageName}-hero.webp` });
   }
 
   render() {
@@ -25,8 +33,8 @@ export default class Header extends Component<NodeProps, StateProps> {
         <Head>
           <title>{this.props.title}</title>
           <link rel="icon" href="/favicon.webp" />
-          {this.state.preloadHero === "" ? null : (
-            <link rel="preload" as="image" href={this.state.preloadHero} />
+          {this.state.preloadHeroPath === null ? null : (
+            <link rel="preload" as="image" href={this.state.preloadHeroPath} />
           )}
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
@@ -70,7 +78,7 @@ export default class Header extends Component<NodeProps, StateProps> {
                   <Link href="/about">
                     <a
                       onClick={this.props.handleClick}
-                      onHover={this.preloadHero.call(this, "about")}
+                      onMouseEnter={this.preloadHero.bind(this, "about")}
                       href="#"
                       className="btn btn-a"
                     >
@@ -80,6 +88,7 @@ export default class Header extends Component<NodeProps, StateProps> {
                   <Link href="/writing">
                     <a
                       onClick={this.props.handleClick}
+                      onMouseEnter={this.preloadHero.bind(this, "writing")}
                       href="#"
                       className="btn btn-a"
                     >
@@ -89,6 +98,7 @@ export default class Header extends Component<NodeProps, StateProps> {
                   <Link href="/speaking">
                     <a
                       onClick={this.props.handleClick}
+                      onMouseEnter={this.preloadHero.bind(this, "speaking")}
                       href="#"
                       className="btn btn-a"
                     >
@@ -98,6 +108,7 @@ export default class Header extends Component<NodeProps, StateProps> {
                   <Link href="/investing">
                     <a
                       onClick={this.props.handleClick}
+                      onMouseEnter={this.preloadHero.bind(this, "investing")}
                       href="#"
                       className="btn btn-a"
                     >
