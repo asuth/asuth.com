@@ -22,6 +22,7 @@ export default class Header extends Component<NodeProps, {}> {
 
         <nav
           className={`nav border-black font-domaineSans border-b flex justify-center`}
+          key="headernav"
         >
           <style jsx>{`
             nav {

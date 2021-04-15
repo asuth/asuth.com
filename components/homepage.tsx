@@ -1,4 +1,3 @@
-import Header from "../pages/header";
 import { Component } from "react";
 
 const animations: {
@@ -110,7 +109,11 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   componentDidMount() {
     this.calculateSizes();
     window.addEventListener("resize", this.calculateSizes.bind(this));
+    console.log("didMount");
     window.addEventListener("load", this.preloadHomepage.bind(this));
+    if (document.readyState === "complete") {
+      this.preloadHomepage();
+    }
   }
 
   componentWillUnmount() {
@@ -118,6 +121,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   }
 
   preloadHomepage() {
+    console.log("yes, preload");
     this.setState({ shouldPreloadHomepage: true });
   }
 
@@ -145,6 +149,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   }
 
   render() {
+    console.log(this.props.homepageIsCurrent, this.state.shouldPreloadHomepage);
     return (
       <>
         <div

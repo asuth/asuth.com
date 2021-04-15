@@ -1,19 +1,45 @@
 import { AppProps } from "next/app";
 import "../styles/globals.css";
 import Homepage from "../components/homepage";
+import Header from "../components/header";
 import Transition from "../components/transition";
 
 import { useRouter } from "next/router";
-import Home from "./about";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   const isHomepage = router.pathname === "/";
 
+  // this code is absolute trash and I am ashamed
+  // todo figure out how to lift properties properly
+  const titles: { [key: string]: string } = {
+    "/": "Andrew Sutherland",
+    "/about": "About Andrew",
+    "/writing": "Writing",
+    "/speaking": "Speaking",
+    "/investing": "Investing",
+    "/contact": "Contact",
+  };
+
+  const colors: { [key: string]: string } = {
+    "/": "hpPurple",
+    "/about": "blue",
+    "/writing": "salmon",
+    "/speaking": "purple",
+    "/investing": "green",
+    "/contact": "yellow",
+  };
+
   return (
     <>
       <Homepage homepageIsCurrent={isHomepage} />
+      <Header
+        title={titles[router.pathname]}
+        backgroundColor={colors[router.pathname]}
+        handleClick={() => {}}
+        homepageIsCurrent={isHomepage}
+      ></Header>
       <Transition location={router.pathname}>
         <div className="Page">
           <Component {...pageProps} />

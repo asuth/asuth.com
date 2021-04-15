@@ -4,13 +4,6 @@ import Header from "./header";
 export default function Home() {
   return (
     <>
-      <Header
-        title="About Me"
-        backgroundColor="blue"
-        handleClick={() => {}}
-        homepageIsCurrent={false}
-      />
-
       <div className="PageHeader Flex">
         <Image layout="fill" objectFit="cover" src="/portrait-2.webp" />
         <div className="MaxWidth ContentBlock">
