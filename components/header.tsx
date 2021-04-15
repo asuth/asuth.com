@@ -10,13 +10,24 @@ type NodeProps = {
   homepageIsCurrent: boolean;
 };
 
-export default class Header extends Component<NodeProps, {}> {
+type StateProps = {
+  preloadHero: string;
+};
+
+export default class Header extends Component<NodeProps, StateProps> {
+  preloadHero(pageName: string) {
+    this.setState({ preloadHero: `/${pageName}.webp` });
+  }
+
   render() {
     return (
       <>
         <Head>
           <title>{this.props.title}</title>
           <link rel="icon" href="/favicon.webp" />
+          {this.state.preloadHero === "" ? null : (
+            <link rel="preload" as="image" href={this.state.preloadHero} />
+          )}
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
 
@@ -59,6 +70,7 @@ export default class Header extends Component<NodeProps, {}> {
                   <Link href="/about">
                     <a
                       onClick={this.props.handleClick}
+                      onHover={this.preloadHero.call(this, "about")}
                       href="#"
                       className="btn btn-a"
                     >

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div className="PageHeader Flex">
-        <Image layout="fill" objectFit="cover" src="/portrait-2.webp" />
+        <Image layout="fill" objectFit="cover" src="/about-hero.webp" />
         <div className="MaxWidth ContentBlock">
           {/* <h1 className="HelloText">
             Hey,

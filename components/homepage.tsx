@@ -121,7 +121,6 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   }
 
   preloadHomepage() {
-    console.log("yes, preload");
     this.setState({ shouldPreloadHomepage: true });
   }
 
