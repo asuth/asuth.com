@@ -43,6 +43,7 @@ type HomeProps = {
 
 type HomeState = {
   offsets: OffsetType;
+  shouldPreloadHomepage: boolean;
 };
 
 export default class Homepage extends Component<HomeProps, HomeState> {
@@ -56,6 +57,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
     this.state = {
       offsets: defaultOffsets,
+      shouldPreloadHomepage: false,
     };
   }
 
@@ -108,10 +110,38 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   componentDidMount() {
     this.calculateSizes();
     window.addEventListener("resize", this.calculateSizes.bind(this));
+    window.addEventListener("load", this.preloadHomepage.bind(this));
   }
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.calculateSizes.bind(this));
+  }
+
+  preloadHomepage() {
+    this.setState({ shouldPreloadHomepage: true });
+  }
+
+  // If user has landed on homepage, render this html right away
+  // If they're on a different page, render this after the main content has loaded
+  renderRealHomepage() {
+    return (
+      <>
+        <link rel="preload" as="image" href="main_crop@0.5x.webp" />
+        {Object.entries(this.state.offsets).map(([key, gif]) => (
+          // if we're actually on the homepage, render the gifs
+          <img
+            src={`${key}.webp`}
+            key={key}
+            style={{
+              left: `${gif.offsetX}px`,
+              bottom: `${gif.offsetY}px`,
+              width: `${gif.width}px`,
+              position: "absolute",
+            }}
+          />
+        ))}
+      </>
+    );
   }
 
   render() {
@@ -123,29 +153,9 @@ export default class Homepage extends Component<HomeProps, HomeState> {
             "HomepageBackground"
           }
         >
-          {this.props.homepageIsCurrent ? (
-            ""
-          ) : (
-            <link rel="preload" as="image" href="main_crop@0.5x.webp" />
-          )}
-          {Object.entries(this.state.offsets).map(([key, gif]) =>
-            // if we're actually on the homepage, render the gifs
-            this.props.homepageIsCurrent ? (
-              <img
-                src={`${key}.webp`}
-                key={key}
-                style={{
-                  left: `${gif.offsetX}px`,
-                  bottom: `${gif.offsetY}px`,
-                  width: `${gif.width}px`,
-                  position: "absolute",
-                }}
-              />
-            ) : (
-              // otherwise, just preload the gifs
-              <link rel="preload" as="image" href={`${key}.webp`} />
-            )
-          )}
+          {this.props.homepageIsCurrent || this.state.shouldPreloadHomepage
+            ? this.renderRealHomepage()
+            : ""}
         </div>
       </>
     );
