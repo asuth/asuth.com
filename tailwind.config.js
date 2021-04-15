@@ -24,7 +24,7 @@ module.exports = {
     backgroundImage: {
       chairHero: "url('/investing-hero.webp')",
       homesHero: "url('/homes.png')",
-      computersHero: "url('/computers.png')",
+      computersHero: "url('/writing-hero.webp')",
       dogsHero: "url('/dogs.png')",
       breadHero: "url('/speaking-hero.webp')",
       coffee: "url('/Coffee.png')",
