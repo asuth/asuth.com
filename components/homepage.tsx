@@ -16,8 +16,8 @@ const animations: {
     offsetY: 142,
   },
   turbine: {
-    width: 548,
-    height: 638,
+    width: 524,
+    height: 635,
     offsetX: 2668,
     offsetY: 1180,
   },
@@ -130,7 +130,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
         {Object.entries(this.state.offsets).map(([key, gif]) => (
           // if we're actually on the homepage, render the gifs
           <img
-            src={`${key}.webp`}
+            src={key === "turbine" ? "turbine.gif" : `${key}.webp`}
             key={key}
             style={{
               left: `${gif.offsetX}px`,
@@ -150,6 +150,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
         <div
           className={
             (this.props.homepageIsCurrent ? "HomepageIsCurrent " : " ") +
+            (this.state.shouldPreloadHomepage ? "HomepageIsLoaded " : " ") +
             "HomepageBackground"
           }
         >

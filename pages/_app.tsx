@@ -1,6 +1,7 @@
 import { AppProps } from "next/app";
 import "../styles/globals.css";
 import Homepage from "../components/homepage";
+import Transition from "../components/transition";
 
 import { useRouter } from "next/router";
 import Home from "./about";
@@ -13,11 +14,27 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Homepage homepageIsCurrent={isHomepage} />
-      <div className="Page">
-        <Component {...pageProps} />
-      </div>
+      <Transition location={router.pathname}>
+        <div className="Page">
+          <Component {...pageProps} />
+        </div>
+      </Transition>
     </>
   );
 }
 
 export default MyApp;
+
+// import { useRouter } from "next/router"
+
+// const MainLaylout: React.FC = () => {
+//   const router = useRouter()
+
+//   return (
+//     // you may import your header and footer here too
+//     <Fragment>
+//       <Transition location={router.pathname}>
+//         <div className="min-h-screen">{children}</div>
+//       </Transition>
+//     </Fragment>
+//   )
