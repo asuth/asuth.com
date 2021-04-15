@@ -152,10 +152,11 @@
 
 .nav {
   height: var(--nav-bar-height);
+  transition: background 750ms ease 0s;
 }
 
 body {
-  transition: all 600ms ease 0s;
+  /* transition: all 600ms ease 0s; */
 }
 
 .HomepageIsCurrent {
