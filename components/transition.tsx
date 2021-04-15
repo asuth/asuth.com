@@ -46,9 +46,11 @@ const Transition: React.FC<TransitionKind<ReactChild>> = ({
       >
         {(status) => (
           <div
-            style={{
-              ...getTransitionStyles[status],
-            }}
+            style={
+              {
+                // ...getTransitionStyles[status],
+              }
+            }
           >
             {children}
           </div>
