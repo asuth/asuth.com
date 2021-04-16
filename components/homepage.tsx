@@ -9,10 +9,10 @@ const animations: {
   };
 } = {
   dog: {
-    width: 965,
-    height: 558,
-    offsetX: 2375,
-    offsetY: 142,
+    width: 958,
+    height: 533,
+    offsetX: 2378,
+    offsetY: 161,
   },
   turbine: {
     width: 524,
@@ -133,7 +133,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
         {Object.entries(this.state.offsets).map(([key, gif]) => (
           // if we're actually on the homepage, render the gifs
           <img
-            src={key === "turbine" ? "turbine.gif" : `${key}.webp`}
+            src={key === "kids" ? "kids.webp" : `${key}.gif`}
             key={key}
             style={{
               left: `${gif.offsetX}px`,
