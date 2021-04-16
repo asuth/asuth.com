@@ -10,12 +10,12 @@ type NodeProps = {
   homepageIsCurrent: boolean;
 };
 
-type StateProps = {
+type NodeState = {
   preloadHeroPath: string | null;
 };
 
-export default class Header extends Component<NodeProps, StateProps> {
-  constructor(props: HomeProps) {
+export default class Header extends Component<NodeProps, NodeState> {
+  constructor(props: NodeProps) {
     super(props);
 
     this.state = {
