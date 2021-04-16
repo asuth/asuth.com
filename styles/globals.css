@@ -108,6 +108,11 @@
   src: url(/domaine-sans-text-web-medium.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: "National 2";
+  src: url(/national-2-web-regular.woff2) format("woff2");
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -136,6 +141,7 @@
 :root {
   --nav-bar-height: 85px;
   --headline-font: "Domaine Sans Text", sans-serif;
+  --body-font: "National 2", sans-serif;
   --yellow: #faff98;
   --purple: #d0abc5;
   --salmon: #f0999e;
