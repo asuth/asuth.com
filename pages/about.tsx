@@ -3,16 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="PageHeader Flex">
-        <Image layout="fill" objectFit="cover" src="/about-hero.webp" />
-        <div className="MaxWidth ContentBlock">
-          {/* <h1 className="HelloText">
-            Hey,
-            <br />
-            I'm Andrew
-          </h1> */}
-        </div>
-      </div>
+      <div className="PageHeader Flex"></div>
 
       {/* <div className="WallpaperHeader"></div> */}
       <div className="ContentBlock">
@@ -162,6 +153,9 @@ export default function Home() {
           width: 100%;
           height: 55vh;
           position: relative;
+          background: url(/about-hero.webp);
+          background-size: cover;
+
           border-bottom: 15px solid var(--blue);
         }
         .Flex {

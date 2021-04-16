@@ -23,7 +23,7 @@ module.exports = {
     },
     backgroundImage: {
       chairHero: "url('/investing-hero.webp')",
-      homesHero: "url('/homes.png')",
+      aboutHero: "url('/about-hero.webp')",
       computersHero: "url('/writing-hero.webp')",
       dogsHero: "url('/dogs.png')",
       breadHero: "url('/speaking-hero.webp')",
