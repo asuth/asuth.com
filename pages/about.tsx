@@ -155,7 +155,7 @@ export default function Home() {
           position: relative;
           background: url(/about-hero.webp);
           background-size: cover;
-
+          background-position: center;
           border-bottom: 15px solid var(--blue);
         }
         .Flex {

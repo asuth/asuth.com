@@ -17,8 +17,8 @@ const animations: {
   turbine: {
     width: 524,
     height: 635,
-    offsetX: 2668,
-    offsetY: 1180,
+    offsetX: 2672,
+    offsetY: 1186,
   },
   kids: {
     width: 476,
