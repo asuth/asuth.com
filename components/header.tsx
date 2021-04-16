@@ -69,7 +69,12 @@ export default class Header extends Component<NodeProps, NodeState> {
           <div className="MaxWidth grid grid-cols-headerGrid grid-rows-1">
             <Link href="/">
               <a className="logo" onClick={this.props.handleClick}>
-                <Image src="/logo@3x.png" width="240" height="131" />
+                <Image
+                  src="/logo@3x.png"
+                  width="240"
+                  height="131"
+                  alt="Andrew Sutherland"
+                />
               </a>
             </Link>
             {this.props.homepageIsCurrent ? (
