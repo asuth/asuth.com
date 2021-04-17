@@ -4,8 +4,7 @@ export default function Home() {
       <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">
-            MY
-            <br />
+            <span className="PageHeadline-Small">HERE ARE MY</span>
             INVESTMENTS
           </h1>
         </div>
@@ -22,9 +21,9 @@ export default function Home() {
                 housing, and developer tools.
               </p>
               <p>
-                The reasons for investing I give below are{" "}
+                The reasons given below for investing are{" "}
                 <b>complete fabrications</b>. Or, shall we say, post-hoc
-                rationalizations; most of my criteria is whether I believe in
+                rationalizations. Most of my criteria is whether I believe in
                 the leader and think they are capable of greatness.
               </p>
             </div>

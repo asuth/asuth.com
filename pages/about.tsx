@@ -6,9 +6,8 @@ export default function Home() {
       <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">
-            Hello
-            <br />
-            I'm Andrew
+            <span className="PageHeadline-Small">HELLO I'M</span>
+            ANDREW
           </h1>
         </div>
       </div>
