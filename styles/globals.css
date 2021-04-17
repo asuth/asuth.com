@@ -86,6 +86,13 @@
   );
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
+  .HomepageBackground.HomepageIsCurrent,
+  .HomepageBackground.HomepageIsLoaded {
+    background-image: url("/homepage-phone-1170.webp");
+  }
+}
+
 :root {
   --nav-bar-height: 85px;
   --headline-font: "Domaine Sans Text", sans-serif;

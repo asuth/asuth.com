@@ -235,7 +235,7 @@ export default function Home() {
 
           .InvestmentInfo .btn {
             display inline-block;
-            margin-left: 20px;
+            margin-left: 15px;
           }
 
 
