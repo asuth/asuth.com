@@ -92,11 +92,16 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       const offsetXRatio = animations[obj].offsetX / imgWidth;
       const offsetYRatio = animations[obj].offsetY / imgHeight;
 
-      offsets[obj] = {
-        offsetX: naturalWidth * offsetXRatio,
-        offsetY: naturalHeight * offsetYRatio,
-        width: naturalWidth * widthRatio,
-      };
+      const offsetX = naturalWidth * offsetXRatio;
+      // don't load animations that would load offscreen
+      // e.g. on mobile devices
+      if (offsetX < cWidth) {
+        offsets[obj] = {
+          offsetX: offsetX,
+          offsetY: naturalHeight * offsetYRatio,
+          width: naturalWidth * widthRatio,
+        };
+      }
     }
 
     this.setState({ offsets: offsets });
