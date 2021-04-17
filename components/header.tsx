@@ -5,7 +5,6 @@ import Head from "next/head";
 
 type NodeProps = {
   title: string;
-  backgroundColor: string;
   handleClick: () => void;
   homepageIsCurrent: boolean;
 };

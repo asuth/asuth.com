@@ -4,7 +4,7 @@ export default function Home() {
       <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">
-            <span className="PageHeadline-Small">HERE ARE MY</span>
+            <span className="PageHeadline-Small">I MAKE</span>
             INVESTMENTS
           </h1>
         </div>
