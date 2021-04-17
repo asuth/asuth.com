@@ -69,8 +69,10 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     const navHeight = 85;
     const imgRatio = imgWidth / imgHeight;
 
+    const wHeight = window.innerHeight;
+    const cHeight = wHeight - navHeight;
     const cWidth = window.innerWidth;
-    const cHeight = window.innerHeight - navHeight;
+
     const cRatio = cWidth / cHeight;
 
     let naturalWidth = -1;
@@ -105,6 +107,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     }
 
     this.setState({ offsets: offsets });
+    document.documentElement.style.setProperty("--app-height", `${wHeight}px`);
   }
 
   // handleClick() {

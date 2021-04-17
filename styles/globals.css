@@ -69,13 +69,13 @@
 .HomepageBackground {
   overflow: hidden;
   background-size: 100%;
-  height: calc(100vh - var(--nav-bar-height));
+  height: calc(var(--app-height) - var(--nav-bar-height));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left 0 bottom 0;
   position: relative;
   transition: margin-top 750ms ease 0s;
-  margin-top: calc(-100vh + var(--nav-bar-height));
+  margin-top: calc(-1 * var(--app-height) + var(--nav-bar-height));
 }
 
 .HomepageBackground.HomepageIsCurrent,
@@ -107,6 +107,8 @@
   --blue: #89aee0;
   --dark-blue: #6b8fbf;
   --hpPurple: rgb(59, 59, 104);
+  /* this gets dynamically updated by js, so safari can have a full-height page */
+  --app-height: 100vh;
 }
 
 body {
