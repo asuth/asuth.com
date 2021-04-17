@@ -129,7 +129,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   renderRealHomepage() {
     return (
       <>
-        <link rel="preload" as="image" href="main_crop@0.5x.webp" />
+        <link rel="preload" as="image" href="homepage-2880.webp" />
         {Object.entries(this.state.offsets).map(([key, gif]) => (
           // if we're actually on the homepage, render the gifs
           <img
@@ -148,7 +148,6 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   }
 
   render() {
-    console.log(this.props.homepageIsCurrent, this.state.shouldPreloadHomepage);
     return (
       <>
         <div
@@ -162,6 +161,11 @@ export default class Homepage extends Component<HomeProps, HomeState> {
             ? this.renderRealHomepage()
             : ""}
         </div>
+        <style jsx>{`
+          :global(:root) {
+            --bg-color: var(--hpPurple);
+          }
+        `}</style>
       </>
     );
   }

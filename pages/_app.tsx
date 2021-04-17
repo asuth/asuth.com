@@ -22,21 +22,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/contact": "Contact",
   };
 
-  const colors: { [key: string]: string } = {
-    "/": "hpPurple",
-    "/about": "blue",
-    "/writing": "salmon",
-    "/speaking": "purple",
-    "/investing": "green",
-    "/contact": "yellow",
-  };
-
   return (
     <>
       <Homepage homepageIsCurrent={isHomepage} />
       <Header
         title={titles[router.pathname]}
-        backgroundColor={colors[router.pathname]}
         handleClick={() => {}}
         homepageIsCurrent={isHomepage}
       ></Header>

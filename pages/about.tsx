@@ -143,15 +143,13 @@ export default function Home() {
       </div>
 
       <style jsx>{`
-        :global(body) {
-          background: var(--blue);
+        :global(:root) {
+          --bg-color: var(--blue);
+          --hero-url: url(/about-hero.webp);
         }
-        .WallpaperHeader {
-          background: url(/homes.png);
-          height: 45vh;
-          width: 100%;
-          background-size: 500px 500px;
-          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+
+        .PageHeader {
+          background-size: cover;
         }
 
         .Content {
@@ -224,15 +222,6 @@ export default function Home() {
           font-family: var(--headline-font);
           padding: 35px 0;
           text-align: center;
-        }
-        .PageHeader {
-          width: 100%;
-          height: 55vh;
-          position: relative;
-          background: url(/about-hero.webp);
-          background-size: cover;
-          background-position: center;
-          border-bottom: 15px solid var(--blue);
         }
         .Flex {
           display: flex;

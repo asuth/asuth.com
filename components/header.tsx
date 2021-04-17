@@ -39,16 +39,14 @@ export default class Header extends Component<NodeProps, NodeState> {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
 
-        <nav
-          className={`nav border-black font-domaineSans border-b flex justify-center`}
-          key="headernav"
-        >
+        <nav className={`nav flex justify-center`}>
           <style jsx>{`
-            nav {
-              background: var(--${this.props.backgroundColor});
+            .nav {
+              background: var(--bg-color);
               width: 100%;
               font-family: var(--headline-font);
               padding: 1.25rem;
+              border-bottom: 1px solid #000; /*var(--dark-bg-color);*/
             }
             .logo {
               position: absolute;
@@ -59,7 +57,6 @@ export default class Header extends Component<NodeProps, NodeState> {
               font-size: 30px;
               width: 500px;
             }
-
             .carrot {
               font-size: 15px;
               transform: translateY(0px);
@@ -130,13 +127,13 @@ export default class Header extends Component<NodeProps, NodeState> {
               </>
             ) : (
               <div className="col-start-2 col-end-2 row-start-1 row-end-1 space-x-6 flex justify-end">
+                <div className="PageTitle"></div>
                 <Link href="/">
                   <a onClick={this.props.handleClick} className="btn btn-b">
-                    <span className="carrot">&uarr;</span>&nbsp;OTHER&nbsp;STUFF
+                    <span className="carrot">&uarr;</span>
+                    &nbsp;MORE&nbsp;STUFF&nbsp;AT&nbsp;HOME
                   </a>
                 </Link>
-
-                <div className="PageTitle">{this.props.title}</div>
               </div>
             )}
           </div>
