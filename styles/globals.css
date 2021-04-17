@@ -147,6 +147,11 @@
   --hpPurple: rgb(59, 59, 104);
 }
 
+body {
+  background: var(--dark-bg-color) url(/yellow-texture.png);
+  background-size: 800px 800px;
+}
+
 .MaxWidth {
   max-width: 60rem;
   width: 100%;
@@ -187,8 +192,31 @@
   border-bottom: 128px solid var(--bg-color);
 }
 
+.PageHeadline {
+  background: var(--bg-color);
+  font-size: 32px;
+  font-family: var(--headline-font);
+  padding: 35px;
+  place-self: center start;
+  margin-left: 5rem;
+  border: 4px solid var(--dark-bg-color);
+}
+
+.ContentBlock {
+  width: 100%;
+  place-self: stretch start;
+  display: grid;
+  margin: 0 auto;
+  position: relative;
+}
+
 .HomepageIsCurrent {
   margin-top: 0;
+}
+
+.Content {
+  width: 100%;
+  padding: 50px;
 }
 
 .btn {
