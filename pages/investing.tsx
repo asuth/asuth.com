@@ -25,7 +25,7 @@ export default function Home() {
     {
       name: "Shyft Power",
       leader: "Ugwem Eneyo",
-      description: `Shyft is building hardware and software that allow buildings to seamlessly switch between grid- and non-grid energy sources. I invested because we’ll need solutions like this to defeat climate change.`,
+      description: `Shyft is building hardware and software that allow buildings to seamlessly switch between grid- and non-grid energy sources. I invested because this  could enable developing countries to leapfrog past old grid technologies.`,
       category: "Climate Tech",
       link: "https://shyftpower.com/",
     },
@@ -67,7 +67,7 @@ export default function Home() {
       name: "BusRight",
       leader: "Keith Corso",
       description: `
-      BusRight is building a modern platform for intelligent school bus routing and tracking. I invested because...of course this should exist.`,
+      BusRight is building a modern platform for intelligent school bus routing and tracking. I invested because school buses are a huge public transportation system that could be run much more effectively.`,
       link: "https://busright.com/",
       category: "Education Tech",
     },
@@ -91,9 +91,9 @@ export default function Home() {
     {
       name: "PrismsVR",
       leader: "Anurupa Ganguly",
-      description: `PrismsVR is a math education startup building spatial understanding.`,
+      description: `PrismsVR is building a virtual reality experience that helps math students develop their spatial reasoning. I invested because students need radical new ways to develop their math understanding and intuition.`,
       link: "https://www.prismsvr.com/",
-      category: "Education",
+      category: "Education Tech",
     },
   ];
 
@@ -239,7 +239,7 @@ export default function Home() {
           }
 
 
-
+        /*
         .GreenCard {
           transform: rotate(-2deg);
         }
@@ -250,7 +250,7 @@ export default function Home() {
 
         .YellowCard {
           transform: rotate(-2deg);
-        }
+        }*/
 
         .GreenCard .InvestmentInfo {
           background: var(--green);
@@ -284,16 +284,6 @@ export default function Home() {
 
         li:last-child {
           margin-bottom: 0;
-        }
-
-        .RightCard {
-          float: right;
-          transform: rotate(2deg);
-        }
-
-        .LeftCard {
-          float: left;
-          transform: rotate(-1deg);
         }
 
         p {

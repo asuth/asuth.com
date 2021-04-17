@@ -160,7 +160,7 @@
 body {
   background: var(--dark-bg-color) url(/yellow-texture.png);
   background-size: 800px 800px;
-  font-family: var(--body-font);
+  font: 1rem / 1.6 var(--body-font);
 }
 
 .MaxWidth {
