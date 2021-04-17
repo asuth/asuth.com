@@ -41,7 +41,7 @@ export default class Header extends Component<NodeProps, NodeState> {
         <nav className={`nav flex justify-center`}>
           <style jsx>{`
             .nav {
-              background: var(--bg-color);
+              background: var(--nav-bar-color);
               width: 100%;
               font-family: var(--headline-font);
               padding: 1.25rem;

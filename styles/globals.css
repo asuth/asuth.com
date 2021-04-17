@@ -109,6 +109,11 @@
   --hpPurple: rgb(59, 59, 104);
   /* this gets dynamically updated by js, so safari can have a full-height page */
   --app-height: 100vh;
+  /* 
+    separate this from bg-color because during page transition, we set nav-color
+    during the transition but we leave bg-color to change later
+  */
+  --nav-bar-color: var(--bg-color);
 }
 
 body {
@@ -123,6 +128,7 @@ this is especially nice on mobile but is useful on all platforms
 */
 .BodyHomepageIsCurrent {
   overflow: hidden;
+  --nav-bar-color: var(--hpPurple);
 }
 
 .MaxWidth {

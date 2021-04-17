@@ -70,6 +70,9 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     const imgRatio = imgWidth / imgHeight;
 
     const wHeight = window.innerHeight;
+    // TODO putting side effects in a react setState caller...seems bad
+    document.documentElement.style.setProperty("--app-height", `${wHeight}px`);
+
     const cHeight = wHeight - navHeight;
     const cWidth = window.innerWidth;
 
@@ -107,10 +110,10 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     }
 
     this.setState({ offsets: offsets });
-    document.documentElement.style.setProperty("--app-height", `${wHeight}px`);
   }
 
   componentDidUpdate() {
+    //
     document.body.classList.toggle(
       "BodyHomepageIsCurrent",
       this.props.homepageIsCurrent
@@ -171,11 +174,6 @@ export default class Homepage extends Component<HomeProps, HomeState> {
             ? this.renderRealHomepage()
             : ""}
         </div>
-        <style jsx>{`
-          :global(:root) {
-            --bg-color: var(--hpPurple);
-          }
-        `}</style>
       </>
     );
   }
