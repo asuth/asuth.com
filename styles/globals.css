@@ -67,6 +67,7 @@
 }
 
 .HomepageBackground {
+  overflow: hidden;
   background-size: 100%;
   height: calc(100vh - var(--nav-bar-height));
   background-repeat: no-repeat;
@@ -126,6 +127,7 @@ body {
 
 .nav {
   height: var(--nav-bar-height);
+  overflow-x: hidden; /* todo remove once nav is simplified */
   transition: background 750ms ease 0s;
 }
 
