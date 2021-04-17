@@ -110,14 +110,16 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     document.documentElement.style.setProperty("--app-height", `${wHeight}px`);
   }
 
-  // handleClick() {
-  //   this.setState({ isHomepage: !this.props.isHomepage });
-  // }
+  componentDidUpdate() {
+    document.body.classList.toggle(
+      "BodyHomepageIsCurrent",
+      this.props.homepageIsCurrent
+    );
+  }
 
   componentDidMount() {
     this.calculateSizes();
     window.addEventListener("resize", this.calculateSizes.bind(this));
-    console.log("didMount");
     window.addEventListener("load", this.preloadHomepage.bind(this));
     if (document.readyState === "complete") {
       this.preloadHomepage();
