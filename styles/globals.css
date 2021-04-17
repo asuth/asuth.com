@@ -137,7 +137,8 @@
   --nav-bar-height: 85px;
   --headline-font: "Domaine Sans Text", sans-serif;
   --body-font: "National 2", sans-serif;
-  --yellow: #faff98;
+  --brightYellow: #faff98;
+  --yellow: #f2f1a0;
   --purple: #d0abc5;
   --salmon: #f0999e;
   --green: #8bdad5;
@@ -150,6 +151,7 @@
 body {
   background: var(--dark-bg-color) url(/yellow-texture.png);
   background-size: 800px 800px;
+  font-family: var(--body-font);
 }
 
 .MaxWidth {
@@ -169,7 +171,7 @@ body {
 
 .Card {
   background: #fff;
-  border: 28px solid #f2f1a0;
+  border: 28px solid var(--yellow);
   padding: 50px;
   width: 66%;
   position: relative;

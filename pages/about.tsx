@@ -165,24 +165,8 @@ export default function Home() {
           font: 40px var(--headline-font);
         }
 
-        .PortraitCard {
-          height: 450px;
-          padding: 0;
-        }
-
-        .RightCardText {
-          font: 30px var(--headline-font);
-          padding: 120px 40px;
-          float: left;
-          width: 30%;
-        }
-
         .CenterCard {
           clear: both;
-        }
-
-        .Hey {
-          font-size: 60px;
         }
 
         ul {
