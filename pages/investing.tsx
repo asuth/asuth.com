@@ -83,11 +83,21 @@ export default function Home() {
       name: "California Yimby",
       leader: "Brian Hanlon",
       description: `
-        California is a neat place, but it leads the nation in its real poverty rate. Its anti-building housing policies push way too many people into housing instability and homelessness. Teachers can’t afford to live where they teach. I invested because California Yimby is leading the charge to create an abundant and equitable supply of housing
+        California is a neat place, but it leads the nation in its real poverty rate. Its anti-building housing policies push way too many people into housing instability and homelessness. Teachers can’t afford to live where they teach. I invested because California Yimby is leading the charge to create an abundant and equitable supply of housing.
         `,
       link: "https://cayimby.org/",
       category: "Policy Advocacy",
     },
+    {
+      name: "Hidden Genius Project",
+      leader: "Brandon Nicholson",
+      description: `
+          The Hidden Genius Project trains Black Male youth in technology skills.
+          `,
+      link: "https://www.hiddengeniusproject.org/",
+      category: "Youth Development",
+    },
+
     {
       name: "PrismsVR",
       leader: "Anurupa Ganguly",
@@ -182,7 +192,7 @@ export default function Home() {
 
         .InvestmentCard {
           display: inline-block;
-          width: 35%;
+          width: 33%;
           background: #fff;
           margin: 0 5% 80px 0;
           box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
@@ -199,29 +209,29 @@ export default function Home() {
         }
 
         .InvestmentCard p {
-          padding: 30px;
+          padding: 25px;
         }
 
         .InvestmentCard img {
           width: 222px;
           margin: 0;
-          display: inline-block;
+          display: none;
           margin: 10px 0 0 0;
         }
 
         .InvestmentCard h3 {
           font-size: 25px;
           text-transform: uppercase;
-          margin: 10px 0;
+          display: inline-block;
         }
 
         .InvestmentName {
-          padding: 15px 30px;
-          text-align: center;
+          padding: 25px 25px 0 25px;
+          // text-align: center;
         }
 
         .InvestmentInfo {
-          padding: 15px 30px;
+          padding: 15px 25px 25px 25px;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -239,28 +249,16 @@ export default function Home() {
           }
 
 
-        /*
-        .GreenCard {
-          transform: rotate(-2deg);
-        }
 
-        .SalmonCard {
-          transform: rotate(2deg);
-        }
-
-        .YellowCard {
-          transform: rotate(-2deg);
-        }*/
-
-        .GreenCard .InvestmentInfo {
+        .GreenCard .InvestmentInfo, .GreenCard .InvestmentName {
           background: var(--green);
         }
 
-        .SalmonCard .InvestmentInfo {
+        .SalmonCard .InvestmentInfo, .SalmonCard .InvestmentName {
           background: var(--salmon);
         }
 
-        .YellowCard .InvestmentInfo {
+        .YellowCard .InvestmentInfo, .YellowCard .InvestmentName {
           background: var(--yellow);
         }
 

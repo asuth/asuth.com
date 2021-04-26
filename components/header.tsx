@@ -57,9 +57,10 @@ export default class Header extends Component<NodeProps, NodeState> {
               width: 500px;
             }
             .carrot {
-              font-size: 15px;
-              transform: translateY(0px);
-              color: #666;
+              font-size: 20px;
+              transform: translateY(0px) rotate(-90deg);
+
+              // color:  var(--dark-bg-color);
             }
           `}</style>
           <div className="MaxWidth grid grid-cols-headerGrid grid-rows-1">
@@ -103,7 +104,7 @@ export default class Header extends Component<NodeProps, NodeState> {
                       href="#"
                       className="btn btn-a"
                     >
-                      SPEAKING
+                      QUESTIONS
                     </a>
                   </Link>
                   <Link href="/investing">
@@ -127,10 +128,12 @@ export default class Header extends Component<NodeProps, NodeState> {
             ) : (
               <div className="col-start-2 col-end-2 row-start-1 row-end-1 space-x-6 flex justify-end">
                 <div className="PageTitle"></div>
+
                 <Link href="/">
                   <a onClick={this.props.handleClick} className="btn btn-b">
-                    <span className="carrot">&uarr;</span>
-                    &nbsp;MORE&nbsp;STUFF&nbsp;AT&nbsp;HOME
+                    {/* <span className="carrot">&#8629;</span> */}
+                    <span className="carrot">☞</span>
+                    &nbsp;MORE&nbsp;STUFF
                   </a>
                 </Link>
               </div>
