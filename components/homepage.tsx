@@ -14,18 +14,18 @@ const animations: {
     offsetX: 2378,
     offsetY: 161,
   },
-  turbine: {
-    width: 524,
-    height: 635,
-    offsetX: 2672,
-    offsetY: 1186,
-  },
-  kids: {
-    width: 476,
-    height: 534,
-    offsetX: 1233,
-    offsetY: 584,
-  },
+  // turbine: {
+  //   width: 524,
+  //   height: 635,
+  //   offsetX: 2672,
+  //   offsetY: 1186,
+  // },
+  // kids: {
+  //   width: 476,
+  //   height: 534,
+  //   offsetX: 1233,
+  //   offsetY: 584,
+  // },
 };
 
 type AnimationObjectOffsetType = {
