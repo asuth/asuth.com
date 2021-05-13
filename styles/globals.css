@@ -66,6 +66,7 @@
   src: url(/national-2-web-regular.woff2) format("woff2");
 }
 
+/* NB: the url of the background image is defined dynamically in JS */
 .HomepageBackground {
   overflow: hidden;
   background-size: 100%;
@@ -76,17 +77,13 @@
   position: relative;
   transition: margin-top 750ms ease 0s;
   margin-top: calc(-1 * var(--app-height) + var(--nav-bar-height));
+
+  /* fixes bad dynamic resizing of my art */
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: pixelated;
 }
 
-.HomepageBackground.HomepageIsCurrent,
-.HomepageBackground.HomepageIsLoaded {
-  background-image: url("/homepage-2880.webp");
-  background-image: image-set(
-    url("/homepage-1440.webp") 1x,
-    url("/homepage-2880.webp") 2x
-  );
-}
-
+/* portrait phone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
   .HomepageBackground.HomepageIsCurrent,
   .HomepageBackground.HomepageIsLoaded {

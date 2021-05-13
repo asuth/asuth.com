@@ -28,7 +28,7 @@ const animations: {
   },
 };
 
-type OffsetType = {
+type AnimationObjectOffsetType = {
   [key: string]: {
     offsetX: number;
     offsetY: number;
@@ -41,22 +41,28 @@ type HomeProps = {
 };
 
 type HomeState = {
-  offsets: OffsetType;
+  offsets: AnimationObjectOffsetType;
   shouldPreloadHomepage: boolean;
+  originalBgSize: number | null;
 };
 
 export default class Homepage extends Component<HomeProps, HomeState> {
   constructor(props: HomeProps) {
     super(props);
 
-    const defaultOffsets: OffsetType = {};
+    const defaultOffsets: AnimationObjectOffsetType = {};
     for (const obj in animations) {
-      defaultOffsets[obj] = { offsetX: 0, offsetY: 0, width: 0 };
+      defaultOffsets[obj] = {
+        offsetX: 0,
+        offsetY: 0,
+        width: 0,
+      };
     }
 
     this.state = {
       offsets: defaultOffsets,
       shouldPreloadHomepage: false,
+      originalBgSize: null,
     };
   }
 
@@ -91,7 +97,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       naturalHeight = cHeight;
     }
 
-    const offsets: OffsetType = {};
+    const offsets: AnimationObjectOffsetType = {};
     for (const obj in animations) {
       const widthRatio = animations[obj].width / imgWidth;
       const offsetXRatio = animations[obj].offsetX / imgWidth;
@@ -109,7 +115,37 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       }
     }
 
-    this.setState({ offsets: offsets });
+    // calculate size of bg image
+    let originalBgSize = this.state.originalBgSize;
+    if (typeof window !== undefined && originalBgSize === null) {
+      let bgWidths = [
+        1000,
+        1200,
+        1400,
+        1600,
+        1800,
+        2000,
+        2200,
+        2400,
+        2600,
+        2800,
+        3000,
+        3200,
+        3400,
+      ];
+      let naturalWidthScaledWithDPR = naturalWidth * window.devicePixelRatio;
+      bgWidths.sort(
+        (a, b) =>
+          Math.abs(a - naturalWidthScaledWithDPR) -
+          Math.abs(b - naturalWidthScaledWithDPR)
+      );
+      originalBgSize = bgWidths[0];
+    }
+
+    this.setState({
+      offsets: offsets,
+      originalBgSize: originalBgSize,
+    });
   }
 
   componentDidUpdate() {
@@ -142,7 +178,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   renderRealHomepage() {
     return (
       <>
-        <link rel="preload" as="image" href="homepage-2880.webp" />
+        {/* <link rel="preload" as="image" href="homepage-2880.webp" /> */}
         {Object.entries(this.state.offsets).map(([key, gif]) => (
           // if we're actually on the homepage, render the gifs
           <img
@@ -161,6 +197,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   }
 
   render() {
+    let baseImage = encodeURIComponent("/homepage-flawless.webp");
+
     return (
       <>
         <div
@@ -169,6 +207,9 @@ export default class Homepage extends Component<HomeProps, HomeState> {
             (this.state.shouldPreloadHomepage ? "HomepageIsLoaded " : " ") +
             "HomepageBackground"
           }
+          style={{
+            backgroundImage: `url("/_next/image?url=${baseImage}&w=${this.state.originalBgSize}&q=87")`,
+          }}
         >
           {this.props.homepageIsCurrent || this.state.shouldPreloadHomepage
             ? this.renderRealHomepage()
