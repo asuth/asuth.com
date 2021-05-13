@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 
+@font-face {
+  font-family: "Domaine Sans Text";
+  src: url(/domaine-sans-text-web-medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "National 2";
+  src: url(/national-2-web-regular.woff2) format("woff2");
+}
+
 .btn {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -56,16 +66,6 @@
   transform: scale(1.2);
 }
 
-@font-face {
-  font-family: "Domaine Sans Text";
-  src: url(/domaine-sans-text-web-medium.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: "National 2";
-  src: url(/national-2-web-regular.woff2) format("woff2");
-}
-
 /* NB: the url of the background image is defined dynamically in JS */
 .HomepageBackground {
   overflow: hidden;
@@ -117,6 +117,12 @@ body {
   background: var(--dark-bg-color) url(/yellow-texture.png);
   background-size: 800px 800px;
   font: 1rem / 1.6 var(--body-font);
+}
+
+/* hack to keep the logo in the same place when user chooses a new page */
+html {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /* 

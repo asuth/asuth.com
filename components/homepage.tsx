@@ -76,8 +76,6 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     const imgRatio = imgWidth / imgHeight;
 
     const wHeight = window.innerHeight;
-    // TODO putting side effects in a react setState caller...seems bad
-    document.documentElement.style.setProperty("--app-height", `${wHeight}px`);
 
     const cHeight = wHeight - navHeight;
     const cWidth = window.innerWidth;
@@ -119,21 +117,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     let originalBgSize = this.state.originalBgSize;
     if (originalBgSize === null) {
       let bgWidths = [
-        1000,
-        1200,
-        1400,
-        1600,
-        1800,
-        2000,
-        2200,
-        2400,
-        2600,
-        2800,
-        3000,
-        3200,
-        3400,
-        3600,
-        3800,
+        1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600, 2800, 3000, 3200,
+        3400, 3600, 3800,
       ];
       let naturalWidthScaledWithDPR = naturalWidth * window.devicePixelRatio;
       bgWidths.sort(
@@ -150,11 +135,20 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     });
   }
 
-  componentDidUpdate() {
+  pageSetters() {
+    document.documentElement.style.setProperty(
+      "--app-height",
+      `${window.innerHeight}px`
+    );
+
     document.body.classList.toggle(
       "BodyHomepageIsCurrent",
       this.props.homepageIsCurrent
     );
+  }
+
+  componentDidUpdate() {
+    this.pageSetters();
   }
 
   componentDidMount() {
@@ -164,6 +158,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     if (document.readyState === "complete") {
       this.preloadHomepage();
     }
+    this.pageSetters();
   }
 
   componentWillUnmount() {
