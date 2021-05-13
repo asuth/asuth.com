@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   };
 
   return (
-    <>
+    <div className={isHomepage ? "WrapperHomepageIsCurrent" : ""}>
       <Homepage homepageIsCurrent={isHomepage} />
       <Header
         title={titles[router.pathname]}
@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </div>
       </Transition>
-    </>
+    </div>
   );
 }
 

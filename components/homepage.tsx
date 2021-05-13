@@ -149,7 +149,6 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   }
 
   componentDidUpdate() {
-    //
     document.body.classList.toggle(
       "BodyHomepageIsCurrent",
       this.props.homepageIsCurrent

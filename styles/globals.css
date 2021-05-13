@@ -123,9 +123,12 @@ body {
 prevent scrolling on homepage since it has no scroll bars
 this is especially nice on mobile but is useful on all platforms
 */
+.WrapperHomepageIsCurrent {
+  --nav-bar-color: var(--hpPurple);
+}
+
 .BodyHomepageIsCurrent {
   overflow: hidden;
-  --nav-bar-color: var(--hpPurple);
 }
 
 .MaxWidth {
