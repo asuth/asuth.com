@@ -132,6 +132,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
         3000,
         3200,
         3400,
+        3600,
+        3800,
       ];
       let naturalWidthScaledWithDPR = naturalWidth * window.devicePixelRatio;
       bgWidths.sort(
