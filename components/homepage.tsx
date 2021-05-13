@@ -117,7 +117,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
     // calculate size of bg image
     let originalBgSize = this.state.originalBgSize;
-    if (typeof window !== undefined && originalBgSize === null) {
+    if (originalBgSize === null) {
       let bgWidths = [
         1000,
         1200,
@@ -207,9 +207,13 @@ export default class Homepage extends Component<HomeProps, HomeState> {
             (this.state.shouldPreloadHomepage ? "HomepageIsLoaded " : " ") +
             "HomepageBackground"
           }
-          style={{
-            backgroundImage: `url("/_next/image?url=${baseImage}&w=${this.state.originalBgSize}&q=87")`,
-          }}
+          style={
+            this.state.originalBgSize
+              ? {
+                  backgroundImage: `url("/_next/image?url=${baseImage}&w=${this.state.originalBgSize}&q=87")`,
+                }
+              : null
+          }
         >
           {this.props.homepageIsCurrent || this.state.shouldPreloadHomepage
             ? this.renderRealHomepage()
