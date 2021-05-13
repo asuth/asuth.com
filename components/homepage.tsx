@@ -210,9 +210,9 @@ export default class Homepage extends Component<HomeProps, HomeState> {
           style={
             this.state.originalBgSize
               ? {
-                backgroundImage: `url("/_next/image?url=${baseImage}&w=${this.state.originalBgSize}&q=87")`,
-              }
-              : {}}
+                  backgroundImage: `url("/_next/image?url=${baseImage}&w=${this.state.originalBgSize}&q=87")`,
+                }
+              : {}
           }
         >
           {this.props.homepageIsCurrent || this.state.shouldPreloadHomepage
