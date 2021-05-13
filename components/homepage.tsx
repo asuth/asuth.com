@@ -8,12 +8,12 @@ const animations: {
     offsetY: number;
   };
 } = {
-  dog: {
-    width: 958,
-    height: 533,
-    offsetX: 2378,
-    offsetY: 161,
-  },
+  // dog: {
+  //   width: 958,
+  //   height: 533,
+  //   offsetX: 2378,
+  //   offsetY: 161,
+  // },
   // turbine: {
   //   width: 524,
   //   height: 635,
