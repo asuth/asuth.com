@@ -175,19 +175,31 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     return (
       <>
         {/* <link rel="preload" as="image" href="homepage-2880.webp" /> */}
-        {Object.entries(this.state.offsets).map(([key, gif]) => (
+        {Object.entries(this.state.offsets).map(([key, gif]) => {
+          let dogWidths = [300, 450, 600, 750];
+          // todo move this out of server rendering path
+          let dpr = typeof window === "undefined" ? 1 : window.devicePixelRatio;
+          let widthScaledWithDPR = gif.width * dpr;
+          dogWidths.sort(
+            (a, b) =>
+              Math.abs(a - widthScaledWithDPR) -
+              Math.abs(b - widthScaledWithDPR)
+          );
+          let url = `dog-${dogWidths[0]}.gif`;
           // if we're actually on the homepage, render the gifs
-          <img
-            src={key === "kids" ? "kids.webp" : `${key}.gif`}
-            key={key}
-            style={{
-              left: `${gif.offsetX}px`,
-              bottom: `${gif.offsetY}px`,
-              width: `${gif.width}px`,
-              position: "absolute",
-            }}
-          />
-        ))}
+          return (
+            <img
+              src={key === "kids" ? "kids.webp" : url}
+              key={key}
+              style={{
+                left: `${gif.offsetX}px`,
+                bottom: `${gif.offsetY}px`,
+                width: `${gif.width}px`,
+                position: "absolute",
+              }}
+            />
+          );
+        })}
       </>
     );
   }
@@ -195,6 +207,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   render() {
     let baseImage = encodeURIComponent("/homepage-flawless.webp");
 
+    // todo check image loading sequence on non-homepages
     return (
       <>
         <div
