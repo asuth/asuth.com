@@ -174,18 +174,20 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   renderRealHomepage() {
     return (
       <>
-        {/* <link rel="preload" as="image" href="homepage-2880.webp" /> */}
         {Object.entries(this.state.offsets).map(([key, gif]) => {
-          let dogWidths = [300, 450, 600, 750];
+          let dogWidths = [750, 600, 450, 300];
           // todo move this out of server rendering path
           let dpr = typeof window === "undefined" ? 1 : window.devicePixelRatio;
-          let widthScaledWithDPR = gif.width * dpr;
-          dogWidths.sort(
-            (a, b) =>
-              Math.abs(a - widthScaledWithDPR) -
-              Math.abs(b - widthScaledWithDPR)
-          );
-          let url = `dog-${dogWidths[0]}.gif`;
+          let renderedWidth = gif.width * dpr;
+          // find the smallest image on server that's bigger than what's needed
+          // i.e. allow downscaling but not upscaling (upscaling looked bad)
+          let chosenWidth = dogWidths[0];
+          dogWidths.forEach((w) => {
+            if (w > renderedWidth) {
+              chosenWidth = w;
+            }
+          });
+          let url = `dog-${chosenWidth}.gif`;
           // if we're actually on the homepage, render the gifs
           return (
             <img
