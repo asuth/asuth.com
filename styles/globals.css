@@ -161,7 +161,7 @@ this is especially nice on mobile but is useful on all platforms
   position: relative;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
-  font: 18px/1.6 var(--body-font);
+  font: 17px/1.6 var(--body-font);
 }
 
 .FirstCard {
