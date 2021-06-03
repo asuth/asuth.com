@@ -6,6 +6,8 @@ const animations: {
     height: number;
     offsetX: number;
     offsetY: number;
+    imageSizes: Array<number>;
+    extension: string;
   };
 } = {
   dog: {
@@ -13,6 +15,8 @@ const animations: {
     height: 533,
     offsetX: 2378,
     offsetY: 161,
+    imageSizes: [750, 600, 450, 300],
+    extension: "gif",
   },
   // turbine: {
   //   width: 524,
@@ -25,6 +29,8 @@ const animations: {
     height: 534,
     offsetX: 1233,
     offsetY: 584,
+    imageSizes: [470, 350, 280, 200],
+    extension: "webp",
   },
 };
 
@@ -188,27 +194,24 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
   // If user has landed on homepage, render this html right away
   // If they're on a different page, render this after the main content has loaded
-  renderRealHomepage() {
+  renderAnimations() {
     return (
       <>
         {Object.entries(this.state.offsets).map(([key, gif]) => {
-          let dogWidths = [750, 600, 450, 300];
-          // todo move this out of server rendering path
-          let dpr = typeof window === "undefined" ? 1 : window.devicePixelRatio;
+          let dpr = window.devicePixelRatio;
           let renderedWidth = gif.width * dpr;
           // find the smallest image on server that's bigger than what's needed
           // i.e. allow downscaling but not upscaling (upscaling looked bad)
-          let chosenWidth = dogWidths[0];
-          dogWidths.forEach((w) => {
+          let chosenWidth = animations[key].imageSizes[0];
+          animations[key].imageSizes.forEach((w) => {
             if (w > renderedWidth) {
               chosenWidth = w;
             }
           });
-          let url = `dog-${chosenWidth}.gif`;
           // if we're actually on the homepage, render the gifs
           return (
             <img
-              src={key === "kids" ? "kids.webp" : url}
+              src={`${key}-${chosenWidth}.${animations[key].extension}`}
               key={key}
               style={{
                 left: `${gif.offsetX}px`,
@@ -243,8 +246,10 @@ export default class Homepage extends Component<HomeProps, HomeState> {
               : {}
           }
         >
-          {this.props.homepageIsCurrent || this.state.shouldPreloadHomepage
-            ? this.renderRealHomepage()
+          // only render animations in client side
+          {typeof window !== "undefined" &&
+          (this.props.homepageIsCurrent || this.state.shouldPreloadHomepage)
+            ? this.renderAnimations()
             : ""}
         </div>
       </>
