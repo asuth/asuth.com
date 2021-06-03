@@ -48,10 +48,6 @@ export default function Home() {
           background-size: 360px 360px;
         }
 
-        .CenterCard {
-          clear: both;
-        }
-
         ul {
           list-style: square;
         }
@@ -63,22 +59,6 @@ export default function Home() {
         }
 
         li:last-child {
-          margin-bottom: 0;
-        }
-
-        .RightCard {
-          float: right;
-        }
-
-        .LeftCard {
-          float: left;
-        }
-
-        p {
-          margin-bottom: 30px;
-        }
-
-        p:last-child {
           margin-bottom: 0;
         }
       `}</style>

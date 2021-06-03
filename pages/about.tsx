@@ -156,10 +156,6 @@ export default function Home() {
           transition: transform 0.2s linear;
         }
 
-        .CenterCard {
-          clear: both;
-        }
-
         ul {
           list-style: square;
         }
@@ -171,22 +167,6 @@ export default function Home() {
         }
 
         li:last-child {
-          margin-bottom: 0;
-        }
-
-        .RightCard {
-          float: right;
-        }
-
-        .LeftCard {
-          float: left;
-        }
-
-        p {
-          margin-bottom: 30px;
-        }
-
-        p:last-child {
           margin-bottom: 0;
         }
       `}</style>

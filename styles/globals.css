@@ -185,10 +185,26 @@ this is especially nice on mobile but is useful on all platforms
   font: 17px/1.6 var(--body-font);
 }
 
+.RightCard {
+  float: right;
+}
+
+.LeftCard {
+  float: left;
+}
+
 .Card h3 {
   font: 28px var(--headline-font);
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -197,12 +213,16 @@ this is especially nice on mobile but is useful on all platforms
     border-width: 16px;
     margin-bottom: 25px;
     padding: 25px;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .Card h3 {
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 23px;
+  }
+
+  p {
+    margin-bottom: 15px;
   }
 
   .Content {
