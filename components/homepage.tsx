@@ -241,18 +241,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
             (this.state.shouldPreloadHomepage ? "HomepageIsLoaded " : "") +
             "HomepageBackground"
           }
-          style={
-            this.state.originalBgSize
-              ? {
-                  backgroundImage: `url("${backgroundUrl}")`,
-                }
-              : {}
-          }
         >
-          {/* only render animations in client side */}
-          {shouldPreload ? (
-            <link rel="preload" as="image" href={backgroundUrl} />
-          ) : null}
           {shouldPreload ? this.renderAnimations() : null}
         </div>
       </>
