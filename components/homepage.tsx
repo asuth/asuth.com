@@ -228,8 +228,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
   render() {
     let baseImage = encodeURIComponent("/homepage-flawless.webp");
+    let backgroundUrl = `/_next/image?url=${baseImage}&w=${this.state.originalBgSize}&q=87`;
 
-    // todo check image loading sequence on non-homepages
     return (
       <>
         <div
@@ -241,11 +241,15 @@ export default class Homepage extends Component<HomeProps, HomeState> {
           style={
             this.state.originalBgSize
               ? {
-                  backgroundImage: `url("/_next/image?url=${baseImage}&w=${this.state.originalBgSize}&q=87")`,
+                  backgroundImage: `url("${backgroundUrl}")`,
                 }
               : {}
           }
         >
+          {/* preload most important image first */}
+          {this.state.originalBgSize ? (
+            <link rel="preload" as="image" href={backgroundUrl} />
+          ) : null}
           {/* only render animations in client side */}
           {typeof window !== "undefined" &&
           (this.props.homepageIsCurrent || this.state.shouldPreloadHomepage)
