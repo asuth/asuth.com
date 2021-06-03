@@ -30,7 +30,7 @@
 
 @media only screen and (max-width: 768px) {
   .btn {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -129,9 +129,46 @@
   --nav-bar-color: var(--bg-color);
 }
 
+.Nav {
+  background: var(--nav-bar-color);
+  width: 100%;
+  display: flex;
+  font-family: var(--headline-font);
+  padding: 20px;
+  border-bottom: 1px solid #000; /*var(--dark-bg-color);*/
+}
+
+.NavLinks {
+  justify-content: flex-end;
+  display: flex;
+  gap: 20px;
+}
+
 @media only screen and (max-width: 768px) {
   :root {
     --nav-bar-height: 60px;
+  }
+
+  .Nav {
+    padding: 10px;
+  }
+
+  .Nav .btn {
+    padding: 4px 8px;
+  }
+
+  .NavLinks {
+    background: #ccc;
+    gap: 8px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  :root {
+    --nav-bar-height: 60px;
+  }
+
+  .BodyHomepageIsCurrent .NavLinks {
+    justify-content: center;
   }
 }
 
@@ -188,7 +225,7 @@ this is especially nice on mobile but is useful on all platforms
   display: grid;
 }
 
-.nav {
+.Nav {
   height: var(--nav-bar-height);
   overflow-x: hidden; /* todo remove once nav is simplified */
   transition: background 750ms ease 0s;
@@ -330,7 +367,7 @@ p:last-child {
     padding: 0 12px;
   }
 
-  .nav {
+  .Nav {
     padding: 12px;
   }
 
