@@ -20,12 +20,12 @@ const animations: {
   //   offsetX: 2672,
   //   offsetY: 1186,
   // },
-  // kids: {
-  //   width: 476,
-  //   height: 534,
-  //   offsetX: 1233,
-  //   offsetY: 584,
-  // },
+  kids: {
+    width: 476,
+    height: 534,
+    offsetX: 1233,
+    offsetY: 584,
+  },
 };
 
 type AnimationObjectOffsetType = {
