@@ -78,13 +78,15 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     const imgWidth = 4001;
     const imgHeight = 2250;
 
-    const navHeight = 85;
+    const cWidth = window.innerWidth;
+
+    // nav-bar-height
+    const navHeight = cWidth > 768 ? 85 : 60;
     const imgRatio = imgWidth / imgHeight;
 
     const wHeight = window.innerHeight;
 
     const cHeight = wHeight - navHeight;
-    const cWidth = window.innerWidth;
 
     const cRatio = cWidth / cHeight;
 
