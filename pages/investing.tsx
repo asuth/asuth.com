@@ -218,10 +218,45 @@ export default function Home() {
           box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
         }
 
+
         .SpacerCard {
           display: inline-block;
           width: 20%;
         }
+
+        @media only screen and (max-width: 850px) {
+          .InvestmentCard {
+            width: 47.5%;
+            margin: 0 5% 60px 0;
+          }
+
+          .InvestmentCard:nth-child(even) {
+            margin-right: 0;
+          }
+
+          .SpacerCard {
+            display: none;
+          }
+
+
+  
+        }
+
+        @media only screen and (max-width: 600px) {
+          .InvestmentCard {
+            width: 100%;
+            margin: 0 0 40px 0;
+          }
+          .SpacerCard {
+            display: none;
+          }
+
+        }
+
+        
+
+
+        
 
         .Investments {
           display: flex;
