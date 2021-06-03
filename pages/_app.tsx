@@ -1,5 +1,6 @@
 import { AppProps } from "next/app";
 import Link from "next/link";
+import { useEffect } from "react";
 
 import "../styles/globals.css";
 import Homepage from "../components/homepage";
@@ -26,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <div className="MaxWidth LogoWrap">
+      <div className="MaxWidth LogoWrap" key="logo">
         <Link href="/">
           <a className="logo">
             <img
@@ -41,11 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </Link>
       </div>
 
-      <div
-        className={
-          "SiteWrapper" + (isHomepage ? " WrapperHomepageIsCurrent" : "")
-        }
-      >
+      <div className={"SiteWrapper"} key="site">
         <Homepage homepageIsCurrent={isHomepage} />
         <Header
           title={titles[router.pathname]}
@@ -62,17 +59,3 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 export default MyApp;
-
-// import { useRouter } from "next/router"
-
-// const MainLaylout: React.FC = () => {
-//   const router = useRouter()
-
-//   return (
-//     // you may import your header and footer here too
-//     <Fragment>
-//       <Transition location={router.pathname}>
-//         <div className="min-h-screen">{children}</div>
-//       </Transition>
-//     </Fragment>
-//   )

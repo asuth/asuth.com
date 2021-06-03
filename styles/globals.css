@@ -149,7 +149,12 @@ body {
   transition: transform 750ms ease 0s;
 }
 
-.WrapperHomepageIsCurrent {
+/* When user is resizing screen, don't animate the transform caused by app-height changing */
+.PageIsResizing .SiteWrapper {
+  transition: none;
+}
+
+.BodyHomepageIsCurrent .SiteWrapper {
   transform: translateY(0);
 }
 
@@ -163,7 +168,7 @@ html {
 prevent scrolling on homepage since it has no scroll bars
 this is especially nice on mobile but is useful on all platforms
 */
-.WrapperHomepageIsCurrent {
+.BodyHomepageIsCurrent .SiteWrapper {
   --nav-bar-color: var(--hpPurple);
 }
 

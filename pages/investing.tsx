@@ -121,7 +121,7 @@ export default function Home() {
     },
   ];
 
-  shuffleArray(investments);
+  // shuffleArray(investments);
 
   let counter = 2;
   function resetCounter() {

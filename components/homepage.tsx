@@ -42,13 +42,18 @@ type HomeProps = {
 
 type HomeState = {
   offsets: AnimationObjectOffsetType;
+  appHeight: number;
   shouldPreloadHomepage: boolean;
   originalBgSize: number | null;
 };
 
 export default class Homepage extends Component<HomeProps, HomeState> {
+  timer: number | null;
+
   constructor(props: HomeProps) {
     super(props);
+
+    this.timer = null;
 
     const defaultOffsets: AnimationObjectOffsetType = {};
     for (const obj in animations) {
@@ -61,6 +66,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
     this.state = {
       offsets: defaultOffsets,
+      appHeight: 0,
       shouldPreloadHomepage: false,
       originalBgSize: null,
     };
@@ -136,10 +142,19 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   }
 
   pageSetters() {
-    document.documentElement.style.setProperty(
-      "--app-height",
-      `${window.innerHeight}px`
-    );
+    const newH = window.innerHeight;
+    if (newH != this.state.appHeight) {
+      document.body.classList.toggle("PageIsResizing", true);
+      if (this.timer !== null) {
+        clearTimeout(this.timer);
+      }
+      this.timer = setTimeout(() => {
+        document.body.classList.toggle("PageIsResizing", false);
+      }, 50);
+      this.setState({ appHeight: newH });
+
+      document.documentElement.style.setProperty("--app-height", `${newH}px`);
+    }
 
     document.body.classList.toggle(
       "BodyHomepageIsCurrent",
