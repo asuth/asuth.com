@@ -175,6 +175,15 @@ this is especially nice on mobile but is useful on all platforms
   font: 17px/1.6 var(--body-font);
 }
 
+.Card a {
+  box-shadow: 0 2px var(--bg-color);
+  transition: box-shadow 0.2s ease;
+}
+
+.Card a:hover {
+  box-shadow: 0 2px var(--dark-bg-color);
+}
+
 .FirstCard {
   margin-top: calc(-128px / 2 - 50px);
 }
