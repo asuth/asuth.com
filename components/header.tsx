@@ -44,7 +44,7 @@ export default class Header extends Component<NodeProps, NodeState> {
               background: var(--nav-bar-color);
               width: 100%;
               font-family: var(--headline-font);
-              padding: 1.25rem;
+              padding: 20px;
               border-bottom: 1px solid #000; /*var(--dark-bg-color);*/
             }
             .logo {
@@ -52,6 +52,22 @@ export default class Header extends Component<NodeProps, NodeState> {
               top: 1rem;
               z-index: 2;
             }
+            .LogoImage {
+              width: 240px;
+              height: 131px;
+            }
+
+            @media only screen and (max-width: 768px) {
+              .LogoImage {
+                width: 145px;
+                height: 79px;
+              }
+
+              .nav {
+                padding: 12px;
+              }
+            }
+
             .carrot {
               font-size: 20px;
               transform: translateY(0px) rotate(-90deg);
@@ -62,11 +78,13 @@ export default class Header extends Component<NodeProps, NodeState> {
           <div className="MaxWidth grid grid-cols-headerGrid grid-rows-1">
             <Link href="/">
               <a className="logo" onClick={this.props.handleClick}>
-                <Image
-                  src="/logo@3x.png"
-                  width="240"
-                  height="131"
+                <img
+                  src="logo-200.png"
+                  srcSet="logo-200.png 1x,
+             logo-400.png 2x,
+             logo-600.png 3x"
                   alt="Andrew Sutherland"
+                  className="LogoImage"
                 />
               </a>
             </Link>

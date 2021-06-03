@@ -124,6 +124,12 @@
   --nav-bar-color: var(--bg-color);
 }
 
+@media only screen and (max-width: 768px) {
+  :root {
+    --nav-bar-height: 65px;
+  }
+}
+
 body {
   background: var(--dark-bg-color) url("/yellow-texture-800.png");
   background-image: image-set(
@@ -132,7 +138,7 @@ body {
     url("/yellow-texture-2400.png") 3x
   );
   background-size: 800px 800px;
-  font: 1rem / 1.6 var(--body-font);
+  font: 17px/1.6 var(--body-font);
 }
 
 /* hack to keep the logo in the same place when user chooses a new page */
@@ -182,7 +188,6 @@ this is especially nice on mobile but is useful on all platforms
   position: relative;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
-  font: 17px/1.6 var(--body-font);
 }
 
 .RightCard {
@@ -213,7 +218,6 @@ p:last-child {
     border-width: 16px;
     margin-bottom: 25px;
     padding: 25px;
-    font-size: 15px;
   }
 
   .Card h3 {
@@ -227,6 +231,7 @@ p:last-child {
 
   .Content {
     padding: 20px;
+    font-size: 15px;
   }
 }
 
