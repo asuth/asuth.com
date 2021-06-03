@@ -289,9 +289,6 @@ p:last-child {
   place-self: center start;
   margin-left: 5rem;
   text-transform: uppercase;
-  /* text-align: center; */
-  /* border: 4px solid var(--dark-bg-color); */
-  /* box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1); */
 }
 
 .PageHeadline-Small {
@@ -333,6 +330,16 @@ p:last-child {
 
   .nav {
     padding: 12px;
+  }
+
+  .PageHeadline {
+    font: 25px/1.8 var(--headline-font);
+    padding: 15px 25px;
+    margin-left: 0px;
+  }
+
+  .PageHeadline-Small {
+    font-size: 16px;
   }
 }
 
