@@ -103,7 +103,7 @@ export default class Header extends Component<NodeProps, NodeState> {
             ) : (
               <div className="col-start-2 col-end-2 row-start-1 row-end-1 space-x-6 flex justify-end">
                 <Link href="/">
-                  <a onClick={this.props.handleClick} className="btn btn-b">
+                  <a className="btn btn-b">
                     {/* <span className="carrot">&#8629;</span> */}
                     <span className="carrot">☞</span>
                     &nbsp;MORE&nbsp;STUFF
