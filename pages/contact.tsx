@@ -16,20 +16,21 @@ export default function Home() {
         <div className="Content">
           <div className="MaxWidth">
             <div className="Card FirstCard CenterCard">
+              <h3>Say hello, future friend</h3>
               <p>
-                The best way to reach me is by email:{" "}
-                <a href="mailto:asuth@asuth.com">asuth@asuth.com</a>
+                The best way to reach me is by email at{" "}
+                <a href="mailto:asuth@asuth.com">asuth@asuth.com</a>.
               </p>
 
               <p>
-                You can also follow me on Twitter:{" "}
-                <a href="https://twitter.com/asuth">@asuth</a>
+                You can also follow me on Twitter at{" "}
+                <a href="https://twitter.com/asuth">@asuth</a>.
               </p>
 
               <p>
                 I can also be found on{" "}
                 <a href="https://www.linkedin.com/in/asuth">LinkedIn</a>, though
-                I won't accept your request if I do not know you.
+                I only accept requests from people I already know.
               </p>
             </div>
           </div>
