@@ -52,17 +52,6 @@ export default function Home() {
           width: 100%;
         }
 
-        .BlueTexture {
-          background: var(--dark-blue) url(/yellow-texture.png);
-          background-size: 800px 800px;
-
-          // background: url(/homes.png);
-          // background-size: 500px 500px;
-
-          padding: 50px;
-          overflow: auto;
-        }
-
         h3 {
           font: 28px var(--headline-font);
           text-transform: uppercase;

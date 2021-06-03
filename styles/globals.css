@@ -125,7 +125,12 @@
 }
 
 body {
-  background: var(--dark-bg-color) url(/yellow-texture.png);
+  background: var(--dark-bg-color) url("/yellow-texture-800.png");
+  background-image: image-set(
+    url("/yellow-texture-800.png") 1x,
+    url("/yellow-texture-1600.png") 2x,
+    url("/yellow-texture-2400.png") 3x
+  );
   background-size: 800px 800px;
   font: 1rem / 1.6 var(--body-font);
 }
