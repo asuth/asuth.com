@@ -167,7 +167,7 @@
   }
 
   .BodyHomepageIsCurrent .NavLinks {
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 
