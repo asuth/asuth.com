@@ -234,8 +234,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       <>
         <div
           className={
-            (this.props.homepageIsCurrent ? "HomepageIsCurrent " : " ") +
-            (this.state.shouldPreloadHomepage ? "HomepageIsLoaded " : " ") +
+            (this.props.homepageIsCurrent ? "HomepageIsCurrent " : "") +
+            (this.state.shouldPreloadHomepage ? "HomepageIsLoaded " : "") +
             "HomepageBackground"
           }
           style={
