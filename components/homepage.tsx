@@ -229,6 +229,9 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   render() {
     let baseImage = encodeURIComponent("/homepage-flawless.webp");
     let backgroundUrl = `/_next/image?url=${baseImage}&w=${this.state.originalBgSize}&q=87`;
+    const shouldPreload =
+      typeof window !== "undefined" &&
+      (this.props.homepageIsCurrent || this.state.shouldPreloadHomepage);
 
     return (
       <>
@@ -246,15 +249,11 @@ export default class Homepage extends Component<HomeProps, HomeState> {
               : {}
           }
         >
-          {/* preload most important image first */}
-          {this.state.originalBgSize ? (
+          {/* only render animations in client side */}
+          {shouldPreload ? (
             <link rel="preload" as="image" href={backgroundUrl} />
           ) : null}
-          {/* only render animations in client side */}
-          {typeof window !== "undefined" &&
-          (this.props.homepageIsCurrent || this.state.shouldPreloadHomepage)
-            ? this.renderAnimations()
-            : ""}
+          {shouldPreload ? this.renderAnimations() : null}
         </div>
       </>
     );
