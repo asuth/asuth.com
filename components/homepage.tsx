@@ -153,7 +153,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
   componentDidMount() {
     this.calculateSizes();
-    // window.addEventListener("resize", this.calculateSizes.bind(this));
+    window.addEventListener("resize", this.calculateSizes.bind(this));
     window.addEventListener("load", this.preloadHomepage.bind(this));
     if (document.readyState === "complete") {
       this.preloadHomepage();
@@ -162,7 +162,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   }
 
   componentWillUnmount() {
-    // window.removeEventListener("resize", this.calculateSizes.bind(this));
+    window.removeEventListener("resize", this.calculateSizes.bind(this));
   }
 
   preloadHomepage() {
