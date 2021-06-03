@@ -52,10 +52,6 @@ export default class Header extends Component<NodeProps, NodeState> {
               top: 1rem;
               z-index: 2;
             }
-            .PageTitle {
-              font-size: 30px;
-              width: 500px;
-            }
             .carrot {
               font-size: 20px;
               transform: translateY(0px) rotate(-90deg);
@@ -127,8 +123,6 @@ export default class Header extends Component<NodeProps, NodeState> {
               </>
             ) : (
               <div className="col-start-2 col-end-2 row-start-1 row-end-1 space-x-6 flex justify-end">
-                <div className="PageTitle"></div>
-
                 <Link href="/">
                   <a onClick={this.props.handleClick} className="btn btn-b">
                     {/* <span className="carrot">&#8629;</span> */}
