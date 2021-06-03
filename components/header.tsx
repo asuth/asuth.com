@@ -87,7 +87,7 @@ export default class Header extends Component<NodeProps, NodeState> {
                       ABOUT
                     </a>
                   </Link>
-                  <Link href="/writing">
+                  {/* <Link href="/writing">
                     <a
                       onClick={this.props.handleClick}
                       onMouseEnter={this.preloadHero.bind(this, "writing")}
@@ -96,8 +96,8 @@ export default class Header extends Component<NodeProps, NodeState> {
                     >
                       WRITING
                     </a>
-                  </Link>
-                  <Link href="/speaking">
+                  </Link> */}
+                  {/* <Link href="/speaking">
                     <a
                       onClick={this.props.handleClick}
                       onMouseEnter={this.preloadHero.bind(this, "speaking")}
@@ -106,7 +106,7 @@ export default class Header extends Component<NodeProps, NodeState> {
                     >
                       QUESTIONS
                     </a>
-                  </Link>
+                  </Link> */}
                   <Link href="/investing">
                     <a
                       onClick={this.props.handleClick}

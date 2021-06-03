@@ -6,8 +6,8 @@ export default function Home() {
       <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">
-            <span className="PageHeadline-Small">ABOUT</span>
-            ANDREW
+            About me
+            <span className="PageHeadline-Small">(That’s me &#8680;)</span>
           </h1>
         </div>
       </div>
@@ -52,10 +52,10 @@ export default function Home() {
               </div> */}
 
             <div className="Card FirstCard">
-              <h3>HELLO, STRANGER!</h3>
+              <h3>Hi Friend!</h3>
               <p>
                 Welcome to asuth.com. I built this website so you can get to
-                know me a bit.
+                know a little bit about me.
               </p>
 
               <p>
@@ -68,9 +68,9 @@ export default function Home() {
               </p>
 
               <p>
-                I’m now in a fun, exploratory phase of my life. I’m curious
-                about many things, and I’m taking my time to indulge that
-                curiosity now.
+                I’m in a <span className="Goofy">goofy</span> and exploratory
+                phase of my life. I’m curious about many things, and I’m taking
+                my time to indulge that curiosity now.
               </p>
             </div>
             <div className="Card RightCard">
@@ -123,10 +123,12 @@ export default function Home() {
               <p>INSERT CONTENT HERE.</p>
 
               <p>
-                But really. I dunno what's next. It's gonna be cool tho. Having
-                some free time meant I could build this website, and I LOVE
-                building websites, so that's cool.
+                But really. I dunno what’s next. Having some free time meant I
+                could build this website, and I LOVE building websites, so
+                that’s cool.
               </p>
+
+              <p>I love to build things.</p>
             </div>
           </div>
         </div>
@@ -146,6 +148,16 @@ export default function Home() {
 
         .Content {
           width: 100%;
+        }
+
+        .Goofy {
+          display: inline-block;
+          // transform: rotate(329deg);
+        }
+
+        .Card:hover .Goofy {
+          transform: rotate(360deg);
+          transition: transform 0.2s linear;
         }
 
         .BlueTexture {

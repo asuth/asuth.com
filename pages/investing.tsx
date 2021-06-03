@@ -1,4 +1,11 @@
 export default function Home() {
+  function shuffleArray<T>(array: Array<T>): void {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
   const investments: Array<{
     name: string;
     leader: string;
@@ -25,7 +32,7 @@ export default function Home() {
     {
       name: "Shyft Power",
       leader: "Ugwem Eneyo",
-      description: `Shyft is building hardware and software that allow buildings to seamlessly switch between grid- and non-grid energy sources. I invested because this  could enable developing countries to leapfrog past old grid technologies.`,
+      description: `Shyft is building hardware and software that allow buildings to seamlessly switch between grid- and non-grid energy sources. I invested because this could enable developing countries to leapfrog past old grid technologies.`,
       category: "Climate Tech",
       link: "https://shyftpower.com/",
     },
@@ -83,7 +90,7 @@ export default function Home() {
       name: "California Yimby",
       leader: "Brian Hanlon",
       description: `
-        California is a neat place, but it leads the nation in its real poverty rate. Its anti-building housing policies push way too many people into housing instability and homelessness. Teachers can’t afford to live where they teach. I invested because California Yimby is leading the charge to create an abundant and equitable supply of housing.
+        California is a neat place, but its anti-development housing policies push way too many people into housing instability and homelessness. Teachers can’t afford to live where they teach. I invested because California Yimby is leading the charge to create an abundant supply of housing for everyone.
         `,
       link: "https://cayimby.org/",
       category: "Policy Advocacy",
@@ -92,7 +99,7 @@ export default function Home() {
       name: "Hidden Genius Project",
       leader: "Brandon Nicholson",
       description: `
-          The Hidden Genius Project trains Black Male youth in technology and leadership skills. I invested because creating young leaders can have unpredictable and massive-scale impact down the line.
+          The Hidden Genius Project trains black male youth in technology and leadership skills. I invested because creating young leaders can have unpredictable and massive-scale impact down the line.
           `,
       link: "https://www.hiddengeniusproject.org/",
       category: "Youth Development",
@@ -114,6 +121,8 @@ export default function Home() {
     },
   ];
 
+  shuffleArray(investments);
+
   let counter = 2;
   function resetCounter() {
     counter = 0;
@@ -125,8 +134,8 @@ export default function Home() {
       <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">
-            <span className="PageHeadline-Small">I MAKE</span>
-            INVESTMENTS
+            <span className="PageHeadline-Small">I make</span>
+            Investments
           </h1>
         </div>
       </div>
@@ -277,9 +286,6 @@ export default function Home() {
           font: 40px var(--headline-font);
         }
 
-        .CenterCard {
-          clear: both;
-        }
 
         ul {
           list-style: square;
