@@ -246,7 +246,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
               : {}
           }
         >
-          // only render animations in client side
+          {/* only render animations in client side */}
           {typeof window !== "undefined" &&
           (this.props.homepageIsCurrent || this.state.shouldPreloadHomepage)
             ? this.renderAnimations()
