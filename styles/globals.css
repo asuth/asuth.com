@@ -145,8 +145,8 @@ body {
 }
 
 .SiteWrapper {
-  transform: translateY(calc(-1 * var(--app-height) + var(--nav-bar-height)));
-  transition: transform 750ms ease 0s;
+  margin-top: calc(-1 * var(--app-height) + var(--nav-bar-height));
+  transition: margin 750ms ease 0s;
 }
 
 /* When user is resizing screen, don't animate the transform caused by app-height changing */
@@ -155,7 +155,7 @@ body {
 }
 
 .BodyHomepageIsCurrent .SiteWrapper {
-  transform: translateY(0);
+  margin-top: 0;
 }
 
 /* hack to keep the logo in the same place when user chooses a new page */
