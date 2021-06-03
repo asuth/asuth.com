@@ -21,16 +21,6 @@ module.exports = {
     gridTemplateColumns: {
       headerGrid: "1fr 1fr",
     },
-    backgroundImage: {
-      chairHero: "url('/investing-hero.webp')",
-      aboutHero: "url('/about-hero.webp')",
-      computersHero: "url('/writing-hero.webp')",
-      dogsHero: "url('/dogs.png')",
-      breadHero: "url('/speaking-hero.webp')",
-      coffee: "url('/Coffee.png')",
-      portrait: "url('/portrait-2.webp')",
-      yellowTexture: "url('/yellow-texture.png')",
-    },
     backgroundSize: {
       500: "500px",
       btn: "37px 32px",
