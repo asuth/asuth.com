@@ -142,10 +142,14 @@ body {
   );
   background-size: 800px 800px;
   font: 17px/1.6 var(--body-font);
+}
+
+.SiteWrapper {
   transform: translateY(calc(-1 * var(--app-height) + var(--nav-bar-height)));
   transition: transform 750ms ease 0s;
 }
-.BodyHomepageIsCurrent {
+
+.WrapperHomepageIsCurrent {
   transform: translateY(0);
 }
 
@@ -296,6 +300,35 @@ p:last-child {
   display: grid;
   margin: 0 auto;
   position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  z-index: 2;
+}
+.LogoImage {
+  width: 240px;
+  height: 131px;
+}
+
+.LogoWrap {
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .LogoImage {
+    width: 155px;
+    height: 85px;
+  }
+
+  .LogoWrap {
+    padding: 0 12px;
+  }
+
+  .nav {
+    padding: 12px;
+  }
 }
 
 @tailwind utilities;

@@ -5,7 +5,6 @@ import Head from "next/head";
 
 type NodeProps = {
   title: string;
-  handleClick: () => void;
   homepageIsCurrent: boolean;
 };
 
@@ -47,26 +46,6 @@ export default class Header extends Component<NodeProps, NodeState> {
               padding: 20px;
               border-bottom: 1px solid #000; /*var(--dark-bg-color);*/
             }
-            .logo {
-              position: absolute;
-              top: 1rem;
-              z-index: 2;
-            }
-            .LogoImage {
-              width: 240px;
-              height: 131px;
-            }
-
-            @media only screen and (max-width: 768px) {
-              .LogoImage {
-                width: 155px;
-                height: 85px;
-              }
-
-              .nav {
-                padding: 12px;
-              }
-            }
 
             .carrot {
               font-size: 20px;
@@ -76,24 +55,11 @@ export default class Header extends Component<NodeProps, NodeState> {
             }
           `}</style>
           <div className="MaxWidth grid grid-cols-headerGrid grid-rows-1">
-            <Link href="/">
-              <a className="logo" onClick={this.props.handleClick}>
-                <img
-                  src="logo-200.png"
-                  srcSet="logo-200.png 1x,
-             logo-400.png 2x,
-             logo-600.png 3x"
-                  alt="Andrew Sutherland"
-                  className="LogoImage"
-                />
-              </a>
-            </Link>
             {this.props.homepageIsCurrent ? (
               <>
                 <div className="col-start-2 col-end-2 row-start-1 row-end-1 space-x-6 flex justify-end">
                   <Link href="/about">
                     <a
-                      onClick={this.props.handleClick}
                       onMouseEnter={this.preloadHero.bind(this, "about")}
                       href="#"
                       className="btn btn-a"
@@ -103,7 +69,6 @@ export default class Header extends Component<NodeProps, NodeState> {
                   </Link>
                   {/* <Link href="/writing">
                     <a
-                      onClick={this.props.handleClick}
                       onMouseEnter={this.preloadHero.bind(this, "writing")}
                       href="#"
                       className="btn btn-a"
@@ -113,7 +78,6 @@ export default class Header extends Component<NodeProps, NodeState> {
                   </Link> */}
                   {/* <Link href="/speaking">
                     <a
-                      onClick={this.props.handleClick}
                       onMouseEnter={this.preloadHero.bind(this, "speaking")}
                       href="#"
                       className="btn btn-a"
@@ -123,7 +87,6 @@ export default class Header extends Component<NodeProps, NodeState> {
                   </Link> */}
                   <Link href="/investing">
                     <a
-                      onClick={this.props.handleClick}
                       onMouseEnter={this.preloadHero.bind(this, "investing")}
                       href="#"
                       className="btn btn-a"
@@ -133,9 +96,7 @@ export default class Header extends Component<NodeProps, NodeState> {
                   </Link>
 
                   <Link href="/contact">
-                    <a onClick={this.props.handleClick} className="btn btn-b">
-                      CONTACT
-                    </a>
+                    <a className="btn btn-b">CONTACT</a>
                   </Link>
                 </div>
               </>
