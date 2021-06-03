@@ -146,10 +146,6 @@ export default function Home() {
           height: 70vh;
         }
 
-        .Content {
-          width: 100%;
-        }
-
         .Goofy {
           display: inline-block;
           // transform: rotate(329deg);
@@ -158,12 +154,6 @@ export default function Home() {
         .Card:hover .Goofy {
           transform: rotate(360deg);
           transition: transform 0.2s linear;
-        }
-
-        h3 {
-          font: 28px var(--headline-font);
-          text-transform: uppercase;
-          margin-bottom: 20px;
         }
 
         .CenterCard {

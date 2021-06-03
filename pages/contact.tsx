@@ -48,16 +48,6 @@ export default function Home() {
           background-size: 360px 360px;
         }
 
-        .Content {
-          width: 100%;
-        }
-
-        h3 {
-          font: 28px var(--headline-font);
-          text-transform: uppercase;
-          margin-bottom: 20px;
-        }
-
         .CenterCard {
           clear: both;
         }

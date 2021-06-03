@@ -169,6 +169,11 @@ this is especially nice on mobile but is useful on all platforms
   transition: background 750ms ease 0s;
 }
 
+.Content {
+  width: 100%;
+  padding: 50px;
+}
+
 .Card {
   background: #fff;
   border: 28px solid var(--yellow);
@@ -180,9 +185,28 @@ this is especially nice on mobile but is useful on all platforms
   font: 17px/1.6 var(--body-font);
 }
 
+.Card h3 {
+  font: 28px var(--headline-font);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 768px) {
   .Card {
     width: 100%;
+    border-width: 16px;
+    margin-bottom: 25px;
+    padding: 25px;
+    font-size: 14px;
+  }
+
+  .Card h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+
+  .Content {
+    padding: 20px;
   }
 }
 
@@ -243,11 +267,6 @@ this is especially nice on mobile but is useful on all platforms
 
 .HomepageIsCurrent {
   margin-top: 0;
-}
-
-.Content {
-  width: 100%;
-  padding: 50px;
 }
 
 @tailwind utilities;

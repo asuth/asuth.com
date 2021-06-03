@@ -275,7 +275,7 @@ export default function Home() {
         }
 
         .InvestmentCard h3 {
-          font-size: 25px;
+          font: 25px var(--headline-font);
           text-transform: uppercase;
           display: inline-block;
         }
@@ -316,11 +316,6 @@ export default function Home() {
         .YellowCard .InvestmentInfo, .YellowCard .InvestmentName {
           background: var(--yellow);
         }
-
-        h3 {
-          font: 40px var(--headline-font);
-        }
-
 
         ul {
           list-style: square;
