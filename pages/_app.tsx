@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 import "../styles/globals.css";
 import Homepage from "../components/homepage";
-import Header from "../components/header";
+import Nav from "../components/nav";
 import Transition from "../components/transition";
 
 import { useRouter } from "next/router";
@@ -44,10 +44,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <div className={"SiteWrapper"} key="site">
         <Homepage homepageIsCurrent={isHomepage} />
-        <Header
+        <Nav
           title={titles[router.pathname]}
           homepageIsCurrent={isHomepage}
-        ></Header>
+        ></Nav>
         <Transition location={router.pathname}>
           <div className="Page">
             <Component {...pageProps} />

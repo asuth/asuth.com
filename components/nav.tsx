@@ -12,7 +12,7 @@ type NodeState = {
   preloadHeroPath: string | null;
 };
 
-export default class Header extends Component<NodeProps, NodeState> {
+export default class Nav extends Component<NodeProps, NodeState> {
   constructor(props: NodeProps) {
     super(props);
 
@@ -47,6 +47,20 @@ export default class Header extends Component<NodeProps, NodeState> {
               border-bottom: 1px solid #000; /*var(--dark-bg-color);*/
             }
 
+            @media only screen and (max-width: 768px) {
+              :root {
+                --nav-bar-height: 60px;
+              }
+
+              .nav {
+                padding: 10px;
+              }
+
+              .nav .btn {
+                padding: 5px 10px;
+              }
+            }
+
             .carrot {
               font-size: 20px;
               transform: translateY(0px) rotate(-90deg);
@@ -67,7 +81,7 @@ export default class Header extends Component<NodeProps, NodeState> {
                       ABOUT
                     </a>
                   </Link>
-                  {/* <Link href="/writing">
+                  <Link href="/writing">
                     <a
                       onMouseEnter={this.preloadHero.bind(this, "writing")}
                       href="#"
@@ -75,7 +89,7 @@ export default class Header extends Component<NodeProps, NodeState> {
                     >
                       WRITING
                     </a>
-                  </Link> */}
+                  </Link>
                   {/* <Link href="/speaking">
                     <a
                       onMouseEnter={this.preloadHero.bind(this, "speaking")}
