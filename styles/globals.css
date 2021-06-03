@@ -14,8 +14,8 @@
 .btn {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition-duration: 0.2s;
-  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid black;
   padding: 5px 15px;
@@ -23,15 +23,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.375rem;
+  /* border-radius: 0.375rem; */
   font-size: 0.875rem;
 }
+
+.btn {
+  border: 2px solid black;
+  box-shadow: -2px 2px #000;
+}
+
 .btn:hover,
 .btn:focus,
 .btn:active {
   background-color: #faff98;
 }
-
+/* 
 .btn-a:hover,
 .btn-a:focus,
 .btn-a:active {
@@ -60,10 +66,12 @@
 .btn-e:focus,
 .btn-e:active {
   transform: scale(1.1) rotate(4deg);
-}
+} */
 
 .btn:active {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
+  box-shadow: 0 0 #000;
+  transform: translate(-2px, 2px);
 }
 
 /* NB: the url of the background image is defined dynamically in JS */
@@ -98,6 +106,7 @@
   --brightYellow: #faff98;
   --yellow: #f2f1a0;
   --purple: #d0abc5;
+  --lightBlue: #a2dcf6;
   --salmon: #f0999e;
   --green: #8bdad5;
   --dark-green: #78c6c0;

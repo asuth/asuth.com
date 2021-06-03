@@ -33,7 +33,7 @@ export default function Home() {
       name: "ToMI",
       leader: "Juan Manuel Lopera",
       description: `
-        ToMI is building hardware and software that helps teachers teach with digital tools even when they don’t have an internet connection. I invested because they are building a great product for teachers that no one else is building.
+        ToMI is building hardware and software that helps teachers teach with digital tools even when they don’t have an internet connection. I invested because they are bringing digital technology to classrooms that have never had it before.
         `,
       category: "Education Tech",
       link: "https://tomi.digital/",
@@ -92,7 +92,7 @@ export default function Home() {
       name: "Hidden Genius Project",
       leader: "Brandon Nicholson",
       description: `
-          The Hidden Genius Project trains Black Male youth in technology skills.
+          The Hidden Genius Project trains Black Male youth in technology and leadership skills. I invested because creating young leaders can have unpredictable and massive-scale impact down the line.
           `,
       link: "https://www.hiddengeniusproject.org/",
       category: "Youth Development",
@@ -103,6 +103,13 @@ export default function Home() {
       leader: "Anurupa Ganguly",
       description: `PrismsVR is building a virtual reality experience that helps math students develop their spatial reasoning. I invested because students need radical new ways to develop their math understanding and intuition.`,
       link: "https://www.prismsvr.com/",
+      category: "Education Tech",
+    },
+    {
+      name: "Synthesis",
+      leader: "Chrisman Frank",
+      description: `Synthesis is building multiplayer learning games that get students to discuss complex strategies and work in teams. I invested because I love games that prompt deep thought and discussion.`,
+      link: "https://www.synthesis.is/",
       category: "Education Tech",
     },
   ];
@@ -129,16 +136,20 @@ export default function Home() {
           <div className="MaxWidth">
             <div className="Card FirstCard">
               <p>
-                Investing in good people with good ideas is my jam. Both
-                for-profit and nonprofit organizations can do an immense amount
-                of good, so I invest in both. I like education, climate change,
-                housing, and developer tools.
+                Investing is how I glimpse the future. Both for-profit and
+                nonprofit organizations can do an immense amount of good, so I
+                invest in both. The investment reasons I give below are mostly
+                post-hoc rationalizations. My criteria for investing is largely
+                whether I believe in the leader and think they are capable of
+                greatness. My favorite areas to invest in are education, climate
+                change, housing, and developer tools.
               </p>
               <p>
-                The reasons given below for investing are{" "}
-                <b>complete fabrications</b>. Or, shall we say, post-hoc
-                rationalizations. Most of my criteria is whether I believe in
-                the leader and think they are capable of greatness.
+                If you think I might be a good investor for you, please send an
+                email to investments@asuth.com with the following: a description
+                of a teacher who changed your life, a description of the high
+                expectations you have for yourself, and the materials about your
+                endeavor.
               </p>
             </div>
 

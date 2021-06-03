@@ -63,10 +63,8 @@ export default function Home() {
                 millions of students and teachers worldwide. Students tell
                 Quizlet what they’re learning, and Quizlet gives them
                 flashcards, games, and other activities that help them master
-                their material. Using Quizlet can be a transformative experience
-                for students because it gives them confidence in themselves as
-                learners. After working on Quizlet from age 15 to age 30, I left
-                the company in 2020.
+                their material. After working on Quizlet from age 15 to age 30,
+                I left the company in 2020.
               </p>
 
               <p>
@@ -83,20 +81,19 @@ export default function Home() {
                 impossible assignment: learn 111 French animals and their
                 English translations in 48 hours. In my struggle to learn them
                 all, I had the idea for Quizlet: to build software that would
-                track what I knew, and ask me questions repeatedly until I knew
-                everything. For my next test, I built a barebones website that
-                did this, and got 100% on that test. From there, I shared the
-                tool with friends and gave it
+                ask me questions repeatedly and keeping track of what I needed
+                more work on. I built a barebones website that did this, and got
+                100% on my next test. I then shared the tool with friends, and
+                they loved it.
               </p>
 
               <p>
-                In 2008, I graduated from high school and went off to MIT.
-                Studying at MIT was like drinking from a firehose, but I loved
-                it. I studied Computer Science, did research on speech
-                recognition, and took classes on education. I made friends with
-                many students who had high expectations of themselves, and that
-                rubbed off on me. I continued to work on Quizlet, sacrificing
-                sleep along the way.
+                In 2008, I graduated from high school and went off to MIT. Being
+                at MIT was like drinking from a firehose. I studied Computer
+                Science, did research on speech recognition, and took classes on
+                education. I made friends with many students who had big
+                expectations of themselves, and that rubbed off on me. I
+                continued to work on Quizlet, sacrificing sleep along the way.
               </p>
             </div>
 
@@ -110,12 +107,11 @@ export default function Home() {
                 I needed to focus on doing one thing well.
               </p>
               <p>
-                Over the next 8 years, Quizlet grew to a team of 200 people, we
-                raised several rounds of funding, we expanded its reach to tens
-                of millions of monthly users, we built revenue to make it
-                sustainable, and we made the product even more useful for
-                learning. I was proud to lead the team along with a great
-                executive team. After working on Quizlet for fifteen years, I
+                Over the next 8 years, Quizlet grew to a team of 200 people. We
+                built it into a ubiquitous tool in education, helping tens of
+                millions of students learn in a new way. We built revenue to
+                make it sustainable, and raised several rounds of venture
+                capital funding. After working on Quizlet for fifteen years, I
                 decided it was time to take a breath and think about what I
                 wanted to do next.
               </p>
@@ -124,7 +120,13 @@ export default function Home() {
             <div className="Card RightCard">
               <h3>The New Andrew</h3>
 
-              <p>INSERT CONTENT HERE. HA.</p>
+              <p>INSERT CONTENT HERE.</p>
+
+              <p>
+                But really. I dunno what's next. It's gonna be cool tho. Having
+                some free time meant I could build this website, and I LOVE
+                building websites, so that's cool.
+              </p>
             </div>
           </div>
         </div>
