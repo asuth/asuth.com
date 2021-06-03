@@ -48,12 +48,12 @@ type HomeState = {
 };
 
 export default class Homepage extends Component<HomeProps, HomeState> {
-  timer: number | null;
+  timerId: ReturnType<typeof setTimeout> | null;
 
   constructor(props: HomeProps) {
     super(props);
 
-    this.timer = null;
+    this.timerId = null;
 
     const defaultOffsets: AnimationObjectOffsetType = {};
     for (const obj in animations) {
@@ -145,10 +145,10 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     const newH = window.innerHeight;
     if (newH != this.state.appHeight) {
       document.body.classList.toggle("PageIsResizing", true);
-      if (this.timer !== null) {
-        clearTimeout(this.timer);
+      if (this.timerId !== null) {
+        clearTimeout(this.timerId);
       }
-      this.timer = setTimeout(() => {
+      this.timerId = setTimeout(() => {
         document.body.classList.toggle("PageIsResizing", false);
       }, 50);
       this.setState({ appHeight: newH });
