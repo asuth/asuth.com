@@ -59,8 +59,8 @@ export default class Header extends Component<NodeProps, NodeState> {
 
             @media only screen and (max-width: 768px) {
               .LogoImage {
-                width: 145px;
-                height: 79px;
+                width: 155px;
+                height: 85px;
               }
 
               .nav {
