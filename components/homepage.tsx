@@ -241,6 +241,18 @@ export default class Homepage extends Component<HomeProps, HomeState> {
             (this.state.shouldPreloadHomepage ? "HomepageIsLoaded " : "") +
             "HomepageBackground"
           }
+          style={{
+            background: `image-set(
+                url("/_next/image?url=%2Fhomepage-flawless.webp&w=1400&q=87") 1x,
+                url("/_next/image?url=%2Fhomepage-flawless.webp&w=2800&q=87") 2x,
+                url("/_next/image?url=%2Fhomepage-flawless.webp&w=4200&q=87") 3x
+              )`,
+            backgroundImage: `-webkit-image-set(
+                url("/_next/image?url=%2Fhomepage-flawless.webp&w=1400&q=87") 1x,
+                url("/_next/image?url=%2Fhomepage-flawless.webp&w=2800&q=87") 2x,
+                url("/_next/image?url=%2Fhomepage-flawless.webp&w=4200&q=87") 3x
+              )`,
+          }}
         >
           {shouldPreload ? this.renderAnimations() : null}
         </div>
