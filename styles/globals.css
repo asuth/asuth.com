@@ -174,14 +174,6 @@ body {
   font: 17px/1.6 var(--body-font);
 }
 
-/* .HomepageIsLoaded {
-  background-image: image-set(
-    url("/_next/image?url=%2Fhomepage-flawless.webp&w=1400&q=87") 1x,
-    url("/_next/image?url=%2Fhomepage-flawless.webp&w=2800&q=87") 2x,
-    url("/_next/image?url=%2Fhomepage-flawless.webp&w=4200&q=87") 3x
-  );
-} */
-
 .SiteWrapper {
   margin-top: calc(-1 * var(--app-height) + var(--nav-bar-height));
   transition: margin 750ms ease 0s;

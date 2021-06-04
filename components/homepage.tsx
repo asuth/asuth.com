@@ -242,17 +242,17 @@ export default class Homepage extends Component<HomeProps, HomeState> {
             "HomepageBackground"
           }
           style={
-            this.props.homepageIsCurrent || this.state.shouldPreloadHomepage
+            this.state.originalBgSize
               ? {
-                  backgroundImage: `-webkit-image-set(
-              url("/_next/image?url=%2Fhomepage-flawless.webp&w=1400&q=87") 1x,
-              url("/_next/image?url=%2Fhomepage-flawless.webp&w=2800&q=80") 2x,
-              url("/_next/image?url=%2Fhomepage-flawless.webp&w=4200&q=80") 3x
-            )`,
+                  backgroundImage: `url("${backgroundUrl}")`,
                 }
               : {}
           }
         >
+          {/* only render animations in client side */}
+          {shouldPreload ? (
+            <link rel="preload" as="image" href={backgroundUrl} />
+          ) : null}
           {shouldPreload ? this.renderAnimations() : null}
         </div>
       </>
