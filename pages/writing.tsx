@@ -134,8 +134,6 @@ export default function Home() {
         .PageHeaderRainbow {
           width: 100%;
           height: 100%;
-          position: relative;
-
           background-size: 600px 600px;
           background-image: url(/advanced-bg/green4.png);
           -webkit-animation: rainbow 20s steps(36) infinite;
