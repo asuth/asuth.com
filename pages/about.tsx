@@ -127,8 +127,6 @@ export default function Home() {
                 could build this website, and I LOVE building websites, so
                 that’s cool.
               </p>
-
-              <p>I love to build things.</p>
             </div>
           </div>
         </div>
