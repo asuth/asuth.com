@@ -19,7 +19,7 @@ export default function Home() {
               </h3>
 
               <p>
-                <em>June, 2021</em>
+                <em>June 2021</em>
               </p>
               <p>
                 I started Quizlet because I wanted a tool to help me learn
