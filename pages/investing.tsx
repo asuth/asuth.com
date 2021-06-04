@@ -156,8 +156,7 @@ export default function Home() {
               <p>
                 If you think I might be a good investor for you, please send an
                 email to investments@asuth.com with the following: a description
-                of a teacher who changed your life, a description of the high
-                expectations you have for yourself, and the materials about your
+                of a teacher who changed your life and the materials about your
                 endeavor.
               </p>
             </div>
