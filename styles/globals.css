@@ -117,6 +117,9 @@
   --dark-pink: #f08ba0;
   --green: #8bdad5;
   --dark-green: #78c6c0;
+  --writingBlue: #a2dcf6;
+  --writingDarkBlue: #91cbe4;
+
   --blue: #89aee0;
   --dark-blue: #6b8fbf;
   --hpPurple: rgb(59, 59, 104);
@@ -366,6 +369,26 @@ p:last-child {
 
   .PageHeadline-Small {
     font-size: 16px;
+  }
+}
+
+@-webkit-keyframes rainbow {
+  from {
+    -webkit-filter: hue-rotate(10deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes rainbow {
+  from {
+    -webkit-filter: hue-rotate(10deg);
+    filter: hue-rotate(10deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
   }
 }
 
