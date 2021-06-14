@@ -25,7 +25,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
     this.setState({ preloadHeroPath: `/${pageName}-hero.webp` });
   }
 
-  clickMover(event) {
+  clickMover() {
     // document.getElementsByClassName("Page")[0].style.left =
     //   event.screenX + "px";
     // document.getElementsByClassName("Page")[0].style.top = event.screenY + "px";
