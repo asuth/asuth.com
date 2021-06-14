@@ -14,29 +14,41 @@ const TIMEOUT: number = 1200;
 
 const getTransitionStyles = {
   entering: {
-    // position: `absolute`,
-    // opacity: 0,
-    // transform: `translateX(50px)`,
+    transform: "scale(10%)",
+    right: "150px",
+    top: "280px",
+    bottom: "700px",
+    left: "800px",
   },
   entered: {
     // transition: `opacity ${TIMEOUT}ms ease-in-out, transform ${TIMEOUT}ms ease-in-out`,
     // opacity: 1,
     // transform: `translateX(0px)`,
     // animation: "blink .3s linear 2",
+
+    left: "70px",
+    right: "70px",
+    top: "70px",
+    bottom: "70px",
+    transform: "scale(100%)",
   },
   exiting: {
     // transition: `opacity ${TIMEOUT}ms ease-in-out, transform ${TIMEOUT}ms ease-in-out`,
     // opacity: 0,
     // transform: `translateX(-50px)`,
+    transform: "scale(10%)",
   },
+  empty: {},
 };
 
 const Transition: React.FC<TransitionKind<ReactChild>> = ({
   children,
   location,
 }) => {
+  return <div className="Page">{children}</div>;
+  console.log(children);
   return (
-    <TransitionGroup style={{ position: "relative" }}>
+    <TransitionGroup>
       <ReactTransition
         key={location}
         timeout={{
@@ -46,11 +58,13 @@ const Transition: React.FC<TransitionKind<ReactChild>> = ({
       >
         {(status) => (
           <div
-            style={
-              {
-                // ...getTransitionStyles[status],
-              }
-            }
+            className={"Page " + status}
+            style={{
+              ...getTransitionStyles[
+                status
+                // children.type.name === "HomepageStub" ? "" : status
+              ],
+            }}
           >
             {children}
           </div>

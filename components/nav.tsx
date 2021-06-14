@@ -25,6 +25,12 @@ export default class Nav extends Component<NodeProps, NodeState> {
     this.setState({ preloadHeroPath: `/${pageName}-hero.webp` });
   }
 
+  clickMover(event) {
+    // document.getElementsByClassName("Page")[0].style.left =
+    //   event.screenX + "px";
+    // document.getElementsByClassName("Page")[0].style.top = event.screenY + "px";
+  }
+
   render() {
     return (
       <>
@@ -46,14 +52,17 @@ export default class Nav extends Component<NodeProps, NodeState> {
               // color:  var(--dark-bg-color);
             }
           `}</style>
-          <div className="MaxWidth NavLinks">
+          <div
+            className="MaxWidth NavLinks"
+            onClick={this.clickMover.bind(this)}
+          >
             {this.props.homepageIsCurrent ? (
               <>
                 <Link href="/about">
                   <a
                     onMouseEnter={this.preloadHero.bind(this, "about")}
                     href="#"
-                    className="btn btn-a"
+                    className="btn btn-about"
                   >
                     ABOUT
                   </a>
@@ -62,7 +71,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
                   <a
                     onMouseEnter={this.preloadHero.bind(this, "writing")}
                     href="#"
-                    className="btn btn-a"
+                    className="btn btn-writing"
                   >
                     WRITING
                   </a>
@@ -80,21 +89,22 @@ export default class Nav extends Component<NodeProps, NodeState> {
                   <a
                     onMouseEnter={this.preloadHero.bind(this, "investing")}
                     href="#"
-                    className="btn btn-a"
+                    className="btn btn-investing"
                   >
                     INVESTING
                   </a>
                 </Link>
 
                 <Link href="/contact">
-                  <a className="btn btn-b">CONTACT</a>
+                  <a className="btn btn-contact">CONTACT</a>
                 </Link>
               </>
             ) : (
               <Link href="/">
-                <a className="btn btn-b">
+                <a className="btn btn-more">
                   {/* <span className="carrot">&#8629;</span> */}
-                  <span className="carrot">☞</span>
+                  <span className="carrot">&#8680;</span>
+                  {/* <span className="carrot">☞</span> */}
                   &nbsp;MORE&nbsp;STUFF
                 </a>
               </Link>

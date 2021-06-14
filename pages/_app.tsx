@@ -49,9 +49,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           homepageIsCurrent={isHomepage}
         ></Nav>
         <Transition location={router.pathname}>
-          <div className="Page">
-            <Component {...pageProps} />
-          </div>
+          {/* <div className="Page"> */}
+          <Component {...pageProps} />
+          {/* </div> */}
         </Transition>
       </div>
     </>
