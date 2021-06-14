@@ -46,7 +46,7 @@ const Transition: React.FC<TransitionKind<ReactChild>> = ({
   location,
 }) => {
   return <div className="Page">{children}</div>;
-  console.log(children);
+  /*console.log(children);
   return (
     <TransitionGroup>
       <ReactTransition
@@ -70,7 +70,7 @@ const Transition: React.FC<TransitionKind<ReactChild>> = ({
           </div>
         )}
       </ReactTransition>
-    </TransitionGroup>
+    </TransitionGroup>*/
   );
 };
 export default Transition;
