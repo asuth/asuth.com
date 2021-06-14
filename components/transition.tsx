@@ -70,7 +70,7 @@ const Transition: React.FC<TransitionKind<ReactChild>> = ({
           </div>
         )}
       </ReactTransition>
-    </TransitionGroup>*/
-  );
+    </TransitionGroup>
+  );*/
 };
 export default Transition;
