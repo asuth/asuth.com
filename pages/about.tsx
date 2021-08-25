@@ -86,12 +86,12 @@ export default function Home() {
               </p>
 
               <p>
-                In 2008, I graduated from high school and went off to MIT. Being
-                at MIT was like drinking from a firehose. I studied Computer
-                Science, did research on speech recognition, and took classes on
-                education. I made friends with many students who had big
-                expectations of themselves, and that rubbed off on me. I
-                continued to work on Quizlet, sacrificing sleep along the way.
+                In 2008, I graduated from high school and went off to MIT. I
+                found myself in an intellectual wonderland, surrounded by
+                ambitious, excited peers. Their big expectations of themselves
+                rubbed off on me. I studied Computer Science, did research on
+                speech recognition, and took classes on education. I continued
+                to work on Quizlet, sacrificing sleep along the way.
               </p>
             </div>
 
@@ -121,9 +121,14 @@ export default function Home() {
               <p>INSERT CONTENT HERE.</p>
 
               <p>
-                But really. I dunno what’s next. Having some free time meant I
-                could build this website, and I LOVE building websites, so
-                that’s cool.
+                Haha. But seriously. As I explore what's next for me, I've been
+                immersing myself in new environments. I find that that's the
+                fastest way for me to learn. I've driven for Lyft, I've taught a
+                course at MIT, I've helped run a San Francisco election, I've
+                led a crew of teenagers into the wilderness, and I've been
+                deeply researching education, housing, and climate change.
+                Having some free time has also meant I could build this website,
+                and I LOVE building websites, so that’s cool.
               </p>
             </div>
           </div>
@@ -133,7 +138,7 @@ export default function Home() {
       <style jsx>{`
         :global(:root) {
           --bg-color: var(--lightBlue);
-          --dark-bg-color: var(--dark-blue);
+          --dark-bg-color: var(--darkLightBlue);
           --hero-url: url(/about-hero.webp);
         }
 
