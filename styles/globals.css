@@ -12,8 +12,7 @@
 }
 
 .btn {
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transform: translateZ(1px);
   transition-duration: 0.1s;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -22,17 +21,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
   color: var(--yellow);
-  backdrop-filter: brightness(60%);
+  /* backdrop-filter: brightness(40%); */
+  background: var(--hpPurple);
   /* backdrop-filter: brightness(70%)
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='b' x='0' y='0'%3E%3CfeFlood x='4' y='4' height='2' width='2'/%3E%3CfeComposite width='10' height='10'/%3E%3CfeTile result='a'/%3E%3CfeComposite in='SourceGraphic' in2='a' operator='in'/%3E%3CfeMorphology operator='dilate' radius='5'/%3E%3C/filter%3E%3C/svg%3E#b");
   -webkit-backdrop-filter: brightness(70%)
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='b' x='0' y='0'%3E%3CfeFlood x='4' y='4' height='2' width='2'/%3E%3CfeComposite width='10' height='10'/%3E%3CfeTile result='a'/%3E%3CfeComposite in='SourceGraphic' in2='a' operator='in'/%3E%3CfeMorphology operator='dilate' radius='5'/%3E%3C/filter%3E%3C/svg%3E#b"); */
 
-  border-radius: 5px;
-  font-size: 18px;
-  border: 3px solid var(--yellow);
-  /* box-shadow: -3px 3px var(--yellow); */
+  font-size: 15px;
+  letter-spacing: 1px;
+  /* transform: perspective(9cm); */
+  border: 2px solid var(--brightYellow);
+  /* border-style: outset; */
+  box-shadow: 2px 2px var(--brightYellow);
 }
 
 @media only screen and (max-width: 768px) {
@@ -45,7 +48,7 @@
 .btn:focus,
 .btn:active {
   /* backdrop-filter: blur(2px) brightness(70%); */
-  transform: scale(1.1) rotate(4deg);
+  /* transform: scale(1.1) rotate(4deg); */
 }
 
 .btn-a:hover,
@@ -76,10 +79,25 @@
 .btn-e:active {
   transform: scale(1.1) rotate(4deg);
 }
+/* 
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 4px solid var(--bg-color);
+  border-width: 0 4px;
+} */
+
 .btn:active {
   /* transform: scale(1.2); */
   box-shadow: 0 0 #000;
-  transform: translate(-2px, 2px);
+  transform: translate(2px, 2px);
 }
 
 /* NB: the url of the background image is defined dynamically in JS */
@@ -110,7 +128,7 @@
 
 .Page {
   transform: scale(100%);
-  transition: transform 750ms ease 0s;
+  transition: transform 250ms ease 0s;
 }
 
 /* portrait phone */
@@ -170,9 +188,13 @@
   position: absolute;
 }
 
+.btn:hover {
+  /* transform: scale(1.15) rotate(2deg); */
+}
+
 .btn-about {
-  right: 200px;
-  bottom: 200px;
+  top: 200px;
+  left: 600px;
 }
 
 .btn-writing {
@@ -181,8 +203,8 @@
 }
 
 .btn-investing {
-  top: 200px;
-  left: 600px;
+  right: 200px;
+  bottom: 200px;
 }
 
 .btn-contact {
@@ -191,7 +213,7 @@
 }
 
 .btn-more {
-  top: 10px;
+  top: 30px;
   right: 100px;
 }
 
@@ -343,7 +365,7 @@ p:last-child {
 }
 
 .FirstCard {
-  margin-top: calc(-128px / 2 - 50px);
+  margin-top: calc(-128px / 2 - 150px);
 }
 
 .CenterCard {
@@ -352,23 +374,44 @@ p:last-child {
   margin-right: auto;
 }
 
+body {
+  overflow: overlay;
+}
+
 .Page {
+  border: 10px solid var(--bg-color);
   position: absolute;
-  left: 70px;
-  right: 70px;
-  top: 70px;
-  bottom: 70px;
+  left: 100px;
+  border-radius: 8px;
+  right: 100px;
+  top: 120px;
+  border-width: 16px 16px 16px 16px;
+  bottom: 20px;
+}
+
+.PageInner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  bottom: 0px;
   background: var(--dark-bg-color) url("/yellow-texture-800.png");
-  border: 15px solid var(--bg-color);
-  overflow-y: scroll;
-  border-radius: 15px;
+  border: 8px solid var(--bg-color);
+  border-width: 0;
+  overflow-y: auto;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .PageHeader {
   width: 100%;
   border-radius: 7px;
-  height: 40vh;
-  min-height: 25rem;
+  height: 80vh;
+  /* min-height: 25rem; */
   position: relative;
   background: var(--hero-url);
   background-size: cover;
@@ -400,9 +443,12 @@ p:last-child {
 
 .logo {
   position: absolute;
-  top: 1rem;
   z-index: 2;
+  /* transform: scale(0.8); */
+  /* top: 0rem; */
+  top: 0.7rem;
 }
+
 .LogoImage {
   width: 240px;
   height: 131px;

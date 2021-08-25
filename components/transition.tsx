@@ -45,7 +45,11 @@ const Transition: React.FC<TransitionKind<ReactChild>> = ({
   children,
   location,
 }) => {
-  return <div className="Page">{children}</div>;
+  return (
+    <div className="Page">
+      <div className="PageInner">{children}</div>
+    </div>
+  );
   /*console.log(children);
   return (
     <TransitionGroup>

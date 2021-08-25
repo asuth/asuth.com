@@ -55,22 +55,20 @@ export default function Home() {
               <h3>Hi Friend!</h3>
               <p>
                 Welcome to asuth.com. I built this website so you can get to
-                know a little bit about me.
-              </p>
-
-              <p>
-                I founded Quizlet, an educational software company serving
-                millions of students and teachers worldwide. Students tell
-                Quizlet what they’re learning, and Quizlet gives them
-                flashcards, games, and other activities that help them master
-                their material. After working on Quizlet from age 15 to age 30,
-                I left the company in 2020.
+                know me a lil bit.
               </p>
 
               <p>
                 I’m in a <span className="Goofy">goofy</span> and exploratory
                 phase of my life. I’m curious about many things, and I’m taking
                 my time to indulge that curiosity now.
+              </p>
+
+              <p>
+                Previously, I founded Quizlet, an educational software company
+                serving millions of students and teachers worldwide. After
+                working on Quizlet from age 15 to age 30, I left the company in
+                2020.
               </p>
             </div>
             <div className="Card RightCard">
@@ -134,14 +132,14 @@ export default function Home() {
 
       <style jsx>{`
         :global(:root) {
-          --bg-color: var(--blue);
+          --bg-color: var(--lightBlue);
           --dark-bg-color: var(--dark-blue);
           --hero-url: url(/about-hero.webp);
         }
 
         .PageHeader {
           background-size: cover;
-          height: 60vh;
+          height: 70vh;
         }
 
         .Goofy {

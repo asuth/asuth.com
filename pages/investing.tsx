@@ -145,7 +145,7 @@ export default function Home() {
           <div className="MaxWidth">
             <div className="Card FirstCard">
               <p>
-                Investing is how I glimpse the future. Both for-profit and
+                Investing is my way to see the future. Both for-profit and
                 nonprofit organizations can do an immense amount of good, so I
                 invest in both. The investment reasons I give below are mostly
                 post-hoc rationalizations. My criteria for investing is largely
@@ -156,7 +156,7 @@ export default function Home() {
               <p>
                 If you think I might be a good investor for you, please send an
                 email to investments@asuth.com with the following: a description
-                of a teacher who changed your life and the materials about your
+                of a teacher who changed your life and information about your
                 endeavor.
               </p>
             </div>
