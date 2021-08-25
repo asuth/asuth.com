@@ -76,7 +76,7 @@
 .btn-e:active {
   transform: scale(1.1) rotate(4deg);
 }
-*/ .btn:active {
+.btn:active {
   /* transform: scale(1.2); */
   box-shadow: 0 0 #000;
   transform: translate(-2px, 2px);
