@@ -1,5 +1,11 @@
-@tailwind base;
-@tailwind components;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
 
 @font-face {
   font-family: "Domaine Sans Text";
@@ -495,5 +501,3 @@ body {
     filter: hue-rotate(360deg);
   }
 }
-
-@tailwind utilities;
