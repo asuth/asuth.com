@@ -154,9 +154,9 @@ export default function Home() {
                 education, climate change, housing, and developer tools.
               </p>
               <p>
-                If you think I might be a good investor for you, please send an
-                email to investments@asuth.com with the following: a description
-                of a teacher who changed your life and information about your
+                If I would be a good investor for you, please send an email to
+                investments@asuth.com with the following: a description of a
+                teacher who changed your life and information about your
                 endeavor.
               </p>
             </div>
@@ -171,7 +171,6 @@ export default function Home() {
                     }`}
                   >
                     <div className="InvestmentName">
-                      <img src="sca-logo.png" alt="SCA logo" />
                       <h3>{investment.name}</h3>
                     </div>
                     <div className="InvestmentInfo">

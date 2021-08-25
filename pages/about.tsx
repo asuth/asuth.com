@@ -123,8 +123,8 @@ export default function Home() {
               <p>
                 Haha. But seriously. As I explore what's next for me, I've been
                 immersing myself in new environments. I find that that's the
-                fastest way for me to learn. I've driven for Lyft, I've taught a
-                course at MIT, I've helped run a San Francisco election, I've
+                fastest way for me to learn. I've taught a course at MIT, I've
+                driven for Lyft, I've helped run a San Francisco election, I've
                 led a crew of teenagers into the wilderness, and I've been
                 deeply researching education, housing, and climate change.
                 Having some free time has also meant I could build this website,
