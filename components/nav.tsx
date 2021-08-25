@@ -36,7 +36,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
       <>
         <Head>
           <title>{this.props.title}</title>
-          <link rel="icon" href="/favicon.webp" />
+          <link rel="icon" href="/phone-favicon.gif" />
           {this.state.preloadHeroPath === null ? null : (
             <link rel="preload" as="image" href={this.state.preloadHeroPath} />
           )}
