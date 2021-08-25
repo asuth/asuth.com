@@ -56,27 +56,26 @@ export default class Nav extends Component<NodeProps, NodeState> {
             className="MaxWidth NavLinks"
             onClick={this.clickMover.bind(this)}
           >
-            {this.props.homepageIsCurrent ? (
-              <>
-                <Link href="/about">
-                  <a
-                    onMouseEnter={this.preloadHero.bind(this, "about")}
-                    href="#"
-                    className="btn btn-about"
-                  >
-                    ABOUT
-                  </a>
-                </Link>
-                <Link href="/writing">
-                  <a
-                    onMouseEnter={this.preloadHero.bind(this, "writing")}
-                    href="#"
-                    className="btn btn-writing"
-                  >
-                    WRITING
-                  </a>
-                </Link>
-                {/* <Link href="/speaking">
+            <>
+              <Link href="/about">
+                <a
+                  onMouseEnter={this.preloadHero.bind(this, "about")}
+                  href="#"
+                  className="btn btn-about"
+                >
+                  ABOUT
+                </a>
+              </Link>
+              <Link href="/writing">
+                <a
+                  onMouseEnter={this.preloadHero.bind(this, "writing")}
+                  href="#"
+                  className="btn btn-writing"
+                >
+                  WRITING
+                </a>
+              </Link>
+              {/* <Link href="/speaking">
                     <a
                       onMouseEnter={this.preloadHero.bind(this, "speaking")}
                       href="#"
@@ -85,30 +84,23 @@ export default class Nav extends Component<NodeProps, NodeState> {
                       QUESTIONS
                     </a>
                   </Link> */}
-                <Link href="/investing">
-                  <a
-                    onMouseEnter={this.preloadHero.bind(this, "investing")}
-                    href="#"
-                    className="btn btn-investing"
-                  >
-                    INVESTING
-                  </a>
-                </Link>
-
-                <Link href="/contact">
-                  <a className="btn btn-contact">CONTACT</a>
-                </Link>
-              </>
-            ) : (
-              <Link href="/">
-                <a className="btn btn-more">
-                  {/* <span className="carrot">&#8629;</span> */}
-                  {/* <span className="carrot">&nbsp;HOME&nbsp;</span> */}
-                  {/* <span className="carrot">☞</span> */}
-                  HOME
+              <Link href="/investing">
+                <a
+                  onMouseEnter={this.preloadHero.bind(this, "investing")}
+                  href="#"
+                  className="btn btn-investing"
+                >
+                  INVESTING
                 </a>
               </Link>
-            )}
+
+              <Link href="/contact">
+                <a className="btn btn-contact">CONTACT</a>
+              </Link>
+            </>
+            <Link href="/">
+              <a className="btn btn-more">HOME</a>
+            </Link>
           </div>
         </nav>
       </>
