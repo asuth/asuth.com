@@ -36,7 +36,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
       <>
         <Head>
           <title>{this.props.title}</title>
-          <link rel="icon" href="/face.png" />
+          <link rel="icon" href="/eyezoom.png" />
           {this.state.preloadHeroPath === null ? null : (
             <link rel="preload" as="image" href={this.state.preloadHeroPath} />
           )}
@@ -103,8 +103,9 @@ export default class Nav extends Component<NodeProps, NodeState> {
               <Link href="/">
                 <a className="btn btn-more">
                   {/* <span className="carrot">&#8629;</span> */}
-                  <span className="carrot">&nbsp;✕&nbsp;</span>
+                  {/* <span className="carrot">&nbsp;HOME&nbsp;</span> */}
                   {/* <span className="carrot">☞</span> */}
+                  HOME
                 </a>
               </Link>
             )}

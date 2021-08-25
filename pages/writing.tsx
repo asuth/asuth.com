@@ -131,14 +131,14 @@ export default function Home() {
           background-image: url(/advanced-bg/main.png);
         }
 
-        .PageHeaderRainbow {
-          width: 100%;
-          height: 100%;
-          background-size: 600px 600px;
-          background-image: url(/advanced-bg/green4.png);
-          -webkit-animation: rainbow 20s steps(36) infinite;
-          background-position: center;
-        }
+        // .PageHeaderRainbow {
+        //   width: 100%;
+        //   height: 100%;
+        //   background-size: 600px 600px;
+        //   background-image: url(/advanced-bg/green4.png);
+        //   -webkit-animation: rainbow 20s steps(36) infinite;
+        //   background-position: center;
+        // }
 
         .FirstCard {
           margin-top: calc(-128px / 2 - 280px);
@@ -149,13 +149,13 @@ export default function Home() {
           --dark-bg-color: var(--writingDarkBlue);
         }
 
-        // .PageHeader {
-        //   background-size: 400px 400px;
-        //   background-image: image-set(
-        //     url("/writing-hero-500.webp") 1x,
-        //     url("/writing-hero-1258.webp") 2x
-        //   );
-        // }
+        .PageHeader {
+          background-size: 500px 500px;
+          background-image: image-set(
+            url("/writing-hero-500.webp") 1x,
+            url("/writing-hero-1258.webp") 2x
+          );
+        }
       `}</style>
     </>
   );
