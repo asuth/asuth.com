@@ -145,13 +145,13 @@ export default function Home() {
           <div className="MaxWidth">
             <div className="Card FirstCard">
               <p>
-                Investing is my way to see the future. Both for-profit and
-                nonprofit organizations can do an immense amount of good, so I
-                invest in both. The investment reasons I give below are mostly
-                post-hoc rationalizations. My criteria for investing is largely
-                whether I believe in the leader and think they are capable of
-                greatness. My favorite areas to invest in are education, climate
-                change, housing, and developer tools.
+                Investing is my way to see the future. I invest in both
+                for-profit and non-profit organizations, so you'll see them
+                mixed together in my portfolio below. The reasons I provide for
+                investing are kinda post-hoc rationalizations. Honestly, my
+                criteria for investing is primarily whether I believe the leader
+                is capable of greatness. My favorite areas to invest in are
+                education, climate change, housing, and developer tools.
               </p>
               <p>
                 If you think I might be a good investor for you, please send an
