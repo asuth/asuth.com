@@ -109,16 +109,23 @@ export default class Nav extends Component<NodeProps, NodeState> {
     for (const obj in positions) {
       const offsetXRatio = positions[obj].offsetX / imgWidth;
       const offsetYRatio = positions[obj].offsetY / imgHeight;
-      console.log(offsetYRatio, positions[obj].offsetY, imgHeight);
 
-      const offsetX = naturalWidth * offsetXRatio;
-      // don't load animations that would load offscreen
-      // e.g. on mobile devices
-      // if (offsetX < cWidth) {
+      let offsetX = naturalWidth * offsetXRatio;
+      let offsetY = naturalHeight * offsetYRatio;
+
+      // fudge factors with v approximate width / height
+      // of the buttons
+      while (offsetX + 120 > cWidth) {
+        offsetX *= 5 / 6;
+      }
+
+      while (offsetY + 50 > cHeight) {
+        offsetY *= 5 / 6;
+      }
+
       offsets[obj] = {
         offsetX: offsetX,
-        offsetY: naturalHeight * offsetYRatio,
-        // };
+        offsetY: offsetY,
       };
     }
 
