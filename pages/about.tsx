@@ -144,7 +144,6 @@ export default function Home() {
 
         .PageHeader {
           background-size: cover;
-          height: 70vh;
         }
 
         .Goofy {

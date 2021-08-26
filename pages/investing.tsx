@@ -201,11 +201,11 @@ export default function Home() {
         :global(:root) {
           --bg-color: var(--green);
           --dark-bg-color: var(--dark-green);
-          --hero-url: url(/investing-hero.webp);
+          --hero-url: url(/wallpapers/chairs@2x.jpg);
         }
 
         .PageHeader {
-          background-size: 500px 500px;
+          background-size: 600px 600px;
         }
 
         .InvestmentCard {

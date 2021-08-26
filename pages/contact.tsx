@@ -3,19 +3,19 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="PageHeader Grid">
+      {/* <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">
             <span className="PageHeadline-Small">This is the</span>
             CONTACT PAGE
           </h1>
         </div>
-      </div>
+      </div> */}
 
-      <div className="ContentBlock">
+      <div className="PageHeader">
         <div className="Content">
           <div className="MaxWidth">
-            <div className="Card FirstCard CenterCard">
+            <div className="Card  CenterCard">
               <h3>Say hello, future friend</h3>
               <p>
                 The best way to reach me is by email at{" "}
@@ -45,7 +45,9 @@ export default function Home() {
         }
 
         .PageHeader {
-          background-size: 360px 360px;
+          height: 84vh;
+          background: url(/contact-hero.webp);
+          background-size: 500px 500px;
         }
 
         ul {
