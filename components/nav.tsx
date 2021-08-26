@@ -113,6 +113,9 @@ export default class Nav extends Component<NodeProps, NodeState> {
       let offsetX = naturalWidth * offsetXRatio;
       let offsetY = naturalHeight * offsetYRatio;
 
+      // if buttons are gonna be off screen, reduce their offsets
+      // in an incremental and stable way (independently for x and y)
+
       // fudge factors with v approximate width / height
       // of the buttons
       while (offsetX + 120 > cWidth) {
