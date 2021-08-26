@@ -1,14 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 @font-face {
   font-family: "Domaine Sans Text";
   src: url(/domaine-sans-text-web-medium.woff2) format("woff2");
@@ -17,105 +6,6 @@ a {
 @font-face {
   font-family: "National 2";
   src: url(/national-2-web-regular.woff2) format("woff2");
-}
-
-.btn {
-  transform: translateZ(1px);
-  transition-duration: 0.1s;
-  /* transition-property: all; */
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 10px 14px;
-  /* background; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  color: var(--yellow);
-  /* backdrop-filter: brightness(40%); */
-  background: var(--hpPurple);
-  /* backdrop-filter: brightness(70%)
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='b' x='0' y='0'%3E%3CfeFlood x='4' y='4' height='2' width='2'/%3E%3CfeComposite width='10' height='10'/%3E%3CfeTile result='a'/%3E%3CfeComposite in='SourceGraphic' in2='a' operator='in'/%3E%3CfeMorphology operator='dilate' radius='5'/%3E%3C/filter%3E%3C/svg%3E#b");
-  -webkit-backdrop-filter: brightness(70%)
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='b' x='0' y='0'%3E%3CfeFlood x='4' y='4' height='2' width='2'/%3E%3CfeComposite width='10' height='10'/%3E%3CfeTile result='a'/%3E%3CfeComposite in='SourceGraphic' in2='a' operator='in'/%3E%3CfeMorphology operator='dilate' radius='5'/%3E%3C/filter%3E%3C/svg%3E#b"); */
-  font-size: 16px;
-  letter-spacing: 1px;
-  border: 2px solid var(--brightYellow);
-  box-shadow: 2px 2px var(--brightYellow);
-}
-
-@media only screen and (max-width: 768px) {
-  .btn {
-    font-size: 12px;
-  }
-}
-
-.btn:hover,
-.btn:focus,
-.btn:active {
-  transform: scale(1.1) rotate(4deg);
-}
-
-.btn-a:hover,
-.btn-a:focus,
-.btn-a:active {
-}
-
-.btn-b:hover,
-.btn-b:focus,
-.btn-b:active {
-  transform: scale(1.1) rotate(-4deg);
-}
-
-.btn-c:hover,
-.btn-c:focus,
-.btn-c:active {
-  transform: scale(1.1) rotate(4deg);
-}
-
-.btn-d:hover,
-.btn-d:focus,
-.btn-d:active {
-  transform: scale(1.1) rotate(-4deg);
-}
-
-.btn-e:hover,
-.btn-e:focus,
-.btn-e:active {
-  transform: scale(1.1) rotate(4deg);
-}
-
-.btn:active {
-  /* transform: scale(1.2); */
-  box-shadow: 0 0 #000;
-  transform: translate(2px, 2px);
-}
-
-/* NB: the url of the background image is defined dynamically in JS */
-.HomepageBackground {
-  overflow: hidden;
-  background-size: 100%;
-  height: calc(var(--app-height) - var(--nav-bar-height));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left 0 bottom 0;
-  position: relative;
-  transition: margin-top 750ms ease 0s;
-
-  /* fixes bad dynamic resizing of my art */
-  -ms-interpolation-mode: nearest-neighbor;
-  image-rendering: pixelated;
-}
-
-.HomepageBackground.HomepageIsCurrent {
-  display: block;
-}
-
-/* portrait phone */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
-  .HomepageBackground.HomepageIsCurrent,
-  .HomepageBackground.HomepageIsLoaded {
-    background-image: url("/homepage-phone-1170.webp");
-  }
 }
 
 :root {
@@ -147,87 +37,115 @@ a {
   --nav-bar-color: var(--bg-color);
 }
 
-.NavLinks {
-  justify-content: flex-end;
-  display: flex;
-  gap: 20px;
-  font-family: var(--headline-font);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.btn {
-  position: absolute;
-}
-
-.btn:hover {
-  /* transform: scale(1.15) rotate(2deg); */
-}
-
-.btn-about {
-  top: 200px;
-  left: 600px;
-}
-
-.btn-writing {
-  top: 550px;
-  left: 300px;
-}
-
-.btn-investing {
-  right: 200px;
-  bottom: 200px;
-}
-
-.btn-contact {
-  top: 280px;
-  right: 150px;
-}
-
-.btn-more {
-  top: 15px;
-  right: 100px;
-  display: block;
-}
-
-.BodyHomepageIsCurrent .btn-more {
-  display: none;
-}
-
-.btn-about,
-.btn-writing,
-.btn-investing,
-.btn-contact {
-  display: none;
-}
-
-.BodyHomepageIsCurrent .btn-about,
-.BodyHomepageIsCurrent .btn-writing,
-.BodyHomepageIsCurrent .btn-investing,
-.BodyHomepageIsCurrent .btn-contact {
-  display: block;
-}
-
-@media only screen and (max-width: 500px) {
-  :root {
-    --nav-bar-height: 60px;
-  }
-
-  .Nav {
-    padding: 10px;
-  }
-
-  .Nav .btn {
-    padding: 4px 8px;
-  }
-
-  .BodyHomepageIsCurrent .NavLinks {
-    justify-content: space-evenly;
-    gap: normal;
-  }
+/* hack to keep the logo in the same place when user chooses a new page */
+html {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
   font: 17px/1.6 var(--body-font);
   background: var(--dark-bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.NavBtn {
+  position: absolute;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font: 16px var(--headline-font);
+  color: var(--yellow);
+  /* backdrop-filter: brightness(40%); */
+  background: var(--hpPurple);
+  /* backdrop-filter: brightness(70%)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='b' x='0' y='0'%3E%3CfeFlood x='4' y='4' height='2' width='2'/%3E%3CfeComposite width='10' height='10'/%3E%3CfeTile result='a'/%3E%3CfeComposite in='SourceGraphic' in2='a' operator='in'/%3E%3CfeMorphology operator='dilate' radius='5'/%3E%3C/filter%3E%3C/svg%3E#b");
+  -webkit-backdrop-filter: brightness(70%)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='b' x='0' y='0'%3E%3CfeFlood x='4' y='4' height='2' width='2'/%3E%3CfeComposite width='10' height='10'/%3E%3CfeTile result='a'/%3E%3CfeComposite in='SourceGraphic' in2='a' operator='in'/%3E%3CfeMorphology operator='dilate' radius='5'/%3E%3C/filter%3E%3C/svg%3E#b"); */
+  letter-spacing: 1px;
+  border: 2px solid var(--brightYellow);
+  box-shadow: 2px 2px var(--brightYellow);
+}
+
+.HomeNav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.NavBtn--Home {
+  place-self: end end;
+  position: static;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+.NavBtn--Home,
+.BodyHomepageIsCurrent .NavHomeBtns {
+  display: block;
+}
+
+.BodyHomepageIsCurrent .NavBtn--Home,
+.NavHomeBtns {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .NavBtn {
+    font-size: 12px;
+  }
+}
+
+.NavBtn:hover,
+.NavBtn:focus,
+.NavBtn:active {
+  transform: scale(1.1) rotate(4deg);
+}
+
+.NavBtn:active {
+  /* transform: scale(1.2); */
+  box-shadow: 0 0 #000;
+  transform: translate(2px, 2px) scale(1.1) rotate(4deg);
+}
+
+/* NB: the url of the background image is defined dynamically in JS */
+.HomepageBackground {
+  overflow: hidden;
+  background-size: 100%;
+  height: calc(var(--app-height) - var(--nav-bar-height));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 0 bottom 0;
+  position: relative;
+  transition: margin-top 750ms ease 0s;
+
+  /* fixes bad dynamic resizing of my art */
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: pixelated;
+}
+
+.HomepageBackground.HomepageIsCurrent {
+  display: block;
+}
+
+/* portrait phone */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
+  .HomepageBackground.HomepageIsCurrent,
+  .HomepageBackground.HomepageIsLoaded {
+    background-image: url("/homepage-phone-1170.webp");
+  }
 }
 
 .SiteWrapper {
@@ -238,12 +156,6 @@ body {
 /* When user is resizing screen, don't animate the transform caused by app-height changing */
 .PageIsResizing .SiteWrapper {
   transition: none;
-}
-
-/* hack to keep the logo in the same place when user chooses a new page */
-html {
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 /* 
@@ -266,12 +178,6 @@ this is especially nice on mobile but is useful on all platforms
 
 .Grid {
   display: grid;
-}
-
-.Nav {
-  height: var(--nav-bar-height);
-  overflow-x: hidden; /* todo remove once nav is simplified */
-  transition: background 750ms ease 0s;
 }
 
 .Content {
@@ -372,6 +278,7 @@ p:last-child {
   background: var(--hero-url);
   background-size: cover;
   background-position: center;
+  background-color: var(--dark-bg-color);
   border: 30px solid var(--bg-color);
   border-width: 3vh 0;
   /* outline: 5px solid var(--dark-bg-color); */

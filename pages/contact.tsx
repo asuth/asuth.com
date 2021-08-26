@@ -45,7 +45,7 @@ export default function Home() {
         }
 
         .PageHeader {
-          height: 84vh;
+          height: auto;
           background: url(/contact-hero.webp);
           background-size: 500px 500px;
         }
@@ -62,6 +62,11 @@ export default function Home() {
 
         li:last-child {
           margin-bottom: 0;
+        }
+
+        .CenterCard {
+          margin-top: 50px;
+          margin-bottom: 50px;
         }
       `}</style>
     </>
