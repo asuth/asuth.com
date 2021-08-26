@@ -119,11 +119,11 @@ export default class Nav extends Component<NodeProps, NodeState> {
       // fudge factors with v approximate width / height
       // of the buttons
       while (offsetX + 120 > cWidth) {
-        offsetX *= 5 / 6;
+        offsetX *= 3 / 4;
       }
 
       while (offsetY + 50 > cHeight) {
-        offsetY *= 5 / 6;
+        offsetY *= 3 / 4;
       }
 
       offsets[obj] = {
