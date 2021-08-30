@@ -288,7 +288,7 @@ export default function Home() {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          gap: 50px;
+          gap: 30px;
         }
 
           .InvestmentInfo span {
@@ -298,10 +298,32 @@ export default function Home() {
 
           .InvestmentInfo .btn {
             display inline-block;
-            margin-left: 15px;
+            text-transform: uppercase;
+            font: 12px var(--headline-font);
+            margin-left: 10px;
+            border: 1px solid #000;
+            padding: 4px 6px;
+            border-radius: 3px;
           }
+            .btn:hover {
+              background: #000;
+            }
 
+            .GreenCard .btn:hover {
+              color: var(--green);
+            }
 
+            .SalmonCard .btn:hover {
+              color: var(--salmon);
+            }
+
+            .YellowCard .btn:hover {
+              color: var(--yellow);
+            }
+
+            .btn:active {
+              transform: rotate(3deg);
+            }
 
         .GreenCard .InvestmentInfo, .GreenCard .InvestmentName {
           background: var(--green);

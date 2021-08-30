@@ -115,9 +115,8 @@ a {
 }
 
 .NavBtn:active {
-  /* transform: scale(1.2); */
-  box-shadow: 0 0 #000;
   transform: translate(2px, 2px) scale(1.1) rotate(4deg);
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* NB: the url of the background image is defined dynamically in JS */
