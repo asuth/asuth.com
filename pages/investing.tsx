@@ -274,8 +274,8 @@ export default function Home() {
 
         .InvestmentCard h3 {
           font: 25px var(--headline-font);
-          text-transform: uppercase;
           display: inline-block;
+          margin-bottom: 0;
         }
 
         .InvestmentName {

@@ -9,7 +9,6 @@
 }
 
 :root {
-  --nav-bar-height: 0px;
   --headline-font: "Domaine Sans Text", sans-serif;
   --body-font: "National 2", sans-serif;
   --brightYellow: #faff98;
@@ -30,11 +29,6 @@
   --hpPurple: rgb(59, 59, 104);
   /* this gets dynamically updated by js, so safari can have a full-height page */
   --app-height: 100vh;
-  /* 
-    separate this from bg-color because during page transition, we set nav-color
-    during the transition but we leave bg-color to change later
-  */
-  --nav-bar-color: var(--bg-color);
 }
 
 * {
@@ -68,12 +62,7 @@ a {
   border-radius: 50%;
   font: 16px var(--headline-font);
   color: var(--yellow);
-  /* backdrop-filter: brightness(40%); */
   background: var(--hpPurple);
-  /* backdrop-filter: brightness(70%)
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='b' x='0' y='0'%3E%3CfeFlood x='4' y='4' height='2' width='2'/%3E%3CfeComposite width='10' height='10'/%3E%3CfeTile result='a'/%3E%3CfeComposite in='SourceGraphic' in2='a' operator='in'/%3E%3CfeMorphology operator='dilate' radius='5'/%3E%3C/filter%3E%3C/svg%3E#b");
-  -webkit-backdrop-filter: brightness(70%)
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='b' x='0' y='0'%3E%3CfeFlood x='4' y='4' height='2' width='2'/%3E%3CfeComposite width='10' height='10'/%3E%3CfeTile result='a'/%3E%3CfeComposite in='SourceGraphic' in2='a' operator='in'/%3E%3CfeMorphology operator='dilate' radius='5'/%3E%3C/filter%3E%3C/svg%3E#b"); */
   letter-spacing: 1px;
   border: 2px solid var(--brightYellow);
   box-shadow: 2px 2px var(--brightYellow);
@@ -83,6 +72,7 @@ a {
   width: 100%;
   position: absolute;
   top: 0;
+  z-index: 10;
 }
 
 .NavBtn--Home {
@@ -123,13 +113,12 @@ a {
 .HomepageBackground {
   overflow: hidden;
   background-size: 100%;
-  height: calc(var(--app-height) - var(--nav-bar-height));
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left 0 bottom 0;
   position: relative;
   transition: margin-top 750ms ease 0s;
-
   /* fixes bad dynamic resizing of my art */
   -ms-interpolation-mode: nearest-neighbor;
   image-rendering: pixelated;
@@ -147,22 +136,9 @@ a {
   }
 }
 
-.SiteWrapper {
-  /* margin-top: calc(-1 * var(--app-height) + var(--nav-bar-height)); */
-  /* transition: margin 750ms ease 0s; */
-}
-
 /* When user is resizing screen, don't animate the transform caused by app-height changing */
-.PageIsResizing .SiteWrapper {
+.PageIsResizing .Page {
   transition: none;
-}
-
-/* 
-prevent scrolling on homepage since it has no scroll bars
-this is especially nice on mobile but is useful on all platforms
-*/
-.BodyHomepageIsCurrent .SiteWrapper {
-  --nav-bar-color: var(--hpPurple);
 }
 
 .BodyHomepageIsCurrent {
@@ -202,14 +178,14 @@ this is especially nice on mobile but is useful on all platforms
   float: left;
 }
 
-.Card h3 {
+h3 {
   font: 28px var(--headline-font);
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-.Card h4 {
-  font: 17px var(--headline-font);
+h4 {
+  font: 19px var(--headline-font);
 }
 
 p {
@@ -228,7 +204,7 @@ p:last-child {
     padding: 25px;
   }
 
-  .Card h3 {
+  h3 {
     margin-bottom: 15px;
     font-size: 23px;
   }
@@ -257,7 +233,7 @@ p:last-child {
 }
 
 .FirstCard {
-  margin-top: calc(-128px / 2 - 150px);
+  margin-top: -160px;
 }
 
 .CenterCard {
@@ -280,7 +256,7 @@ p:last-child {
 .PageHeader {
   width: 100%;
   height: 75vh;
-  /* min-height: 25rem; */
+  min-height: 25rem;
   position: relative;
   background: var(--hero-url);
   background-size: cover;
@@ -288,8 +264,6 @@ p:last-child {
   background-color: var(--dark-bg-color);
   border: 30px solid var(--bg-color);
   border-width: 3vh 0;
-  /* outline: 5px solid var(--dark-bg-color); */
-  /* box-shadow: 0 -5px 20px 0px rgba(0, 0, 0, 0.2); */
 }
 
 .PageHeadline {
@@ -323,8 +297,6 @@ p:last-child {
 .logo {
   position: absolute;
   z-index: 2;
-  /* transform: scale(0.8); */
-  /* top: 0rem; */
   top: 0.7rem;
 }
 
@@ -363,25 +335,5 @@ p:last-child {
 
   .PageHeadline-Small {
     font-size: 16px;
-  }
-}
-
-@-webkit-keyframes rainbow {
-  from {
-    -webkit-filter: hue-rotate(10deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-  }
-}
-
-@keyframes rainbow {
-  from {
-    -webkit-filter: hue-rotate(10deg);
-    filter: hue-rotate(10deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(360deg);
-    filter: hue-rotate(360deg);
   }
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,11 +18,14 @@ export default function Home() {
           <div className="MaxWidth">
             <div className="Card FirstCard CenterCard">
               <h3>
-                How do you raise the status of the teaching profession to be
-                similar to doctors or lawyers?
+                <Link href="/goodbye-quizlet">
+                  <a>Goodbye Quizlet Hello New Thing</a>
+                </Link>
               </h3>
 
-              <p>Blurbadurb</p>
+              <p>
+                <em>June 2021</em>
+              </p>
             </div>
           </div>
         </div>
