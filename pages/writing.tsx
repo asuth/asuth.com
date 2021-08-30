@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,8 +6,8 @@ export default function Home() {
       <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">
-            <span className="PageHeadline-Small">Home for my</span>
-            Words
+            <span className="PageHeadline-Small">My</span>
+            Writing
           </h1>
         </div>
       </div>
@@ -18,14 +17,11 @@ export default function Home() {
           <div className="MaxWidth">
             <div className="Card FirstCard CenterCard">
               <h3>
-                <Link href="/goodbye-quizlet">
-                  <a>Goodbye Quizlet, Hello New Thing</a>
-                </Link>
+                How do you raise the status of the teaching profession to be
+                similar to doctors or lawyers?
               </h3>
 
-              <p>
-                <em>June 2021</em>
-              </p>
+              <p>Blurbadurb</p>
             </div>
           </div>
         </div>

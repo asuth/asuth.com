@@ -33,7 +33,10 @@ export default class Nav extends Component<NodeProps, NodeState> {
           offsetX: 0,
           offsetY: 0,
         },
-
+        questions: {
+          offsetX: 0,
+          offsetY: 0,
+        },
         contact: {
           offsetX: 0,
           offsetY: 0,
@@ -54,6 +57,11 @@ export default class Nav extends Component<NodeProps, NodeState> {
       };
     } = {
       about: {
+        offsetX: 600,
+        offsetY: 1550,
+      },
+
+      questions: {
         offsetX: 1300,
         offsetY: 1100,
       },
@@ -202,15 +210,15 @@ export default class Nav extends Component<NodeProps, NodeState> {
                 WRITING
               </a>
             </Link>
-            {/* <Link href="/speaking">
-                    <a
-                      onMouseEnter={this.preloadHero.bind(this, "speaking")}
-                      href="#"
-                      className="btn btn-a"
-                    >
-                      QUESTIONS
-                    </a>
-                  </Link> */}
+            <Link href="/questions">
+              <a
+                onMouseEnter={this.preloadHero.bind(this, "questions")}
+                className="NavBtn"
+                style={this.placements("questions")}
+              >
+                QUESTIONS
+              </a>
+            </Link>
             <Link href="/investing">
               <a
                 onMouseEnter={this.preloadHero.bind(this, "investing")}

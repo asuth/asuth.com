@@ -208,6 +208,10 @@ this is especially nice on mobile but is useful on all platforms
   margin-bottom: 20px;
 }
 
+.Card h4 {
+  font: 17px var(--headline-font);
+}
+
 p {
   margin-bottom: 30px;
 }
@@ -241,11 +245,15 @@ p:last-child {
 
 .Card a {
   box-shadow: 0 2px var(--bg-color);
-  transition: box-shadow 0.2s ease;
+  transition: box-shadow 150ms ease;
 }
 
 .Card a:hover {
   box-shadow: 0 2px var(--dark-bg-color);
+}
+
+.Card a:active {
+  transform: rotate(-4deg);
 }
 
 .FirstCard {

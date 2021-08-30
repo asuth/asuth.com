@@ -15,47 +15,11 @@ export default function Home() {
       <div className="ContentBlock">
         <div className="Content">
           <div className="MaxWidth">
-            {/* <div className="Card LeftCard">
-                <p>
-                  I am passionate about teaching, learning, and improving our
-                  society’s systems of education.
-                </p>
-                <p>
-                  I am an entrepreneur, so I like making things. That includes
-                  this website, which took me took too long to make, but also
-                  probably the right amount of time.
-                </p>
-              </div>
-              <div className="Card RightCard">
-                <p>
-                  I made Quizlet, an educational software company serving
-                  millions of students and teachers worldwide.
-                </p>
-                <p>
-                  It gives students a system for learning that helps them come
-                  prepared to whatever class they’re taking, and thus raises
-                  their own expectations of what they can achieve.
-                </p>
-              </div>
-
-              <div className="Card LeftCard">
-                <p>These days, I'm exploring new things</p>
-
-                <p>Questions that excite me:</p>
-                <ul>
-                  <li>Why are blueberries the best berry?</li>
-                  <li>
-                    How do you raise the status of the teaching profession to be
-                    similar to doctors or lawyers?
-                  </li>
-                </ul>
-              </div> */}
-
             <div className="Card FirstCard">
               <h3>Hi Friend!</h3>
               <p>
-                Welcome to asuth.com. I built this website so you can get to
-                know me a lil bit.
+                Welcome to asuth.com. I built this website so you can start to
+                get to know me.
               </p>
 
               <p>
