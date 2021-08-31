@@ -276,6 +276,27 @@ p:last-child {
   }
 }
 
+@media only screen and (max-height: 568px) {
+  .LogoImage {
+    width: 155px;
+    height: 85px;
+  }
+
+  .LogoWrap {
+    padding: 0 12px;
+  }
+
+  .PageHeadline {
+    font: 25px/1.8 var(--headline-font);
+    padding: 15px 25px;
+    margin-left: 0px;
+  }
+
+  .PageHeadline-Small {
+    font-size: 16px;
+  }
+}
+
 .NavBtn {
   position: absolute;
   padding: 10px 14px;

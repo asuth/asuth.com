@@ -57,18 +57,16 @@ export default class Nav extends Component<NodeProps, NodeState> {
       };
     } = {
       about: {
-        offsetX: 600,
+        offsetX: 500,
         offsetY: 1550,
       },
-
       questions: {
         offsetX: 1300,
         offsetY: 1100,
       },
-
       writing: {
-        offsetX: 580,
-        offsetY: 500,
+        offsetX: 850,
+        offsetY: 150,
       },
       contact: {
         offsetX: 2600,
@@ -130,7 +128,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
         offsetX *= 3 / 4;
       }
 
-      while (offsetY + 50 > cHeight) {
+      while (offsetY + 140 > cHeight) {
         offsetY *= 3 / 4;
       }
 
