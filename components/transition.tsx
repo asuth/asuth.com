@@ -47,6 +47,7 @@ const Transition: React.FC<TransitionKind<ReactChild>> = ({
               className={"Page"} /* + status + " " + children.type.name} */
               style={{
                 ...getTransitionStyles[
+                  // @ts-ignore: Property 'type' does not exist on type 'ReactChild & ReactNode'.
                   children.type.name === "HomepageStub" ? "" : status
                 ],
               }}
