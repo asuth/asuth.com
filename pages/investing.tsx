@@ -1,10 +1,11 @@
-export default function Home() {
+export default function Investing() {
+  /*
   function shuffleArray<T>(array: Array<T>): void {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
-  }
+  }*/
 
   const investments: Array<{
     name: string;
@@ -216,7 +217,6 @@ export default function Home() {
           box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
         }
 
-
         .SpacerCard {
           display: inline-block;
           width: 20%;
@@ -235,9 +235,6 @@ export default function Home() {
           .SpacerCard {
             display: none;
           }
-
-
-  
         }
 
         @media only screen and (max-width: 600px) {
@@ -248,13 +245,7 @@ export default function Home() {
           .SpacerCard {
             display: none;
           }
-
         }
-
-        
-
-
-        
 
         .Investments {
           display: flex;
@@ -265,13 +256,6 @@ export default function Home() {
           padding: 25px;
         }
 
-        .InvestmentCard img {
-          width: 222px;
-          margin: 0;
-          display: none;
-          margin: 10px 0 0 0;
-        }
-
         .InvestmentCard h3 {
           font: 25px var(--headline-font);
           display: inline-block;
@@ -280,7 +264,6 @@ export default function Home() {
 
         .InvestmentName {
           padding: 25px 25px 0 25px;
-          // text-align: center;
         }
 
         .InvestmentInfo {
@@ -348,14 +331,6 @@ export default function Home() {
         }
 
         li:last-child {
-          margin-bottom: 0;
-        }
-
-        p {
-          margin-bottom: 40px;
-        }
-
-        p:last-child {
           margin-bottom: 0;
         }
       `}</style>

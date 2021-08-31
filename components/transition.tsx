@@ -10,34 +10,19 @@ type TransitionKind<RC> = {
   location: string;
 };
 
-const TIMEOUT: number = 1200;
-
-const getTransitionStyles = {
+const getTransitionStyles: { [key: string]: {} } = {
   entering: {
-    transform: "scale(10%)",
-    right: "150px",
-    top: "280px",
-    bottom: "700px",
-    left: "800px",
+    marginTop: 0,
+    opacity: 0,
   },
   entered: {
-    // transition: `opacity ${TIMEOUT}ms ease-in-out, transform ${TIMEOUT}ms ease-in-out`,
-    // opacity: 1,
-    // transform: `translateX(0px)`,
-    // animation: "blink .3s linear 2",
-
-    left: "70px",
-    right: "70px",
-    top: "70px",
-    bottom: "70px",
-    transform: "scale(100%)",
+    marginTop: "-91vh",
+    opacity: 1,
   },
-  exiting: {
-    // transition: `opacity ${TIMEOUT}ms ease-in-out, transform ${TIMEOUT}ms ease-in-out`,
-    // opacity: 0,
-    // transform: `translateX(-50px)`,
-    transform: "scale(10%)",
-  },
+  // exiting: {
+  //   marginTop: 0,
+  //   opacity: 0,
+  // },
   empty: {},
 };
 
@@ -45,32 +30,33 @@ const Transition: React.FC<TransitionKind<ReactChild>> = ({
   children,
   location,
 }) => {
-  return <div className="Page">{children}</div>;
-  /*console.log(children);
   return (
     <TransitionGroup>
       <ReactTransition
         key={location}
         timeout={{
-          enter: TIMEOUT,
-          exit: TIMEOUT,
+          // don't wait to create the new element; don't totally understand why this needs to be zerod
+          enter: 0,
+          // don't destroy the element while it is animating away
+          exit: 1000,
         }}
       >
-        {(status) => (
-          <div
-            className={"Page " + status}
-            style={{
-              ...getTransitionStyles[
-                status
-                // children.type.name === "HomepageStub" ? "" : status
-              ],
-            }}
-          >
-            {children}
-          </div>
-        )}
+        {(status: string) => {
+          return (
+            <div
+              className={"Page"} /* + status + " " + children.type.name} */
+              style={{
+                ...getTransitionStyles[
+                  children.type.name === "HomepageStub" ? "" : status
+                ],
+              }}
+            >
+              {children}
+            </div>
+          );
+        }}
       </ReactTransition>
     </TransitionGroup>
-  );*/
+  );
 };
 export default Transition;

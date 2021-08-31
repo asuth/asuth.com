@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <div className="MaxWidth LogoWrap" key="logo">
         <Link href="/">
-          <a className="logo">
+          <a className="Logo">
             <img
               src="logo-200.png"
               srcSet="logo-200.png 1x,
@@ -50,9 +50,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           homepageIsCurrent={isHomepage}
         ></Nav>
         <Transition location={router.pathname}>
-          {/* <div className="Page"> */}
           <Component {...pageProps} />
-          {/* </div> */}
         </Transition>
       </div>
     </>

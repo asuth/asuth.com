@@ -53,60 +53,22 @@ a {
   color: inherit;
 }
 
-.NavBtn {
-  position: absolute;
-  padding: 10px 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font: 16px var(--headline-font);
-  color: var(--yellow);
-  background: var(--hpPurple);
-  letter-spacing: 1px;
-  border: 2px solid var(--brightYellow);
-  box-shadow: 2px 2px var(--brightYellow);
+h3 {
+  font: 28px var(--headline-font);
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.HomeNav {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 10;
+h4 {
+  font: 19px var(--headline-font);
 }
 
-.NavBtn--Home {
-  place-self: end end;
-  position: static;
-  margin-top: 12px;
-  margin-right: 12px;
+p {
+  margin-bottom: 30px;
 }
 
-.NavBtn--Home,
-.BodyHomepageIsCurrent .NavHomeBtns {
-  display: block;
-}
-
-.BodyHomepageIsCurrent .NavBtn--Home,
-.NavHomeBtns {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  .NavBtn {
-    font-size: 12px;
-  }
-}
-
-.NavBtn:hover,
-.NavBtn:focus,
-.NavBtn:active {
-  transform: scale(1.1) rotate(4deg);
-}
-
-.NavBtn:active {
-  transform: translate(2px, 2px) scale(1.1) rotate(4deg);
-  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3);
+p:last-child {
+  margin-bottom: 0;
 }
 
 /* NB: the url of the background image is defined dynamically in JS */
@@ -178,24 +140,6 @@ a {
   float: left;
 }
 
-h3 {
-  font: 28px var(--headline-font);
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-h4 {
-  font: 19px var(--headline-font);
-}
-
-p {
-  margin-bottom: 30px;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
 @media only screen and (max-width: 768px) {
   .Card {
     width: 100%;
@@ -242,15 +186,9 @@ p:last-child {
   margin-right: auto;
 }
 
-.BodyHomepageIsCurrent .Page {
-  margin-top: 0;
-  opacity: 0;
-}
-
+/* on/off animation is defined in transition.tsx */
 .Page {
-  margin-top: -91vh;
   transition: all 200ms ease 0s;
-  opacity: 1;
 }
 
 .PageHeader {
@@ -294,17 +232,17 @@ p:last-child {
   );
 }
 
-.logo {
+.Logo {
   position: absolute;
   z-index: 2;
   top: 0.7rem;
 }
 
-.logo:hover {
+.Logo:hover {
   transform: rotate(-2deg);
 }
 
-.logo:active {
+.Logo:active {
   transform: rotate(-3deg);
 }
 
@@ -336,4 +274,60 @@ p:last-child {
   .PageHeadline-Small {
     font-size: 16px;
   }
+}
+
+.NavBtn {
+  position: absolute;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font: 16px var(--headline-font);
+  color: var(--yellow);
+  background: var(--hpPurple);
+  letter-spacing: 1px;
+  border: 2px solid var(--brightYellow);
+  box-shadow: 2px 2px var(--brightYellow);
+}
+
+.HomeNav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.NavBtn--Home {
+  place-self: end end;
+  position: static;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+.NavBtn--Home,
+.BodyHomepageIsCurrent .NavHomeBtns {
+  display: block;
+}
+
+.BodyHomepageIsCurrent .NavBtn--Home,
+.NavHomeBtns {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .NavBtn {
+    font-size: 12px;
+  }
+}
+
+.NavBtn:hover,
+.NavBtn:focus,
+.NavBtn:active {
+  transform: scale(1.1) rotate(4deg);
+}
+
+.NavBtn:active {
+  transform: translate(2px, 2px) scale(1.1) rotate(4deg);
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
