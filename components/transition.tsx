@@ -12,16 +12,16 @@ type TransitionKind<RC> = {
 
 const getTransitionStyles: { [key: string]: {} } = {
   entering: {
-    marginTop: 0,
-    // opacity: 0,
+    opacity: 0,
+    top: "100vh",
   },
   entered: {
-    marginTop: "-91vh",
-    // opacity: 1,
+    top: "66px",
+    opacity: 1,
   },
   exiting: {
-    marginTop: 0,
-    // opacity: 0,
+    top: "100vh",
+    opacity: 0,
   },
   exited: {},
 };
