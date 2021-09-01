@@ -103,7 +103,8 @@ p:last-child {
   transition: none;
 }
 
-.HtmlHomepageIsCurrent {
+.HtmlHomepageIsCurrent,
+.PageIsResizing {
   overflow: hidden;
 }
 

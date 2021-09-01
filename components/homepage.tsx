@@ -148,12 +148,12 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   pageSetters() {
     const newH = window.innerHeight;
     if (newH != this.state.appHeight) {
-      document.body.classList.toggle("PageIsResizing", true);
+      document.documentElement.classList.toggle("PageIsResizing", true);
       if (this.timerId !== null) {
         clearTimeout(this.timerId);
       }
       this.timerId = setTimeout(() => {
-        document.body.classList.toggle("PageIsResizing", false);
+        document.documentElement.classList.toggle("PageIsResizing", false);
       }, 50);
       this.setState({ appHeight: newH });
 

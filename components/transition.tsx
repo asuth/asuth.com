@@ -19,11 +19,11 @@ const getTransitionStyles: { [key: string]: {} } = {
     marginTop: "-91vh",
     opacity: 1,
   },
-  // exiting: {
-  //   marginTop: 0,
-  //   opacity: 0,
-  // },
-  empty: {},
+  exiting: {
+    marginTop: 0,
+    opacity: 0,
+  },
+  exited: {},
 };
 
 const Transition: React.FC<TransitionKind<ReactChild>> = ({
