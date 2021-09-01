@@ -1,4 +1,4 @@
-import Image from "next/image";
+import hero from "/public/heros/questions.webp";
 import Link from "next/link";
 
 export default function Questions() {
@@ -97,10 +97,7 @@ export default function Questions() {
 
         .PageHeader {
           background-size: 600px 600px;
-          background-image: image-set(
-            url("/homes.png") 1x,
-            url("/homes.png") 2x
-          );
+          background-image: url(${hero.src});
         }
       `}</style>
     </>
