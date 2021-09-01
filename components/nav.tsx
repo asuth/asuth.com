@@ -204,7 +204,6 @@ export default class Nav extends Component<NodeProps, NodeState> {
             <Link href="/about">
               <a
                 onMouseEnter={this.preloadHero.bind(this, "about")}
-                href="#"
                 className="NavBtn"
                 style={this.placements("about")}
               >
@@ -240,7 +239,11 @@ export default class Nav extends Component<NodeProps, NodeState> {
             </Link>
 
             <Link href="/contact">
-              <a className="NavBtn" style={this.placements("contact")}>
+              <a
+                onMouseEnter={this.preloadHero.bind(this, "contact")}
+                className="NavBtn"
+                style={this.placements("contact")}
+              >
                 CONTACT
               </a>
             </Link>
