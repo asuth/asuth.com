@@ -53,6 +53,8 @@ type HomeState = {
   originalBgSize: number | null;
 };
 
+let initialBrowserWidthCss: string | null = null;
+
 export default class Homepage extends Component<HomeProps, HomeState> {
   timerId: ReturnType<typeof setTimeout> | null;
 
@@ -221,29 +223,51 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   }
 
   render() {
+    let isBrowser = typeof window !== "undefined";
+
     const shouldPreload =
-      typeof window !== "undefined" &&
+      isBrowser &&
       (this.props.homepageIsCurrent || this.state.shouldPreloadHomepage);
 
     let bgWidths = [3800, 3400, 3000, 2600, 2200, 1800, 1400, 1000];
 
-    let css = "";
+    let staticCss = "";
+    let bestCss: string[] = [];
     let baseImage = encodeURIComponent("/homepage-flawless.webp");
 
+    // this very goofy past-midnight code is set up so that initial download
+    // will get the right image with media queries, but subsequently the css
+    // will be based on the browser window's initial size. this prevents
+    // dynamic downloading of different size backgrounds as people resize
+    // their window, which is expected to be ~all people
     bgWidths.forEach((w) => {
-      css += `
-      @media screen and (max-width: ${w}px) {
-        .HomepageBackground {
-          background-image: url(/_next/image?url=${baseImage}&w=${w}&q=87);
-          background-image: -webkit-image-set(
-            url(/_next/image?url=${baseImage}&w=${w}&q=87) 1x,
-            url(/_next/image?url=${baseImage}&w=${w * 2}&q=87) 2x,
-            url(/_next/image?url=${baseImage}&w=${w * 3}&q=87) 3x
-          );
-        }
+      let thisCss = `.HomepageBackground {
+        background-image: url(/_next/image?url=${baseImage}&w=${w}&q=87);
+        background-image: -webkit-image-set(
+          url(/_next/image?url=${baseImage}&w=${w}&q=87) 1x,
+          url(/_next/image?url=${baseImage}&w=${w * 2}&q=87) 2x,
+          url(/_next/image?url=${baseImage}&w=${w * 3}&q=87) 3x
+        );
       }
-`;
+      `;
+
+      bestCss.push(thisCss);
+
+      staticCss += `
+      @media screen and (max-width: ${w}px) {
+        ${thisCss}
+      }
+      `;
     });
+
+    if (isBrowser && initialBrowserWidthCss === null) {
+      let windowWidth = window.innerWidth;
+      let bestCssIndex = bgWidths.length - 1;
+      while (windowWidth > bgWidths[bestCssIndex]) {
+        bestCssIndex--;
+      }
+      initialBrowserWidthCss = bestCss[bestCssIndex];
+    }
 
     return (
       <>
@@ -257,7 +281,9 @@ export default class Homepage extends Component<HomeProps, HomeState> {
           {/* only render animations in client side */}
           {shouldPreload ? this.renderAnimations() : null}
         </div>
-        <style jsx>{css}</style>
+        <style>
+          {initialBrowserWidthCss === null ? staticCss : initialBrowserWidthCss}
+        </style>
       </>
     );
   }
