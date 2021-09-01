@@ -156,8 +156,6 @@ export default class Homepage extends Component<HomeProps, HomeState> {
         document.documentElement.classList.toggle("PageIsResizing", false);
       }, 50);
       this.setState({ appHeight: newH });
-
-      document.documentElement.style.setProperty("--app-height", `${newH}px`);
     }
 
     document.documentElement.classList.toggle(

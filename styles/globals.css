@@ -28,7 +28,6 @@
   --dark-blue: #6b8fbf;
   --hpPurple: rgb(59, 59, 104);
   /* this gets dynamically updated by js, so safari can have a full-height page */
-  --app-height: 100vh;
 }
 
 * {
@@ -98,7 +97,6 @@ p:last-child {
   }
 }
 
-/* When user is resizing screen, don't animate the transform caused by app-height changing */
 .PageIsResizing .Page {
   transition: none;
 }
@@ -189,7 +187,9 @@ p:last-child {
 
 /* on/off animation is defined in transition.tsx */
 .Page {
-  transition: all 2000ms ease 0s;
+  transition: all 200ms ease 0s;
+  position: absolute;
+  width: 100%;
 }
 
 .PageHeader {
