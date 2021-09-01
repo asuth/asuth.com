@@ -202,10 +202,14 @@ export default class Homepage extends Component<HomeProps, HomeState> {
               chosenWidth = w;
             }
           });
+          let url = `${key}-${chosenWidth}.${animations[key].extension}`;
+          // console.log(require(`../public/${url}`).default.src);
+          let img = require(`../public/${url}`);
+
           // if we're actually on the homepage, render the gifs
           return (
             <img
-              src={`${key}-${chosenWidth}.${animations[key].extension}`}
+              src={url}
               key={key}
               style={{
                 left: `${gif.offsetX}px`,
@@ -222,6 +226,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
   render() {
     let baseImage = encodeURIComponent("/homepage-flawless.webp");
+    require("../public/homepage-flawless.webp").default.src;
     let backgroundUrl = `/_next/image?url=${baseImage}&w=${this.state.originalBgSize}&q=87`;
     const shouldPreload =
       typeof window !== "undefined" &&

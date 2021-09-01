@@ -16,4 +16,11 @@ module.exports = {
       3400, 3600, 3800,
     ],
   },
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.(woff|woff2|ttf|eot)$/,
+      type: "asset/resource",
+    });
+    return config;
+  },
 };
