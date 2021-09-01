@@ -1,17 +1,8 @@
-import Image from "next/image";
+import hero from "/public/heros/contact.webp";
 
 export default function Contact() {
   return (
     <>
-      {/* <div className="PageHeader Grid">
-        <div className="MaxWidth Grid">
-          <h1 className="PageHeadline">
-            <span className="PageHeadline-Small">This is the</span>
-            CONTACT PAGE
-          </h1>
-        </div>
-      </div> */}
-
       <div className="PageHeader">
         <div className="Content">
           <div className="MaxWidth">
@@ -41,12 +32,11 @@ export default function Contact() {
         :global(:root) {
           --bg-color: var(--pink);
           --dark-bg-color: var(--dark-pink);
-          --hero-url: url(/contact-hero.webp);
         }
 
         .PageHeader {
           height: auto;
-          background: url(/contact-hero.webp);
+          background-image: url(${hero.src});
           background-size: 500px 500px;
         }
 

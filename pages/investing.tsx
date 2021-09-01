@@ -1,3 +1,5 @@
+import hero from "/public/heros/investing.webp";
+
 export default function Investing() {
   /*
   function shuffleArray<T>(array: Array<T>): void {
@@ -207,6 +209,7 @@ export default function Investing() {
 
         .PageHeader {
           background-size: 600px 600px;
+          background-image: url(${hero.src});
         }
 
         .InvestmentCard {

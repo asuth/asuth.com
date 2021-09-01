@@ -1,4 +1,4 @@
-import Image from "next/image";
+import hero from "/public/heros/about.webp";
 
 export default function About() {
   return (
@@ -103,11 +103,11 @@ export default function About() {
         :global(:root) {
           --bg-color: var(--lightBlue);
           --dark-bg-color: var(--darkLightBlue);
-          --hero-url: url(/about-hero.webp);
         }
 
         .PageHeader {
           background-size: cover;
+          background-image: url(${hero.src});
         }
 
         .Goofy {

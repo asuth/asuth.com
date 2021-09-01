@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import hero from "/public/heros/writing.webp";
 
 export default function Home() {
   return (
@@ -44,10 +44,7 @@ export default function Home() {
         .PageHeader {
           height: 70vh;
           background-size: 600px 600px;
-          background-image: image-set(
-            url("/writing-hero-500.webp") 1x,
-            url("/writing-hero-1258.webp") 2x
-          );
+          background-image: url(${hero.src});
         }
       `}</style>
     </>

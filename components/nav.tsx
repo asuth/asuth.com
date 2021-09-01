@@ -3,6 +3,12 @@ import { Component } from "react";
 import Image from "next/image";
 import Head from "next/head";
 
+import aboutHero from "/public/heros/about.webp";
+import questionsHero from "/public/heros/questions.webp";
+import investingHero from "/public/heros/investing.webp";
+import writingHero from "/public/heros/writing.webp";
+import contactHero from "/public/heros/contact.webp";
+
 type NodeProps = {
   title: string;
 };
@@ -150,7 +156,14 @@ export default class Nav extends Component<NodeProps, NodeState> {
   }
 
   preloadHero(pageName: string) {
-    this.setState({ preloadHeroPath: `/${pageName}-hero.webp` });
+    let paths: { [key: string]: string } = {
+      about: aboutHero.src,
+      writing: writingHero.src,
+      questions: questionsHero.src,
+      investing: investingHero.src,
+      contact: contactHero.src,
+    };
+    this.setState({ preloadHeroPath: paths[pageName] });
   }
 
   clickMover() {

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import hero from "/public/heros/writing.webp";
 
 export default function GoodbyeQuizlet() {
   return (
@@ -136,10 +136,7 @@ export default function GoodbyeQuizlet() {
         .PageHeader {
           height: 70vh;
           background-size: 600px 600px;
-          background-image: image-set(
-            url("/writing-hero-500.webp") 1x,
-            url("/writing-hero-1258.webp") 2x
-          );
+          background-image: url(${hero.src});
         }
       `}</style>
     </>
