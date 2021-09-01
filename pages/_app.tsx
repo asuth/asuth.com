@@ -32,10 +32,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Link href="/">
           <a className="Logo">
             <img
-              src="logo-240.webp"
-              srcSet="logo-240.webp 1x,
-   logo-480.webp 2x,
-   logo-720.webp 3x"
+              src="/logo-240.webp"
+              srcSet="/logo-240.webp 1x,
+   /logo-480.webp 2x,
+   /logo-720.webp 3x"
               alt="Andrew Sutherland"
               className="LogoImage"
             />
