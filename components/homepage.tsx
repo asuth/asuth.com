@@ -234,10 +234,11 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       css += `
       @media screen and (max-width: ${w}px) {
         .HomepageBackground {
-          background-image: image-set(
-            url("/_next/image?url=${baseImage}&w=${w}&q=87") 1x,
-            url("/_next/image?url=${baseImage}&w=${w * 2}&q=87") 2x,
-            url("/_next/image?url=${baseImage}&w=${w * 3}&q=87") 3x
+          background-image: url(/_next/image?url=${baseImage}&w=${w}&q=87);
+          background-image: -webkit-image-set(
+            url(/_next/image?url=${baseImage}&w=${w}&q=87) 1x,
+            url(/_next/image?url=${baseImage}&w=${w * 2}&q=87) 2x,
+            url(/_next/image?url=${baseImage}&w=${w * 3}&q=87) 3x
           );
         }
       }
