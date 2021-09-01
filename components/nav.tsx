@@ -9,6 +9,8 @@ import investingHero from "/public/heros/investing.webp";
 import writingHero from "/public/heros/writing.webp";
 import contactHero from "/public/heros/contact.webp";
 
+import favicon from "/public/favicon.png";
+
 type NodeProps = {
   title: string;
 };
@@ -184,7 +186,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
       <>
         <Head>
           <title>{this.props.title}</title>
-          <link rel="icon" href="/eyezoom.png" />
+          <link rel="icon" href={favicon.src} />
           {this.state.preloadHeroPath === null ? null : (
             <link rel="preload" as="image" href={this.state.preloadHeroPath} />
           )}
