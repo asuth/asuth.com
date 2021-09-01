@@ -281,9 +281,14 @@ export default class Homepage extends Component<HomeProps, HomeState> {
           {/* only render animations in client side */}
           {shouldPreload ? this.renderAnimations() : null}
         </div>
-        <style>
-          {initialBrowserWidthCss === null ? staticCss : initialBrowserWidthCss}
-        </style>
+        <style
+          dangerouslySetInnerHTML={{
+            __html:
+              initialBrowserWidthCss === null
+                ? staticCss
+                : initialBrowserWidthCss,
+          }}
+        ></style>
       </>
     );
   }
