@@ -93,7 +93,7 @@ p:last-child {
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
   .HtmlHomepageIsCurrent .HomepageBackground,
   .HomepageBackground.HomepageIsLoaded {
-    background-image: url("/homepage-phone-1170.webp");
+    background-image: url("/homepage-phone-1170-no-laptop.jpg");
   }
 }
 
@@ -179,11 +179,11 @@ p:last-child {
   margin-top: -160px;
 }
 
-  @media only screen and (max-height: 568px) {
-    .FirstCard {
-      margin-top: -110px;
-   }
-
+@media only screen and (max-height: 568px) {
+  .FirstCard {
+    margin-top: -110px;
+  }
+}
 
 .CenterCard {
   clear: both;

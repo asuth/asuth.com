@@ -32,6 +32,14 @@ const animations: {
     imageSizes: [470, 350, 280, 200],
     extension: "webp",
   },
+  laptop: {
+    width: 576,
+    height: 375,
+    offsetX: 234,
+    offsetY: 698,
+    imageSizes: [260],
+    extension: "gif",
+  },
 };
 
 type AnimationObjectOffsetType = {
@@ -233,7 +241,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
     let staticCss = "";
     let bestCss: string[] = [];
-    let baseImage = encodeURIComponent("/homepage-flawless.webp");
+    let baseImage = encodeURIComponent("/no-laptop.webp");
 
     // this very goofy past-midnight code is set up so that initial download
     // will get the right image with media queries, but subsequently the css
