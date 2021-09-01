@@ -1,5 +1,7 @@
 import { Component } from "react";
 
+import hp1400 from "/public/homepage-1400.webp";
+
 const animations: {
   [key: string]: {
     width: number;
@@ -242,11 +244,11 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     // their window, which is expected to be ~all people
     bgWidths.forEach((w) => {
       let thisCss = `.HomepageBackground {
-        background-image: url(/_next/image?url=${baseImage}&w=${w}&q=87);
+        background-image: url(${hp1400.src});
         background-image: -webkit-image-set(
-          url(/_next/image?url=${baseImage}&w=${w}&q=87) 1x,
-          url(/_next/image?url=${baseImage}&w=${w * 2}&q=87) 2x,
-          url(/_next/image?url=${baseImage}&w=${w * 3}&q=87) 3x
+          url(${hp1400.src}) 1x,
+          url(${hp1400.src}) 2x,
+          url(${hp1400.src}) 3x
         );
       }
       `;
