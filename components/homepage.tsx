@@ -221,33 +221,42 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   }
 
   render() {
-    let baseImage = encodeURIComponent("/homepage-flawless.webp");
-    let backgroundUrl = `/_next/image?url=${baseImage}&w=${this.state.originalBgSize}&q=87`;
     const shouldPreload =
       typeof window !== "undefined" &&
       (this.props.homepageIsCurrent || this.state.shouldPreloadHomepage);
 
+    let bgWidths = [3800, 3400, 3000, 2600, 2200, 1800, 1400, 1000];
+
+    let css = "";
+    let baseImage = encodeURIComponent("/homepage-flawless.webp");
+
+    bgWidths.forEach((w) => {
+      css += `
+      @media screen and (max-width: ${w}px) {
+        .HomepageBackground {
+          background-image: image-set(
+            url("/_next/image?url=${baseImage}&w=${w}&q=87") 1x,
+            url("/_next/image?url=${baseImage}&w=${w * 2}&q=87") 2x,
+            url("/_next/image?url=${baseImage}&w=${w * 3}&q=87") 3x
+          );
+        }
+      }
+`;
+    });
+
     return (
       <>
         <div
+          key="hpBg"
           className={
-            (this.state.shouldPreloadHomepage ? "HomepageIsLoaded " : "") +
-            "HomepageBackground"
-          }
-          style={
-            this.state.originalBgSize
-              ? {
-                  backgroundImage: `url("${backgroundUrl}")`,
-                }
-              : {}
+            "HomepageBackground" +
+            (this.state.shouldPreloadHomepage ? " HomepageIsLoaded" : "")
           }
         >
           {/* only render animations in client side */}
-          {shouldPreload ? (
-            <link rel="preload" as="image" href={backgroundUrl} />
-          ) : null}
           {shouldPreload ? this.renderAnimations() : null}
         </div>
+        <style jsx>{css}</style>
       </>
     );
   }
