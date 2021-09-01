@@ -13,15 +13,15 @@ type TransitionKind<RC> = {
 const getTransitionStyles: { [key: string]: {} } = {
   entering: {
     marginTop: 0,
-    opacity: 0,
+    // opacity: 0,
   },
   entered: {
     marginTop: "-91vh",
-    opacity: 1,
+    // opacity: 1,
   },
   exiting: {
     marginTop: 0,
-    opacity: 0,
+    // opacity: 0,
   },
   exited: {},
 };
@@ -38,13 +38,13 @@ const Transition: React.FC<TransitionKind<ReactChild>> = ({
           // don't wait to create the new element; don't totally understand why this needs to be zerod
           enter: 0,
           // don't destroy the element while it is animating away
-          exit: 300,
+          exit: 3000,
         }}
       >
         {(status: string) => {
           return (
             <div
-              className={"Page"} /* + status + " " + children.type.name} */
+              className="Page" /* + status + " " + children.type.name} */
               style={{
                 ...getTransitionStyles[
                   // @ts-ignore: Property 'type' does not exist on type 'ReactChild & ReactNode'.

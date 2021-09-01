@@ -189,7 +189,7 @@ p:last-child {
 
 /* on/off animation is defined in transition.tsx */
 .Page {
-  transition: all 200ms ease 0s;
+  transition: all 2000ms ease 0s;
 }
 
 .PageHeader {
@@ -235,7 +235,7 @@ p:last-child {
 
 .Logo {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 0.7rem;
 }
 
@@ -317,7 +317,7 @@ p:last-child {
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: 10;
+  z-index: 2;
 }
 
 .NavBtn--Home {
