@@ -9,6 +9,10 @@ import Transition from "../components/transition";
 
 import { useRouter } from "next/router";
 
+import logo1x from "/public/logo-240.webp";
+import logo2x from "/public/logo-480.webp";
+import logo3x from "/public/logo-720.webp";
+
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
@@ -32,10 +36,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Link href="/">
           <a className="Logo">
             <img
-              src="/logo-240.webp"
-              srcSet="/logo-240.webp 1x,
-   /logo-480.webp 2x,
-   /logo-720.webp 3x"
+              src={logo1x.src}
+              srcSet={`${logo1x.src} 1x,
+              ${logo2x.src} 2x,
+              ${logo3x.src} 3x`}
               alt="Andrew Sutherland"
               className="LogoImage"
             />
