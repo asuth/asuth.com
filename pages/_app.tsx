@@ -45,10 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <div className={"SiteWrapper"} key="site">
         <Homepage homepageIsCurrent={isHomepage} />
-        <Nav
-          title={titles[router.pathname]}
-          homepageIsCurrent={isHomepage}
-        ></Nav>
+        <Nav title={titles[router.pathname]}></Nav>
         <Transition location={router.pathname}>
           <Component {...pageProps} />
         </Transition>

@@ -160,8 +160,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       document.documentElement.style.setProperty("--app-height", `${newH}px`);
     }
 
-    document.body.classList.toggle(
-      "BodyHomepageIsCurrent",
+    document.documentElement.classList.toggle(
+      "HtmlHomepageIsCurrent",
       this.props.homepageIsCurrent
     );
   }
@@ -233,7 +233,6 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       <>
         <div
           className={
-            (this.props.homepageIsCurrent ? "HomepageIsCurrent " : "") +
             (this.state.shouldPreloadHomepage ? "HomepageIsLoaded " : "") +
             "HomepageBackground"
           }

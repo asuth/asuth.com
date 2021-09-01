@@ -38,7 +38,7 @@ const Transition: React.FC<TransitionKind<ReactChild>> = ({
           // don't wait to create the new element; don't totally understand why this needs to be zerod
           enter: 0,
           // don't destroy the element while it is animating away
-          exit: 1000,
+          exit: 300,
         }}
       >
         {(status: string) => {

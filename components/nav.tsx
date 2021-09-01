@@ -5,7 +5,6 @@ import Head from "next/head";
 
 type NodeProps = {
   title: string;
-  homepageIsCurrent: boolean;
 };
 
 type NodeState = {
@@ -128,7 +127,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
         offsetX *= 3 / 4;
       }
 
-      while (offsetY + 140 > cHeight) {
+      while (offsetY + 170 > cHeight) {
         offsetY *= 3 / 4;
       }
 

@@ -86,13 +86,13 @@ p:last-child {
   image-rendering: pixelated;
 }
 
-.HomepageBackground.HomepageIsCurrent {
+.HtmlHomepageIsCurrent .HomepageBackground {
   display: block;
 }
 
 /* portrait phone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
-  .HomepageBackground.HomepageIsCurrent,
+  .HtmlHomepageIsCurrent .HomepageBackground,
   .HomepageBackground.HomepageIsLoaded {
     background-image: url("/homepage-phone-1170.webp");
   }
@@ -103,7 +103,7 @@ p:last-child {
   transition: none;
 }
 
-.BodyHomepageIsCurrent {
+.HtmlHomepageIsCurrent {
   overflow: hidden;
 }
 
@@ -327,11 +327,11 @@ p:last-child {
 }
 
 .NavBtn--Home,
-.BodyHomepageIsCurrent .NavHomeBtns {
+.HtmlHomepageIsCurrent .NavHomeBtns {
   display: block;
 }
 
-.BodyHomepageIsCurrent .NavBtn--Home,
+.HtmlHomepageIsCurrent .NavBtn--Home,
 .NavHomeBtns {
   display: none;
 }
