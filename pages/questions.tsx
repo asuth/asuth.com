@@ -1,6 +1,11 @@
 import hero from "/public/heros/questions.webp";
 import toast from "/public/toast.png";
+import computer from "/public/computer.png";
+import coffee from "/public/coffee.png";
+import homes from "/public/homes.png";
+import stump from "/public/stump.png";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Questions() {
   return (
@@ -31,6 +36,10 @@ export default function Questions() {
               </p>
             </div>
             <div className="LeftCard Card">
+              <div className="CenterImage">
+                <Image src={coffee} width={200} height={200} />
+              </div>
+
               <h4>
                 How do you make teaching a high-status profession in the U.S.?
               </h4>
@@ -44,10 +53,14 @@ export default function Questions() {
               </p>
             </div>
             <div className="RightCard Card">
+              <div className="CenterImage">
+                <Image src={homes} width={225} height={225} />
+              </div>
               <h4>
                 How do you convince people that more housing density and
                 integration are better for everyone?
               </h4>
+
               <p>
                 Many well-meaning folks are against developing more housing,
                 often because of misguided environmentalism, anti-developer
@@ -64,6 +77,9 @@ export default function Questions() {
               </p>
             </div>
             <div className="LeftCard Card">
+              <div className="CenterImage">
+                <Image src={computer} width={180} height={180} />
+              </div>
               <h4>
                 How do you make programming literacy a universal basic skill?
               </h4>
@@ -86,6 +102,9 @@ export default function Questions() {
               </p>
             </div>
             <div className="RightCard Card">
+              <div className="CenterImage">
+                <Image src={stump} width={180} height={180} />
+              </div>
               <h4>How can I solve my chronic sinus infections?</h4>
               <p>
                 I have had low-grade sinus infections my whole life. I've tried
@@ -95,12 +114,10 @@ export default function Questions() {
               </p>
             </div>
 
-            <div className="LeftCard Card">
+            <div className="LeftCard Card ToastCard">
+              <Image src={toast} className="Toast" width={250} height={250} />
               <h4>Why is buttery toast so unreasonably good?</h4>
-              <img src={toast.src} className="Toast" />
-              <p>
-                I think this is just an unexplainable law of the universe tbh.
-              </p>
+              <p>It just doesn't make sense. </p>
             </div>
 
             {/*             
@@ -148,6 +165,11 @@ export default function Questions() {
 
         .PageHeader {
           background-image: url(${hero.src});
+        }
+
+        .CenterImage {
+          text-align: center;
+          margin-bottom: 10px;
         }
       `}</style>
     </>
