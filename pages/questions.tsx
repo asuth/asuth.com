@@ -90,8 +90,8 @@ export default function Questions() {
                 priesthood of programmers. In a world run by software,
                 programming literacy should be on par with math and reading as a
                 basic skill taught to everyone. If we did this, we'd live in a
-                more free society and we'd be more capable of understanding and
-                shaping the changes brought by software.
+                more empowered society and we'd be more capable of understanding
+                and shaping the changes brought by software.
               </p>
               <p>
                 Two of my favorite investments are working on this problem,{" "}
