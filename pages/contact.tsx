@@ -37,7 +37,6 @@ export default function Contact() {
         .PageHeader {
           height: auto;
           background-image: url(${hero.src});
-          background-size: 600px 600px;
           background-position: 125px 165px;
         }
 

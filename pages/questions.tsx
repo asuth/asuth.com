@@ -96,7 +96,6 @@ export default function Questions() {
         }
 
         .PageHeader {
-          background-size: 600px 600px;
           background-image: url(${hero.src});
         }
       `}</style>
