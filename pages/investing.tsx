@@ -67,10 +67,10 @@ export default function Investing() {
       category: "Developer Tools",
     },
     {
-      name: "CollegeBacker",
+      name: "Backer",
       leader: "Jordan Lee",
-      description: `CollegeBacker is building software that makes it simple to create college savings accounts. I invested because they are making it easier for everyone, not just rich people, to save for college.`,
-      link: "https://collegebacker.com/",
+      description: `Backer is building software that makes it simple to create college savings accounts. I invested because they are making it easier for everyone, not just rich people, to save for college.`,
+      link: "https://backer.com/",
       category: "Education Tech",
     },
     {
@@ -85,7 +85,7 @@ export default function Investing() {
       name: "Student Conservation Association",
       leader: "Stephanie Meeks",
       description: `
-      The SCA transformed my life when I was age 14 through 16. It taught me about service to a community and country, and about building lifelong bonds through hard work. I invested (and joined the board) because I wanted to give back to organization that gave me so much.`,
+      The SCA transformed my life when I was in high school. It taught me about service to a community and country, and about building lifelong bonds through hard work. I invested (and joined the board) because I wanted to give back to an organization that gave me so much.`,
       link: "https://www.thesca.org/",
       category: "Youth Development",
     },
@@ -93,7 +93,7 @@ export default function Investing() {
       name: "California Yimby",
       leader: "Brian Hanlon",
       description: `
-        California is a neat place, but its anti-development housing policies push way too many people into housing instability and homelessness. Teachers can’t afford to live where they teach. I invested because California Yimby is leading the charge to create an abundant supply of housing for everyone.
+        California is a neat place, but its anti-development housing policies push way too many people into housing instability and homelessness. Teachers can’t afford to live where they teach. I invested (and joined the board) because California Yimby is leading the charge to create an abundant supply of housing for everyone.
         `,
       link: "https://cayimby.org/",
       category: "Policy Advocacy",
@@ -121,6 +121,13 @@ export default function Investing() {
       description: `Synthesis is building multiplayer learning games that get students to discuss complex strategies and work in teams. I invested because I love games that prompt deep thought and discussion.`,
       link: "https://www.synthesis.is/",
       category: "Education Tech",
+    },
+    {
+      name: "Dynamicland",
+      leader: "Bret Victor",
+      description: `Dynamicland is building a more humane computing environment from the ground up. I invested because new models of computing, outside the bounds of shrink-wrapped consumer software, are desperately needed.`,
+      link: "https://dynamicland.org/",
+      category: "Tools For Thought",
     },
   ];
 
@@ -154,7 +161,7 @@ export default function Investing() {
                 investing are kinda post-hoc rationalizations. Honestly, my
                 criteria for investing is primarily whether I believe the leader
                 is capable of greatness. My favorite areas to invest in are
-                education, climate change, housing, and developer tools.
+                education, climate, housing, and developer tools.
               </p>
               <p>
                 If I would be a good investor for you, please send an email to
@@ -209,6 +216,7 @@ export default function Investing() {
 
         .PageHeader {
           background-image: url(${hero.src});
+          background-position: 0 20px;
         }
 
         .InvestmentCard {

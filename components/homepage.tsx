@@ -256,7 +256,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     // will get the right image with media queries, but subsequently the css
     // will be based on the browser window's initial size. this prevents
     // dynamic downloading of different size backgrounds as people resize
-    // their window, which is expected to be ~all people
+    // their window, which creates a white flash.
+    // resize behavior is expected of ~all people
     bgWidths.forEach((w) => {
       let thisCss = `.HomepageBackground {
         background-image: url(/_next/image?url=${baseImage}&w=${w}&q=87);

@@ -119,20 +119,6 @@ export default function About() {
           transform: rotate(360deg);
           transition: transform 0.2s linear;
         }
-
-        ul {
-          list-style: square;
-        }
-
-        li {
-          margin-bottom: 20px;
-          list-style: dot;
-          margin-left: 20px;
-        }
-
-        li:last-child {
-          margin-bottom: 0;
-        }
       `}</style>
     </>
   );

@@ -62,7 +62,8 @@ h3 {
 }
 
 h4 {
-  font: 19px var(--headline-font);
+  font: 18px var(--headline-font);
+  margin-bottom: 5px;
 }
 
 p {
@@ -72,6 +73,22 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
+
+/*
+        ul {
+          list-style: square;
+        }
+
+        li {
+          margin-bottom: 20px;
+          list-style: dot;
+          margin-left: 20px;
+        }
+
+        li:last-child {
+          margin-bottom: 0;
+        }
+*/
 
 /* NB: the url of the background image is defined dynamically in JS */
 .HomepageBackground {
@@ -155,6 +172,16 @@ p:last-child {
     padding: 25px;
   }
 
+  .RightCard {
+    width: 95%;
+    margin-left: 5%;
+  }
+
+  .LeftCard {
+    width: 95%;
+    margin-right: 5%;
+  }
+
   h3 {
     margin-bottom: 15px;
     font-size: 23px;
@@ -165,8 +192,8 @@ p:last-child {
   }
 
   .Content {
-    padding: 20px;
-    font-size: 15px;
+    padding: 40px 25px;
+    font-size: 14px;
   }
 }
 
@@ -187,7 +214,7 @@ p:last-child {
   margin-top: -160px;
 }
 
-@media only screen and (max-height: 568px) {
+@media only screen and (max-width: 568px) {
   .FirstCard {
     margin-top: -110px;
   }
@@ -291,7 +318,7 @@ p:last-child {
 }
 
 /* iPhone size */
-@media only screen and (max-height: 568px) {
+@media only screen and (max-width: 568px) {
   .PageHeader {
     height: 55vh;
   }

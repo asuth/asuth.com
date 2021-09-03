@@ -19,10 +19,10 @@ export default function Questions() {
             <div className="Card FirstCard CenterCard">
               <h3>Your Instructions</h3>
               <p>
-                I've collected questions that motivate and excite me and put
-                them on this page, in the hopes that a kindly stranger (you!)
-                might offer a compelling answer, or perhaps an interesting lead
-                or book recommendation. Please{" "}
+                I've collected important questions and put them on this page, in
+                the hopes that a kindly stranger (you!) might offer a compelling
+                answer, or perhaps a promising lead or book recommendation.
+                Please{" "}
                 <Link href="/contact">
                   <a>contact me</a>
                 </Link>{" "}
@@ -31,29 +31,71 @@ export default function Questions() {
             </div>
             <div className="LeftCard Card">
               <h4>
-                How do you make teaching a high-status profession in the USA?
+                How do you make teaching a high-status profession in the U.S.?
               </h4>
               <p>
                 Doctors and lawyers perform service jobs that are well-respected
-                in society. Teaching is just as important, but doesn't get the
-                same respect or pay. Teaching
+                in society. Teachers are just as important, but they don't get
+                the same respect or pay. If teaching were a high-status
+                profession, it would be more competitive to get into, it would
+                pay better, and teachers would have more latitude to be creative
+                and autonomous. Children would benefit enormously as a result.
               </p>
             </div>
             <div className="RightCard Card">
               <h4>
-                How do you create a majority movement that supports higher
-                housing density?
+                How do you convince people that more housing density and
+                integration are better for everyone?
               </h4>
+              <p>
+                Many well-meaning folks are against developing more housing,
+                often because of misguided environmentalism, anti-developer
+                sentiment, or anti-change conservatism. How do you create a
+                movement that turns public opinion towards building cities to be
+                more dense? If you did this, we could reduce rent burdens,
+                wealth gaps, and live in a more egalitarian and integrated
+                society.
+              </p>
+              <p>
+                My work on the board of{" "}
+                <a href="https://cayimby.org/">California YIMBY's</a>{" "}
+                educational arm aims towards this goal.
+              </p>
             </div>
             <div className="LeftCard Card">
               <h4>
-                How do you make programming literacy a universal basic skill, on
-                par with math and reading?
+                How do you make programming literacy a universal basic skill?
               </h4>
+              <p>
+                I was lucky to teach myself programming starting around age 13.
+                Most children never learn to program a computer, and
+                increasingly live at the mercy of the relatively small
+                priesthood of programmers. In a world run by software,
+                programming literacy should be on par with math and reading as a
+                basic skill taught to everyone. If we did this, we'd live in a
+                more free society and we'd be more capable of understanding and
+                shaping the changes brought by software.
+              </p>
+              <p>
+                Two of my favorite investments are working on this problem,{" "}
+                <a href="https://replit.com">Replit</a> by lowering the barriers
+                to entry to programming, and{" "}
+                <a href="https://dynamicland.org">Dynamicland</a> by redefining
+                computing itself.
+              </p>
             </div>
-            <div className="LeftCard Card">
-              <h4>What should I do about the climate crisis?</h4>
+            <div className="RightCard Card">
+              <h4>How can I solve my chronic sinus infections?</h4>
+              <p>
+                I have had low-grade sinus infections my whole life. I've tried
+                sinus surgery and a variety of other things and nothing seems to
+                help. This doesn't stop me from doing most things, but it is an
+                annoying issue I would love to fix.
+              </p>
             </div>
+
+            {/*             
+            <h2>Your Questions, Answered</h2>
 
             <div className="LeftCard Card">
               <h3>What are my values?</h3>
@@ -84,7 +126,7 @@ export default function Questions() {
                 about why they can’t do such-and-such thing. Rid yourself of
                 that silliness, and help others do the same.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
