@@ -91,6 +91,8 @@ export default function About() {
                 driven for Lyft, I've helped run a San Francisco election, I've
                 led a crew of teenagers into the wilderness, and I've been
                 deeply researching education, housing, and climate change.
+              </p>
+              <p>
                 Having some free time has also meant I could build this website,
                 and I LOVE building websites, so that’s cool.
               </p>
@@ -112,7 +114,6 @@ export default function About() {
 
         .Goofy {
           display: inline-block;
-          // transform: rotate(329deg);
         }
 
         .Card:hover .Goofy {
