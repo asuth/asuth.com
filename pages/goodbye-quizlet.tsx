@@ -1,4 +1,4 @@
-import hero from "/public/heros/writing.webp";
+import hero from "/public/heros/writing.png";
 
 export default function GoodbyeQuizlet() {
   return (

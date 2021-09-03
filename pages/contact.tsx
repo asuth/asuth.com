@@ -1,4 +1,4 @@
-import hero from "/public/heros/contact.webp";
+import hero from "/public/heros/bluedogs.png";
 
 export default function Contact() {
   return (
@@ -30,14 +30,15 @@ export default function Contact() {
 
       <style jsx>{`
         :global(:root) {
-          --bg-color: var(--pink);
-          --dark-bg-color: var(--dark-pink);
+          --bg-color: #8bd6f3;
+          --dark-bg-color: #feadcd;
         }
 
         .PageHeader {
           height: auto;
           background-image: url(${hero.src});
-          background-size: 500px 500px;
+          background-size: 600px 600px;
+          background-position: 125px 165px;
         }
 
         ul {
