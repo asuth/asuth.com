@@ -32,10 +32,6 @@ export default function Home() {
       </div>
 
       <style jsx>{`
-        .FirstCard {
-          margin-top: calc(-128px / 2 - 50px);
-        }
-
         :global(:root) {
           --bg-color: var(--writingBlue);
           --dark-bg-color: var(--writingDarkBlue);

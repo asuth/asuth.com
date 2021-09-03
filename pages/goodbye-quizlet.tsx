@@ -125,7 +125,7 @@ export default function GoodbyeQuizlet() {
 
       <style jsx>{`
         .FirstCard {
-          margin-top: calc(-128px / 2 - 280px);
+          margin-top: calc(-128px / 2 - 300px);
         }
 
         :global(:root) {
