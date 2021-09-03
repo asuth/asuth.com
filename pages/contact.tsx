@@ -1,4 +1,4 @@
-import hero from "/public/heros/bluedogs.png";
+import hero from "/public/heros/contact.webp";
 
 export default function Contact() {
   return (

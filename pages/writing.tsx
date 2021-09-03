@@ -1,5 +1,5 @@
 import Link from "next/link";
-import hero from "/public/heros/writing.png";
+import hero from "/public/heros/writing.webp";
 
 export default function Home() {
   return (
