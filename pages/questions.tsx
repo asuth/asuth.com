@@ -8,7 +8,7 @@ export default function Questions() {
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">
             <span className="PageHeadline-Small">At 2AM, I ponder these</span>
-            Good Questions
+            Questions
           </h1>
         </div>
       </div>
@@ -91,8 +91,8 @@ export default function Questions() {
 
       <style jsx>{`
         :global(:root) {
-          --bg-color: var(--writingBlue);
-          --dark-bg-color: var(--writingDarkBlue);
+          --bg-color: var(--breadPurple);
+          --dark-bg-color: var(--darkBreadPurple);
         }
 
         .PageHeader {

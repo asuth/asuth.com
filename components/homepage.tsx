@@ -40,6 +40,14 @@ const animations: {
     imageSizes: [260],
     extension: "gif",
   },
+  boat: {
+    width: 164,
+    height: 251,
+    offsetX: 800,
+    offsetY: 1000,
+    imageSizes: [150],
+    extension: "webp",
+  },
 };
 
 type AnimationObjectOffsetType = {
@@ -217,6 +225,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
             <img
               src={`${key}-${chosenWidth}.${animations[key].extension}`}
               key={key}
+              className={`Animation--${key}`}
               style={{
                 left: `${gif.offsetX}px`,
                 bottom: `${gif.offsetY}px`,
@@ -241,7 +250,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
     let staticCss = "";
     let bestCss: string[] = [];
-    let baseImage = encodeURIComponent("/no-laptop.webp");
+    let baseImage = encodeURIComponent("/no-boat.webp");
 
     // this very goofy past-midnight code is set up so that initial download
     // will get the right image with media queries, but subsequently the css
