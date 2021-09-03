@@ -159,8 +159,8 @@ export default class Nav extends Component<NodeProps, NodeState> {
   }
 
   // nav to Home when user presses esc
-  escFunction(event) {
-    if (event.keyCode === 27) {
+  escFunction(event: KeyboardEvent) {
+    if (event.key === "Escape") {
       document.getElementById("HomeBtn")?.click();
     }
   }
