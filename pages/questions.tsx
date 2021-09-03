@@ -64,11 +64,11 @@ export default function Questions() {
               <p>
                 Many well-meaning folks are against developing more housing,
                 often because of misguided environmentalism, anti-developer
-                sentiment, or anti-change conservatism. How do you create a
-                movement that turns public opinion towards building cities to be
-                more dense? If you did this, we could reduce rent burdens,
-                wealth gaps, and live in a more egalitarian and integrated
-                society.
+                sentiment, or anti-change conservatism. What efforts could
+                convince a majority of Americans that making cities more dense
+                is good for everyone? If you did this, we could ease rent
+                burdens, reduce wealth gaps, and live in a more egalitarian and
+                integrated society.
               </p>
               <p>
                 My work on the board of{" "}
