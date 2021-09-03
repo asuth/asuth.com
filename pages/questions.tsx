@@ -1,4 +1,5 @@
 import hero from "/public/heros/questions.webp";
+import toast from "/public/toast.png";
 import Link from "next/link";
 
 export default function Questions() {
@@ -91,6 +92,14 @@ export default function Questions() {
                 sinus surgery and a variety of other things and nothing seems to
                 help. This doesn't stop me from doing most things, but it is an
                 annoying issue I would love to fix.
+              </p>
+            </div>
+
+            <div className="LeftCard Card">
+              <h4>Why is buttery toast so unreasonably good?</h4>
+              <img src={toast.src} className="Toast" />
+              <p>
+                I think this is just an unexplainable law of the universe tbh.
               </p>
             </div>
 
