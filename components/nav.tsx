@@ -155,6 +155,17 @@ export default class Nav extends Component<NodeProps, NodeState> {
   componentDidMount() {
     this.calculatePositions();
     window.addEventListener("resize", this.calculatePositions.bind(this));
+    document.addEventListener("keydown", this.escFunction.bind(this), false);
+  }
+
+  // nav to Home when user presses esc
+  escFunction(event) {
+    if (event.keyCode === 27) {
+      document.getElementById("HomeBtn")?.click();
+    }
+  }
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.escFunction.bind(this), false);
   }
 
   preloadHero(pageName: string) {
@@ -253,7 +264,9 @@ export default class Nav extends Component<NodeProps, NodeState> {
           <div className="HomeNav">
             <div className="MaxWidth Grid">
               <Link href="/">
-                <a className="NavBtn NavBtn--Home">HOME</a>
+                <a id="HomeBtn" className="NavBtn NavBtn--Home">
+                  HOME
+                </a>
               </Link>
             </div>
           </div>
