@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Component } from "react";
-import Image from "next/image";
 import Head from "next/head";
 
 import aboutHero from "/public/heros/about.webp";
@@ -8,8 +7,6 @@ import questionsHero from "/public/heros/questions.webp";
 import investingHero from "/public/heros/investing.webp";
 import writingHero from "/public/heros/writing.webp";
 import contactHero from "/public/heros/contact.webp";
-
-import favicon from "/public/favicon.png";
 
 type NodeProps = {
   title: string;
@@ -64,24 +61,24 @@ export default class Nav extends Component<NodeProps, NodeState> {
       };
     } = {
       about: {
-        offsetX: 500,
+        offsetX: 300,
         offsetY: 1550,
       },
       questions: {
-        offsetX: 1300,
-        offsetY: 1100,
+        offsetX: 980,
+        offsetY: 1300,
       },
       writing: {
-        offsetX: 850,
-        offsetY: 150,
+        offsetX: 160,
+        offsetY: 200,
       },
       contact: {
-        offsetX: 2600,
-        offsetY: 1700,
+        offsetX: 2850,
+        offsetY: 1775,
       },
       investing: {
         offsetX: 1900,
-        offsetY: 320,
+        offsetY: 350,
       },
     };
 
@@ -131,12 +128,12 @@ export default class Nav extends Component<NodeProps, NodeState> {
 
       // fudge factors with v approximate width / height
       // of the buttons
-      while (offsetX + 120 > cWidth) {
-        offsetX *= 3 / 4;
+      while (offsetX + 110 > cWidth) {
+        offsetX *= 5 / 6;
       }
 
-      while (offsetY + 170 > cHeight) {
-        offsetY *= 3 / 4;
+      while (offsetY > cHeight) {
+        offsetY *= 5 / 6;
       }
 
       offsets[obj] = {
@@ -144,8 +141,6 @@ export default class Nav extends Component<NodeProps, NodeState> {
         offsetY: offsetY,
       };
     }
-
-    console.log(offsets);
 
     this.setState({
       offsets: offsets,
@@ -177,12 +172,6 @@ export default class Nav extends Component<NodeProps, NodeState> {
       contact: contactHero.src,
     };
     this.setState({ preloadHeroPath: paths[pageName] });
-  }
-
-  clickMover() {
-    // document.getElementsByClassName("Page")[0].style.left =
-    //   event.screenX + "px";
-    // document.getElementsByClassName("Page")[0].style.top = event.screenY + "px";
   }
 
   placements(navName: string): { left: string; bottom: string } {
@@ -224,15 +213,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
         </Head>
 
         <nav className="Nav">
-          <style jsx>{`
-            .carrot {
-              font-size: 20px;
-              transform: translateY(0px) rotate(-90deg);
-
-              // color:  var(--dark-bg-color);
-            }
-          `}</style>
-          <div className="NavHomeBtns" onClick={this.clickMover.bind(this)}>
+          <div className="NavHomeBtns">
             <Link href="/about">
               <a
                 onMouseEnter={this.preloadHero.bind(this, "about")}
