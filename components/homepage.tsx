@@ -65,7 +65,7 @@ type HomeProps = {
 type HomeState = {
   offsets: AnimationObjectOffsetType;
   appHeight: number;
-  shouldPreloadHomepage: boolean;
+  domHasLoaded: boolean;
   originalBgSize: number | null;
 };
 
@@ -91,7 +91,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     this.state = {
       offsets: defaultOffsets,
       appHeight: 0,
-      shouldPreloadHomepage: false,
+      domHasLoaded: false,
       originalBgSize: null,
     };
   }
@@ -201,7 +201,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
   }
 
   preloadHomepage() {
-    this.setState({ shouldPreloadHomepage: true });
+    this.setState({ domHasLoaded: true });
   }
 
   // If user has landed on homepage, render this html right away
@@ -243,8 +243,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     let isBrowser = typeof window !== "undefined";
 
     const shouldPreload =
-      isBrowser &&
-      (this.props.homepageIsCurrent || this.state.shouldPreloadHomepage);
+      isBrowser && (this.props.homepageIsCurrent || this.state.domHasLoaded);
 
     let bgWidths = [3800, 3400, 3000, 2600, 2200, 1800, 1400, 1000];
 
@@ -293,7 +292,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
           key="hpBg"
           className={
             "HomepageBackground" +
-            (this.state.shouldPreloadHomepage ? " HomepageIsLoaded" : "")
+            (this.state.domHasLoaded ? " HomepageIsLoaded" : "")
           }
         >
           {/* only render animations in client side */}
@@ -302,9 +301,9 @@ export default class Homepage extends Component<HomeProps, HomeState> {
         <style
           dangerouslySetInnerHTML={{
             __html:
-              initialBrowserWidthCss === null
-                ? staticCss
-                : initialBrowserWidthCss,
+              this.state.domHasLoaded && initialBrowserWidthCss
+                ? initialBrowserWidthCss
+                : staticCss,
           }}
         ></style>
       </>
