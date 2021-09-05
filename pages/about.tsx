@@ -19,14 +19,14 @@ export default function About() {
             <div className="Card FirstCard">
               <h3>Hi Friend!</h3>
               <p>
-                Welcome to asuth.com. I built this website so you can start to
-                get to know me.
+                Welcome to asuth.com. I built this website so you can get to
+                know me a bit.
               </p>
 
               <p>
                 I’m in a <span className="Goofy">goofy</span> and exploratory
-                phase of my life. I’m curious about many things, and I’m taking
-                my time to indulge that curiosity now.
+                phase of my life. I am indulging my curiosity, saying yes to
+                adventures, and seriously researching what I might do next.
               </p>
 
               <p>
@@ -50,12 +50,12 @@ export default function About() {
               </p>
 
               <p>
-                In 2008, I graduated from high school and went off to MIT. I
-                found myself in an intellectual wonderland, surrounded by
-                ambitious, excited peers. Their big expectations of themselves
-                rubbed off on me. I studied Computer Science, did research on
-                speech recognition, and took classes on education. I continued
-                to work on Quizlet, sacrificing sleep along the way.
+                I graduated from high school and went off to MIT. I found myself
+                in an intellectual wonderland, surrounded by ambitious, excited
+                peers. Their big expectations of themselves rubbed off on me. I
+                studied Computer Science, did research on speech recognition,
+                and took classes on education. I continued to work on Quizlet,
+                sacrificing sleep along the way.
               </p>
 
               <p>
