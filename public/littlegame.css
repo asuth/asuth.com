@@ -1,0 +1,103 @@
+html {
+  height: 100vh;
+}
+body {
+  overflow: hidden;
+}
+
+#parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+ #name {
+  width: 320px;
+  background: #322e2f;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font: bold 19px courier;
+  border-radius: 5px;
+  resize: none;
+  display: block;
+  position: relative;
+  border-bottom: 3px solid #fac901;
+  border-left: 3px solid #225095;
+  border-right: 3px solid #225095;
+  border-top: 3px solid #dd0100;
+  opacity: 20;
+} 
+
+@media only screen and (min-width: 768px) {
+  #name { 
+    width: 450px;
+    font-size: 25px;
+  }
+}
+
+#name.init {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  animation-delay: 3000ms;
+}
+
+#name.go {
+  border: 3px solid #fff;
+  animation-name: fadeBack;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+} 
+
+@keyframes fadeBack {
+  30% {
+    border-bottom: 3px solid #fac901;
+    border-left: 3px solid #225095;
+    border-right: 3px solid #225095;
+    border-top: 3px solid #dd0100;
+  }
+
+  50% {
+    border: 3px solid #fff;
+  }
+
+  100% {
+    border-bottom: 3px solid #fac901;
+    border-left: 3px solid #225095;
+    border-right: 3px solid #225095;
+    border-top: 3px solid #dd0100;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
