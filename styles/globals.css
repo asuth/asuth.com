@@ -95,6 +95,7 @@ p:last-child {
   overflow: hidden;
   background-size: 100%;
   height: 100vh;
+  height: -webkit-fill-available;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left 0 bottom 0;
@@ -103,6 +104,10 @@ p:last-child {
   /* fixes bad dynamic resizing of my art */
   -ms-interpolation-mode: nearest-neighbor;
   image-rendering: pixelated;
+}
+
+html {
+  height: -webkit-fill-available;
 }
 
 /* fixing margins */

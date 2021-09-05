@@ -254,7 +254,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
     let staticCss = "";
     let bestCss: string[] = [];
-    let baseImage = encodeURIComponent("homepage-srgb-embed.png");
+    let baseImage = encodeURIComponent("/no-boat.webp");
 
     // this very goofy past-midnight code is set up so that initial download
     // will get the right image with media queries, but subsequently the css
@@ -264,11 +264,11 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     // resize behavior is expected of ~all people
     bgWidths.forEach((w) => {
       let thisCss = `.HomepageBackground {
-        background-image: url(/${baseImage}?w=${w}&q=87);
+        background-image: url(/_next/image?url=${baseImage}&w=${w}&q=87);
         background-image: -webkit-image-set(
-          url(/${baseImage}?w=${w}&q=87) 1x,
-          url(/${baseImage}?w=${w * 2}&q=87) 2x,
-          url(/${baseImage}?w=${w * 3}&q=87) 3x
+          url(/_next/image?url=${baseImage}&w=${w}&q=87) 1x,
+          url(/_next/image?url=${baseImage}&w=${w * 2}&q=87) 2x,
+          url(/_next/image?url=${baseImage}&w=${w * 3}&q=87) 3x
         );
       }
       `;
