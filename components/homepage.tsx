@@ -32,14 +32,14 @@ const animations: {
     imageSizes: [470, 350, 280, 200],
     extension: "webp",
   },
-  laptop: {
-    width: 576,
-    height: 375,
-    offsetX: 234,
-    offsetY: 698,
-    imageSizes: [260],
-    extension: "gif",
-  },
+  // laptop: {
+  //   width: 576,
+  //   height: 375,
+  //   offsetX: 234,
+  //   offsetY: 698,
+  //   imageSizes: [260],
+  //   extension: "gif",
+  // },
   boat: {
     width: 164,
     height: 251,
