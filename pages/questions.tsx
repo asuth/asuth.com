@@ -166,11 +166,6 @@ export default function Questions() {
         .PageHeader {
           background-image: url(${hero.src});
         }
-
-        .CenterImage {
-          text-align: center;
-          margin-bottom: 10px;
-        }
       `}</style>
     </>
   );

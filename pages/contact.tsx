@@ -40,20 +40,6 @@ export default function Contact() {
           background-position: 125px 165px;
         }
 
-        ul {
-          list-style: square;
-        }
-
-        li {
-          margin-bottom: 20px;
-          list-style: dot;
-          margin-left: 20px;
-        }
-
-        li:last-child {
-          margin-bottom: 0;
-        }
-
         .CenterCard {
           margin-top: 50px;
           margin-bottom: 50px;
