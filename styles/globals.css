@@ -56,8 +56,10 @@ when you can't use height 100vh for iOS Safari
 */
 #__next,
 body,
-html {
-  height: stretch;
+html,
+.HomepageBackground {
+  height: 100vh; /* for firefox */
+  height: -webkit-fill-available; /* for safari, chrome, ios */
 }
 
 a {
@@ -107,7 +109,6 @@ p:last-child {
   /* 100vh hack for iOS nav bar: 
      https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/
   */
-  height: stretch;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left 0 bottom 0;
