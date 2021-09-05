@@ -124,6 +124,8 @@ p:last-child {
 .Animation--boat {
   display: block;
   animation: doBoatStuff 30s 1;
+  /* don't unsink the boat when the animation is done */
+  animation-fill-mode: forwards;
 }
 
 .AnimationContainer--boat {
