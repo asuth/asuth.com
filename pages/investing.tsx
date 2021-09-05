@@ -55,7 +55,7 @@ export default function Investing() {
         Vanta is building software to automate security on the Internet. I invested because it’s hard to build secure software and it can’t be done without significant automated systems to make sure you’re doing it right.
         `,
       link: "https://www.vanta.com/",
-      category: "Security Tools",
+      category: "Developer Tools",
     },
     {
       name: "Vercel",

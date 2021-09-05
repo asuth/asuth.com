@@ -105,6 +105,11 @@ p:last-child {
   image-rendering: pixelated;
 }
 
+/* fixing margins */
+.HomepageBackground img {
+  display: block;
+}
+
 .RightImage {
   float: right;
 }
