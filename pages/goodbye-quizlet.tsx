@@ -39,8 +39,7 @@ export default function GoodbyeQuizlet() {
                 almost died several times in the early years, over harsh
                 disagreements with my first business partner. But Quizlet
                 continued to grow. In 2015, after ten years of bootstrapping, we
-                raised money from a group of investors led by Fred Wilson at
-                Union Square Ventures and Greg Sands at Costanoa Ventures.
+                raised money from a group of investors.
               </p>
               <p>
                 After raising money, Quizlet kicked into high gear. We grew
@@ -111,13 +110,9 @@ export default function GoodbyeQuizlet() {
               </p>
               <p>
                 There are seismic changes happening in education, in our
-                climate, in politics, in technology. I found a present tense of
-                learning and exploration, meeting many interesting people,
-                taking lots of diligent notes, thinking slowly and deeply. I’ve
-                been saying yes to lots of cool things to invest in, to work on.
-                I’ve been teaching a class at MIT, all about learning and
-                education, and I’ve quite enjoyed that. I’m not in a rush. I’ll
-                find something big to do when it’s time.
+                climate, in politics, and in technology. I'm greatly enjoying
+                being fully open to new possibilities. I’ll find something big
+                to do when it’s time.
               </p>
             </div>
           </div>
