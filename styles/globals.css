@@ -123,10 +123,6 @@ p:last-child {
   display: block;
 }
 
-.RightImage {
-  float: right;
-}
-
 .HtmlHomepageIsCurrent .HomepageBackground {
   display: block;
 }
