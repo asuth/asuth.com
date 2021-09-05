@@ -122,8 +122,43 @@ p:last-child {
 } */
 
 .Animation--boat {
-  margin-left: 0;
-  transition: margin-left 5s ease;
+  display: block;
+  animation: doBoatStuff 30s 1;
+}
+
+.AnimationContainer--boat {
+  overflow: hidden;
+}
+
+@keyframes doBoatStuff {
+  0% {
+    margin-left: 0;
+  }
+  /* sail da boat */
+  90% {
+    transform: none;
+    margin-left: 11vw;
+  }
+  /* rock da boat */
+  91.5% {
+    transform: rotate(-7deg);
+    margin-left: 11vw;
+  }
+  93% {
+    transform: rotate(7deg);
+    margin-left: 11vw;
+  }
+  94.5% {
+    transform: rotate(-7deg);
+    margin-left: 11vw;
+  }
+  /* sink da boat */
+  /* I wish it sank a little better */
+  100% {
+    transform: translateY(300px) rotate(90deg);
+    margin-left: 11vw;
+  }
+  /* yes, it never comes back...It sank. */
 }
 
 .PageIsResizing .Page {

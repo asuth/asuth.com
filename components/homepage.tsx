@@ -32,21 +32,21 @@ const animations: {
     imageSizes: [470, 350, 280, 200],
     extension: "webp",
   },
-  laptop: {
-    width: 576,
-    height: 375,
-    offsetX: 234,
-    offsetY: 698,
-    imageSizes: [260],
-    extension: "gif",
-  },
+  // laptop: {
+  //   width: 576,
+  //   height: 375,
+  //   offsetX: 234,
+  //   offsetY: 698,
+  //   imageSizes: [260],
+  //   extension: "gif",
+  // },
   boat: {
     width: 164,
     height: 251,
     offsetX: 800,
     offsetY: 1000,
-    imageSizes: [150],
-    extension: "webp",
+    imageSizes: [150, 120, 105, 90, 75],
+    extension: "gif",
   },
 };
 
@@ -220,19 +220,24 @@ export default class Homepage extends Component<HomeProps, HomeState> {
               chosenWidth = w;
             }
           });
+          console.log(key, renderedWidth, chosenWidth);
           // if we're actually on the homepage, render the gifs
           return (
-            <img
-              src={`${key}-${chosenWidth}.${animations[key].extension}`}
+            <div
+              className={`AnimationContainer--${key}`}
               key={key}
-              className={`Animation--${key}`}
               style={{
                 left: `${gif.offsetX}px`,
                 bottom: `${gif.offsetY}px`,
-                width: `${gif.width}px`,
                 position: "absolute",
               }}
-            />
+            >
+              <img
+                src={`${key}-${chosenWidth}.${animations[key].extension}`}
+                className={`Animation--${key}`}
+                style={{ width: `${gif.width}px` }}
+              />
+            </div>
           );
         })}
       </>
