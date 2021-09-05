@@ -42,6 +42,7 @@
 /* hack to keep the logo in the same place when user chooses a new page */
 html {
   width: 100vw;
+  height: -webkit-fill-available;
   overflow-x: hidden;
 }
 
@@ -95,6 +96,9 @@ p:last-child {
   overflow: hidden;
   background-size: 100%;
   height: 100vh;
+  /* 100vh hack for iOS nav bar: 
+     https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/
+  */
   height: -webkit-fill-available;
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,10 +108,6 @@ p:last-child {
   /* fixes bad dynamic resizing of my art */
   -ms-interpolation-mode: nearest-neighbor;
   image-rendering: pixelated;
-}
-
-html {
-  height: -webkit-fill-available;
 }
 
 /* fixing margins */
