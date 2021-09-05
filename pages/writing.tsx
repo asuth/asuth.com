@@ -19,7 +19,7 @@ export default function Home() {
             <div className="Card FirstCard CenterCard">
               <h3>
                 <Link href="/goodbye-quizlet">
-                  <a>Goodbye Quizlet, Hello Word</a>
+                  <a>Goodbye Quizlet, Hello World</a>
                 </Link>
               </h3>
 
