@@ -47,13 +47,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         </Link>
       </div>
 
-      <div className={"SiteWrapper"} key="site">
-        <Homepage homepageIsCurrent={isHomepage} />
-        <Nav title={titles[router.pathname]}></Nav>
-        <Transition location={router.pathname}>
-          <Component {...pageProps} />
-        </Transition>
-      </div>
+      <Homepage homepageIsCurrent={isHomepage} />
+      <Nav title={titles[router.pathname]}></Nav>
+      <Transition location={router.pathname}>
+        <Component {...pageProps} />
+      </Transition>
     </>
   );
 }

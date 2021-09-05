@@ -32,14 +32,14 @@ const animations: {
     imageSizes: [470, 350, 280, 200],
     extension: "webp",
   },
-  // laptop: {
-  //   width: 576,
-  //   height: 375,
-  //   offsetX: 234,
-  //   offsetY: 698,
-  //   imageSizes: [260],
-  //   extension: "gif",
-  // },
+  laptop: {
+    width: 576,
+    height: 375,
+    offsetX: 234,
+    offsetY: 698,
+    imageSizes: [260],
+    extension: "gif",
+  },
   boat: {
     width: 164,
     height: 251,
@@ -131,8 +131,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
       const offsetX = naturalWidth * offsetXRatio;
       // don't load animations that would load offscreen
-      // e.g. on mobile devices
-      if (offsetX < cWidth) {
+      // e.g. on mobile devices. Also fudge factor for tiny amount of gif showing
+      if (offsetX + 25 < cWidth) {
         offsets[obj] = {
           offsetX: offsetX,
           offsetY: naturalHeight * offsetYRatio,
@@ -220,7 +220,6 @@ export default class Homepage extends Component<HomeProps, HomeState> {
               chosenWidth = w;
             }
           });
-          console.log(key, renderedWidth, chosenWidth);
           // if we're actually on the homepage, render the gifs
           return (
             <div
@@ -254,7 +253,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
     let staticCss = "";
     let bestCss: string[] = [];
-    let baseImage = encodeURIComponent("/no-boat.webp");
+    let baseImage = encodeURIComponent("/desktop.webp");
 
     // this very goofy past-midnight code is set up so that initial download
     // will get the right image with media queries, but subsequently the css
