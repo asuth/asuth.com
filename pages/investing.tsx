@@ -144,7 +144,7 @@ export default function Investing() {
       <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">
-            <span className="PageHeadline-Small">I make</span>
+            <span className="PageHeadline-Small">Here are my</span>
             Investments
           </h1>
         </div>
@@ -164,10 +164,10 @@ export default function Investing() {
                 education, climate, housing, and developer tools.
               </p>
               <p>
-                If I would be a good investor for you, please send an email to
-                investments@asuth.com with the following: a description of a
-                teacher who changed your life and information about your
-                endeavor.
+                If I would be a good investor for you, please send an email to{" "}
+                <a href="mailto:investments@asuth.com">investments@asuth.com</a>{" "}
+                with the following: a description of a teacher who changed your
+                life and information about your endeavor.
               </p>
             </div>
 
