@@ -104,11 +104,10 @@ p:last-child {
 .HomepageBackground {
   overflow: hidden;
   background-size: 100%;
-  height: 100vh;
   /* 100vh hack for iOS nav bar: 
      https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/
   */
-  min-height: stretch;
+  height: stretch;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left 0 bottom 0;
@@ -134,7 +133,6 @@ p:last-child {
 
 /* portrait phone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
-  .HomepageBackground,
   .HomepageBackground {
     background-image: url("/iphone.webp") !important;
   }
