@@ -1,4 +1,5 @@
 import hero from "/public/heros/about.webp";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -39,14 +40,13 @@ export default function About() {
               <h3>Inventing Quizlet</h3>
 
               <p>
-                One night, when I was 15-years-old, my French teacher gave me an
-                impossible assignment: learn 111 French animals and their
-                English translations in 48 hours. In my struggle to learn them
-                all, I had the idea for Quizlet: to build software that would
-                ask me questions repeatedly and keeping track of what I needed
-                more work on. I built a barebones website that did this, and got
-                100% on my next test. I then shared the tool with friends, and
-                they loved it.
+                One night, my French 3 teacher gave me an impossible assignment:
+                learn 111 French animals and their English translations in 48
+                hours. In my struggle to learn them all, I had the idea for
+                Quizlet: to build software that would ask me questions
+                repeatedly and keeping track of what I needed more work on. I
+                built a barebones website that did this, and got 100% on my next
+                test. I then shared the tool with friends, and they loved it.
               </p>
 
               <p>
@@ -57,29 +57,23 @@ export default function About() {
                 speech recognition, and took classes on education. I continued
                 to work on Quizlet, sacrificing sleep along the way.
               </p>
-            </div>
-
-            <div className="Card LeftCard">
-              <h3>Building the Company</h3>
 
               <p>
                 In 2011, I left MIT to move to San Francisco and focus on
-                Quizlet. It was a wrenching decision to leave before graduating,
-                because I was learning so much and having so much fun. I decided
-                I needed to focus on doing one thing well.
-              </p>
-              <p>
-                Over the next 8 years, Quizlet grew to a team of 200 people. We
-                built it into a ubiquitous tool in education, helping tens of
-                millions of students learn in a new way. We built revenue to
-                make it sustainable, and raised several rounds of venture
-                capital funding. After working on Quizlet for fifteen years, I
-                decided it was time to take a breath and think about what I
-                wanted to do next.
+                Quizlet. Over the next 8 years, Quizlet grew to a team of 200
+                people. We built it into a ubiquitous tool in education, helping
+                tens of millions of students learn in a new way. We built
+                revenue to make it sustainable, and raised several rounds of
+                venture capital funding. After working on Quizlet for fifteen
+                years, I{" "}
+                <Link href="/goodbye-quizlet">
+                  <a>decided it was time</a>
+                </Link>{" "}
+                to take a breath and think about what I wanted to do next.
               </p>
             </div>
 
-            <div className="Card RightCard">
+            <div className="Card LeftCard">
               <h3>The New Andrew</h3>
 
               <p>INSERT CONTENT HERE.</p>
