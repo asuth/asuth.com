@@ -144,7 +144,9 @@ class Nav extends Component<NodeProps, NodeState> {
         offsetX *= 5 / 6;
       }
 
-      while (offsetY + 30 > cHeight) {
+      // hacky way to avoid logo overlap
+      let yFudge = obj === "about" || obj === "questions" ? 160 : 30;
+      while (offsetY + yFudge > cHeight) {
         offsetY *= 5 / 6;
       }
 
