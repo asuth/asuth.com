@@ -37,11 +37,10 @@ export default function GoodbyeQuizlet() {
               <p>
                 I worked on Quizlet non-stop -- through high school, through
                 college, through all of my twenties. I didn’t really have other
-                hobbies. I poured my heart and soul into making it work. It
-                almost died several times in the early years, over harsh
-                disagreements with my first business partner. But Quizlet
-                continued to grow. In 2015, after ten years of bootstrapping, we
-                raised money from a group of investors.
+                hobbies. I poured my heart and soul into making it work. The
+                company almost died several times in the early years. But
+                Quizlet continued to grow. In 2015, after ten years of
+                bootstrapping, we raised money from a group of investors.
               </p>
               <p>
                 After raising money, Quizlet kicked into high gear. We grew
@@ -52,8 +51,8 @@ export default function GoodbyeQuizlet() {
                 and that genuinely helped them. We had many stories of kids
                 who'd transformed their whole outlook on education after finding
                 Quizlet. I loved interviewing new people to join our team. I
-                loved mentoring engineers. I loved getting 360 feedback from
-                everyone on the team and seeing how I'd grown and how much
+                loved mentoring engineers. I loved getting 360-degree feedback
+                from everyone on the team and seeing how I'd grown and how much
                 further I had to go.
               </p>
               <p>
@@ -98,7 +97,7 @@ export default function GoodbyeQuizlet() {
                 actions; one improperly phrased suggestion could send a team on
                 a wild goose chase. Now, as a unit of one, I can be weirder.
                 Weirder and goofier. The website you're on now is a reflection
-                of this different me.
+                of this new changed me.
               </p>
               <p>
                 In some unexpected sense, I don’t feel like I have anything to

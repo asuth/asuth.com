@@ -35,7 +35,7 @@ export default function Investments() {
     {
       name: "Shyft Power",
       leader: "Ugwem Eneyo",
-      description: `Shyft is building hardware and software that allow buildings to seamlessly switch between grid- and non-grid energy sources. I invested because this could enable developing countries to leapfrog past old grid technologies.`,
+      description: `Shyft is building hardware and software that allow buildings to seamlessly switch between grid and non-grid energy sources. I invested because this could enable developing countries to leapfrog past old grid technologies.`,
       category: "Climate Tech",
       link: "https://shyftpower.com/",
     },
@@ -43,7 +43,7 @@ export default function Investments() {
       name: "ToMI",
       leader: "Juan Manuel Lopera",
       description: `
-        ToMI is building hardware and software that helps teachers teach with digital tools even when they don’t have an internet connection. I invested because they are bringing digital technology to classrooms that have never had it before.
+        ToMI is building hardware and software that help teachers teach with digital tools even when they don’t have an internet connection. I invested because they are bringing digital technology to classrooms that have never had it before.
         `,
       category: "Education Tech",
       link: "https://tomi.digital/",
@@ -93,7 +93,7 @@ export default function Investments() {
       name: "California Yimby",
       leader: "Brian Hanlon",
       description: `
-        California is a neat place, but its anti-development housing policies push way too many people into housing instability and homelessness. Teachers can’t afford to live where they teach. I invested (and joined the board) because California Yimby is leading the charge to create an abundant supply of housing for everyone.
+        California is a neat place, but its anti-development housing policies push way too many people into housing instability and homelessness. Teachers can’t afford to live where they teach. I invested (and joined the board) because California YIMBY is leading the charge to create an abundant supply of housing for everyone.
         `,
       link: "https://cayimby.org/",
       category: "Policy Advocacy",
@@ -159,9 +159,9 @@ export default function Investments() {
                 for-profit and non-profit organizations, so you'll see them
                 mixed together in my portfolio below. The reasons I provide for
                 investing are kinda post-hoc rationalizations. Honestly, my
-                criteria for investing is primarily whether I believe the leader
-                is capable of greatness. My favorite areas to invest in are
-                education, climate, housing, and developer tools.
+                criterion for investing is primarily whether I believe the
+                leader is capable of greatness. My favorite areas to invest in
+                are education, climate, housing, and developer tools.
               </p>
               <p>
                 If I would be a good investor for you, please send an email to{" "}

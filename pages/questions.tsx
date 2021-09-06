@@ -73,7 +73,7 @@ export default function Questions() {
               <p>
                 My work on the board of{" "}
                 <a href="https://cayimby.org/">California YIMBY's</a>{" "}
-                educational arm aims towards this goal.
+                educational arm fits with this goal.
               </p>
             </div>
             <div className="LeftCard Card">
