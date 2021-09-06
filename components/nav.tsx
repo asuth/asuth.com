@@ -10,6 +10,7 @@ import contactHero from "/public/heros/contact.webp";
 
 type NodeProps = {
   title: string;
+  description: string;
 };
 
 type NodeState = {
@@ -206,6 +207,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
           <link rel="manifest" href="/site.webmanifest" />
           <meta name="msapplication-TileColor" content="#f5ff9e" />
           <meta name="theme-color" content="#f5ff9e" />
+          <meta name="description" content={this.props.description} />
           {this.state.preloadHeroPath === null ? null : (
             <link rel="preload" as="image" href={this.state.preloadHeroPath} />
           )}

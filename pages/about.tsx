@@ -29,8 +29,8 @@ export default function About() {
               <p>
                 I’m in a <span className="Goofy">goofy</span> and exploratory
                 phase of my life. I am indulging my curiosity, saying yes to
-                adventures, and finding projects that keep me filled with joy
-                and wonder until late into the night.
+                adventures, and finding projects that give me joy and wonder
+                until late into the night.
               </p>
 
               <p>
@@ -133,7 +133,7 @@ export default function About() {
                 <a href="https://twitter.com/wesbos/status/1354903492641611797">
                   LOVE
                 </a>{" "}
-                building websites, so that’s cool.
+                building websites, so that’s good.
               </p>
             </div>
           </div>

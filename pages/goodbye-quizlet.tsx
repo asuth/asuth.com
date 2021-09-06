@@ -1,5 +1,7 @@
 import hero from "/public/heros/writing.webp";
+import smallplant from "/public/smallplant.png";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function GoodbyeQuizlet() {
   return (
@@ -51,13 +53,15 @@ export default function GoodbyeQuizlet() {
                 who'd transformed their whole outlook on education after finding
                 Quizlet. I loved interviewing new people to join our team. I
                 loved mentoring engineers. I loved getting 360 feedback from
-                everyone on the team and seeing how far I had to grow.
+                everyone on the team and seeing how I'd grown and how much
+                further I had to go.
               </p>
               <p>
                 I loved staying up late at night, writing code that would change
                 how millions of people learn. I loved chatting with teachers
                 during classroom visits, all over the world, learning what they
-                wanted from their students and their tools.
+                wanted from their students and their tools. I loved working with
+                a team that deeply cared about learning.
               </p>
               <p>
                 Eventually I found myself adrift. I was the founder and CTO, but
@@ -65,7 +69,8 @@ export default function GoodbyeQuizlet() {
                 in which the rest of the exec team wanted to go. And if I'm
                 honest, I was tired of working on roughly the same problem I
                 started thinking about when I was 15. Sure, there were a million
-                new problems encountered along the way. But I needed a change.
+                new problems encountered along the way. Quizlet was succeeding,
+                but I needed a change.
               </p>
               <p>
                 So I left. I felt like I had been riding a train, the same one
@@ -102,17 +107,23 @@ export default function GoodbyeQuizlet() {
                 to do great things in the world.
               </p>
               <p>
-                If at age 15, being a beginner at everything, I could set myself
-                on a path of such incredible growth, joy, intensity, then what,
-                at age 31, is the equivalent beginner state? How do I get as
-                much hard-won growth out of the next 15 years as I got out of
-                the last 15?
+                This thought comes to me often: If at age 15, being a beginner
+                at everything, I could set myself on a path of such incredible
+                growth, joy, intensity, then what, at age 31, is the equivalent
+                beginner state? How do I get as much hard-won growth out of the
+                next 15 years as I got out of the last 15?
               </p>
               <p>
                 There are seismic changes happening in education, in our
                 climate, in politics, and in technology. I'm greatly enjoying
                 being fully open to new possibilities. I’ll find something big
                 to do when it’s time.
+              </p>
+
+              <p>
+                <Link href="/">
+                  <a>Wanna visit my homepage next?</a>
+                </Link>
               </p>
             </div>
           </div>

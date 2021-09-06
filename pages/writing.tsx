@@ -17,14 +17,18 @@ export default function Home() {
         <div className="Content">
           <div className="MaxWidth">
             <div className="Card FirstCard CenterCard">
+              <em>September 2021</em>
               <h3>
                 <Link href="/goodbye-quizlet">
                   <a>Goodbye Quizlet, Hello World</a>
                 </Link>
               </h3>
-
+              <br />
               <p>
-                <em>September 2021</em>
+                <em>
+                  If this appears to be one of those elaborate websites with
+                  just a single blog post on it, you are indeed perceptive.
+                </em>
               </p>
             </div>
           </div>

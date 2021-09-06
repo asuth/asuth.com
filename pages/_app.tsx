@@ -20,14 +20,30 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   // this code is absolute trash and I am ashamed
   // todo figure out how to lift properties properly
+
   const titles: { [key: string]: string } = {
     "/": "Andrew Sutherland",
     "/about": "About Andrew",
     "/writing": "Writing",
-    "/speaking": "Speaking",
     "/investments": "Investments",
     "/contact": "Contact",
     "/questions": "Questions I'm Pondering",
+    "/goodbye-quizlet": "Goodbye Quizlet, Hello World",
+  };
+
+  const descriptions: { [key: string]: string } = {
+    "/": "On the lookout for wonder",
+    "/about":
+      "I’m in a goofy and exploratory phase of my life. I am indulging my curiosity, saying yes to adventures, and finding projects that keep me filled with joy and wonder until late into the night.",
+    "/writing": "Writing",
+    "/investments":
+      "Investing is my way to see the future. I invest in both for-profit and non-profit organizations, so you'll see them mixed together in my portfolio.",
+    "/contact":
+      "If you're on this page, you're already considering emailing me, so just do it, eh?",
+    "/questions":
+      "I've collected important questions and put them on this page, in the hopes that a kindly stranger (you!) might offer a compelling answer, or perhaps a promising lead or book recommendation.",
+    "/goodbye-quizlet":
+      "If you're on this page, you're already considering emailing me, so just do it, eh?",
   };
 
   return (
@@ -48,7 +64,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       </div>
 
       <Homepage homepageIsCurrent={isHomepage} />
-      <Nav title={titles[router.pathname]}></Nav>
+      <Nav
+        title={titles[router.pathname]}
+        description={descriptions[router.pathname]}
+      ></Nav>
       <Transition location={router.pathname}>
         <Component {...pageProps} />
       </Transition>
