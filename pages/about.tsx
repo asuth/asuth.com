@@ -43,9 +43,7 @@ export default function About() {
             <div className="Card RightCard">
               <h3>Inventing Quizlet</h3>
 
-              <div
-                style={{ float: "left", marginRight: "8px", marginTop: "8px" }}
-              >
+              <div className="LeftImage">
                 <Image
                   src={andrewAndJohnny}
                   width={233}
@@ -92,9 +90,7 @@ export default function About() {
             <div className="Card LeftCard">
               <h3>The New Andrew</h3>
 
-              <p>INSERT CONTENT HERE.</p>
-
-              <div style={{ float: "right", marginLeft: "8px" }}>
+              <div className="RightImage">
                 <Image
                   src={underConstruction}
                   width={200}
@@ -102,6 +98,8 @@ export default function About() {
                   alt="Old-school Under Construction gif"
                 />
               </div>
+
+              <p>INSERT CONTENT HERE.</p>
 
               <p>
                 Haha. But seriously. To construct the new me, I've been

@@ -219,6 +219,16 @@ p:last-child {
   float: left;
 }
 
+.RightImage {
+  float: right;
+  margin: 8px 0 8px 8px;
+}
+
+.LeftImage {
+  float: left;
+  margin: 8px 8px 8px 0;
+}
+
 @media only screen and (max-width: 768px) {
   .Card {
     width: 100%;
@@ -249,6 +259,11 @@ p:last-child {
   .Content {
     padding: 40px 25px;
     font-size: 14px;
+  }
+
+  .RightImage,
+  .LeftImage {
+    float: none;
   }
 }
 
