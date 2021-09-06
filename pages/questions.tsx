@@ -57,8 +57,8 @@ export default function Questions() {
                 <Image src={homes} width={225} height={225} />
               </div>
               <h4>
-                How do you convince people that more housing density and
-                integration are better for everyone?
+                How do you create a successful mass movement for greater housing
+                density?
               </h4>
 
               <p>
@@ -67,8 +67,8 @@ export default function Questions() {
                 sentiment, or anti-change conservatism. What efforts could
                 convince a majority of Americans that making cities more dense
                 is good for everyone? If you did this, we could ease rent
-                burdens, reduce wealth gaps, and live in a more egalitarian and
-                integrated society.
+                burdens, reduce wealth gaps, lower carbon emissions, and live in
+                a more egalitarian and integrated society.
               </p>
               <p>
                 My work on the board of{" "}
@@ -80,9 +80,7 @@ export default function Questions() {
               <div className="CenterImage">
                 <Image src={computer} width={180} height={180} />
               </div>
-              <h4>
-                How do you make programming literacy a universal basic skill?
-              </h4>
+              <h4>How do you bring about universal programming literacy?</h4>
               <p>
                 I was lucky to teach myself programming starting around age 13.
                 Most children never learn to program a computer, and
