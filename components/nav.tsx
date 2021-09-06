@@ -77,7 +77,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
         offsetY: 1775,
       },
       investments: {
-        offsetX: 1900,
+        offsetX: 1875,
         offsetY: 350,
       },
     };
