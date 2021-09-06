@@ -1,6 +1,6 @@
-import hero from "/public/heros/investing.webp";
+import hero from "/public/heros/investments.webp";
 
-export default function Investing() {
+export default function Investments() {
   /*
   function shuffleArray<T>(array: Array<T>): void {
     for (let i = array.length - 1; i > 0; i--) {
@@ -221,7 +221,7 @@ export default function Investing() {
 
         .InvestmentCard {
           display: inline-block;
-          width: 33%;
+          width: 36%;
           background: #fff;
           margin: 0 5% 80px 0;
           box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
@@ -229,7 +229,7 @@ export default function Investing() {
 
         .SpacerCard {
           display: inline-block;
-          width: 20%;
+          width: 14%;
         }
 
         @media only screen and (max-width: 850px) {

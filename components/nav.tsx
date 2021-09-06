@@ -4,7 +4,7 @@ import Head from "next/head";
 
 import aboutHero from "/public/heros/about.webp";
 import questionsHero from "/public/heros/questions.webp";
-import investingHero from "/public/heros/investing.webp";
+import investmentsHero from "/public/heros/investments.webp";
 import writingHero from "/public/heros/writing.webp";
 import contactHero from "/public/heros/contact.webp";
 
@@ -45,7 +45,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
           offsetX: 0,
           offsetY: 0,
         },
-        investing: {
+        investments: {
           offsetX: 0,
           offsetY: 0,
         },
@@ -76,7 +76,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
         offsetX: 2850,
         offsetY: 1775,
       },
-      investing: {
+      investments: {
         offsetX: 1900,
         offsetY: 350,
       },
@@ -168,7 +168,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
       about: aboutHero.src,
       writing: writingHero.src,
       questions: questionsHero.src,
-      investing: investingHero.src,
+      investments: investmentsHero.src,
       contact: contactHero.src,
     };
     this.setState({ preloadHeroPath: paths[pageName] });
@@ -241,13 +241,13 @@ export default class Nav extends Component<NodeProps, NodeState> {
                 QUESTIONS
               </a>
             </Link>
-            <Link href="/investing">
+            <Link href="/investments">
               <a
-                onMouseEnter={this.preloadHero.bind(this, "investing")}
+                onMouseEnter={this.preloadHero.bind(this, "investments")}
                 className="NavBtn"
-                style={this.placements("investing")}
+                style={this.placements("investments")}
               >
-                INVESTING
+                INVESTMENTS
               </a>
             </Link>
 

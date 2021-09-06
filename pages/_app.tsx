@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/about": "About Andrew",
     "/writing": "Writing",
     "/speaking": "Speaking",
-    "/investing": "Investing",
+    "/investments": "Investments",
     "/contact": "Contact",
     "/questions": "Questions I'm Pondering",
   };
