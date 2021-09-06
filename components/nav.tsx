@@ -217,6 +217,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
             <Link href="/about">
               <a
                 onMouseEnter={this.preloadHero.bind(this, "about")}
+                onTouchStart={this.preloadHero.bind(this, "about")}
                 className="NavBtn"
                 style={this.placements("about")}
               >
@@ -226,6 +227,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
             <Link href="/writing">
               <a
                 onMouseEnter={this.preloadHero.bind(this, "writing")}
+                onTouchStart={this.preloadHero.bind(this, "writing")}
                 className="NavBtn"
                 style={this.placements("writing")}
               >
@@ -235,6 +237,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
             <Link href="/questions">
               <a
                 onMouseEnter={this.preloadHero.bind(this, "questions")}
+                onTouchStart={this.preloadHero.bind(this, "questions")}
                 className="NavBtn"
                 style={this.placements("questions")}
               >
@@ -244,6 +247,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
             <Link href="/investments">
               <a
                 onMouseEnter={this.preloadHero.bind(this, "investments")}
+                onTouchStart={this.preloadHero.bind(this, "investments")}
                 className="NavBtn"
                 style={this.placements("investments")}
               >
@@ -254,6 +258,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
             <Link href="/contact">
               <a
                 onMouseEnter={this.preloadHero.bind(this, "contact")}
+                onTouchStart={this.preloadHero.bind(this, "contact")}
                 className="NavBtn"
                 style={this.placements("contact")}
               >
