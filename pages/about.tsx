@@ -148,6 +148,7 @@ export default function About() {
 
         .PageHeader {
           background-size: cover;
+          height: 50vh;
           background-image: url(${hero.src});
         }
 

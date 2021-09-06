@@ -392,6 +392,10 @@ p:last-child {
     margin-left: 0px;
   }
 
+  .PageHeader {
+    background-size: 450px 450px;
+  }
+
   .PageHeadline-Small {
     font-size: 16px;
   }

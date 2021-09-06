@@ -39,7 +39,7 @@ export default function Contact() {
         .PageHeader {
           height: auto;
           background-image: url(${hero.src});
-          background-position: 125px 165px;
+          background-position: 155px -10px;
         }
 
         .CenterCard {
