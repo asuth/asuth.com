@@ -392,10 +392,6 @@ p:last-child {
     margin-left: 0px;
   }
 
-  .PageHeader {
-    background-size: 450px 450px;
-  }
-
   .PageHeadline-Small {
     font-size: 16px;
   }
@@ -405,6 +401,7 @@ p:last-child {
 @media only screen and (max-width: 568px) {
   .PageHeader {
     height: 55vh;
+    background-size: 450px 450px;
   }
 
   .PageHeadline {
