@@ -94,7 +94,7 @@ export default function Questions() {
                 and shaping the changes brought by software.
               </p>
               <p>
-                Two of my favorite investments are working on this problem,{" "}
+                Two of my favorite investments are working on this problem:{" "}
                 <a href="https://replit.com">Replit</a> by lowering the barriers
                 to entry to programming, and{" "}
                 <a href="https://dynamicland.org">Dynamicland</a> by redefining

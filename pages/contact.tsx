@@ -10,7 +10,9 @@ export default function Contact() {
               <h3>Say hello, future friend</h3>
               <p>
                 The best way to reach me is by email at{" "}
-                <a href="mailto:asuth@asuth.com">asuth@asuth.com</a>.
+                <a href="mailto:asuth@asuth.com">asuth@asuth.com</a>. If you're
+                on this page, you're already considering emailing me, so just do
+                it, eh?
               </p>
 
               <p>
@@ -31,7 +33,7 @@ export default function Contact() {
       <style jsx>{`
         :global(:root) {
           --bg-color: #8bd6f3;
-          --dark-bg-color: #feadcd;
+          --dark-bg-color: #7dbcdb;
         }
 
         .PageHeader {

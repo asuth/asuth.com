@@ -55,14 +55,13 @@ export default function About() {
               </div>
 
               <p>
-                One night, my French 3 teacher (pictured) gave me an impossible
-                assignment: learn 111 French animals and their English
-                translations in 48 hours. In my struggle to learn them all, I
-                had the idea for Quizlet: to build software that would ask me
-                questions repeatedly and keeping track of what I needed more
-                work on. I built a barebones website that did this, and got 100%
-                on my next test. I then shared the tool with friends, and they
-                loved it.
+                One night, my French 3 teacher (pictured avec moi) gave me an
+                impossible assignment: learn 111 French animals and their
+                English translations in 48 hours. In my struggle to learn them
+                all, I had the idea for Quizlet: to build a website that would
+                ask me questions repeatedly until I could answer every question
+                correctly. With this new tool, I aced my next exam. I then
+                shared it with friends, and they loved it.
               </p>
 
               <p>
@@ -106,10 +105,10 @@ export default function About() {
 
               <p>
                 Haha. But seriously. To construct the new me, I've been
-                immersing myself in new environments. I find that that's the
-                fastest way for me to learn. I've taught a course at MIT, I've
-                driven for Lyft, I've helped run a San Francisco election, and
-                I've led a crew of teenagers into the wilderness.
+                immersing myself in new environments. That's the fastest way for
+                me to learn. Recently, I've taught a course at MIT, I've driven
+                for Lyft, I've helped run a San Francisco election, and I've led
+                a crew of teenagers into the wilderness.
               </p>
               <p>
                 My narrow set of interests, if you could call them narrow, are
@@ -131,7 +130,7 @@ export default function About() {
                 person.
               </p>
               <p>
-                Having some extra free time has meant I could build this
+                Having some extra free time has also meant I could build this
                 website, and I{" "}
                 <a href="https://twitter.com/wesbos/status/1354903492641611797">
                   LOVE
