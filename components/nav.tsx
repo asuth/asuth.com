@@ -186,11 +186,47 @@ class Nav extends Component<NodeProps, NodeState> {
     };
   }
 
+  renderAsciiArt() {
+    return (
+      <noscript
+        dangerouslySetInnerHTML={{
+          __html: `<!--
+
+
+    ██████╗ ███╗   ██╗    ████████╗██╗  ██╗███████╗    ██╗      ██████╗  ██████╗ ██╗  ██╗ ██████╗ ██╗   ██╗████████╗
+    ██╔═══██╗████╗  ██║    ╚══██╔══╝██║  ██║██╔════╝    ██║     ██╔═══██╗██╔═══██╗██║ ██╔╝██╔═══██╗██║   ██║╚══██╔══╝
+    ██║   ██║██╔██╗ ██║       ██║   ███████║█████╗      ██║     ██║   ██║██║   ██║█████╔╝ ██║   ██║██║   ██║   ██║   
+    ██║   ██║██║╚██╗██║       ██║   ██╔══██║██╔══╝      ██║     ██║   ██║██║   ██║██╔═██╗ ██║   ██║██║   ██║   ██║   
+    ╚██████╔╝██║ ╚████║       ██║   ██║  ██║███████╗    ███████╗╚██████╔╝╚██████╔╝██║  ██╗╚██████╔╝╚██████╔╝   ██║   
+     ╚═════╝ ╚═╝  ╚═══╝       ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝    ╚═╝   
+                                                                                                                     
+    ███████╗ ██████╗ ██████╗     ██╗    ██╗ ██████╗ ███╗   ██╗██████╗ ███████╗██████╗                                
+    ██╔════╝██╔═══██╗██╔══██╗    ██║    ██║██╔═══██╗████╗  ██║██╔══██╗██╔════╝██╔══██╗                               
+    █████╗  ██║   ██║██████╔╝    ██║ █╗ ██║██║   ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝                               
+    ██╔══╝  ██║   ██║██╔══██╗    ██║███╗██║██║   ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗                               
+    ██║     ╚██████╔╝██║  ██║    ╚███╔███╔╝╚██████╔╝██║ ╚████║██████╔╝███████╗██║  ██║                               
+    ╚═╝      ╚═════╝ ╚═╝  ╚═╝     ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝                               
+    
+    Hello. I've been expecting you.
+    
+
+    -->`,
+        }}
+      />
+    );
+  }
+
   render() {
+    let path = this.props.router.pathname.substring(1);
+    const bgImage = this.paths.hasOwnProperty(path)
+      ? this.paths[path]
+      : metaImage.src;
+
     return (
       <>
         <Head>
           <title>{this.props.title}</title>
+          {this.renderAsciiArt()}
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -216,12 +252,12 @@ class Nav extends Component<NodeProps, NodeState> {
 
           <meta name="twitter:title" content={this.props.title} />
           <meta name="twitter:description" content={this.props.description} />
-          <meta name="twitter:image" content={metaImage.src} />
+          <meta name="twitter:image" content={bgImage} />
           <meta name="twitter:card" content="summary_large_image" />
 
           <meta property="og:title" content={this.props.title} />
           <meta property="og:description" content={this.props.description} />
-          <meta property="og:image" content={metaImage.src} />
+          <meta property="og:image" content={bgImage} />
           <meta
             property="og:url"
             content={`https://asuth.com${this.props.router.pathname}`}
