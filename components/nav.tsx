@@ -219,8 +219,8 @@ class Nav extends Component<NodeProps, NodeState> {
   render() {
     let path = this.props.router.pathname.substring(1);
     const bgImage = this.paths.hasOwnProperty(path)
-      ? this.paths[path]
-      : metaImage.src;
+      ? `https://asuth.com${this.paths[path]}`
+      : `https://asuth.com${metaImage.src}`;
 
     return (
       <>
