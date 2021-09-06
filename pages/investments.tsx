@@ -12,7 +12,7 @@ export default function Investments() {
   const investments: Array<{
     name: string;
     leader: string;
-    description: string;
+    description: string | Node;
     link: string;
     category: string;
   }> = [
@@ -128,6 +128,20 @@ export default function Investments() {
       description: `Dynamicland is building a more humane computing environment from the ground up. I invested because new models of computing, outside the bounds of shrink-wrapped consumer software, are desperately needed.`,
       link: "https://dynamicland.org/",
       category: "Tools For Thought",
+    },
+    {
+      name: "Charm Industrial",
+      leader: "Peter Reinhardt",
+      description: (
+        <>
+          Charm Industrial is capturing CO<sub>2</sub> from the atmosphere,
+          converting it to bio-oil, and pumping it underground. I invested
+          because they are moving faster than anyone in building large-scale
+          carbon removal technology.
+        </>
+      ),
+      link: "https://charmindustrial.com",
+      category: "Climate Tech",
     },
   ];
 
