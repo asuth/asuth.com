@@ -8,10 +8,12 @@ import investmentsHero from "/public/heros/investments.webp";
 import writingHero from "/public/heros/writing.webp";
 import contactHero from "/public/heros/contact.webp";
 import metaImage from "/public/metaweb.jpg";
+import { withRouter, NextRouter } from "next/router";
 
 type NodeProps = {
   title: string;
   description: string;
+  router: NextRouter;
 };
 
 type NodeState = {
@@ -24,7 +26,7 @@ type NodeState = {
   };
 };
 
-export default class Nav extends Component<NodeProps, NodeState> {
+class Nav extends Component<NodeProps, NodeState> {
   paths: { [key: string]: string } = {
     about: aboutHero.src,
     writing: writingHero.src,
@@ -210,12 +212,24 @@ export default class Nav extends Component<NodeProps, NodeState> {
           <meta name="msapplication-TileColor" content="#f5ff9e" />
           <meta name="theme-color" content="#f5ff9e" />
           <meta name="description" content={this.props.description} />
-          <meta property="twitter:image" content={metaImage.src} />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          <meta name="twitter:title" content={this.props.title} />
+          <meta name="twitter:description" content={this.props.description} />
+          <meta name="twitter:image" content={metaImage.src} />
+          <meta name="twitter:card" content="summary_large_image" />
+
+          <meta property="og:title" content={this.props.title} />
+          <meta property="og:description" content={this.props.description} />
           <meta property="og:image" content={metaImage.src} />
+          <meta
+            property="og:url"
+            content={`https://asuth.com${this.props.router.pathname}`}
+          />
+
           {this.state.preloadHeroPath === null ? null : (
             <link rel="preload" as="image" href={this.state.preloadHeroPath} />
           )}
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
 
         <nav className="Nav">
@@ -286,3 +300,5 @@ export default class Nav extends Component<NodeProps, NodeState> {
     );
   }
 }
+
+export default withRouter(Nav);
