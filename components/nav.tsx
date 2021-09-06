@@ -7,6 +7,7 @@ import questionsHero from "/public/heros/questions.webp";
 import investmentsHero from "/public/heros/investments.webp";
 import writingHero from "/public/heros/writing.webp";
 import contactHero from "/public/heros/contact.webp";
+import metaImage from "/public/metaweb.jpg";
 
 type NodeProps = {
   title: string;
@@ -24,6 +25,14 @@ type NodeState = {
 };
 
 export default class Nav extends Component<NodeProps, NodeState> {
+  paths: { [key: string]: string } = {
+    about: aboutHero.src,
+    writing: writingHero.src,
+    questions: questionsHero.src,
+    investments: investmentsHero.src,
+    contact: contactHero.src,
+  };
+
   constructor(props: NodeProps) {
     super(props);
 
@@ -165,14 +174,7 @@ export default class Nav extends Component<NodeProps, NodeState> {
   }
 
   preloadHero(pageName: string) {
-    let paths: { [key: string]: string } = {
-      about: aboutHero.src,
-      writing: writingHero.src,
-      questions: questionsHero.src,
-      investments: investmentsHero.src,
-      contact: contactHero.src,
-    };
-    this.setState({ preloadHeroPath: paths[pageName] });
+    this.setState({ preloadHeroPath: this.paths[pageName] });
   }
 
   placements(navName: string): { left: string; bottom: string } {
@@ -208,6 +210,8 @@ export default class Nav extends Component<NodeProps, NodeState> {
           <meta name="msapplication-TileColor" content="#f5ff9e" />
           <meta name="theme-color" content="#f5ff9e" />
           <meta name="description" content={this.props.description} />
+          <meta property="twitter:image" content={metaImage.src} />
+          <meta property="og:image" content={metaImage.src} />
           {this.state.preloadHeroPath === null ? null : (
             <link rel="preload" as="image" href={this.state.preloadHeroPath} />
           )}
