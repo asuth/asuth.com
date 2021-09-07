@@ -35,7 +35,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/": "On the lookout for wonder",
     "/about":
       "I’m in a goofy and exploratory phase of my life. I am indulging my curiosity, saying yes to adventures, and finding projects that keep me filled with joy and wonder until late into the night.",
-    "/writing": "Writing",
+    "/writing":
+      "If this appears to be one of those elaborate websites with just a single blog post on it, you are indeed perceptive.",
     "/investments":
       "Investing is my way to see the future. I invest in both for-profit and non-profit organizations, so you'll see them mixed together in my portfolio.",
     "/contact":

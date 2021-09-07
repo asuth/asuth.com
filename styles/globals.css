@@ -237,12 +237,12 @@ p:last-child {
 
 .RightImage {
   float: right;
-  margin: 8px 0 8px 8px;
+  margin: 8px 0 8px 10px;
 }
 
 .LeftImage {
   float: left;
-  margin: 8px 8px 8px 0;
+  margin: 8px 10px 8px 0;
 }
 
 @media only screen and (max-width: 768px) {
