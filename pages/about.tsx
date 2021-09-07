@@ -102,9 +102,9 @@ export default function About() {
               <p>
                 Haha. But seriously. To construct the new me, I've been
                 immersing myself in new environments. That's the fastest way for
-                me to learn. Recently, I've taught a course at MIT, I've driven
-                for Lyft, I've helped run a San Francisco election, and I've led
-                a crew of teenagers into the wilderness.
+                me to learn. Recently, I've taught a course about learning at
+                MIT, driven for Lyft, helped run a San Francisco municipal
+                election, and led crews of teenagers into the wilderness.
               </p>
               <p>
                 My narrow set of interests, if you could call them narrow, are
@@ -113,7 +113,7 @@ export default function About() {
                 a lack of good housing is the secret rotten core of many of our
                 society's problems, from wealth inequality to sidewalk poop. And
                 climate, because it is the mega-problem that if we fail to
-                address, we're all gonna burn.
+                address we're all gonna burn.
               </p>
               <p>
                 I also love programming and computers. A day spent programming
