@@ -79,7 +79,7 @@ a {
 }
 
 h3 {
-  font: 28px var(--headline-font);
+  font: 28px/1.6 var(--headline-font);
   text-transform: uppercase;
   margin-bottom: 20px;
 }
