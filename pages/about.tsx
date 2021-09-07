@@ -80,11 +80,8 @@ export default function About() {
                 education, helping tens of millions of students learn in a new
                 way. We built revenue to make it sustainable, and raised several
                 rounds of venture capital funding. After working on Quizlet for
-                almost fifteen years, I{" "}
-                <Link href="/goodbye-quizlet">
-                  <a>decided it was time</a>
-                </Link>{" "}
-                to take a breath and think about what I wanted to do next.
+                almost fifteen years, I decided it was time to take a breath and
+                think about what I wanted to do next.
               </p>
             </div>
 

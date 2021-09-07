@@ -284,7 +284,7 @@ class Nav extends Component<NodeProps, NodeState> {
                 ABOUT
               </a>
             </Link>
-            <Link href="/writing">
+            {/* <Link href="/writing">
               <a
                 onMouseEnter={this.preloadHero.bind(this, "writing")}
                 onTouchStart={this.preloadHero.bind(this, "writing")}
@@ -293,7 +293,7 @@ class Nav extends Component<NodeProps, NodeState> {
               >
                 WRITING
               </a>
-            </Link>
+            </Link> */}
             <Link href="/questions">
               <a
                 onMouseEnter={this.preloadHero.bind(this, "questions")}
