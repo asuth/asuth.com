@@ -455,9 +455,9 @@ p:last-child {
 }
 
 .BackToHome .NavBtn {
-  width: intrinsic;
+  display: inline-block;
   position: static;
-  margin: 0 auto;
+  margin: 0 auto 5px auto;
 }
 
 @media only screen and (max-width: 768px) {

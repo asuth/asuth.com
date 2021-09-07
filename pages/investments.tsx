@@ -1,5 +1,6 @@
 import hero from "/public/heros/investments.webp";
 import Link from "next/link";
+import React, { ReactElement } from "react";
 
 export default function Investments() {
   /*
@@ -13,7 +14,7 @@ export default function Investments() {
   const investments: Array<{
     name: string;
     leader: string;
-    description: string | Node;
+    description: string | ReactElement;
     link: string;
     category: string;
   }> = [
@@ -186,11 +187,10 @@ export default function Investments() {
               </p>
             </div>
 
-            <div className="Investments">
+            <div className="Investments" key="investments">
               {investments.map((investment, k) => (
-                <>
+                <React.Fragment key={`investment${k}`}>
                   <div
-                    key={`investment${k}`}
                     className={`InvestmentCard ${
                       ["GreenCard", "SalmonCard", "YellowCard"][k % 3]
                     }`}
@@ -210,12 +210,12 @@ export default function Investments() {
                     <p>{investment.description}</p>
                   </div>
                   {++counter === 4 && resetCounter() ? (
-                    <>
-                      <div className="SpacerCard"></div>
-                      <div className="SpacerCard"></div>
-                    </>
+                    <React.Fragment key={`spacer${k}`}>
+                      <div className={`SpacerCard`}></div>
+                      <div className={`SpacerCard`}></div>
+                    </React.Fragment>
                   ) : null}
-                </>
+                </React.Fragment>
               ))}
             </div>
             <div className="BackToHome">
