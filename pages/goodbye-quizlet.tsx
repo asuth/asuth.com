@@ -24,7 +24,7 @@ export default function GoodbyeQuizlet() {
                 <em>September 2021 &middot; By Andrew Sutherland</em>
               </p>
               <p>
-                After founding and running Quizlet for nearly fifteen years, I
+                After founding and leading Quizlet for nearly fifteen years, I
                 left last year. This is the first time I’ve written about it.
               </p>
               <p>
