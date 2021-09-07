@@ -127,7 +127,7 @@ export default function Investments() {
     {
       name: "Dynamicland",
       leader: "Bret Victor",
-      description: `Dynamicland is building a more humane computing environment from the ground up. I invested because new models of computing, outside the bounds of shrink-wrapped consumer software, are desperately needed.`,
+      description: `Dynamicland is building a more friendly and communal computing environment from the ground up. I invested because new models of computing, outside the bounds of shrink-wrapped consumer software, are desperately needed.`,
       link: "https://dynamicland.org/",
       category: "Tools For Thought",
     },

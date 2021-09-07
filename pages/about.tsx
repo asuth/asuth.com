@@ -29,8 +29,8 @@ export default function About() {
               <p>
                 I’m in a <span className="Goofy">goofy</span> and exploratory
                 phase of my life. I am indulging my curiosity, saying yes to
-                adventures, and finding projects that give me joy and wonder
-                until late into the night.
+                adventures, and finding projects that bring me joy and keep me
+                up late into the night.
               </p>
 
               <p>
@@ -73,13 +73,13 @@ export default function About() {
 
               <p>
                 In 2011, I left MIT to move to San Francisco and focus on
-                Quizlet. Over the next 8 years, Quizlet grew to a{" "}
+                Quizlet. Over the next 8 years, Quizlet's{" "}
                 <a href="https://www.youtube.com/watch?v=2c16h--F6ZI">team</a>{" "}
-                of 200 people. We built it into a ubiquitous tool in education,
-                helping tens of millions of students learn in a new way. We
-                built revenue to make it sustainable, and raised several rounds
-                of venture capital funding. After working on Quizlet for almost
-                fifteen years, I{" "}
+                grew to 200 people. We built it into a ubiquitous tool in
+                education, helping tens of millions of students learn in a new
+                way. We built revenue to make it sustainable, and raised several
+                rounds of venture capital funding. After working on Quizlet for
+                almost fifteen years, I{" "}
                 <Link href="/goodbye-quizlet">
                   <a>decided it was time</a>
                 </Link>{" "}

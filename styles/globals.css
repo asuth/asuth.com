@@ -58,8 +58,19 @@ when you can't use height 100vh for iOS Safari
 body,
 html,
 .HomepageBackground {
-  height: 100vh; /* for firefox */
-  height: -webkit-fill-available; /* for safari, chrome, ios */
+  height: 100vh;
+}
+
+/* ios-only targeting dirty hack */
+/* while desktop support webkit-fill-available, the resizing logic 
+  is faulty, such that it doesn't resize when you expect it */
+@supports (-webkit-touch-callout: none) {
+  #__next,
+  body,
+  html,
+  .HomepageBackground {
+    height: -webkit-fill-available; /* for safari, chrome, ios */
+  }
 }
 
 a {
