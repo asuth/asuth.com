@@ -19,12 +19,12 @@
   --salmon: #f0999e;
   --pink: #feadbe;
   --dark-pink: #f08ba0;
-  --green: #8bdad5;
+  --green: #91e3de;
   --dark-green: #78c6c0;
   --writingBlue: #a2dcf6;
   --writingDarkBlue: #91cbe4;
 
-  --breadPurple: #c0b4e1;
+  --breadPurple: #cabeed;
   --darkBreadPurple: #9d93b8;
 
   --blue: #89aee0;
@@ -74,7 +74,7 @@ h3 {
 }
 
 h4 {
-  font: 18px var(--headline-font);
+  font: 18px/1.6 var(--headline-font);
   margin-bottom: 10px;
 }
 
