@@ -25,7 +25,7 @@ export default function Questions() {
             <div className="Card FirstCard CenterCard">
               <h3>Your Instructions</h3>
               <p>
-                I've collected important questions and put them on this page, in
+                I’ve collected important questions and put them on this page, in
                 the hopes that a kindly stranger (you!) might offer a compelling
                 answer, or perhaps a promising lead or book recommendation.
                 Please{" "}
@@ -45,7 +45,7 @@ export default function Questions() {
               </h4>
               <p>
                 Doctors and lawyers perform service jobs that are well-respected
-                in society. Teachers are just as important, but they don't get
+                in society. Teachers are just as important, but they don’t get
                 the same respect or pay. If teaching were a high-status
                 profession, it would be more competitive to get into, it would
                 pay better, and teachers would have more latitude to be creative
@@ -72,7 +72,7 @@ export default function Questions() {
               </p>
               <p>
                 My work on the board of{" "}
-                <a href="https://cayimby.org/">California YIMBY's</a>{" "}
+                <a href="https://cayimby.org/">California YIMBY’s</a>{" "}
                 educational arm fits with this goal.
               </p>
             </div>
@@ -87,8 +87,8 @@ export default function Questions() {
                 increasingly live at the mercy of the relatively small
                 priesthood of programmers. In a world run by software,
                 programming literacy should be on par with math and reading as a
-                basic skill taught to everyone. If we did this, we'd live in a
-                more empowered society and we'd be more capable of understanding
+                basic skill taught to everyone. If we did this, we’d live in a
+                more empowered society and we’d be more capable of understanding
                 and shaping the changes brought by software.
               </p>
               <p>
@@ -105,9 +105,9 @@ export default function Questions() {
               </div>
               <h4>How can I solve my chronic sinus infections?</h4>
               <p>
-                I have had low-grade sinus infections my whole life. I've tried
+                I have had low-grade sinus infections my whole life. I’ve tried
                 sinus surgery and a variety of other things and nothing seems to
-                help. This doesn't stop me from doing most things, but it is an
+                help. This doesn’t stop me from doing most things, but it is an
                 annoying issue I would love to fix.
               </p>
             </div>
@@ -115,7 +115,7 @@ export default function Questions() {
             <div className="LeftCard Card ToastCard">
               <Image src={toast} className="Toast" width={250} height={250} />
               <h4>Why is buttery toast so unreasonably good?</h4>
-              <p>It just doesn't make sense. </p>
+              <p>It just doesn’t make sense.</p>
             </div>
 
             <div className="BackToHome">

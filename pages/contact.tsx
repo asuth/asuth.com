@@ -10,8 +10,8 @@ export default function Contact() {
               <h3>Say hello, future friend</h3>
               <p>
                 The best way to reach me is by email at{" "}
-                <a href="mailto:asuth@asuth.com">asuth@asuth.com</a>. If you're
-                on this page, you're already considering emailing me, so just do
+                <a href="mailto:asuth@asuth.com">asuth@asuth.com</a>. If you’re
+                on this page, you’re already considering emailing me, so just do
                 it, eh?
               </p>
 

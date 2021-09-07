@@ -25,7 +25,7 @@ export default function GoodbyeQuizlet() {
               </p>
               <p>
                 After founding and running Quizlet for nearly fifteen years, I
-                left last year. This is the first time I've written about it.
+                left last year. This is the first time I’ve written about it.
               </p>
               <p>
                 I started Quizlet while I was in high school because I wanted a
@@ -35,7 +35,7 @@ export default function GoodbyeQuizlet() {
                 thing.
               </p>
               <p>
-                I worked on Quizlet non-stop -- through high school, through
+                I worked on Quizlet non-stop—through high school, through
                 college, through all of my twenties. I didn’t really have other
                 hobbies. I poured my heart and soul into making it work. The
                 company almost died several times in the early years. But
@@ -44,15 +44,15 @@ export default function GoodbyeQuizlet() {
               </p>
               <p>
                 After raising money, Quizlet kicked into high gear. We grew
-                quickly -- the team, the users, the revenue.
+                quickly—the team, the users, the revenue.
               </p>
               <p>
                 I loved the work. I loved making a product that people adored,
                 and that genuinely helped them. We had many stories of kids
-                who'd transformed their whole outlook on education after finding
+                who’d transformed their whole outlook on education after finding
                 Quizlet. I loved interviewing new people to join our team. I
                 loved mentoring engineers. I loved getting 360-degree feedback
-                from everyone on the team and seeing how I'd grown and how much
+                from everyone on the team and seeing how I’d grown and how much
                 further I had to go.
               </p>
               <p>
@@ -65,7 +65,7 @@ export default function GoodbyeQuizlet() {
               <p>
                 Eventually I found myself adrift. I was the founder and CTO, but
                 I wasn’t the CEO, and I had begun to disagree with the direction
-                in which the rest of the exec team wanted to go. And if I'm
+                in which the rest of the exec team wanted to go. And if I’m
                 honest, I was tired of working on roughly the same problem I
                 started thinking about when I was 15. Sure, there were a million
                 new problems encountered along the way. Quizlet was succeeding,
@@ -82,13 +82,13 @@ export default function GoodbyeQuizlet() {
                 In the past year, I’ve redeveloped a sense of wonder and
                 nurtured a wide breadth of interests. I’ve been exploring the
                 depths of education policy, which led me to housing policy and
-                structural political reform. I've taught a course on
+                structural political reform. I’ve taught a course on
                 programming, a class about learning at MIT, and life skills to
-                teenagers deep in the wilderness. I've{" "}
+                teenagers deep in the wilderness. I’ve{" "}
                 <Link href="/investments">
                   <a>invested</a>
                 </Link>{" "}
-                in a number of new companies. I've joined two boards. I've been
+                in a number of new companies. I’ve joined two boards. I’ve been
                 spending time on the proverbial and literal beach.
               </p>
               <p>
@@ -96,7 +96,7 @@ export default function GoodbyeQuizlet() {
                 Quizlet, I was too keenly aware of the impact of my words and
                 actions; one improperly phrased suggestion could send a team on
                 a wild goose chase. Now, as a unit of one, I can be weirder.
-                Weirder and goofier. The website you're on now is a reflection
+                Weirder and goofier. The website you’re on now is a reflection
                 of this new changed me.
               </p>
               <p>
@@ -114,7 +114,7 @@ export default function GoodbyeQuizlet() {
               </p>
               <p>
                 There are seismic changes happening in education, in our
-                climate, in politics, and in technology. I'm greatly enjoying
+                climate, in politics, and in technology. I’m greatly enjoying
                 being fully open to new possibilities. I’ll find something big
                 to do when it’s time.
               </p>

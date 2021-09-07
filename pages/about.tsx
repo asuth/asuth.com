@@ -74,14 +74,17 @@ export default function About() {
               <p>
                 In 2011, I left MIT to move to San Francisco and to focus on
                 making Quizlet an amazing tool for learning. Over the next 8
-                years, Quizlet's{" "}
+                years, Quizlet’s{" "}
                 <a href="https://www.youtube.com/watch?v=2c16h--F6ZI">team</a>{" "}
                 grew to 200 people. We built it into a ubiquitous tool in
                 education, helping tens of millions of students learn in a new
                 way. We built revenue to make it sustainable, and raised several
                 rounds of venture capital funding. After working on Quizlet for
-                almost fifteen years, I decided it was time to take a breath and
-                think about what I wanted to do next.
+                almost fifteen years, I decided it was{" "}
+                <Link href="/goodbye-quizlet">
+                  <a>time to take a break</a>
+                </Link>{" "}
+                and think about what I wanted to do next.
               </p>
             </div>
 
@@ -100,9 +103,9 @@ export default function About() {
               <p>INSERT CONTENT HERE.</p>
 
               <p>
-                Haha. But seriously. To construct the new me, I've been
-                immersing myself in new environments. That's the fastest way for
-                me to learn. Recently, I've taught a course about learning at
+                Haha. But seriously. To construct the new me, I’ve been
+                immersing myself in new environments. That’s the fastest way for
+                me to learn. Recently, I’ve taught a course about learning at
                 MIT, driven for Lyft, helped run a San Francisco municipal
                 election, and led crews of teenagers into the wilderness.
               </p>
@@ -111,14 +114,14 @@ export default function About() {
                 education, housing, and climate. Education, because I love
                 helping kids learn and kids are funny as hell. Housing, because
                 a lack of good housing is the secret rotten core of many of our
-                society's problems, from wealth inequality to sidewalk poop. And
+                society’s problems, from wealth inequality to sidewalk poop. And
                 climate, because it is the mega-problem that if we fail to
-                address we're all gonna burn.
+                address we’re all gonna burn.
               </p>
               <p>
                 I also love programming and computers. A day spent programming
                 is like a spa day for me: luxurious and restorative. I want
-                computers to help me think thoughts I couldn't otherwise think,
+                computers to help me think thoughts I couldn’t otherwise think,
                 which you could say makes me a{" "}
                 <a href="https://numinous.productions/ttft/">
                   "Tools for Thought"

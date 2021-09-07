@@ -172,7 +172,7 @@ export default function Investments() {
             <div className="Card FirstCard">
               <p>
                 Investing is my way to see the future. I invest in both
-                for-profit and non-profit organizations, so you'll see them
+                for-profit and non-profit organizations, so you’ll see them
                 mixed together in my portfolio below. The reasons I provide for
                 investing are kinda post-hoc rationalizations. Honestly, my
                 criterion for investing is primarily whether I believe the
