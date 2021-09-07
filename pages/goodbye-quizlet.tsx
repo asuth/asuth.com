@@ -118,12 +118,11 @@ export default function GoodbyeQuizlet() {
                 being fully open to new possibilities. I’ll find something big
                 to do when it’s time.
               </p>
-
-              <p>
-                <Link href="/">
-                  <a>Wanna visit my homepage next?</a>
-                </Link>
-              </p>
+            </div>
+            <div className="BackToHome">
+              <Link href="/">
+                <a className="NavBtn">Back to Home</a>
+              </Link>
             </div>
           </div>
         </div>

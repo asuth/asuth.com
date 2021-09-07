@@ -136,6 +136,11 @@ export default function About() {
                 building websites, so that’s good.
               </p>
             </div>
+            <div className="BackToHome">
+              <Link href="/">
+                <a className="NavBtn">Back to Home</a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import hero from "/public/heros/investments.webp";
+import Link from "next/link";
 
 export default function Investments() {
   /*
@@ -216,6 +217,11 @@ export default function Investments() {
                   ) : null}
                 </>
               ))}
+            </div>
+            <div className="BackToHome">
+              <Link href="/">
+                <a className="NavBtn">Back to Home</a>
+              </Link>
             </div>
           </div>
         </div>

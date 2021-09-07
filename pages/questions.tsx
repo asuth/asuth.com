@@ -118,6 +118,12 @@ export default function Questions() {
               <p>It just doesn't make sense. </p>
             </div>
 
+            <div className="BackToHome">
+              <Link href="/">
+                <a className="NavBtn">Back to Home</a>
+              </Link>
+            </div>
+
             {/*             
             <h2>Your Questions, Answered</h2>
 
