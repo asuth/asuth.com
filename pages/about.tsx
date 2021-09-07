@@ -53,27 +53,28 @@ export default function About() {
               </div>
 
               <p>
-                One night, my French 3 teacher (pictured avec moi) gave me an
+                One day, my French 3 teacher (pictured avec moi) gave me an
                 impossible assignment: learn 111 French animals and their
                 English translations in 48 hours. In my struggle to learn them
-                all, I had the idea for Quizlet: to build a website that would
-                ask me questions repeatedly until I could answer every question
-                correctly. With this new tool, I aced my next exam. I then
-                shared it with friends, and they loved it.
+                all, I built a website that would ask me questions repeatedly
+                until I could answer each one correctly. With this new tool, I
+                aced my next quiz. Then I shared it with friends. They loved it.
+                Quizlet was born.
               </p>
 
               <p>
-                I graduated from high school and went off to MIT. I found myself
-                in an intellectual wonderland, surrounded by ambitious, excited
-                peers. Their big expectations of themselves rubbed off on me. I
-                studied Computer Science, did research on speech recognition,
-                and took classes on education. I continued to work on Quizlet,
+                After high school I went off to MIT. It was an intellectual
+                wonderland. I was surrounded by ambitious and excited peers who
+                had big expectations of themselves, which rubbed off on me. I
+                studied computer science, researched speech recognition, and
+                took classes on education. I continued to work on Quizlet,
                 sacrificing sleep along the way.
               </p>
 
               <p>
-                In 2011, I left MIT to move to San Francisco and focus on
-                Quizlet. Over the next 8 years, Quizlet's{" "}
+                In 2011, I left MIT to move to San Francisco and to focus on
+                making Quizlet an amazing tool for learning. Over the next 8
+                years, Quizlet's{" "}
                 <a href="https://www.youtube.com/watch?v=2c16h--F6ZI">team</a>{" "}
                 grew to 200 people. We built it into a ubiquitous tool in
                 education, helping tens of millions of students learn in a new

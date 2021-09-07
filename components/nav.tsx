@@ -89,7 +89,7 @@ class Nav extends Component<NodeProps, NodeState> {
         offsetY: 1775,
       },
       investments: {
-        offsetX: 1875,
+        offsetX: 1845,
         offsetY: 350,
       },
     };
