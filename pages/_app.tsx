@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/writing": "Writing",
     "/investments": "Investments",
     "/contact": "Contact",
-    "/questions": "Questions I'm Pondering",
+    "/questions": "Questions I’m Pondering",
     "/goodbye-quizlet": "Goodbye Quizlet, Hello World",
   };
 
@@ -38,13 +38,13 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/writing":
       "If this appears to be one of those elaborate websites with just a single blog post on it, you are indeed perceptive.",
     "/investments":
-      "Investing is my way to see the future. I invest in both for-profit and non-profit organizations, so you'll see them mixed together in my portfolio.",
+      "Investing is my way to see the future. I invest in both for-profit and non-profit organizations, so you’ll see them mixed together in my portfolio.",
     "/contact":
-      "If you're on this page, you're already considering emailing me, so just do it, eh?",
+      "If you’re on this page, you’re already considering emailing me, so just do it, eh?",
     "/questions":
-      "I've collected important questions and put them on this page, in the hopes that a kindly stranger (you!) might offer a compelling answer, or perhaps a promising lead or book recommendation.",
+      "I’ve collected important questions and put them on this page, in the hopes that a kindly stranger (you!) might offer a compelling answer, or perhaps a promising lead or book recommendation.",
     "/goodbye-quizlet":
-      "If you're on this page, you're already considering emailing me, so just do it, eh?",
+      "If you’re on this page, you’re already considering emailing me, so just do it, eh?",
   };
 
   return (
