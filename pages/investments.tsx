@@ -177,7 +177,8 @@ export default function Investments() {
                 investing are kinda post-hoc rationalizations. Honestly, my
                 criterion for investing is primarily whether I believe the
                 leader is capable of greatness. My favorite areas to invest in
-                are education, climate, housing, and developer tools.
+                are education, climate, housing, developer tools, and tools for
+                thought.
               </p>
               <p>
                 If I would be a good investor for you, please send an email to{" "}

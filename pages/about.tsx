@@ -58,8 +58,8 @@ export default function About() {
                 English translations in 48 hours. In my struggle to learn them
                 all, I built a website that would ask me questions repeatedly
                 until I could answer each one correctly. With this new tool, I
-                aced my next quiz. Then I shared it with friends. They loved it.
-                Quizlet was born.
+                aced my next quiz. Then I shared it with my friends. They loved
+                it. Quizlet was born.
               </p>
 
               <p>
