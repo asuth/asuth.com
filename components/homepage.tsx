@@ -66,7 +66,6 @@ type HomeState = {
   offsets: AnimationObjectOffsetType;
   appHeight: number;
   domHasLoaded: boolean;
-  originalBgSize: number | null;
 };
 
 let initialBrowserWidthCss: string | null = null;
@@ -92,7 +91,6 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       offsets: defaultOffsets,
       appHeight: 0,
       domHasLoaded: false,
-      originalBgSize: null,
     };
   }
 
@@ -141,25 +139,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       }
     }
 
-    // calculate size of bg image
-    let originalBgSize = this.state.originalBgSize;
-    if (originalBgSize === null) {
-      let bgWidths = [
-        1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600, 2800, 3000, 3200,
-        3400, 3600, 3800,
-      ];
-      let naturalWidthScaledWithDPR = naturalWidth * window.devicePixelRatio;
-      bgWidths.sort(
-        (a, b) =>
-          Math.abs(a - naturalWidthScaledWithDPR) -
-          Math.abs(b - naturalWidthScaledWithDPR)
-      );
-      originalBgSize = bgWidths[0];
-    }
-
     this.setState({
       offsets: offsets,
-      originalBgSize: originalBgSize,
     });
   }
 
@@ -249,7 +230,10 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     const shouldPreload =
       isBrowser && (this.props.homepageIsCurrent || this.state.domHasLoaded);
 
-    let bgWidths = [3800, 3400, 3000, 2600, 2200, 1800, 1400, 1000];
+    let bgWidths = [
+      4000, 3800, 3600, 3400, 3200, 3000, 2800, 2600, 2400, 2200, 2000, 1800,
+      1600, 1400, 1200, 1000,
+    ];
 
     let staticCss = "";
     let bestCss: string[] = [];
