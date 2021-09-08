@@ -253,7 +253,6 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
     let staticCss = "";
     let bestCss: string[] = [];
-    let baseImage = encodeURIComponent("/desktop.webp");
 
     // this very goofy past-midnight code is set up so that initial download
     // will get the right image with media queries, but subsequently the css
@@ -263,11 +262,11 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     // resize behavior is expected of ~all people
     bgWidths.forEach((w) => {
       let thisCss = `.HomepageBackground {
-        background-image: url(/_next/image?url=${baseImage}&w=${w}&q=87);
+        background-image: url(/desktop/desktop-${w}.webp);
         background-image: -webkit-image-set(
-          url(/_next/image?url=${baseImage}&w=${w}&q=87) 1x,
-          url(/_next/image?url=${baseImage}&w=${w * 2}&q=87) 2x,
-          url(/_next/image?url=${baseImage}&w=${w * 3}&q=87) 3x
+          url(/desktop/desktop-${w}.webp) 1x,
+          url(/desktop/desktop-${w * 2}.webp) 2x,
+          url(/desktop/desktop-${w * 3}.webp) 3x
         );
       }
       `;
