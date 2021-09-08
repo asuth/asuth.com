@@ -16,4 +16,29 @@ module.exports = {
       3400, 3600, 3800,
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/30m",
+        destination: "https://calendly.com/asuth-9000/45-minutes",
+        permanent: true,
+      },
+      {
+        source: "/45m",
+        destination: "https://calendly.com/asuth-9000/45-minutes",
+        permanent: true,
+      },
+
+      {
+        source: "/60m",
+        destination: "https://calendly.com/asuth-9000/60-minutes",
+        permanent: true,
+      },
+      {
+        source: "/90m",
+        destination: "https://calendly.com/asuth-9000/90-minutes",
+        permanent: true,
+      },
+    ];
+  },
 };
