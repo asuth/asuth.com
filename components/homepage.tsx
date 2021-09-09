@@ -78,17 +78,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
     this.timerId = null;
 
-    const defaultOffsets: AnimationObjectOffsetType = {};
-    for (const obj in animations) {
-      defaultOffsets[obj] = {
-        offsetX: 0,
-        offsetY: 0,
-        width: 0,
-      };
-    }
-
     this.state = {
-      offsets: defaultOffsets,
+      offsets: {},
       appHeight: 0,
       domHasLoaded: false,
     };
