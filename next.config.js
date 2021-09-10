@@ -20,7 +20,7 @@ module.exports = {
     return [
       {
         source: "/30m",
-        destination: "https://calendly.com/asuth-9000/45-minutes",
+        destination: "https://calendly.com/asuth-9000/30-minutes",
         permanent: true,
       },
       {
