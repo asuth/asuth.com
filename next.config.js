@@ -39,6 +39,11 @@ module.exports = {
         destination: "https://calendly.com/asuth-9000/90-minutes",
         permanent: true,
       },
+      {
+        source: "/zoom",
+        destination: "https://us06web.zoom.us/j/4384500729",
+        permanent: false,
+      },
     ];
   },
 };
