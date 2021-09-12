@@ -225,6 +225,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       4000, 3800, 3600, 3400, 3200, 3000, 2800, 2600, 2400, 2200, 2000, 1800,
       1600, 1400, 1200, 1000,
     ];
+    let max = Math.max(...bgWidths);
 
     let staticCss = "";
     let bestCss: string[] = [];
@@ -240,8 +241,8 @@ export default class Homepage extends Component<HomeProps, HomeState> {
         background-image: url(/desktop/desktop-${w}.webp);
         background-image: -webkit-image-set(
           url(/desktop/desktop-${w}.webp) 1x,
-          url(/desktop/desktop-${w * 2}.webp) 2x,
-          url(/desktop/desktop-${w * 3}.webp) 3x
+          url(/desktop/desktop-${Math.min(max, w * 2)}.webp) 2x,
+          url(/desktop/desktop-${Math.min(max, w * 3)}.webp) 3x
         );
       }
       `;
