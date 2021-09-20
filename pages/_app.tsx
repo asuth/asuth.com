@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/questions":
       "I’ve collected important questions and put them on this page, in the hopes that a kindly stranger (you!) might offer a compelling answer, or perhaps a promising lead or book recommendation.",
     "/goodbye-quizlet":
-      "If you’re on this page, you’re already considering emailing me, so just do it, eh?",
+      "After founding and leading Quizlet for nearly fifteen years, I left last year. This is the first time I’ve written about it.",
   };
 
   return (
