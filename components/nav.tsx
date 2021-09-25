@@ -250,7 +250,7 @@ class Nav extends Component<NodeProps, NodeState> {
           />
           <link rel="manifest" href="/site.webmanifest" />
           <meta name="msapplication-TileColor" content="#f5ff9e" />
-          <meta name="theme-color" content="#f5ff9e" />
+          <meta name="theme-color" content="#3b3b68" />
           <meta name="description" content={this.props.description} />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
 
