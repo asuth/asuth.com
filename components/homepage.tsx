@@ -230,6 +230,10 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     let staticCss = "";
     let bestCss: string[] = [];
 
+    // fudge factor because image is 16:9 but often browsers are 4:3 or whatever window size
+    // number of pixels
+    const windowRatioFudgeFactor = 300;
+
     // this very goofy past-midnight code is set up so that initial download
     // will get the right image with media queries, but subsequently the css
     // will be based on the browser window's initial size. this prevents
@@ -250,7 +254,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
       bestCss.push(thisCss);
 
       staticCss += `
-      @media screen and (max-width: ${w}px) {
+      @media screen and (max-width: ${w - windowRatioFudgeFactor}px) {
         ${thisCss}
       }
       `;
@@ -259,7 +263,7 @@ export default class Homepage extends Component<HomeProps, HomeState> {
     if (isBrowser && initialBrowserWidthCss === null) {
       let windowWidth = window.innerWidth;
       let bestCssIndex = bgWidths.length - 1;
-      while (windowWidth > bgWidths[bestCssIndex]) {
+      while (windowWidth + windowRatioFudgeFactor > bgWidths[bestCssIndex]) {
         bestCssIndex--;
       }
       initialBrowserWidthCss = bestCss[bestCssIndex];
