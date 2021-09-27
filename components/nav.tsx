@@ -252,7 +252,10 @@ class Nav extends Component<NodeProps, NodeState> {
           <meta name="msapplication-TileColor" content="#f5ff9e" />
           <meta name="theme-color" content="#3b3b68" />
           <meta name="description" content={this.props.description} />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+          />
 
           <meta name="twitter:title" content={this.props.title} />
           <meta name="twitter:description" content={this.props.description} />
