@@ -30,7 +30,7 @@ const animations: {
     offsetX: 1233,
     offsetY: 584,
     imageSizes: [470, 350, 280, 200],
-    extension: "webp",
+    extension: "gif",
   },
   // laptop: {
   //   width: 576,
