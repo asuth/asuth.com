@@ -13,14 +13,14 @@ type TransitionKind<RC> = {
 const getTransitionStyles: { [key: string]: {} } = {
   entering: {
     opacity: 0,
-    transform: "translateY(100vh)",
+    top: "100vh",
   },
   entered: {
-    transform: "translateY(66px)",
+    top: "66px",
     opacity: 1,
   },
   exiting: {
-    transform: "translateY(100vh)",
+    top: "100vh",
     opacity: 0,
   },
   exited: {},

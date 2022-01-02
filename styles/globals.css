@@ -321,7 +321,6 @@ p:last-child {
 .Page {
   transition: all 200ms ease 0s;
   position: absolute;
-  top: 0;
   width: 100%;
 }
 
