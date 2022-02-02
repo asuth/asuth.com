@@ -72,13 +72,13 @@ export default function About() {
               </p>
 
               <p>
-                In 2011, I left MIT to move to San Francisco and to focus on
-                making Quizlet an amazing tool for learning. Over the next 8
-                years, Quizlet’s{" "}
+                In 2011, I left MIT to move to San Francisco and focus on making
+                Quizlet an amazing tool for learning. Over the next 8 years,
+                Quizlet’s{" "}
                 <a href="https://www.youtube.com/watch?v=2c16h--F6ZI">team</a>{" "}
                 grew to 200 people. We built it into a ubiquitous tool in
                 education, helping tens of millions of students learn in a new
-                way. We built revenue to make it sustainable, and raised several
+                way. We built revenue to make it sustainable and raised several
                 rounds of venture capital funding. After working on Quizlet for
                 almost fifteen years, I decided it was{" "}
                 <Link href="/goodbye-quizlet">
@@ -112,8 +112,8 @@ export default function About() {
               <p>
                 My narrow set of interests, if you could call them narrow, are
                 education, housing, and climate. Education, because I love
-                helping kids learn and kids are funny as hell. Housing, because
-                a lack of good housing is the secret rotten core of many of our
+                helping kids learn, and kids are funny as hell. Housing, because
+                a lack of housing is the secret rotten core of many of our
                 society’s problems, from wealth inequality to sidewalk poop. And
                 climate, because it is the mega-problem that if we fail to
                 address we’re all gonna burn.
@@ -124,7 +124,7 @@ export default function About() {
                 computers to help me think thoughts I couldn’t otherwise think,
                 which you could say makes me a{" "}
                 <a href="https://numinous.productions/ttft/">
-                  "Tools for Thought"
+                  “Tools for Thought”
                 </a>{" "}
                 person.
               </p>
