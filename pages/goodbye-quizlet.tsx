@@ -29,10 +29,9 @@ export default function GoodbyeQuizlet() {
               </p>
               <p>
                 I started Quizlet while I was in high school because I wanted a
-                tool to help me learn French. It has now become a ubiquitous
-                tool, used by the vast majority of teachers and students in the
-                U.S., and soon the world. They use it to learn every imaginable
-                thing.
+                tool to help me learn French. It has become a ubiquitous tool,
+                used by the vast majority of teachers and students in the U.S.
+                and soon the world. They use it to learn every imaginable thing.
               </p>
               <p>
                 I worked on Quizlet non-stop—through high school, through
@@ -58,18 +57,18 @@ export default function GoodbyeQuizlet() {
               <p>
                 I loved staying up late at night, writing code that would change
                 how millions of people learn. I loved chatting with teachers
-                during classroom visits, all over the world, learning what they
+                during classroom visits all over the world, hearing what they
                 wanted from their students and their tools. I loved working with
                 a team that deeply cared about learning.
               </p>
               <p>
                 Eventually I found myself adrift. I was the founder and CTO, but
                 I wasn’t the CEO, and I had begun to disagree with the direction
-                in which the rest of the exec team wanted to go. And if I’m
-                honest, I was tired of working on roughly the same problem I
-                started thinking about when I was 15. Sure, there were a million
-                new problems encountered along the way. Quizlet was succeeding,
-                but I needed a change.
+                the rest of the exec team wanted to go. And if I’m honest, I was
+                tired of working on roughly the same problem I started thinking
+                about when I was 15. Sure, there were a million new problems
+                encountered along the way. Quizlet was succeeding, but I needed
+                a change.
               </p>
               <p>
                 So I left. I felt like I had been riding a train, the same one
@@ -96,8 +95,8 @@ export default function GoodbyeQuizlet() {
                 Quizlet, I was too keenly aware of the impact of my words and
                 actions; one improperly phrased suggestion could send a team on
                 a wild goose chase. Now, as a unit of one, I can be weirder.
-                Weirder and goofier. The website you’re on now is a reflection
-                of this new changed me.
+                Weirder and goofier. The website you’re on now reflects this new
+                changed me.
               </p>
               <p>
                 In some unexpected sense, I don’t feel like I have anything to
@@ -114,7 +113,7 @@ export default function GoodbyeQuizlet() {
               </p>
               <p>
                 There are seismic changes happening in education, in our
-                climate, in politics, and in technology. I’m greatly enjoying
+                climate, in politics, and in technology. I’m immensely enjoying
                 being fully open to new possibilities. I’ll find something big
                 to do when it’s time.
               </p>
