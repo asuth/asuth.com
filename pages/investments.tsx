@@ -172,9 +172,9 @@ export default function Investments() {
       leader: "Paul Rony",
       description: (
         <>
-          Kosmik is building digital canvas that helps you think spatially. I
-          invested because Kosmik takes advantage of the mind's incredible
-          ability to reason visually.
+          Kosmik is building a digital canvas that helps you think spatially. I
+          invested because I want to see spatial reasoning become a core part of
+          everyday computing.
         </>
       ),
       link: "https://www.kosmik.app",
