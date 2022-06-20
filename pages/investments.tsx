@@ -98,7 +98,7 @@ export default function Investments() {
         California is a neat place, but its anti-development housing policies push way too many people into housing instability and homelessness. Teachers can’t afford to live where they teach. I invested (and joined the board) because California YIMBY is leading the charge to create an abundant supply of housing for everyone.
         `,
       link: "https://cayimby.org/",
-      category: "Policy Advocacy",
+      category: "Housing Policy",
     },
     {
       name: "Hidden Genius Project",
@@ -113,7 +113,14 @@ export default function Investments() {
     {
       name: "PrismsVR",
       leader: "Anurupa Ganguly",
-      description: `PrismsVR is building a virtual reality experience that helps math students develop their spatial reasoning. I invested because students need radical new ways to develop their math understanding and intuition.`,
+      description: (
+        <>
+          PrismsVR is building a virtual reality experience that helps math
+          students develop their spatial reasoning. I invested because students
+          need radical new ways to develop their math understanding and
+          intuition.
+        </>
+      ),
       link: "https://www.prismsvr.com/",
       category: "Education Tech",
     },
@@ -143,7 +150,35 @@ export default function Investments() {
         </>
       ),
       link: "https://charmindustrial.com",
+
       category: "Climate Tech",
+    },
+    {
+      name: "Terner Center",
+      leader: "Ben Metcalf",
+      description: (
+        <>
+          The Terner Center for Housing Innovation at UC Berkeley does the most
+          rigorous research into the causes of and solutions to California's
+          housing crisis. I invested because we will make much better housing
+          policy decisions if they're backed by good research.
+        </>
+      ),
+      link: "https://ternercenter.berkeley.edu",
+      category: "Housing Policy",
+    },
+    {
+      name: "Kosmik",
+      leader: "Paul Rony",
+      description: (
+        <>
+          Kosmik is building digital canvas that helps you think spatially. I
+          invested because Kosmik takes advantage of the mind's incredible
+          ability to reason visually.
+        </>
+      ),
+      link: "https://www.kosmik.app",
+      category: "Tools for Thought",
     },
   ];
 
