@@ -245,6 +245,13 @@ p:last-child {
   margin: 8px 10px 8px 0;
 }
 
+/* yeah, print size should be full size */
+@media print {
+  .Card {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .Card {
     width: 100%;
