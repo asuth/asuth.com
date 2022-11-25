@@ -274,64 +274,57 @@ class Nav extends Component<NodeProps, NodeState> {
 
         <nav className="Nav">
           <div className="NavHomeBtns">
-            <Link href="/about">
-              <a
-                onMouseEnter={this.preloadHero.bind(this, "about")}
-                onTouchStart={this.preloadHero.bind(this, "about")}
-                className="NavBtn"
-                style={this.placements("about")}
-              >
-                ABOUT
-              </a>
+            <Link
+              href="/about"
+              onMouseEnter={this.preloadHero.bind(this, "about")}
+              onTouchStart={this.preloadHero.bind(this, "about")}
+              className="NavBtn"
+              style={this.placements("about")}
+            >
+              ABOUT
             </Link>
-            <Link href="/writing">
-              <a
-                onMouseEnter={this.preloadHero.bind(this, "writing")}
-                onTouchStart={this.preloadHero.bind(this, "writing")}
-                className="NavBtn"
-                style={this.placements("writing")}
-              >
-                WRITING
-              </a>
+            <Link
+              href="/writing"
+              onMouseEnter={this.preloadHero.bind(this, "writing")}
+              onTouchStart={this.preloadHero.bind(this, "writing")}
+              className="NavBtn"
+              style={this.placements("writing")}
+            >
+              WRITING
             </Link>
-            <Link href="/questions">
-              <a
-                onMouseEnter={this.preloadHero.bind(this, "questions")}
-                onTouchStart={this.preloadHero.bind(this, "questions")}
-                className="NavBtn"
-                style={this.placements("questions")}
-              >
-                QUESTIONS
-              </a>
+            <Link
+              href="/questions"
+              onMouseEnter={this.preloadHero.bind(this, "questions")}
+              onTouchStart={this.preloadHero.bind(this, "questions")}
+              className="NavBtn"
+              style={this.placements("questions")}
+            >
+              QUESTIONS
             </Link>
-            <Link href="/investments">
-              <a
-                onMouseEnter={this.preloadHero.bind(this, "investments")}
-                onTouchStart={this.preloadHero.bind(this, "investments")}
-                className="NavBtn"
-                style={this.placements("investments")}
-              >
-                INVESTMENTS
-              </a>
+            <Link
+              href="/investments"
+              onMouseEnter={this.preloadHero.bind(this, "investments")}
+              onTouchStart={this.preloadHero.bind(this, "investments")}
+              className="NavBtn"
+              style={this.placements("investments")}
+            >
+              INVESTMENTS
             </Link>
 
-            <Link href="/contact">
-              <a
-                onMouseEnter={this.preloadHero.bind(this, "contact")}
-                onTouchStart={this.preloadHero.bind(this, "contact")}
-                className="NavBtn"
-                style={this.placements("contact")}
-              >
-                CONTACT
-              </a>
+            <Link
+              href="/contact"
+              onMouseEnter={this.preloadHero.bind(this, "contact")}
+              onTouchStart={this.preloadHero.bind(this, "contact")}
+              className="NavBtn"
+              style={this.placements("contact")}
+            >
+              CONTACT
             </Link>
           </div>
           <div className="HomeNav">
             <div className="MaxWidth Grid">
-              <Link href="/">
-                <a id="HomeBtn" className="NavBtn NavBtn--Home">
-                  HOME
-                </a>
+              <Link href="/" id="HomeBtn" className="NavBtn NavBtn--Home">
+                HOME
               </Link>
             </div>
           </div>

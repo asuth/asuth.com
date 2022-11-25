@@ -50,17 +50,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <div className="MaxWidth LogoWrap" key="logo">
-        <Link href="/">
-          <a className="Logo">
-            <img
-              src={logo1x.src}
-              srcSet={`${logo1x.src} 1x,
-              ${logo2x.src} 2x,
-              ${logo3x.src} 3x`}
-              alt="Andrew Sutherland"
-              className="LogoImage"
-            />
-          </a>
+        <Link href="/" className="Logo">
+          <img
+            src={logo1x.src}
+            srcSet={`${logo1x.src} 1x,
+          ${logo2x.src} 2x,
+          ${logo3x.src} 3x`}
+            alt="Andrew Sutherland"
+            className="LogoImage"
+          />
         </Link>
       </div>
 

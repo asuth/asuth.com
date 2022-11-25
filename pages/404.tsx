@@ -16,7 +16,7 @@ export default function Custom404() {
               <p>
                 I don’t know what you did, but you’re on the wrong page. Your
                 only option is to{" "}
-                <Link href="/">
+                <Link href="/" legacyBehavior>
                   <a>escape</a>
                 </Link>
                 .

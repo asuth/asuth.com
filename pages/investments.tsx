@@ -255,7 +255,7 @@ export default function Investments() {
               ))}
             </div>
             <div className="BackToHome">
-              <Link href="/">
+              <Link href="/" legacyBehavior>
                 <a className="NavBtn">Back to Home</a>
               </Link>
             </div>
@@ -264,142 +264,142 @@ export default function Investments() {
       </div>
 
       <style jsx>{`
-        :global(:root) {
-          --bg-color: var(--green);
-          --dark-bg-color: var(--dark-green);
-          --hero-url: url(/wallpapers/chairs@2x.jpg);
-        }
+      :global(:root) {
+        --bg-color: var(--green);
+        --dark-bg-color: var(--dark-green);
+        --hero-url: url(/wallpapers/chairs@2x.jpg);
+      }
 
-        .PageHeader {
-          background-image: url(${hero.src});
-          background-position: 0 20px;
-        }
+      .PageHeader {
+        background-image: url(${hero.src});
+        background-position: 0 20px;
+      }
 
+      .InvestmentCard {
+        display: inline-block;
+        width: 36%;
+        background: #fff;
+        margin: 0 5% 80px 0;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .SpacerCard {
+        display: inline-block;
+        width: 14%;
+      }
+
+      @media only screen and (max-width: 850px) {
         .InvestmentCard {
-          display: inline-block;
-          width: 36%;
-          background: #fff;
-          margin: 0 5% 80px 0;
-          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+          width: 47.5%;
+          margin: 0 5% 60px 0;
+        }
+
+        .InvestmentCard:nth-child(even) {
+          margin-right: 0;
         }
 
         .SpacerCard {
+          display: none;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .InvestmentCard {
+          width: 100%;
+          margin: 0 0 40px 0;
+        }
+        .SpacerCard {
+          display: none;
+        }
+      }
+
+      .Investments {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .InvestmentCard p {
+        padding: 25px;
+      }
+
+      .InvestmentCard h3 {
+        font: 25px var(--headline-font);
+        display: inline-block;
+        margin-bottom: 0;
+      }
+
+      .InvestmentName {
+        padding: 25px 25px 0 25px;
+      }
+
+      .InvestmentInfo {
+        padding: 15px 25px 25px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+        .InvestmentInfo span {
           display: inline-block;
-          width: 14%;
+          font-size: 0.8rem;
         }
 
-        @media only screen and (max-width: 850px) {
-          .InvestmentCard {
-            width: 47.5%;
-            margin: 0 5% 60px 0;
+        .InvestmentInfo .btn {
+          display inline-block;
+          text-transform: uppercase;
+          font: 12px var(--headline-font);
+          margin-left: 10px;
+          border: 1px solid #000;
+          padding: 4px 6px;
+          border-radius: 3px;
+        }
+          .btn:hover {
+            background: #000;
           }
 
-          .InvestmentCard:nth-child(even) {
-            margin-right: 0;
+          .GreenCard .btn:hover {
+            color: var(--green);
           }
 
-          .SpacerCard {
-            display: none;
-          }
-        }
-
-        @media only screen and (max-width: 600px) {
-          .InvestmentCard {
-            width: 100%;
-            margin: 0 0 40px 0;
-          }
-          .SpacerCard {
-            display: none;
-          }
-        }
-
-        .Investments {
-          display: flex;
-          flex-wrap: wrap;
-        }
-
-        .InvestmentCard p {
-          padding: 25px;
-        }
-
-        .InvestmentCard h3 {
-          font: 25px var(--headline-font);
-          display: inline-block;
-          margin-bottom: 0;
-        }
-
-        .InvestmentName {
-          padding: 25px 25px 0 25px;
-        }
-
-        .InvestmentInfo {
-          padding: 15px 25px 25px 25px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 30px;
-        }
-
-          .InvestmentInfo span {
-            display: inline-block;
-            font-size: 0.8rem;
+          .SalmonCard .btn:hover {
+            color: var(--salmon);
           }
 
-          .InvestmentInfo .btn {
-            display inline-block;
-            text-transform: uppercase;
-            font: 12px var(--headline-font);
-            margin-left: 10px;
-            border: 1px solid #000;
-            padding: 4px 6px;
-            border-radius: 3px;
+          .YellowCard .btn:hover {
+            color: var(--yellow);
           }
-            .btn:hover {
-              background: #000;
-            }
 
-            .GreenCard .btn:hover {
-              color: var(--green);
-            }
+          .btn:active {
+            transform: rotate(3deg);
+          }
 
-            .SalmonCard .btn:hover {
-              color: var(--salmon);
-            }
+      .GreenCard .InvestmentInfo, .GreenCard .InvestmentName {
+        background: var(--green);
+      }
 
-            .YellowCard .btn:hover {
-              color: var(--yellow);
-            }
+      .SalmonCard .InvestmentInfo, .SalmonCard .InvestmentName {
+        background: var(--salmon);
+      }
 
-            .btn:active {
-              transform: rotate(3deg);
-            }
+      .YellowCard .InvestmentInfo, .YellowCard .InvestmentName {
+        background: var(--yellow);
+      }
 
-        .GreenCard .InvestmentInfo, .GreenCard .InvestmentName {
-          background: var(--green);
-        }
+      ul {
+        list-style: square;
+      }
 
-        .SalmonCard .InvestmentInfo, .SalmonCard .InvestmentName {
-          background: var(--salmon);
-        }
+      li {
+        margin-bottom: 20px;
+        list-style: dot;
+        margin-left: 20px;
+      }
 
-        .YellowCard .InvestmentInfo, .YellowCard .InvestmentName {
-          background: var(--yellow);
-        }
-
-        ul {
-          list-style: square;
-        }
-
-        li {
-          margin-bottom: 20px;
-          list-style: dot;
-          margin-left: 20px;
-        }
-
-        li:last-child {
-          margin-bottom: 0;
-        }
-      `}</style>
+      li:last-child {
+        margin-bottom: 0;
+      }
+    `}</style>
     </>
   );
 }

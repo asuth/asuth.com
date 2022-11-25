@@ -29,7 +29,7 @@ export default function Questions() {
                 the hopes that a kindly stranger (you!) might offer a compelling
                 answer, or perhaps a promising lead or book recommendation.
                 Please{" "}
-                <Link href="/contact">
+                <Link href="/contact" legacyBehavior>
                   <a>contact me</a>
                 </Link>{" "}
                 if you have something to share!
@@ -119,44 +119,44 @@ export default function Questions() {
             </div>
 
             <div className="BackToHome">
-              <Link href="/">
+              <Link href="/" legacyBehavior>
                 <a className="NavBtn">Back to Home</a>
               </Link>
             </div>
 
             {/*             
-            <h2>Your Questions, Answered</h2>
+          <h2>Your Questions, Answered</h2>
 
-            <div className="LeftCard Card">
-              <h3>What are my values?</h3>
+          <div className="LeftCard Card">
+            <h3>What are my values?</h3>
 
-              <p>I post these publicly to remind myself what matters to me.</p>
-              <h4>Immersion</h4>
-              <p>
-                Genuine understanding comes when you’re deep-soaking in the tub
-                of new experience. That means changing your environment,
-                changing the people you’re around, and staying a while. I try to
-                do this as much as I can.
-              </p>
-              <h4>Treat People Well</h4>
-              <p>
-                Treating people well is so relatively easy and pays such
-                handsome rewards. If you aren’t doing this, what are you doing?
-                I gave a{" "}
-                <a href="https://www.youtube.com/watch?v=-Xj2DnCz-PI">
-                  commencement speech
-                </a>{" "}
-                on this topic.
-              </p>
-              <h4>Set High Expectations</h4>
-              <p>
-                A meaningful gift to give is to help someone raise their own
-                expectations of themselves. People are capable of way more than
-                they know, and they’ve always got bad stories in their heads
-                about why they can’t do such-and-such thing. Rid yourself of
-                that silliness, and help others do the same.
-              </p>
-            </div> */}
+            <p>I post these publicly to remind myself what matters to me.</p>
+            <h4>Immersion</h4>
+            <p>
+              Genuine understanding comes when you’re deep-soaking in the tub
+              of new experience. That means changing your environment,
+              changing the people you’re around, and staying a while. I try to
+              do this as much as I can.
+            </p>
+            <h4>Treat People Well</h4>
+            <p>
+              Treating people well is so relatively easy and pays such
+              handsome rewards. If you aren’t doing this, what are you doing?
+              I gave a{" "}
+              <a href="https://www.youtube.com/watch?v=-Xj2DnCz-PI">
+                commencement speech
+              </a>{" "}
+              on this topic.
+            </p>
+            <h4>Set High Expectations</h4>
+            <p>
+              A meaningful gift to give is to help someone raise their own
+              expectations of themselves. People are capable of way more than
+              they know, and they’ve always got bad stories in their heads
+              about why they can’t do such-and-such thing. Rid yourself of
+              that silliness, and help others do the same.
+            </p>
+          </div> */}
           </div>
         </div>
       </div>

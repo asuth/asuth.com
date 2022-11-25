@@ -81,7 +81,7 @@ export default function About() {
                 way. We built revenue to make it sustainable and raised several
                 rounds of venture capital funding. After working on Quizlet for
                 almost fifteen years, I decided it was{" "}
-                <Link href="/goodbye-quizlet">
+                <Link href="/goodbye-quizlet" legacyBehavior>
                   <a>time to take a break</a>
                 </Link>{" "}
                 and think about what I wanted to do next.
@@ -138,7 +138,7 @@ export default function About() {
               </p>
             </div>
             <div className="BackToHome">
-              <Link href="/">
+              <Link href="/" legacyBehavior>
                 <a className="NavBtn">Back to Home</a>
               </Link>
             </div>

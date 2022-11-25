@@ -84,7 +84,7 @@ export default function GoodbyeQuizlet() {
                 structural political reform. I’ve taught a course on
                 programming, a class about learning at MIT, and life skills to
                 teenagers deep in the wilderness. I’ve{" "}
-                <Link href="/investments">
+                <Link href="/investments" legacyBehavior>
                   <a>invested</a>
                 </Link>{" "}
                 in a number of new companies. I’ve joined two boards. I’ve been
@@ -119,7 +119,7 @@ export default function GoodbyeQuizlet() {
               </p>
             </div>
             <div className="BackToHome">
-              <Link href="/">
+              <Link href="/" legacyBehavior>
                 <a className="NavBtn">Back to Home</a>
               </Link>
             </div>
