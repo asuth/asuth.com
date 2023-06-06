@@ -10,7 +10,7 @@ export default function Custom404() {
           <div className="MaxWidth">
             <div className="Card CenterCard">
               <div className="CenterImage">
-                <Image src={cd} width={90} height={90} />
+                <Image src={cd} width={90} height={90} alt="CD illustration" />
               </div>
               <h3>404 Not Found</h3>
               <p>
