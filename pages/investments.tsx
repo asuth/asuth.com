@@ -85,7 +85,7 @@ export default function Investments() {
     },
     {
       name: "Student Conservation Association",
-      leader: "Stephanie Meeks",
+      leader: "Lidia Soto-Harmon",
       description: `
       The SCA transformed my life when I was in high school. It taught me about service to a community and country, and about building lifelong bonds through hard work. I invested (and joined the board) because I wanted to give back to an organization that gave me so much.`,
       link: "https://www.thesca.org/",
