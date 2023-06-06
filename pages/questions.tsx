@@ -37,7 +37,7 @@ export default function Questions() {
             </div>
             <div className="LeftCard Card">
               <div className="CenterImage">
-                <Image src={coffee} width={200} height={200} />
+                <Image src={coffee} width={200} height={200} alt="Coffee" />
               </div>
 
               <h4>
@@ -54,7 +54,7 @@ export default function Questions() {
             </div>
             <div className="RightCard Card">
               <div className="CenterImage">
-                <Image src={homes} width={225} height={225} />
+                <Image src={homes} width={225} height={225} alt="Homes" />
               </div>
               <h4>
                 How do you create a successful mass movement for greater housing
@@ -78,7 +78,7 @@ export default function Questions() {
             </div>
             <div className="LeftCard Card">
               <div className="CenterImage">
-                <Image src={computer} width={180} height={180} />
+                <Image src={computer} width={180} height={180} alt="Computer" />
               </div>
               <h4>How do you bring about universal programming literacy?</h4>
               <p>
@@ -101,7 +101,7 @@ export default function Questions() {
             </div>
             <div className="RightCard Card">
               <div className="CenterImage">
-                <Image src={stump} width={180} height={180} />
+                <Image src={stump} width={180} height={180} alt="Stump" />
               </div>
               <h4>How can I solve my chronic sinus infections?</h4>
               <p>
@@ -113,7 +113,13 @@ export default function Questions() {
             </div>
 
             <div className="LeftCard Card ToastCard">
-              <Image src={toast} className="Toast" width={250} height={250} />
+              <Image
+                src={toast}
+                className="Toast"
+                width={250}
+                height={250}
+                alt="Toast"
+              />
               <h4>Why is buttery toast so unreasonably good?</h4>
               <p>It just doesn’t make sense.</p>
             </div>
