@@ -122,7 +122,7 @@ export default function Investments() {
         </>
       ),
       link: "https://www.prismsvr.com/",
-      category: "Education Tech",
+      category: "Spatial Computing",
     },
     {
       name: "Synthesis",
@@ -136,7 +136,7 @@ export default function Investments() {
       leader: "Bret Victor",
       description: `Dynamicland is building a more friendly and communal computing environment from the ground up. I invested because new models of computing, outside the bounds of shrink-wrapped consumer software, are desperately needed.`,
       link: "https://dynamicland.org/",
-      category: "Tools For Thought",
+      category: "Spatial Computing",
     },
     {
       name: "Charm Industrial",
@@ -178,7 +178,20 @@ export default function Investments() {
         </>
       ),
       link: "https://www.kosmik.app",
-      category: "Tools for Thought",
+      category: "Spatial Computing",
+    },
+    {
+      name: "Sonic Sphere",
+      leader: "Ed Cooke",
+      description: (
+        <>
+          Sonic Sphere is building spherical concert halls with mind-blowing
+          many-channel audio. I invested because I want real-life and social
+          computing to be better than the metaverse.
+        </>
+      ),
+      link: "https://www.sonic-sphere.com",
+      category: "Spatial Computing",
     },
   ];
 
