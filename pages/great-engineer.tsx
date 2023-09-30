@@ -91,8 +91,8 @@ export default function GoodbyeQuizlet() {
               <p>
                 A great engineer makes other engineers great too. That means
                 they’ll pair program or mentor other engineers both ad-hoc and
-                formally. That means they’re great at code reviews - they push
-                on conceptual problems with code, not just cosmetic problems.
+                formally. They’re great at code reviews - they push on
+                conceptual problems with code, not just cosmetic problems.
                 They’ll push on people to write better tests and to rewrite
                 their code if it’s confusing. They’ll research new patterns or
                 tools and educate their team on how to use them. They’ll write
