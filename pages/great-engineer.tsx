@@ -1,7 +1,5 @@
 import hero from "/public/heros/writing.webp";
-import smallplant from "/public/smallplant.png";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function GoodbyeQuizlet() {
   return (
@@ -63,11 +61,11 @@ export default function GoodbyeQuizlet() {
                 can be written explicitly in a product spec.
               </p>
 
-              <h4>Proactive problem solver</h4>
+              <h4>Permissionless problem solving</h4>
               <p>
                 Engineers should be proactive in bringing new ideas to the team.
                 They might spend a weekend prototyping a new interface concept
-                they thought of. They might come to management and say, we can’t
+                they thought of. They might come to their team and say, we can’t
                 keep building on this page, it need to be rearchitected, and
                 here’s how we should do it. When building a new login screen,
                 they proactively cover every edge case not previously discussed
@@ -75,7 +73,7 @@ export default function GoodbyeQuizlet() {
                 for permission.
               </p>
 
-              <h4>Aims for excellence and delight</h4>
+              <h4>Pushes for excellence and delight</h4>
               <p>
                 A great engineer will say when the product they’re building
                 isn’t good enough yet. Annoyingly for management, often when a
@@ -101,7 +99,7 @@ export default function GoodbyeQuizlet() {
                 and maintain documentation.
               </p>
 
-              <h4>Goes Spelunking</h4>
+              <h4>Goes spelunking</h4>
               <p>
                 Many problems have an easy solution and a hard solution. A great
                 engineer will sometimes say we can live with a quick/expedient

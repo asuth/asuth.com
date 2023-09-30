@@ -19,7 +19,7 @@ export default function Home() {
             <div className="Card FirstCard CenterCard">
               <em>September 2023</em>
               <h3>
-                <Link href="/great-engineers" legacyBehavior>
+                <Link href="/great-engineer" legacyBehavior>
                   <a>What makes a great engineer?</a>
                 </Link>
               </h3>

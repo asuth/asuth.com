@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/contact": "Contact",
     "/questions": "Questions I’m Pondering",
     "/goodbye-quizlet": "Goodbye Quizlet, Hello World",
-    "/great-engineers": "What makes a great engineer?",
+    "/great-engineer": "What makes a great engineer?",
   };
 
   const descriptions: { [key: string]: string } = {
