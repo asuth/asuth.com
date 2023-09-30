@@ -23,7 +23,7 @@ export default function GoodbyeQuizlet() {
                 what I wrote so I decided to post it! Here is my list.
               </p>
 
-              <h4>Have learned from the consequences of their own actions</h4>
+              <h4>Has learned from the consequences of their own actions</h4>
               <p>
                 A great engineer has worked on the same system for multiple
                 years. They've seen systems evolve. They’ve learned what choices
@@ -33,7 +33,7 @@ export default function GoodbyeQuizlet() {
                 months ago. You can’t get great without this iteration.
               </p>
 
-              <h4>Fast and obsessed with their tools</h4>
+              <h4>Is obsessed with their tools</h4>
               <p>
                 One basic interview test is how fast and capable an engineer is
                 with their editor. Do they know their keyboard shortcuts? Do
@@ -61,7 +61,7 @@ export default function GoodbyeQuizlet() {
                 can be written explicitly in a product spec.
               </p>
 
-              <h4>Permissionless problem solving</h4>
+              <h4>Solves problems without asking permission</h4>
               <p>
                 Engineers should be proactive in bringing new ideas to the team.
                 They might spend a weekend prototyping a new interface concept
