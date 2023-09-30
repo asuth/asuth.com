@@ -29,6 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/contact": "Contact",
     "/questions": "Questions I’m Pondering",
     "/goodbye-quizlet": "Goodbye Quizlet, Hello World",
+    "/great-engineers": "What makes a great engineer?",
   };
 
   const descriptions: { [key: string]: string } = {
@@ -36,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/about":
       "I’m in a goofy and exploratory phase of my life. I am indulging my curiosity, saying yes to adventures, and finding projects that keep me filled with joy and wonder until late into the night.",
     "/writing":
-      "If this appears to be one of those elaborate websites with just a single blog post on it, you are indeed perceptive.",
+      "If this appears to be one of those elaborate websites with just two blog posts on it, you are indeed perceptive.",
     "/investments":
       "Investing is my way to see the future. I invest in both for-profit and non-profit organizations, so you’ll see them mixed together in my portfolio.",
     "/contact":
