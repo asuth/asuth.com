@@ -114,9 +114,13 @@ export default function GoodbyeQuizlet() {
               <h4>What is the “Single Decisive Reason” to do this or not?</h4>
               <p>
                 Here I write my final decision in one simple sentence. I nicked
-                this from Reid Hoffman via Rahul Vohra. Simply: “You should have
-                one overwhelming reason to do something. When you have multiple,
-                it's often a fuzzy decision, not well made.”
+                this from Reid Hoffman via{" "}
+                <a href="https://blog.superhuman.com/single-decisive-reason-decision-making-for-fast-scaling-startups/">
+                  Rahul Vohra
+                </a>
+                . Simply: “You should have one overwhelming reason to do
+                something. When you have multiple, it's often a fuzzy decision,
+                not well made.”
               </p>
 
               <p>
