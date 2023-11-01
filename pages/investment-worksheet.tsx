@@ -14,7 +14,7 @@ export default function GoodbyeQuizlet() {
         <div className="Content">
           <div className="MaxWidth">
             <div className="Card FirstCard CenterCard">
-              <h3>My worksheet for making investment decisions</h3>
+              <h3>How I decide on investments</h3>
               <p>
                 <em>October 2023 &middot; By Andrew Sutherland</em>
               </p>
@@ -53,15 +53,15 @@ export default function GoodbyeQuizlet() {
               <p>
                 This is my favorite question, and the one most frequently
                 dispositive. I see some really interesting ideas. But sometimes
-                I get bad vibes from the person. They might seem visionary but
-                very hard to work with. Asking if I would work for someone is a
-                good proxy for if I think high-caliber people would work for
-                this person. At the end of the day, the only way to make
-                something successful is by hiring great people to help you. I’ve
-                avoided a number of companies that have later blown up because
-                of this question. Conversely, I’ve made some great investments
-                that were shaky on other fronts but the person was someone I’d
-                want to work for.
+                founders seem too bought into their own hype. They might be
+                visionary but very hard to work with. Asking if I would work for
+                someone is a good proxy for if I think high-caliber people would
+                work for this person. At the end of the day, the only way to
+                make something successful is by hiring great people to help you.
+                I’ve avoided a number of companies that have later blown up
+                because of this question. Conversely, I’ve made some great
+                investments that were shaky on other fronts but the person was
+                someone I’d want to work for.
               </p>
 
               <h4>What does wild success look like? </h4>
@@ -79,20 +79,22 @@ export default function GoodbyeQuizlet() {
                 involved?
               </h4>
               <p>
-                My interests are cities, computers, and education. If there’s
-                something that would help me on my own projects, that’s
-                exciting. If there’s something I can imagine helping a lot with,
-                that’s exciting. If it’s interesting but I have no value to add
-                besides money, it’s hard to justify. Other people can make that
-                investment.
+                I aim to be a principal agent - to make things happen myself,
+                not just help others make things happen. My interests are
+                cities, computers, and education. If there’s something that
+                would help me on my own projects, that’s exciting. If there’s
+                something I can help a lot with, that’s exciting. If it’s
+                interesting but I have no value to add besides money, it’s hard
+                to justify. Other people can make that investment.
               </p>
 
               <h4>Do I have a gender or other bias in this decision?</h4>
               <p>
-                This is useful because writing this down can help me see
-                something I’m missing — someone who has conquered a lot of
-                personal adversity but is just starting out in business, for
-                example, could be very good bet.{" "}
+                Writing this down can help me see something I’m overlooking. It
+                can be harder for women to network into fundraising circles that
+                are mostly men. Someone who has conquered a lot of personal
+                adversity but is just starting out in business, for example,
+                could be a very good bet.
               </p>
 
               <h4>What are the terms of this deal? How was it sourced?</h4>

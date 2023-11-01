@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/questions": "Questions I’m Pondering",
     "/goodbye-quizlet": "Goodbye Quizlet, Hello World",
     "/great-engineer": "What makes a great engineer?",
-    "/investment-worksheet": "My worksheet for making investment decisions",
+    "/investment-worksheet": "How I decide on investments",
   };
 
   const descriptions: { [key: string]: string } = {

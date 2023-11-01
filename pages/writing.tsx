@@ -20,7 +20,7 @@ export default function Home() {
               <em>October 2023</em>
               <h3>
                 <Link href="/investment-worksheet" legacyBehavior>
-                  <a>My worksheet for making investment decisions</a>
+                  <a>How I decide on investments</a>
                 </Link>
               </h3>
               <br />
