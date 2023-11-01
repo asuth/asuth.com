@@ -47,6 +47,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       "I’ve collected important questions and put them on this page, in the hopes that a kindly stranger (you!) might offer a compelling answer, or perhaps a promising lead or book recommendation.",
     "/goodbye-quizlet":
       "After founding and leading Quizlet for nearly fifteen years, I left last year. This is the first time I’ve written about it.",
+    "/great-engineer": "I wrote what about the attributes of great engineers.",
+
+    "/investment-worksheet":
+      "Seeing a lot of investment opportunities has meant I needed a rigorous process. So I made my own worksheet.",
   };
 
   return (
