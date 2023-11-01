@@ -17,6 +17,14 @@ export default function Home() {
         <div className="Content">
           <div className="MaxWidth">
             <div className="Card FirstCard CenterCard">
+              <em>October 2023</em>
+              <h3>
+                <Link href="/investment-worksheet" legacyBehavior>
+                  <a>My worksheet for making investment decisions</a>
+                </Link>
+              </h3>
+              <br />
+
               <em>September 2023</em>
               <h3>
                 <Link href="/great-engineer" legacyBehavior>
@@ -35,7 +43,7 @@ export default function Home() {
               <p>
                 <em>
                   If this appears to be one of those elaborate websites with
-                  just two blog posts on it, you are indeed perceptive.
+                  just three blog posts on it, you are indeed perceptive.
                 </em>
               </p>
             </div>
