@@ -31,6 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/goodbye-quizlet": "Goodbye Quizlet, Hello World",
     "/great-engineer": "What makes a great engineer?",
     "/investment-worksheet": "How I decide on investments",
+    "/how-to-not-be-late": "How to not be late",
   };
 
   const descriptions: { [key: string]: string } = {
@@ -51,6 +52,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
     "/investment-worksheet":
       "Seeing a lot of investment opportunities has meant I needed a rigorous process. So I made my own worksheet.",
+    "/how-to-not-be-late": "A life lesson I once bought for $1,500.",
   };
 
   return (

@@ -17,6 +17,14 @@ export default function Home() {
         <div className="Content">
           <div className="MaxWidth">
             <div className="Card FirstCard CenterCard">
+              <em>November 2023</em>
+              <h3>
+                <Link href="/how-to-not-be-late" legacyBehavior>
+                  <a>How to not be late</a>
+                </Link>
+              </h3>
+              <br />
+
               <em>October 2023</em>
               <h3>
                 <Link href="/investment-worksheet" legacyBehavior>
@@ -42,8 +50,8 @@ export default function Home() {
               <br />
               <p>
                 <em>
-                  If this appears to be one of those elaborate websites with
-                  just three blog posts on it, you are indeed perceptive.
+                  Hey, I bet you can't spot the time I signed up for a
+                  once-a-month writing club!
                 </em>
               </p>
             </div>

@@ -89,8 +89,20 @@ h4 {
   margin-bottom: 10px;
 }
 
-p {
-  margin-bottom: 30px;
+p,
+ol,
+ul,
+pre {
+  margin-bottom: 25px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+li {
+  margin-bottom: 10px;
+  margin-left: 23px;
 }
 
 p:last-child {
@@ -275,7 +287,10 @@ p:last-child {
     font-size: 23px;
   }
 
-  p {
+  p,
+  ul,
+  ol,
+  pre {
     margin-bottom: 20px;
   }
 
