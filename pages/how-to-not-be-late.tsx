@@ -35,7 +35,7 @@ export default function GoodbyeQuizlet() {
                 Ok, scenario time. You have a coffee with a rando at 9am at the
                 Blue Bottle in SOMA. It takes about 15 minutes to get there from
                 your house. So in your head you say, I'll leave around 8:40.
-                Five minutes of buffer means I'll be fine.
+                Five minutes of buffer makes you a responsible man.
               </p>
               <p>
                 This is a shit plan. It is an eyeball-once-cut-twice plan. It is
