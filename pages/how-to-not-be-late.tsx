@@ -122,8 +122,8 @@ export default function GoodbyeQuizlet() {
               </p>
             </div>
             <div className="BackToHome">
-              <Link href="/" legacyBehavior>
-                <a className="NavBtn">Back to Home</a>
+              <Link href="/" className="NavBtn">
+                Back to Home
               </Link>
             </div>
           </div>

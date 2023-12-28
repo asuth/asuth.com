@@ -15,11 +15,7 @@ export default function Custom404() {
               <h3>404 Not Found</h3>
               <p>
                 I don’t know what you did, but you’re on the wrong page. Your
-                only option is to{" "}
-                <Link href="/" legacyBehavior>
-                  <a>escape</a>
-                </Link>
-                .
+                only option is to <Link href="/">escape</Link>.
               </p>
             </div>
           </div>

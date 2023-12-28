@@ -22,15 +22,13 @@ export default function GoodbyeQuizlet() {
               <p>
                 I’ve made more than 100 investment decisions over the last 7
                 years. Most are nos, but some become{" "}
-                <Link href="/investments" legacyBehavior>
-                  <a>investments</a>
-                </Link>
-                . They could be for-profit companies, non-profits, or political
-                candidates or projects. Seeing a lot of opportunities has meant
-                I needed a rigorous process. So I made my own worksheet. When
-                I’m done filling it out, it’s clear to me if I want to invest or
-                not. Writing is thinking, after all. This tool is nice because I
-                can look later on to see if I made good decisions. Here are the
+                <Link href="/investments">investments</Link>. They could be
+                for-profit companies, non-profits, or political candidates or
+                projects. Seeing a lot of opportunities has meant I needed a
+                rigorous process. So I made my own worksheet. When I’m done
+                filling it out, it’s clear to me if I want to invest or not.
+                Writing is thinking, after all. This tool is nice because I can
+                look later on to see if I made good decisions. Here are the
                 questions I use:
               </p>
               <h4>What are they building?</h4>
@@ -141,8 +139,8 @@ export default function GoodbyeQuizlet() {
               </p>
             </div>
             <div className="BackToHome">
-              <Link href="/" legacyBehavior>
-                <a className="NavBtn">Back to Home</a>
+              <Link href="/" className="NavBtn">
+                Back to Home
               </Link>
             </div>
           </div>

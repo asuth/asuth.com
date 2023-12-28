@@ -28,11 +28,8 @@ export default function Questions() {
                 I’ve collected important questions and put them on this page, in
                 the hopes that a kindly stranger (you!) might offer a compelling
                 answer, or perhaps a promising lead or book recommendation.
-                Please{" "}
-                <Link href="/contact" legacyBehavior>
-                  <a>contact me</a>
-                </Link>{" "}
-                if you have something to share!
+                Please <Link href="/contact">contact me</Link> if you have
+                something to share!
               </p>
             </div>
             <div className="LeftCard Card">
@@ -125,8 +122,8 @@ export default function Questions() {
             </div>
 
             <div className="BackToHome">
-              <Link href="/" legacyBehavior>
-                <a className="NavBtn">Back to Home</a>
+              <Link href="/" className="NavBtn">
+                Back to Home
               </Link>
             </div>
 

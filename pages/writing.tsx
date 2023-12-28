@@ -19,32 +19,28 @@ export default function Home() {
             <div className="Card FirstCard CenterCard">
               <em>November 2023</em>
               <h3>
-                <Link href="/how-to-not-be-late" legacyBehavior>
-                  <a>How to not be late</a>
-                </Link>
+                <Link href="/how-to-not-be-late">How to not be late</Link>
               </h3>
               <br />
 
               <em>October 2023</em>
               <h3>
-                <Link href="/investment-worksheet" legacyBehavior>
-                  <a>How I decide on investments</a>
+                <Link href="/investment-worksheet">
+                  How I decide on investments
                 </Link>
               </h3>
               <br />
 
               <em>September 2023</em>
               <h3>
-                <Link href="/great-engineer" legacyBehavior>
-                  <a>What makes a great engineer?</a>
-                </Link>
+                <Link href="/great-engineer">What makes a great engineer?</Link>
               </h3>
               <br />
 
               <em>September 2021</em>
               <h3>
-                <Link href="/goodbye-quizlet" legacyBehavior>
-                  <a>Goodbye Quizlet, Hello World</a>
+                <Link href="/goodbye-quizlet">
+                  Goodbye Quizlet, Hello World
                 </Link>
               </h3>
               <br />
