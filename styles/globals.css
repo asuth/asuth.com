@@ -273,7 +273,7 @@ p:last-child {
     width: 100%;
     border-width: 16px;
     margin-bottom: 25px;
-    padding: 25px;
+    padding: 20px;
   }
 
   .RightCard {
@@ -300,7 +300,7 @@ p:last-child {
   }
 
   .Content {
-    padding: 40px 25px;
+    padding: 40px 20px;
     font-size: 14px;
   }
 
