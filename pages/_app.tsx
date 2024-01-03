@@ -33,6 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/how-to-not-be-late": "How to not be late",
     "/building-a-demo-culture": "Giggles over mockups: Building a demo culture",
     "/404": "404 Not Found",
+    "/500": "Server Error",
   };
 
   const descriptions: { [key: string]: string } = {
@@ -56,6 +57,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/building-a-demo-culture":
       "Watch for giggles – they are a sign that you’ve probably found magic.",
     "/404": "I don’t know what you did.",
+    "/500": "I don’t know what I did.",
   };
 
   const title = titles[router.pathname];
