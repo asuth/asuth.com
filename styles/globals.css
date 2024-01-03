@@ -474,6 +474,7 @@ figcaption {
   border: 2px solid var(--brightYellow);
   box-shadow: 2px 2px var(--brightYellow);
   -webkit-tap-highlight-color: transparent;
+  transition: top 100ms, left 100ms, bottom 100ms, right 100ms;
 }
 
 .HomeNav {
