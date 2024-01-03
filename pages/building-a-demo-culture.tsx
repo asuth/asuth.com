@@ -42,7 +42,7 @@ export default function GoodbyeQuizlet() {
                 of iteration. Their process for developing the iPhone was making
                 tangible examples of how the device would work. They showed
                 those examples to each other, and played with them hands-on.
-                These examples weren't fully working software, but rather{" "}
+                These examples weren’t fully working software, but rather{" "}
                 <em>demonstrations</em> of what was possible. If they found
                 themselves giggling after a demo, they had struck magic. If not,
                 they discussed the direction to try out for the next meeting.
@@ -52,7 +52,7 @@ export default function GoodbyeQuizlet() {
                 There were no elaborate written product specifications for what
                 the iPhone should be. There were no Photoshop mockups for
                 engineers to implement. How would the keyboard work? They made
-                demos instead of talking about it. Ken Kocienda's book{" "}
+                demos instead of talking about it. Ken Kocienda’s book{" "}
                 <a href="http://creativeselection.io">Creative Selection</a>{" "}
                 goes into detail on their process.
               </p>
@@ -82,11 +82,11 @@ export default function GoodbyeQuizlet() {
               <p>
                 Here’s what they did: first they had a normal keyboard shrunk to
                 a small size. No one at Apple could type with it, so the
-                software VP paused all other engineering, and made every
-                engineer a “keyboard engineer” for a month. They held a keyboard
-                derby to decide the best keyboard. The resulting winner was a
-                weird keyboard with multiple letters per key and a predictive
-                engine underneath to guess the word you typed.
+                software VP paused all other engineering, and made everyone a
+                “keyboard engineer” for a month. They held a keyboard derby to
+                decide the best keyboard. The resulting winner was a weird
+                keyboard with multiple letters per key and a predictive engine
+                underneath to guess the word you typed.
               </p>
 
               <p>
@@ -113,17 +113,17 @@ export default function GoodbyeQuizlet() {
                 At the smol age of 15, when I was first building Quizlet, I had
                 my own little demo culture. I was the biggest user of Quizlet,
                 so I could tell if it was good or not. I would be studying for
-                my French class and I’d have an idea. I'd realize there was a
+                my French class and I’d have an idea. I’d realize there was a
                 feature that could make it better -- say, inline editing of
-                misspelled terms in the middle of a study session. I'd put my
+                misspelled terms in the middle of a study session. I’d put my
                 textbooks aside and code in the feature. Then I’d get my books
                 again and continue studying. If I liked using the new inline
-                edit feature, I'd keep it.
+                edit feature, I’d keep it.
               </p>
 
               <p>
                 Thus, I was giving myself lots of feedback all the time. This
-                process is the reason for Quizlet's success out of the gate. I
+                process is the reason for Quizlet’s success out of the gate. I
                 had built a product that had been iterated many times, even by
                 the date of its first launch in 2007.
               </p>
@@ -137,7 +137,7 @@ export default function GoodbyeQuizlet() {
                 demo culture. It is a multiplayer game, designed for in-person
                 classroom usage. We had noticed Quizlet was being used in
                 classrooms a lot, but all of our software to date was
-                single-player. It couldn't take advantage of the co-location of
+                single-player. It couldn’t take advantage of the co-location of
                 30 students in one place.
               </p>
 
@@ -162,7 +162,7 @@ export default function GoodbyeQuizlet() {
               </figure>
 
               <p>
-                That first game was decent, but it wasn't magical. Fortunately,
+                That first game was decent, but it wasn’t magical. Fortunately,
                 we developed a methodology of refinement that <em>was</em>{" "}
                 magical. We decided we would test the game in a real classroom
                 every Friday morning. After a test session, the team would go to
@@ -173,17 +173,16 @@ export default function GoodbyeQuizlet() {
 
               <p>
                 We landed on an idea to make it a team game, since that would
-                make it more collaborative in addition to being competitive. I
-                started working on a team-assignment interface that would let
-                the teacher choose which team each kid was on. This would enable
-                them to match their seating chart.
+                make it collaborative in addition to being competitive. I
+                started working on a team-assignment interface that would enable
+                the teacher to match the seating chart of their class.
               </p>
 
               <p>
                 But since we had a demo that Friday and the team assignment code
-                wouldn't be done on time, Sophia, the product manager, requested
+                wouldn’t be done on time, Sophia, the product manager, requested
                 that we do random teams as a stop-gap. I hated the idea. Surely
-                teachers would object – they might have kids that shouldn't be
+                teachers would object – they might have kids that shouldn’t be
                 together, for example. But I went along because of the deadline.
               </p>
 
@@ -191,7 +190,7 @@ export default function GoodbyeQuizlet() {
                 Random teams turned out to be the magic that made the whole game
                 work. It meant there was a chaotic 3-minute period where every
                 kid had to scramble to find their teammates. They would shout
-                "Who's an owl?" or “Who’s a mouse?” since every team was
+                “Who’s an owl?” or “Who’s a mouse?” since every team was
                 assigned a different animal. That scramble was precisely what
                 built excitement and energy for the game to come. It got kids
                 out of their chairs and working with someone new. It was
@@ -219,17 +218,17 @@ export default function GoodbyeQuizlet() {
 
               <p>
                 By contrast, our immediately previous effort was a game called
-                Gravity. We didn't have external deadlines via scheduled class
-                visits. We had a long list of features requirements to build. By
-                the time we'd gotten the basic game working, we were already
+                Gravity. We didn’t have external deadlines via scheduled class
+                visits. We had a long list of feature requirements to build. By
+                the time we’d gotten the basic game working, we were already
                 past the time allotted for the project. We shipped what we had
                 and moved on.
               </p>
 
               <p>
-                It was a dud. If we'd taken the time to build a 7th or 8th
-                iteration of the game, I'm certain it would have been a hit. And
-                if we'd had weekly classroom demos, we would have had faster
+                It was a dud. If we’d taken the time to build a 7th or 8th
+                iteration of the game, I’m certain it would have been a hit. And
+                if we had had weekly classroom demos, we would have had faster
                 cycles with more accidental discoveries.
               </p>
 
