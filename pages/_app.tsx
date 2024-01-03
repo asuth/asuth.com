@@ -1,6 +1,5 @@
 import { AppProps } from "next/app";
 import Link from "next/link";
-import { useEffect } from "react";
 
 import "../styles/globals.css";
 import Homepage from "../components/homepage";
