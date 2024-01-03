@@ -32,6 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/investment-worksheet": "How I decide on investments",
     "/how-to-not-be-late": "How to not be late",
     "/building-a-demo-culture": "Giggles over mockups: Building a demo culture",
+    "/404": "404 Not Found",
   };
 
   const descriptions: { [key: string]: string } = {
@@ -54,6 +55,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/how-to-not-be-late": "A life lesson I once bought for $1,500.",
     "/building-a-demo-culture":
       "Watch for giggles – they are a sign that you’ve probably found magic.",
+    "/404": "I don’t know what you did.",
   };
 
   const title = titles[router.pathname];
