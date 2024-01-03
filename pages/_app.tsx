@@ -32,6 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/great-engineer": "What makes a great engineer?",
     "/investment-worksheet": "How I decide on investments",
     "/how-to-not-be-late": "How to not be late",
+    "/building-a-demo-culture": "Giggles over mockups: Building a demo culture",
   };
 
   const descriptions: { [key: string]: string } = {
@@ -49,10 +50,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     "/goodbye-quizlet":
       "After founding and leading Quizlet for nearly fifteen years, I left last year. This is the first time I’ve written about it.",
     "/great-engineer": "I wrote what about the attributes of great engineers.",
-
     "/investment-worksheet":
       "Seeing a lot of investment opportunities has meant I needed a rigorous process. So I made my own worksheet.",
     "/how-to-not-be-late": "A life lesson I once bought for $1,500.",
+    "/building-a-demo-culture":
+      "Watch for giggles – they are a sign that you’ve probably found magic.",
   };
 
   return (
