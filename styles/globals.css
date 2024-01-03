@@ -327,6 +327,19 @@ p:last-child {
   margin-top: -160px;
 }
 
+.FirstCard--writing {
+  margin-top: calc(-128px / 2 - 300px);
+}
+
+@media only screen and (max-width: 768px) {
+  .FirstCard {
+    margin-top: -110px;
+  }
+  .FirstCard--writing {
+    margin-top: calc(-128px / 2 - 270px);
+  }
+}
+
 .CenterImage,
 .FullSizeMedia {
   text-align: center;
@@ -346,12 +359,6 @@ figcaption {
   display: block;
   font-size: 85%;
   font-style: italic;
-}
-
-@media only screen and (max-width: 568px) {
-  .FirstCard {
-    margin-top: -110px;
-  }
 }
 
 .CenterCard {

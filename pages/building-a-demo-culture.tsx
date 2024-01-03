@@ -14,7 +14,7 @@ export default function GoodbyeQuizlet() {
       <div className="ContentBlock">
         <div className="Content">
           <div className="MaxWidth">
-            <div className="Card FirstCard CenterCard">
+            <div className="Card FirstCard FirstCard--writing CenterCard">
               <h3>Giggles over mockups: Building a demo culture</h3>
               <p>
                 <em>December 2023 &middot; By Andrew Sutherland</em>
@@ -258,10 +258,6 @@ export default function GoodbyeQuizlet() {
       </div>
 
       <style jsx>{`
-        .FirstCard {
-          margin-top: calc(-128px / 2 - 300px);
-        }
-
         :global(:root) {
           --bg-color: var(--writingBlue);
           --dark-bg-color: var(--writingDarkBlue);
