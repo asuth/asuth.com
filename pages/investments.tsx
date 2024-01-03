@@ -336,7 +336,6 @@ export default function Investments() {
       }
 
       .InvestmentCard h3 {
-        font: 25px var(--headline-font);
         display: inline-block;
         margin-bottom: 0;
       }

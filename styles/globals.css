@@ -79,13 +79,13 @@ a {
 }
 
 h3 {
-  font: 28px/1.6 var(--headline-font);
+  font: 165%/1.6 var(--headline-font);
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 h4 {
-  font: 18px/1.6 var(--headline-font);
+  font: 110%/1.6 var(--headline-font);
   margin-bottom: 10px;
 }
 
@@ -260,6 +260,9 @@ p:last-child {
 
 /* yeah, print size should be full size */
 @media print {
+  body {
+    font-size: 20px;
+  }
   .Card {
     width: 100%;
   }
