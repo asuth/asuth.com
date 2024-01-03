@@ -143,9 +143,9 @@ export default function GoodbyeQuizlet() {
 
               <p>
                 We wanted to build a game that was competitive and fun but also
-                rewarded accuracy. We built a simple game where students had to
-                answer questions, and they won if they got a 12-in-a-row correct
-                streak.
+                rewarded thought and accuracy. We built a simple game where
+                students had to answer questions, and they won if they got a
+                12-in-a-row correct streak.
               </p>
 
               <figure className="FullSizeMedia">
