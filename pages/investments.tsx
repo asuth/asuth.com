@@ -159,9 +159,9 @@ export default function Investments() {
       description: (
         <>
           The Terner Center for Housing Innovation at UC Berkeley does the most
-          rigorous research into the causes of and solutions to California's
+          rigorous research into the causes of and solutions to California’s
           housing crisis. I invested because we will make much better housing
-          policy decisions if they're backed by good research.
+          policy decisions if they’re backed by good research.
         </>
       ),
       link: "https://ternercenter.berkeley.edu",

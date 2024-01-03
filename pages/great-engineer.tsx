@@ -26,7 +26,7 @@ export default function GoodbyeQuizlet() {
               <h4>Has learned from the consequences of their own actions</h4>
               <p>
                 A great engineer has worked on the same system for multiple
-                years. They've seen systems evolve. They’ve learned what choices
+                years. They’ve seen systems evolve. They’ve learned what choices
                 or shortcuts they made were worthwhile, and which have caused
                 problems. They’ve seen their choices confuse other engineers.
                 They’ve had to fix performance issues on code they wrote six
@@ -82,7 +82,7 @@ export default function GoodbyeQuizlet() {
                 just doesn’t feel great yet, you want engineers to push for
                 better. I saw this mistake happen sometimes at Quizlet: we’d
                 ship when something was good enough. It wouldn’t get a ton of
-                traction. We'd iterate a bit more, but not make major changes.
+                traction. We’d iterate a bit more, but not make major changes.
                 Then people would say, well, that didn’t work. In consumer
                 products, users need to be delighted or they’ll move on.
               </p>

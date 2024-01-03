@@ -54,7 +54,7 @@ export default function Home() {
               <br />
               <p>
                 <em>
-                  Hey, I bet you can't spot the time I signed up for a
+                  Hey, I bet you can’t spot the time I signed up for a
                   once-a-month writing club!
                 </em>
               </p>

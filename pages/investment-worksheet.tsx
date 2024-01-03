@@ -119,7 +119,7 @@ export default function GoodbyeQuizlet() {
                   Rahul Vohra
                 </a>
                 . Simply: “You should have one overwhelming reason to do
-                something. When you have multiple, it's often a fuzzy decision,
+                something. When you have multiple, it’s often a fuzzy decision,
                 not well made.”
               </p>
 
