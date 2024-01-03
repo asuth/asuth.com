@@ -57,6 +57,16 @@ function MyApp({ Component, pageProps }: AppProps) {
       "Watch for giggles – they are a sign that you’ve probably found magic.",
   };
 
+  const title = titles[router.pathname];
+  const description = descriptions[router.pathname];
+
+  // error if title or description is undefined
+  if (!title || !description) {
+    throw new Error(
+      `title or description is undefined for ${router.pathname}. fix in _app.tsx`
+    );
+  }
+
   return (
     <>
       <div className="MaxWidth LogoWrap" key="logo">
@@ -73,10 +83,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </div>
 
       <Homepage homepageIsCurrent={isHomepage} />
-      <Nav
-        title={titles[router.pathname]}
-        description={descriptions[router.pathname]}
-      ></Nav>
+      <Nav title={title} description={description}></Nav>
       <Transition location={router.pathname}>
         <Component {...pageProps} />
       </Transition>
