@@ -71,7 +71,7 @@ export default function GoodbyeQuizlet() {
                   src="https://www.youtube.com/embed/Etyt4osHgX0?start=1878"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen={true}
+                  allowFullScreen={true}
                 ></iframe>
                 <figcaption>
                   Steve Jobs demos the iPhone and its keyboard for the first
