@@ -92,7 +92,8 @@ h4 {
 p,
 ol,
 ul,
-pre {
+pre,
+figure {
   margin-bottom: 25px;
 }
 
@@ -290,7 +291,8 @@ p:last-child {
   p,
   ul,
   ol,
-  pre {
+  pre,
+  figure {
     margin-bottom: 20px;
   }
 
@@ -322,9 +324,25 @@ p:last-child {
   margin-top: -160px;
 }
 
-.CenterImage {
+.CenterImage,
+.FullSizeMedia {
   text-align: center;
-  margin-bottom: 10px;
+}
+
+.FullSizeMedia img,
+.FullSizeMedia iframe {
+  width: 100%;
+  height: auto;
+}
+
+.FullSizeMedia iframe {
+  height: 300px;
+}
+
+figcaption {
+  display: block;
+  font-size: 85%;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 568px) {

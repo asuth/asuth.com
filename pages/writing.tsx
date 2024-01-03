@@ -17,6 +17,14 @@ export default function Home() {
         <div className="Content">
           <div className="MaxWidth">
             <div className="Card FirstCard CenterCard">
+              <em>December 2023</em>
+              <h3>
+                <Link href="/building-a-demo-culture">
+                  Giggles over mockups: Building a demo culture
+                </Link>
+              </h3>
+              <br />
+
               <em>November 2023</em>
               <h3>
                 <Link href="/how-to-not-be-late">How to not be late</Link>
