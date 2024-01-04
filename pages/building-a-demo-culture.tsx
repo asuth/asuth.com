@@ -243,6 +243,14 @@ export default function GoodbyeQuizlet() {
               </p>
 
               <p>
+                Fast cycle times are the harder trick to pull off. Most
+                companies lack any forcing functions for iterating quickly.
+                Pre-scheduling external user testing sessions is a great way to
+                do that. Signing up to present at conferences is another way.
+                Anything external and immovable will help.
+              </p>
+
+              <p>
                 If you want to make something great, build a demo culture and
                 iterate your demos with fast cycle times. Then, watch for
                 giggles – they are a sign that you’ve probably found magic.
