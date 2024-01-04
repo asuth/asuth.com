@@ -38,14 +38,14 @@ export default function GoodbyeQuizlet() {
               </p>
 
               <p>
-                Apple’s culture is unique for its frequent demos and fast cycles
-                of iteration. Their process for developing the iPhone was making
-                tangible examples of how the device would work. They showed
-                those examples to each other, and played with them hands-on.
-                These examples weren’t fully working software, but rather{" "}
-                <em>demonstrations</em> of what was possible. If they found
-                themselves giggling after a demo, they had struck magic. If not,
-                they discussed the direction to try out for the next meeting.
+                Apple’s culture is unique in its reverence for demos. Their
+                process for developing the iPhone was making tangible examples
+                of how the device would work. They showed those examples to each
+                other, and played with them hands-on. These examples weren’t
+                fully working software, but rather <em>demonstrations</em> of
+                what was possible. If they found themselves giggling after a
+                demo, they had struck magic. If not, they discussed the
+                direction to try out for the next meeting.
               </p>
 
               <p>
