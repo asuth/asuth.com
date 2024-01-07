@@ -1,11 +1,16 @@
+import Meta from "../components/meta";
 import hero from "/public/heros/writing.webp";
 import Link from "next/link";
 
-export default function GoodbyeQuizlet() {
+export default function () {
   return (
     <>
+      <Meta
+        title="How I decide on investments"
+        description="Seeing a lot of investment opportunities has meant I needed a rigorous process. So I made my own worksheet."
+      />
       <div className="PageHeader Grid">
-        <div className="PageHeaderRainbow Grid">
+        <div className="Grid">
           <div className="MaxWidth Grid"></div>
         </div>
       </div>

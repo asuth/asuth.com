@@ -1,11 +1,16 @@
+import Meta from "../components/meta";
 import hero from "/public/heros/writing.webp";
 import Link from "next/link";
 
-export default function GoodbyeQuizlet() {
+export default function () {
   return (
     <>
+      <Meta
+        title="How to not be late"
+        description="A life lesson I once bought for $1,500."
+      />
       <div className="PageHeader Grid">
-        <div className="PageHeaderRainbow Grid">
+        <div className="Grid">
           <div className="MaxWidth Grid"></div>
         </div>
       </div>

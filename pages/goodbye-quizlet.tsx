@@ -2,12 +2,17 @@ import hero from "/public/heros/writing.webp";
 import smallplant from "/public/smallplant.png";
 import Link from "next/link";
 import Image from "next/image";
+import Meta from "../components/meta";
 
-export default function GoodbyeQuizlet() {
+export default function () {
   return (
     <>
+      <Meta
+        title="Goodbye Quizlet, Hello World"
+        description="After founding and leading Quizlet for nearly fifteen years, I left last year. This is the first time I’ve written about it."
+      />
       <div className="PageHeader Grid">
-        <div className="PageHeaderRainbow Grid">
+        <div className="Grid">
           <div className="MaxWidth Grid"></div>
         </div>
       </div>

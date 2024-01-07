@@ -1,8 +1,9 @@
 import hero from "/public/heros/investments.webp";
 import Link from "next/link";
 import React, { ReactElement } from "react";
+import Meta from "../components/meta";
 
-export default function Investments() {
+export default function () {
   /*
   function shuffleArray<T>(array: Array<T>): void {
     for (let i = array.length - 1; i > 0; i--) {
@@ -205,6 +206,10 @@ export default function Investments() {
 
   return (
     <>
+      <Meta
+        title="Investments"
+        description="Investing is my way to see the future. I invest in both for-profit and non-profit organizations, so you’ll see them mixed together in my portfolio."
+      />
       <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">

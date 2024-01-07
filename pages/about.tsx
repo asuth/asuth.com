@@ -3,10 +3,15 @@ import underConstruction from "/public/under-construction.gif";
 import andrewAndJohnny from "/public/andrew-and-johnny.webp";
 import Link from "next/link";
 import Image from "next/image";
+import Meta from "../components/meta";
 
-export default function About() {
+export default function () {
   return (
     <>
+      <Meta
+        title="About Andrew"
+        description="I’m in a goofy and exploratory phase of my life. I am indulging my curiosity, saying yes to adventures, and finding projects that keep me filled with joy and wonder until late into the night."
+      />
       <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">

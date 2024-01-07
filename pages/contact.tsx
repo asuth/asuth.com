@@ -1,8 +1,13 @@
+import Meta from "../components/meta";
 import hero from "/public/heros/contact.webp";
 
-export default function Contact() {
+export default function () {
   return (
     <>
+      <Meta
+        title="Contact"
+        description="If you’re on this page, you’re already considering emailing me, so just do it, eh?"
+      />
       <div className="PageHeader">
         <div className="Content">
           <div className="MaxWidth">

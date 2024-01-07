@@ -6,10 +6,16 @@ import homes from "/public/homes.png";
 import stump from "/public/stump.png";
 import Link from "next/link";
 import Image from "next/image";
+import Meta from "../components/meta";
 
-export default function Questions() {
+export default function () {
   return (
     <>
+      <Meta
+        title="Questions I’m Pondering"
+        description="I’ve collected important questions and put them on this page, in the hopes that a kindly stranger (you!) might offer a compelling answer, or perhaps a promising lead or book recommendation."
+      />
+
       <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">

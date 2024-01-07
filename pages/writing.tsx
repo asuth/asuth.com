@@ -1,9 +1,14 @@
 import Link from "next/link";
 import hero from "/public/heros/writing.webp";
+import Meta from "../components/meta";
 
-export default function Home() {
+export default function () {
   return (
     <>
+      <Meta
+        title="Writing"
+        description="Hey, I bet you can’t spot the time I signed up for a once-a-month writing club!"
+      />
       <div className="PageHeader Grid">
         <div className="MaxWidth Grid">
           <h1 className="PageHeadline">

@@ -1,10 +1,12 @@
 import cd from "/public/cd.png";
 import Image from "next/image";
 import Link from "next/link";
+import Meta from "../components/meta";
 
-export default function Custom404() {
+export default function () {
   return (
     <>
+      <Meta title="404 Not Found" description="I don’t know what you did." />
       <div className="PageHeader">
         <div className="Content">
           <div className="MaxWidth">

@@ -1,12 +1,17 @@
 import hero from "/public/heros/writing.webp";
 import Link from "next/link";
 import Image from "next/image";
+import Meta from "../components/meta";
 
-export default function GoodbyeQuizlet() {
+export default function () {
   return (
     <>
+      <Meta
+        title="Giggles over mockups: Building a demo culture"
+        description="Watch for giggles – they are a sign that you’ve probably found magic."
+      />
       <div className="PageHeader Grid">
-        <div className="PageHeaderRainbow Grid">
+        <div className="Grid">
           <div className="MaxWidth Grid"></div>
         </div>
       </div>

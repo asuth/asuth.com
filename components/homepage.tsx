@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Meta from "./meta";
 
 const animations: {
   [key: string]: {
@@ -271,6 +272,12 @@ export default class Homepage extends Component<HomeProps, HomeState> {
 
     return (
       <>
+        {this.props.homepageIsCurrent ? (
+          <Meta
+            title="Andrew Sutherland"
+            description="On the lookout for wonder"
+          />
+        ) : null}
         <div
           key="hpBg"
           className={
