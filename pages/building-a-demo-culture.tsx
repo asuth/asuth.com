@@ -11,9 +11,7 @@ export default function () {
         description="Watch for giggles – they are a sign that you’ve probably found magic."
       />
       <div className="PageHeader Grid">
-        <div className="Grid">
-          <div className="MaxWidth Grid"></div>
-        </div>
+        <div className="MaxWidth Grid"></div>
       </div>
 
       <div className="ContentBlock">

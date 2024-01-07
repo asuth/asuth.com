@@ -10,9 +10,7 @@ export default function () {
         description="I wrote what about the attributes of great engineers."
       />
       <div className="PageHeader Grid">
-        <div className="Grid">
-          <div className="MaxWidth Grid"></div>
-        </div>
+        <div className="MaxWidth Grid"></div>
       </div>
 
       <div className="ContentBlock">

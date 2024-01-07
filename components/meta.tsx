@@ -16,11 +16,7 @@ type NodeProps = {
   router: NextRouter;
 };
 
-type NodeState = {
-  preloadHeroPath: string | null;
-};
-
-class Meta extends Component<NodeProps, NodeState> {
+class Meta extends Component<NodeProps> {
   paths: { [key: string]: string } = {
     about: aboutHero.src,
     writing: writingHero.src,
@@ -31,14 +27,6 @@ class Meta extends Component<NodeProps, NodeState> {
 
   constructor(props: NodeProps) {
     super(props);
-
-    this.state = {
-      preloadHeroPath: null,
-    };
-  }
-
-  preloadHero(pageName: string) {
-    this.setState({ preloadHeroPath: this.paths[pageName] });
   }
 
   renderAsciiArt() {
@@ -117,10 +105,6 @@ class Meta extends Component<NodeProps, NodeState> {
             property="og:url"
             content={`https://asuth.com${this.props.router.pathname}`}
           />
-
-          {this.state.preloadHeroPath === null ? null : (
-            <link rel="preload" as="image" href={this.state.preloadHeroPath} />
-          )}
         </Head>
       </>
     );

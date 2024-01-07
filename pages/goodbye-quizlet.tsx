@@ -12,9 +12,7 @@ export default function () {
         description="After founding and leading Quizlet for nearly fifteen years, I left last year. This is the first time I’ve written about it."
       />
       <div className="PageHeader Grid">
-        <div className="Grid">
-          <div className="MaxWidth Grid"></div>
-        </div>
+        <div className="MaxWidth Grid"></div>
       </div>
 
       <div className="ContentBlock">

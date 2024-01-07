@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import { Component } from "react";
 
 import aboutHero from "/public/heros/about.webp";
@@ -188,13 +189,13 @@ class Nav extends Component<NodeProps, NodeState> {
   }
 
   render() {
-    let path = this.props.router.pathname.substring(1);
-    const bgImage = this.paths.hasOwnProperty(path)
-      ? `https://asuth.com${this.paths[path]}`
-      : `https://asuth.com${metaImage.src}`;
-
     return (
       <>
+        {this.state.preloadHeroPath === null ? null : (
+          <Head>
+            <link rel="preload" as="image" href={this.state.preloadHeroPath} />
+          </Head>
+        )}
         <nav className="Nav">
           <div className="NavHomeBtns">
             <Link

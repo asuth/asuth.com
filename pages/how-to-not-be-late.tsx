@@ -10,9 +10,7 @@ export default function () {
         description="A life lesson I once bought for $1,500."
       />
       <div className="PageHeader Grid">
-        <div className="Grid">
-          <div className="MaxWidth Grid"></div>
-        </div>
+        <div className="MaxWidth Grid"></div>
       </div>
 
       <div className="ContentBlock">

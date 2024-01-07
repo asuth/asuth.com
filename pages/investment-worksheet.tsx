@@ -10,9 +10,7 @@ export default function () {
         description="Seeing a lot of investment opportunities has meant I needed a rigorous process. So I made my own worksheet."
       />
       <div className="PageHeader Grid">
-        <div className="Grid">
-          <div className="MaxWidth Grid"></div>
-        </div>
+        <div className="MaxWidth Grid"></div>
       </div>
 
       <div className="ContentBlock">
