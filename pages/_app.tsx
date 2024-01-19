@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import logo1x from "/public/logo-240.webp";
 import logo2x from "/public/logo-480.webp";
 import logo3x from "/public/logo-720.webp";
+import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -35,6 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Transition location={router.pathname}>
         <Component {...pageProps} />
       </Transition>
+      <Analytics />
     </>
   );
 }
