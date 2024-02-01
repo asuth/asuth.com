@@ -7,7 +7,7 @@ export default function () {
   return (
     <>
       <Meta
-        title="Paper Research"
+        title="Paper"
         description="You think paper is from the past but I think it's from the future."
       />
       <div className="PageHeader Grid">
@@ -19,7 +19,7 @@ export default function () {
           <div className="MaxWidth">
             <div className="Card FirstCard FirstCard--writing CenterCard SpecialCard">
               <Image
-                alt=""
+                alt="For the past year I have been researching PAPER as a medium, and explorings its potential in our digital world. It has many advantages. It's calm, it exists, it's expressive, it's cheap, it's static, and it has possibility. Of course, it can be harder to edit, share, manipulate and store. But paper can be imbued with computery advantages, and if that is done well, a paper operating system could be verrrry interesting. -Andrew"
                 className="SpecialImage"
                 src="/images/paper.jpg"
                 fill={true}
@@ -48,6 +48,12 @@ export default function () {
         .SpecialCard {
           padding: 0;
           height: 900px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          .SpecialCard {
+            height: 780px;
+          }
         }
 
         .SpecialImage {
