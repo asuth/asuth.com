@@ -22,6 +22,12 @@ export default function () {
         <div className="Content">
           <div className="MaxWidth">
             <div className="Card FirstCard CenterCard">
+              <em>January 2024</em>
+              <h3>
+                <Link href="/paper">Paper</Link>
+              </h3>
+              <br />
+
               <em>December 2023</em>
               <h3>
                 <Link href="/building-a-demo-culture">
