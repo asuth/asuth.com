@@ -42,6 +42,18 @@ export default function () {
           margin-top: 50px;
           margin-bottom: 50px;
         }
+
+        :global(.LogoWrap),
+        :global(.Nav) {
+          display: none;
+        }
+
+        :global(.Page) {
+          top: 0 !important;
+        }
+        :global(.PageHeader) {
+          height: 100vh !important;
+        }
       `}</style>
     </>
   );
