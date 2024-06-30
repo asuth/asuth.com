@@ -1,5 +1,4 @@
 import Meta from "../components/meta";
-import hero from "/public/heros/contact.webp";
 
 export default function () {
   return (
