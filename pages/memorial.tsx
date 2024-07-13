@@ -18,16 +18,14 @@ export default function () {
                 . All who knew Howard are welcome to attend.
               </p>
               <p>
-                <a href="https://us02web.zoom.us/j/84868950583?pwd=AniHTvmbDi3nv5MkpHf7MTSrGodaiM.1">
-                  Click here
-                </a>{" "}
+                <b>
+                  <a href="https://us02web.zoom.us/j/84868950583?pwd=AniHTvmbDi3nv5MkpHf7MTSrGodaiM.1">
+                    Click here
+                  </a>
+                </b>{" "}
                 to view the livestream via Zoom. We aim to start the formal
-                portion of the service at 10:45am Pacific Time.
-              </p>
-
-              <p>
-                We will post a recording to this page in the days following the
-                ceremony.
+                portion of the service at 10:45am Pacific Time. We will post a
+                recording here in the days following the ceremony.
               </p>
             </div>
           </div>
