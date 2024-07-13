@@ -24,6 +24,11 @@ export default function () {
                 to view the livestream via Zoom. We aim to start the formal
                 portion of the service at 10:45am Pacific Time.
               </p>
+
+              <p>
+                We will post a recording to this page in the days following the
+                ceremony.
+              </p>
             </div>
           </div>
         </div>
