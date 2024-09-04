@@ -194,6 +194,33 @@ export default function () {
       link: "https://www.sonic-sphere.com",
       category: "Spatial Computing",
     },
+    {
+      name: "MathDash",
+      leader: "Daniel Sun",
+      description: (
+        <>
+          MathDash is building a place to sharpen your competitive math skills.
+          I invested because I love getting better at Chess via Chess.com and
+          its ELO score, and I want to see the same thing happen for math.
+        </>
+      ),
+      link: "https://www.mathdash.com",
+      category: "Education Tech",
+    },
+    {
+      name: "Infilla",
+      leader: "Jenny Song",
+      description: (
+        <>
+          Infilla is building a platform to help city governments manage housing
+          project applications and approvals. I invested because we need to
+          build the internal capacity of city governments to approve more
+          housing.
+        </>
+      ),
+      link: "https://www.infilla.com",
+      category: "Housing Tech",
+    },
   ];
 
   // shuffleArray(investments);
