@@ -102,16 +102,6 @@ export default function () {
       category: "Housing Policy",
     },
     {
-      name: "Hidden Genius Project",
-      leader: "Brandon Nicholson",
-      description: `
-          The Hidden Genius Project trains black male youth in technology and leadership skills. I invested because creating young leaders can have unpredictable and massive-scale impact down the line.
-          `,
-      link: "https://www.hiddengeniusproject.org/",
-      category: "Youth Development",
-    },
-
-    {
       name: "PrismsVR",
       leader: "Anurupa Ganguly",
       description: (
