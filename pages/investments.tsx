@@ -20,15 +20,6 @@ export default function () {
     category: string;
   }> = [
     {
-      name: "VotingWorks",
-      leader: "Ben Adida",
-      description: `VotingWorks is building next-generation, low-cost voting
-      systems. I invested because we need inexpensive voting machines
-      and auditing systems that the public can trust.`,
-      category: "Civic Tech",
-      link: "https://voting.works/",
-    },
-    {
       name: "Replit",
       leader: "Amjad Masad",
       description: `Replit is building a programming environment in the browser. I invested because it’s incredibly important to make programming more accessible to everyone.`,
@@ -51,6 +42,16 @@ export default function () {
       category: "Education Tech",
       link: "https://tomi.digital/",
     },
+    {
+      name: "VotingWorks",
+      leader: "Ben Adida",
+      description: `VotingWorks is building next-generation, low-cost voting
+        systems. I invested because we need inexpensive voting machines
+        and auditing systems that the public can trust.`,
+      category: "Civic Tech",
+      link: "https://voting.works/",
+    },
+
     {
       name: "Vanta",
       leader: "Christina Cacioppo",
@@ -189,9 +190,10 @@ export default function () {
       leader: "Daniel Sun",
       description: (
         <>
-          MathDash is building a place to sharpen your competitive math skills.
-          I invested because I love getting better at Chess via Chess.com and
-          its ELO score, and I want to see the same thing happen for math.
+          MathDash helps you sharpen your competitive math skills. I invested
+          because I love getting better at Chess via{" "}
+          <a href="https://chess.com">Chess.com</a> and its ELO score, and I
+          want to see the same thing happen for math.
         </>
       ),
       link: "https://www.mathdash.com",
@@ -244,11 +246,11 @@ export default function () {
                 Investing is my way to see the future. I invest in both
                 for-profit and non-profit organizations, so you’ll see them
                 mixed together in my portfolio below. The reasons I provide for
-                investing are kinda post-hoc rationalizations. Honestly, my
-                criterion for investing is primarily whether I believe the
-                leader is capable of greatness. My favorite areas to invest in
-                are education, climate, housing, developer tools, and tools for
-                thought.
+                investing are kinda post-hoc rationalizations. Honestly, my{" "}
+                <Link href="/investment-worksheet">primary criterion</Link> for
+                investing is whether I believe the leader is capable of
+                greatness. My favorite areas to invest in are education,
+                climate, housing, developer tools, and tools for thought.
               </p>
               <p>
                 If I would be a good investor for you, please send an email to{" "}

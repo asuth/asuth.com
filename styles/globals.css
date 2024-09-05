@@ -310,16 +310,16 @@ p:last-child {
   }
 }
 
-.Card a {
+p a {
   box-shadow: 0 2px var(--bg-color);
   transition: box-shadow 150ms ease;
 }
 
-.Card a:hover {
+p a:hover {
   box-shadow: 0 2px var(--dark-bg-color);
 }
 
-.Card a:active {
+p a:active {
   transform: rotate(-4deg);
 }
 
