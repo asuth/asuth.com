@@ -22,6 +22,15 @@ export default function () {
         <div className="Content">
           <div className="MaxWidth">
             <div className="Card FirstCard CenterCard">
+              <em>March 2025</em>
+              <h3>
+                <Link href="/im-joining-aops">
+                  I'm joining AoPS to bring kids to the frontiers of science and
+                  technology
+                </Link>
+              </h3>
+              <br />
+
               <em>January 2024</em>
               <h3>
                 <Link href="/paper">Paper</Link>
