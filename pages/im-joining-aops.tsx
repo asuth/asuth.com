@@ -130,7 +130,7 @@ export default function () {
               <p>
                 After a few years of semi-retirement{" "}
                 <Link href="/goodbye-quizlet">post-Quizlet</Link>, I was bored.
-                I wanted to work grueling hours on something difficult again. I
+                I wanted to work on something difficult again. I
                 wanted to put my experience with making learning tools back to
                 work.
               </p>
