@@ -66,7 +66,9 @@ export default function () {
               <p>
                 AoPS has been quietly at work on this problem for a couple of
                 decades. If you peek behind the curtain at the major AI labs,
-                many of their researchers learned math with AoPS textbooks. Now
+                many of their researchers learned math with AoPS textbooks. For
+                kids in elementary school, we make a comic book-style curriculum
+                called <a href="https://beastacademy.com">Beast Academy</a>. Now
                 it’s my job to scale up AoPS’s approach to problem solving.
               </p>
               <h4>
@@ -130,9 +132,8 @@ export default function () {
               <p>
                 After a few years of semi-retirement{" "}
                 <Link href="/goodbye-quizlet">post-Quizlet</Link>, I was bored.
-                I wanted to work on something difficult again. I
-                wanted to put my experience with making learning tools back to
-                work.
+                I wanted to work on something difficult again. I wanted to put
+                my experience with making learning tools back to work.
               </p>
               <p>
                 AoPS is uniquely set up to create the world’s best learning
