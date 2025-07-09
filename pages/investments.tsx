@@ -103,6 +103,15 @@ export default function () {
       category: "Housing Policy",
     },
     {
+      name: "Abundance Network",
+      leader: "Misha Chellam",
+      description: `
+          I helped start Abundance Network, a network of mostly tech-related leaders working to create housing and energy abundance and end the politics of scarcity. I helped start this because many of the problems with our built environment are self-inflicted policy choices we can change.
+          `,
+      link: "https://abundancenetwork.com/",
+      category: "Housing Policy",
+    },
+    {
       name: "PrismsVR",
       leader: "Anurupa Ganguly",
       description: (
@@ -114,7 +123,20 @@ export default function () {
         </>
       ),
       link: "https://www.prismsvr.com/",
-      category: "Spatial Computing",
+      category: "Education Tech",
+    },
+    {
+      name: "Warp",
+      leader: "Zach Lloyd",
+      description: (
+        <>
+          Warp is building a modern developer terminal and nice related tools. I
+          invested because the terminal is the home base for serious software
+          development and was due for reimagination.
+        </>
+      ),
+      link: "https://warp.dev/",
+      category: "Developer Tools",
     },
     {
       name: "Synthesis",
