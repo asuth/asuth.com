@@ -348,6 +348,10 @@ p a:active,
   text-align: center;
 }
 
+.CenterImage {
+  margin-bottom: 10px;
+}
+
 .FullSizeMedia img,
 .FullSizeMedia iframe {
   width: 100%;

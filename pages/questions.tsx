@@ -75,8 +75,8 @@ export default function () {
               </p>
               <p>
                 My work on the board of{" "}
-                <a href="https://cayimby.org/">California YIMBY’s</a>{" "}
-                educational arm fits with this goal.
+                <a href="https://cayimby.org/">California YIMBY’s</a> fits with
+                this goal.
               </p>
             </div>
             <div className="LeftCard Card">
