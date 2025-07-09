@@ -32,10 +32,10 @@ export default function () {
               </p>
 
               <p>
-                I’m in a <span className="Goofy">goofy</span> and exploratory
-                phase of my life. I am indulging my curiosity, saying yes to
-                adventures, and finding projects that bring me joy and keep me
-                up late into the night.
+                My main thing these days is math. I work on giving kids hard
+                problems to solve at Art of Problem Solving. We train the most
+                intense math kids in the U.S., and lots of medium-intense ones
+                too.
               </p>
 
               <p>
@@ -43,6 +43,19 @@ export default function () {
                 serving millions of students and teachers worldwide. After
                 working on Quizlet from age 15 to age 30, I left the company in
                 2020.
+              </p>
+
+              <p>
+                Between Quizlet and AoPS, I was in a{" "}
+                <span className="Goofy">goofy</span> and exploratory phase of
+                life. You might have called it retirement. I was saying yes to
+                lots of adventures, and finding projects that kept me up late
+                into the night. That was when I had time to build this website,
+                and I{" "}
+                <a href="https://twitter.com/wesbos/status/1354903492641611797">
+                  LOVE
+                </a>{" "}
+                building websites, so that was good.
               </p>
             </div>
             <div className="Card RightCard">
@@ -92,7 +105,7 @@ export default function () {
             </div>
 
             <div className="Card LeftCard">
-              <h3>The New Andrew</h3>
+              <h3>The Andrew Construction Zone</h3>
 
               <div className="RightImage">
                 <Image
@@ -103,43 +116,68 @@ export default function () {
                 />
               </div>
 
-              <p>INSERT CONTENT HERE.</p>
+              <p>
+                To construct the post-Quizlet me, I immersed myself in new
+                environments. I taught a course about learning at MIT, drove for
+                Lyft, helped run a San Francisco municipal election, and led
+                crews of teenagers into the wilderness.
+              </p>
 
               <p>
-                Haha. But seriously. To construct the new me, I’ve been
-                immersing myself in new environments. That’s the fastest way for
-                me to learn. Recently, I’ve taught a course about learning at
-                MIT, driven for Lyft, helped run a San Francisco municipal
-                election, and led crews of teenagers into the wilderness.
+                I also installed myself for a period à Paris, which is the
+                superior city in the category of all cities. Unlike Americans,
+                the French know how to sit outside, have a glass of wine, and
+                have an unbothered chat about life. Life sparkles in Paris.
               </p>
+
               <p>
-                My narrow set of interests, if you could call them narrow, are
-                education, housing, and climate. Education, because I love
-                helping kids learn, and kids are funny as hell. Housing, because
-                a lack of housing is the secret rotten core of many of our
-                society’s problems, from wealth inequality to sidewalk poop. And
-                climate, because it is the mega-problem that if we fail to
-                address we’re all gonna burn.
-              </p>
-              <p>
-                I also love programming and computers. A day spent programming
-                is like a spa day for me: luxurious and restorative. I want
-                computers to help me think thoughts I couldn’t otherwise think,
-                which you could say makes me a{" "}
-                <a href="https://numinous.productions/ttft/">
-                  “Tools for Thought”
-                </a>{" "}
-                person.
-              </p>
-              <p>
-                Having some extra free time has also meant I could build this
-                website, and I{" "}
-                <a href="https://twitter.com/wesbos/status/1354903492641611797">
-                  LOVE
-                </a>{" "}
-                building websites, so that’s good.
+                As time passed however, I couldn't shake my American yearning
+                for long working hours. I became obsessed with education and
+                housing policy. I helped found{" "}
+                <a href="https://abundancenetwork.com/">Abundance Network</a>{" "}
+                and joined the board of{" "}
+                <a href="https://cayimby.org">California YIMBY</a>. A lack of
+                housing is the secret rotten core of many of our society’s
+                problems, from wealth inequality to sidewalk poop. We are on it!
               </p>
             </div>
+
+            <div className="Card RightCard">
+              <h3>You need a challenge</h3>
+
+              <p>
+                We all seek meaning and purpose in life. My period of personal
+                reconstruction was joyful and meandering, and it gave me the
+                clarity of purpose I sought.
+              </p>
+
+              <p>
+                I want to live in a world with excellent education, excellent
+                cities, and excellent computers. These are worthy problems to
+                work on over many decades. For now, computers can wait. Today, I
+                am quite involved in working on cities, while my full-time focus
+                is on education.
+              </p>
+
+              <p>
+                Educational excellence is rare. My high school French teacher
+                challenged me in a way I had previously never been challenged.
+                Her work led to so many of the good things that have happened in
+                my life.
+              </p>
+
+              <p>
+                I joined AoPS because it's a company that presents kids with
+                hard challenges, at scale. We get kids sitting with a single
+                hard math problem for hours. I'm quite optimistic we can be
+                leaders of a movement towards rigor, challenge, and excellence
+                in education in this country. It's also wonderful to be working
+                with kids again, because kids are funny as hell.
+              </p>
+
+              <p>That's all for now, thank you for reading this far!</p>
+            </div>
+
             <div className="BackToHome">
               <Link href="/" className="NavBtn">
                 Back to Home
