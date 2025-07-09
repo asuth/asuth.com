@@ -26,6 +26,7 @@ export default function () {
           <div className="MaxWidth">
             <div className="Card FirstCard">
               <h3>Hi Friend!</h3>
+
               <p>
                 Welcome to asuth.com. I built this website so you can get to
                 know me a bit.
