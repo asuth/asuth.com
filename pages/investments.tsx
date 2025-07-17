@@ -132,7 +132,7 @@ export default function () {
         <>
           Warp is building a modern developer terminal and nice related tools. I
           invested because the terminal is the home base for serious software
-          development and was due for reimagination.
+          development and it has been due for total reimagination.
         </>
       ),
       link: "https://warp.dev/",
@@ -181,6 +181,20 @@ export default function () {
       link: "https://ternercenter.berkeley.edu",
       category: "Housing Policy",
     },
+    {
+      name: "Exa",
+      leader: "Will Bryk",
+      description: (
+        <>
+          Exa is building web search infrastructure for large language models. I
+          invested because accurate information retrieval is an essential part
+          of any interesting AI experience.
+        </>
+      ),
+      link: "https://exa.ai",
+      category: "Developer Tools",
+    },
+
     {
       name: "Kosmik",
       leader: "Paul Rony",
