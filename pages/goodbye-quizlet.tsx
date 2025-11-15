@@ -1,5 +1,5 @@
-import hero from "/public/heros/writing.webp";
-import smallplant from "/public/smallplant.png";
+import hero from "../public/heros/writing.webp";
+import smallplant from "../public/smallplant.png";
 import Link from "next/link";
 import Image from "next/image";
 import Meta from "../components/meta";

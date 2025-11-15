@@ -1,4 +1,4 @@
-import hero from "/public/heros/investments.webp";
+import hero from "../public/heros/investments.webp";
 import Link from "next/link";
 import React, { ReactElement } from "react";
 import Meta from "../components/meta";

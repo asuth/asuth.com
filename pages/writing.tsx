@@ -1,5 +1,5 @@
 import Link from "next/link";
-import hero from "/public/heros/writing.webp";
+import hero from "../public/heros/writing.webp";
 import Meta from "../components/meta";
 
 export default function () {

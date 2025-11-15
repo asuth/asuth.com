@@ -2,11 +2,11 @@ import Link from "next/link";
 import Head from "next/head";
 import { Component } from "react";
 
-import aboutHero from "/public/heros/about.webp";
-import questionsHero from "/public/heros/questions.webp";
-import investmentsHero from "/public/heros/investments.webp";
-import writingHero from "/public/heros/writing.webp";
-import contactHero from "/public/heros/contact.webp";
+import aboutHero from "../public/heros/about.webp";
+import questionsHero from "../public/heros/questions.webp";
+import investmentsHero from "../public/heros/investments.webp";
+import writingHero from "../public/heros/writing.webp";
+import contactHero from "../public/heros/contact.webp";
 import { withRouter, NextRouter } from "next/router";
 
 type NodeProps = {

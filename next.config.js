@@ -1,6 +1,5 @@
 module.exports = {
   reactStrictMode: true,
-  swcMinify: true,
   // be accessibility friendly
   i18n: {
     locales: ["en-US"],

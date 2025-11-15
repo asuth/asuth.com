@@ -8,9 +8,9 @@ import Transition from "../components/transition";
 
 import { useRouter } from "next/router";
 
-import logo1x from "/public/logo-240.webp";
-import logo2x from "/public/logo-480.webp";
-import logo3x from "/public/logo-720.webp";
+import logo1x from "../public/logo-240.webp";
+import logo2x from "../public/logo-480.webp";
+import logo3x from "../public/logo-720.webp";
 import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }: AppProps) {
