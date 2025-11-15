@@ -1,140 +1,124 @@
-import { ReactNode, useState, useEffect, useRef } from "react";
+import React, {
+  ReactNode,
+  useEffect,
+  useRef,
+  useState,
+  CSSProperties,
+} from "react";
 
-type TransitionKind<RC> = {
-  children: RC;
+type TransitionKind = {
+  children: ReactNode;
   location: string;
 };
 
-type TransitionStatus = "entering" | "entered" | "exiting" | "exited";
+type Status = "entering" | "entered" | "exiting" | "exited";
 
-// Calculate the transform offset needed to move from entered position (66px) to bottom (100vh)
-const ENTER_OFFSET = "calc(100vh - 66px)";
+type PageState = {
+  key: string;
+  child: ReactNode;
+  status: Status;
+};
 
-const getTransitionStyles: { [key: string]: {} } = {
+const getTransitionStyles: Record<Status, CSSProperties> = {
   entering: {
     opacity: 0,
-    transform: `translateY(${ENTER_OFFSET})`,
+    top: "100vh",
   },
   entered: {
-    transform: "translateY(0)",
+    top: "66px",
     opacity: 1,
   },
   exiting: {
-    transform: `translateY(${ENTER_OFFSET})`,
+    top: "100vh",
     opacity: 0,
   },
   exited: {},
 };
 
-const Transition: React.FC<TransitionKind<ReactNode>> = ({
-  children,
-  location,
-}) => {
-  const [status, setStatus] = useState<TransitionStatus>("entering");
-  const [displayChildren, setDisplayChildren] = useState(children);
-  const [exitingChildren, setExitingChildren] = useState<ReactNode | null>(null);
-  const [exitingStatus, setExitingStatus] = useState<TransitionStatus>("entered");
-  const previousLocationRef = useRef<string>(location);
-  const exitTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+const EXIT_DURATION = 300; // ms
 
+const Transition: React.FC<TransitionKind> = ({ children, location }) => {
+  const [current, setCurrent] = useState<PageState | null>(null);
+  const [prev, setPrev] = useState<PageState | null>(null);
+  const firstRenderRef = useRef(true);
+
+  // Handle first render and subsequent location changes
   useEffect(() => {
-    // If location changed, immediately show new content and exit old content
-    if (previousLocationRef.current !== location) {
-      // Clear any pending exit timeout
-      if (exitTimeoutRef.current) {
-        clearTimeout(exitTimeoutRef.current);
+    // First render: just show the page as "entered"
+    if (firstRenderRef.current) {
+      firstRenderRef.current = false;
+      setCurrent({
+        key: location,
+        child: children,
+        status: "entered",
+      });
+      return;
+    }
+
+    // On later renders when location changes:
+    setPrev((oldPrev) => {
+      // Move the existing current page to prev (exiting)
+      if (current) {
+        return { ...current, status: "exiting" };
       }
+      return oldPrev;
+    });
 
-      // Store the old children for exit animation
-      setExitingChildren(displayChildren);
-      // Start exiting content from entered state, then transition to exiting
-      setExitingStatus("entered");
-      
-      // Immediately switch to new content (enter: 0 - no delay)
-      setDisplayChildren(children);
-      previousLocationRef.current = location;
-      
-      // Start enter transition immediately - set to entering state
-      setStatus("entering");
-      
-      // Wait for browser to paint the entering state, then transition to entered
-      // Using double requestAnimationFrame ensures the entering state is rendered
-      // Add a small delay to ensure smooth transition
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          // Small timeout to ensure the entering state is fully painted
-          setTimeout(() => {
-            setStatus("entered");
-            // Now start the exit animation for old content
-            setExitingStatus("exiting");
-          }, 10);
-        });
-      });
+    // New page starts as "entering"
+    setCurrent({
+      key: location,
+      child: children,
+      status: "entering",
+    });
 
-      // After exit timeout, remove the old content
-      exitTimeoutRef.current = setTimeout(() => {
-        setExitingChildren(null);
-      }, 300); // exit timeout
-    } else {
-      // Initial mount - enter immediately
-      setStatus("entering");
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          setStatus("entered");
-        });
-      });
+    // After one tick, mark new page as "entered" so CSS can animate it
+    let enterTimeout: number | undefined;
+    if (typeof window !== "undefined") {
+      enterTimeout = window.setTimeout(() => {
+        setCurrent((curr) =>
+          curr && curr.key === location ? { ...curr, status: "entered" } : curr
+        );
+      }, 0);
+    }
+
+    // After EXIT_DURATION, remove the previous page
+    let exitTimeout: number | undefined;
+    if (typeof window !== "undefined") {
+      exitTimeout = window.setTimeout(() => {
+        setPrev(null);
+      }, EXIT_DURATION);
     }
 
     return () => {
-      if (exitTimeoutRef.current) {
-        clearTimeout(exitTimeoutRef.current);
-      }
+      if (enterTimeout) window.clearTimeout(enterTimeout);
+      if (exitTimeout) window.clearTimeout(exitTimeout);
     };
-  }, [location, children, displayChildren]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location, children]); // re-run on route changes
 
-  // Get children type name for HomepageStub check
-  // Check the original children prop (React element) before rendering
-  const childrenTypeName = 
-    children && 
-    typeof children === "object" && 
-    "type" in children &&
-    typeof children.type === "function"
-      ? (children.type as any).name || ""
-      : "";
+  const renderPage = (page: PageState | null) => {
+    if (!page) return null;
 
-  const shouldSkipTransition = childrenTypeName === "HomepageStub";
-  const effectiveStatus = shouldSkipTransition ? "" : status;
+    const { key, child, status } = page;
+
+    const isHomepage =
+      React.isValidElement(child) &&
+      // `as any` to avoid TS complaining about `type.name`
+      (child.type as any)?.name === "HomepageStub";
+
+    const style = isHomepage ? {} : getTransitionStyles[status];
+
+    return (
+      <div key={key} className="Page" style={style}>
+        {child}
+      </div>
+    );
+  };
 
   return (
     <>
-      {/* Old content exiting - on top while animating down */}
-      {exitingChildren && (
-        <div
-          className="Page"
-          style={{
-            zIndex: 1,
-            top: "66px", // Base position
-            transition: "opacity 300ms ease 0s, transform 300ms ease 0s",
-            willChange: "transform, opacity",
-            ...getTransitionStyles[exitingStatus as keyof typeof getTransitionStyles] || {},
-          }}
-        >
-          {exitingChildren}
-        </div>
-      )}
-      {/* New content entering/entered - below exiting content, animating up */}
-      <div
-        className="Page"
-        style={{
-          zIndex: exitingChildren ? 0 : 1,
-          top: "66px", // Base position
-          transition: "opacity 300ms ease 0s, transform 300ms ease 0s",
-          willChange: "transform, opacity",
-          ...getTransitionStyles[effectiveStatus as keyof typeof getTransitionStyles] || {},
-        }}
-      >
-        {displayChildren}
-      </div>
+      {renderPage(prev)}
+      {renderPage(current)}
     </>
   );
 };
