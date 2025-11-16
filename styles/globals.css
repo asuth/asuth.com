@@ -48,10 +48,6 @@ html {
 body {
   font: 17px/1.6 var(--body-font);
   background: var(--dark-bg-color);
-
-  /* when you click on the Back to Home button, the button doesn't click on Safari */
-  padding: env(safe-area-inset-top) env(safe-area-inset-right)
-    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 /*
@@ -536,6 +532,7 @@ figcaption {
 @media only screen and (max-width: 768px) {
   .NavBtn {
     font-size: 12px;
+    margin-bottom: 40px;
   }
 }
 
