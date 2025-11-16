@@ -113,6 +113,7 @@ export default function () {
                   src={underConstruction}
                   width={200}
                   height={152}
+                  unoptimized
                   alt="Old-school Under Construction gif"
                 />
               </div>
