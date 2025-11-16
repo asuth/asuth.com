@@ -1,0 +1,2726 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Page Snapshots > should match snapshot for 404 page 1`] = `
+<div>
+  <div
+    class="PageHeader"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card CenterCard"
+        >
+          <div
+            class="CenterImage"
+          >
+            <img
+              alt="CD"
+              height="90"
+              src="/public/cd.png"
+              width="90"
+            />
+          </div>
+          <h3>
+            404 Not Found
+          </h3>
+          <p>
+            I don’t know what you did, but you’re on the wrong page. Your only option is to 
+            <a
+              href="/"
+            >
+              escape
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: #999;
+          --dark-bg-color: #555;
+        }
+
+        .PageHeader {
+          height: auto;
+          background: none;
+          background-position: 125px 165px;
+          border-color: #999;
+          border-width: 0;
+        }
+
+        .CenterCard {
+          margin-top: 50px;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for 500 page 1`] = `
+<div>
+  <h1>
+    500 - Server-side error occurred
+  </h1>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for about page 1`] = `
+<div>
+  <div
+    class="PageHeader Grid"
+  >
+    <div
+      class="MaxWidth Grid"
+    >
+      <h1
+        class="PageHeadline"
+      >
+        About me
+        <span
+          class="PageHeadline-Small"
+        >
+          (That’s me ⇨)
+        </span>
+      </h1>
+    </div>
+  </div>
+  <div
+    class="ContentBlock"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card FirstCard"
+        >
+          <h3>
+            Hi Friend!
+          </h3>
+          <p>
+            Welcome to asuth.com. I built this website so you can get to know me a bit.
+          </p>
+          <p>
+            My main thing these days is math. I work on giving kids hard problems to solve at Art of Problem Solving. We train the most intense math kids in the U.S., and lots of medium-intense ones too.
+          </p>
+          <p>
+            Previously, I founded Quizlet, an educational software company serving millions of students and teachers worldwide. After working on Quizlet from age 15 to age 30, I left the company in 2020.
+          </p>
+          <p>
+            Between Quizlet and AoPS, I was in a
+             
+            <span
+              class="Goofy"
+            >
+              goofy
+            </span>
+             and exploratory phase of life. You might have called it retirement. I was saying yes to lots of adventures, and finding projects that kept me up late into the night. That was when I had time to build this website, and I
+             
+            <a
+              href="https://twitter.com/wesbos/status/1354903492641611797"
+            >
+              LOVE
+            </a>
+             
+            building websites, so that was good.
+          </p>
+        </div>
+        <div
+          class="Card RightCard"
+        >
+          <h3>
+            Inventing Quizlet
+          </h3>
+          <div
+            class="LeftImage"
+          >
+            <img
+              alt="Me hugging my French teacher, Johnny Selvin"
+              height="155"
+              src="/public/andrew-and-johnny.webp"
+              width="233"
+            />
+          </div>
+          <p>
+            One day, my French 3 teacher (pictured avec moi) gave me an impossible assignment: learn 111 French animals and their English translations in 48 hours. In my struggle to learn them all, I built a website that would ask me questions repeatedly until I could answer each one correctly. With this new tool, I aced my next quiz. Then I shared it with my friends. They loved it. Quizlet was born.
+          </p>
+          <p>
+            After high school I went off to MIT. It was an intellectual wonderland. I was surrounded by ambitious and excited peers who had big expectations of themselves, which rubbed off on me. I studied computer science, researched speech recognition, and took classes on education. I continued to work on Quizlet, sacrificing sleep along the way.
+          </p>
+          <p>
+            In 2011, I left MIT to move to San Francisco and focus on making Quizlet an amazing tool for learning. Over the next 8 years, Quizlet’s
+             
+            <a
+              href="https://www.youtube.com/watch?v=2c16h--F6ZI"
+            >
+              team
+            </a>
+             
+            grew to 200 people. We built it into a ubiquitous tool in education, helping tens of millions of students learn in a new way. We built revenue to make it sustainable and raised several rounds of venture capital funding. After working on Quizlet for almost fifteen years, I decided it was
+             
+            <a
+              href="/goodbye-quizlet"
+            >
+              time to take a break
+            </a>
+             and think about what I wanted to do next.
+          </p>
+        </div>
+        <div
+          class="Card LeftCard"
+        >
+          <h3>
+            The Andrew Construction Zone
+          </h3>
+          <div
+            class="RightImage"
+          >
+            <img
+              alt="Old-school Under Construction gif"
+              height="152"
+              src="/public/under-construction.gif"
+              width="200"
+            />
+          </div>
+          <p>
+            To construct the post-Quizlet me, I immersed myself in new environments. I taught a course about learning at MIT, drove for Lyft, helped run a San Francisco municipal election, and led crews of teenagers into the wilderness.
+          </p>
+          <p>
+            I also installed myself for a period à Paris, which is the superior city in the category of all cities. Unlike Americans, the French know how to sit outside, have a glass of wine, and have an unbothered chat about life. Life sparkles in Paris.
+          </p>
+          <p>
+            As time passed however, I couldn't shake my American yearning for long working hours. I became obsessed with education and housing policy. I helped found
+             
+            <a
+              href="https://abundancenetwork.com/"
+            >
+              Abundance Network
+            </a>
+             
+            and joined the board of
+             
+            <a
+              href="https://cayimby.org"
+            >
+              California YIMBY
+            </a>
+            . A lack of housing is the secret rotten core of many of our society’s problems, from wealth inequality to sidewalk poop. We are on it!
+          </p>
+        </div>
+        <div
+          class="Card RightCard"
+        >
+          <h3>
+            You need a challenge
+          </h3>
+          <p>
+            We all seek meaning and purpose in life. My period of personal reconstruction was joyful and meandering, and it gave me the clarity of purpose I sought.
+          </p>
+          <p>
+            I want to live in a world with excellent education, excellent cities, and excellent computers. These are worthy problems to work on over many decades. For now, computers can wait. Today, I am quite involved in working on cities, while my full-time focus is on education.
+          </p>
+          <p>
+            Educational excellence is rare. My high school French teacher challenged me in a way I had previously never been challenged. Her work led to so many of the good things that have happened in my life.
+          </p>
+          <p>
+            I joined AoPS because it's a company that presents kids with hard challenges, at scale. We get kids sitting with a single hard math problem for hours. I'm quite optimistic we can be leaders of a movement towards rigor, challenge, and excellence in education in this country. It's also wonderful to be working with kids again, because kids are funny as hell.
+          </p>
+          <p>
+            That's all for now, thank you for reading this far!
+          </p>
+        </div>
+        <div
+          class="BackToHome"
+        >
+          <a
+            class="NavBtn"
+            href="/"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: var(--lightBlue);
+          --dark-bg-color: var(--darkLightBlue);
+        }
+
+        .PageHeader {
+          background-size: cover;
+          background-image: url(undefined);
+        }
+        @media only screen and (max-width: 568px) {
+          .PageHeader {
+            height: 50vh;
+          }
+        }
+
+        .Goofy {
+          display: inline-block;
+        }
+
+        .Card:hover .Goofy {
+          transform: rotate(360deg);
+          transition: transform 0.2s linear;
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for building-a-demo-culture page 1`] = `
+<div>
+  <div
+    class="PageHeader Grid"
+  >
+    <div
+      class="MaxWidth Grid"
+    />
+  </div>
+  <div
+    class="ContentBlock"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card FirstCard FirstCard--writing CenterCard"
+        >
+          <h3>
+            Giggles over mockups: Building a demo culture
+          </h3>
+          <p>
+            <em>
+              December 2023 · By Andrew Sutherland
+            </em>
+          </p>
+          <p>
+            Apple’s iPhone is the most star-spangled awesome product in the history of the world. I hate it 
+            <em>
+              now
+            </em>
+            , because it rules my life and certainly yours too. But there’s no denying it is the best product ever made (sorry). Apple made it, not those muppets at
+             
+            <a
+              href="https://www.youtube.com/watch?v=eywi0h_Y5_U"
+            >
+              Microsoft
+            </a>
+             
+            or
+             
+            <a
+              href="https://www.youtube.com/watch?v=cXL_HDzBQsM"
+            >
+              Blackberry
+            </a>
+            . Why did they succeed? Well, they had a demo culture, of course.
+          </p>
+          <p>
+            Apple’s culture is unique in its reverence for demos. Their process for developing the iPhone was making tangible examples of how the device would work. They showed those examples to each other, and played with them hands-on. These examples weren’t fully working software, but rather 
+            <em>
+              demonstrations
+            </em>
+             of what was possible. If they found themselves giggling after a demo, they had struck magic. If not, they discussed the direction to try out for the next meeting.
+          </p>
+          <p>
+            There were no elaborate written product specifications for what the iPhone should be. There were no Photoshop mockups for engineers to implement. How would the keyboard work? They made demos instead of talking about it. Ken Kocienda’s book
+             
+            <a
+              href="http://creativeselection.io"
+            >
+              Creative Selection
+            </a>
+             
+            goes into detail on their process.
+          </p>
+          <p>
+            I love this story because it confirms my own beliefs. I like working in a demo culture. So does the most valuable and innovative company ever made. So obviously it’s, like, the right way to do things.
+          </p>
+          <figure
+            class="FullSizeMedia"
+          >
+            <iframe
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen=""
+              height="315"
+              src="https://www.youtube.com/embed/Etyt4osHgX0?start=1878"
+              title="YouTube video player"
+              width="560"
+            />
+            <figcaption>
+              Steve Jobs demos the iPhone and its keyboard for the first time.
+            </figcaption>
+          </figure>
+          <p>
+            Here’s what they did: first they had a normal keyboard shrunk to a small size. No one at Apple could type with it, so the software VP paused all other engineering, and made everyone a “keyboard engineer” for a month. They held a keyboard derby to decide the best keyboard. The resulting winner was a weird keyboard with multiple letters per key and a predictive engine underneath to guess the word you typed.
+          </p>
+          <p>
+            The keyboard they chose was nothing like the one that eventually shipped, but it had important insights built into it (mainly, predictive typing). They kept making new keyboards and discussing them 
+            <em>
+              after
+            </em>
+             using them first-hand. The whole team dogfooded (or in their parlance, “lived on”) the product all day long. It was clear when the product was improving and when it didn’t yet feel great.
+          </p>
+          <p>
+            After many iterations, Kocienda tried making the keyboard auto-accept suggestions when you pressed the spacebar. When he first tried this, he and his demo partner couldn’t stop giggling. He could type flawlessly and quickly, and so could a person who had never seen an iPhone before. Kocienda describes this “Giggly Demo” as the moment he knew the keyboard was ready for prime time.
+          </p>
+          <p>
+            At the smol age of 15, when I was first building Quizlet, I had my own little demo culture. I was the biggest user of Quizlet, so I could tell if it was good or not. I would be studying for my French class and I’d have an idea. I’d realize there was a feature that could make it better -- say, inline editing of misspelled terms in the middle of a study session. I’d put my textbooks aside and code in the feature. Then I’d get my books again and continue studying. If I liked using the new inline edit feature, I’d keep it.
+          </p>
+          <p>
+            Thus, I was giving myself lots of feedback all the time. This process is the reason for Quizlet’s success out of the gate. I had built a product that had been iterated many times, even by the date of its first launch in 2007.
+          </p>
+          <p>
+            Years later, we had a breakout new product called
+             
+            <a
+              href="https://quizlet.com/blog/introducing-our-first-collaborative-learning-game-for-the-classroom-quizlet-live"
+            >
+              Quizlet Live
+            </a>
+            . It was the result of a new internal process based around a demo culture. It is a multiplayer game, designed for in-person classroom usage. We had noticed Quizlet was being used in classrooms a lot, but all of our software to date was single-player. It couldn’t take advantage of the co-location of 30 students in one place.
+          </p>
+          <p>
+            We wanted to build a game that was competitive and fun but also rewarded thought and accuracy. We built a simple game where students had to answer questions, and they won if they got a 12-in-a-row correct streak.
+          </p>
+          <figure
+            class="FullSizeMedia"
+          >
+            <img
+              alt=""
+              height="300"
+              src="/images/quizlet-live-team.webp"
+              width="400"
+            />
+            <figcaption>
+              The Quizlet Live team introducing our new game to a classroom of 9th graders.
+            </figcaption>
+          </figure>
+          <p>
+            That first game was decent, but it wasn’t magical. Fortunately, we developed a methodology of refinement that 
+            <em>
+              was
+            </em>
+             
+            magical. We decided we would test the game in a real classroom every Friday morning. After a test session, the team would go to a nearby restaurant for lunch. Over dumplings or burritos, we would review what we had seen and plan our changes for the following week.
+          </p>
+          <p>
+            We landed on an idea to make it a team game, since that would make it collaborative in addition to being competitive. I started working on a team-assignment interface that would enable the teacher to match the seating chart of their class.
+          </p>
+          <p>
+            But since we had a demo that Friday and the team assignment code wouldn’t be done on time, Sophia, the product manager, requested that we do random teams as a stop-gap. I hated the idea. Surely teachers would object – they might have kids that shouldn’t be together, for example. But I went along because of the deadline.
+          </p>
+          <p>
+            Random teams turned out to be the magic that made the whole game work. It meant there was a chaotic 3-minute period where every kid had to scramble to find their teammates. They would shout “Who’s an owl?” or “Who’s a mouse?” since every team was assigned a different animal. That scramble was precisely what built excitement and energy for the game to come. It got kids out of their chairs and working with someone new. It was accidentally brilliant. We made random teams a core part of the game.
+          </p>
+          <p>
+            This only happened on our 6th or 7th iteration of the game, and only because we had a demo deadline and needed something that would work.
+          </p>
+          <p>
+            We knew we had a hit on our hands when the kids and the teachers were giggling all the time. And indeed, this became our fastest growing product to date. It bent the overall trajectory of the company upwards. It made teachers really really love Quizlet. It had great educational value with its emphasis on accuracy over speed. You could only succeed if you worked collaboratively, since the answers were spread across teammates’ screens. Kids were obsessed – they loved the stress of building a flawless streak of right answers.
+          </p>
+          <p>
+            By contrast, our immediately previous effort was a game called Gravity. We didn’t have external deadlines via scheduled class visits. We had a long list of feature requirements to build. By the time we’d gotten the basic game working, we were already past the time allotted for the project. We shipped what we had and moved on.
+          </p>
+          <p>
+            It was a dud. If we’d taken the time to build a 7th or 8th iteration of the game, I’m certain it would have been a hit. And if we had had weekly classroom demos, we would have had faster cycles with more accidental discoveries.
+          </p>
+          <p>
+            If you want to build a demo culture, the easiest way to start is to run hackathons. Many of our best product ideas started at hackathons – where anyone at the company could demo their ideas without official approval from anyone. It’s always shocking how quickly a prototype can come together if it doesn’t need to work beyond a demo. The best demos, often accompanied by giggles, frequently became products (Quizlet Live started this way).
+          </p>
+          <p>
+            Fast cycle times are the harder trick to pull off. Most companies lack any forcing functions for iterating quickly. Pre-scheduling external user testing sessions is a great way to do that. Signing up to present at conferences is another way. Anything external and immovable will help.
+          </p>
+          <p>
+            If you want to make something great, build a demo culture and iterate your demos with fast cycle times. Then, watch for giggles – they are a sign that you’ve probably found magic.
+          </p>
+        </div>
+        <div
+          class="BackToHome"
+        >
+          <a
+            class="NavBtn"
+            href="/"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: var(--writingBlue);
+          --dark-bg-color: var(--writingDarkBlue);
+        }
+
+        .PageHeader {
+          background-image: url(undefined);
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for contact page 1`] = `
+<div>
+  <div
+    class="PageHeader"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card  CenterCard"
+        >
+          <h3>
+            Say hello, future friend
+          </h3>
+          <p>
+            The best way to reach me is by email at
+             
+            <a
+              href="mailto:asuth@asuth.com"
+            >
+              asuth@asuth.com
+            </a>
+            . If you’re on this page, you’re already considering emailing me, so just do it, eh?
+          </p>
+          <p>
+            You can also follow me on Twitter at
+             
+            <a
+              href="https://twitter.com/asuth"
+            >
+              @asuth
+            </a>
+            .
+          </p>
+          <p>
+            I can also be found on
+             
+            <a
+              href="https://www.linkedin.com/in/asuth"
+            >
+              LinkedIn
+            </a>
+            , though I only accept requests from people I already know.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: #8bd6f3;
+          --dark-bg-color: #7dbcdb;
+        }
+
+        .PageHeader {
+          height: auto;
+          background-image: url(undefined);
+          background-position: 155px -10px;
+        }
+
+        .CenterCard {
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for goodbye-quizlet page 1`] = `
+<div>
+  <div
+    class="PageHeader Grid"
+  >
+    <div
+      class="MaxWidth Grid"
+    />
+  </div>
+  <div
+    class="ContentBlock"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card FirstCard FirstCard--writing CenterCard"
+        >
+          <h3>
+            Goodbye Quizlet,
+            <br />
+             Hello World
+          </h3>
+          <p>
+            <em>
+              September 2021 · By Andrew Sutherland
+            </em>
+          </p>
+          <p>
+            After founding and leading Quizlet for nearly fifteen years, I left last year. This is the first time I’ve written about it.
+          </p>
+          <p>
+            I started Quizlet while I was in high school because I wanted a tool to help me learn French. It has become a ubiquitous tool, used by the vast majority of teachers and students in the U.S. and soon the world. They use it to learn every imaginable thing.
+          </p>
+          <p>
+            I worked on Quizlet non-stop—through high school, through college, through all of my twenties. I didn’t really have other hobbies. I poured my heart and soul into making it work. The company almost died several times in the early years. But Quizlet continued to grow. In 2015, after ten years of bootstrapping, we raised money from a group of investors.
+          </p>
+          <p>
+            After raising money, Quizlet kicked into high gear. We grew quickly—the team, the users, the revenue.
+          </p>
+          <p>
+            I loved the work. I loved making a product that people adored, and that genuinely helped them. We had many stories of kids who’d transformed their whole outlook on education after finding Quizlet. I loved interviewing new people to join our team. I loved mentoring engineers. I loved getting 360-degree feedback from everyone on the team and seeing how I’d grown and how much further I had to go.
+          </p>
+          <p>
+            I loved staying up late at night, writing code that would change how millions of people learn. I loved chatting with teachers during classroom visits all over the world, hearing what they wanted from their students and their tools. I loved working with a team that deeply cared about learning.
+          </p>
+          <p>
+            Eventually I found myself adrift. I was the founder and CTO, but I wasn’t the CEO, and I had begun to disagree with the direction the rest of the exec team wanted to go. And if I’m honest, I was tired of working on roughly the same problem I started thinking about when I was 15. Sure, there were a million new problems encountered along the way. Quizlet was succeeding, but I needed a change.
+          </p>
+          <p>
+            So I left. I felt like I had been riding a train, the same one I’d been riding since I was 15, and it had just dropped me off in the middle of nowhere. What now? I’d poured my entire adult life into this one cause, my identity tightly intertwined with my software-baby. Who am I without Quizlet, I wondered.
+          </p>
+          <p>
+            In the past year, I’ve redeveloped a sense of wonder and nurtured a wide breadth of interests. I’ve been exploring the depths of education policy, which led me to housing policy and structural political reform. I’ve taught a course on programming, a class about learning at MIT, and life skills to teenagers deep in the wilderness. I’ve
+             
+            <a
+              href="/investments"
+            >
+              invested
+            </a>
+             in a number of new companies. I’ve joined two boards. I’ve been spending time on the proverbial and literal beach.
+          </p>
+          <p>
+            A profound change has been one of loosening. When I was at Quizlet, I was too keenly aware of the impact of my words and actions; one improperly phrased suggestion could send a team on a wild goose chase. Now, as a unit of one, I can be weirder. Weirder and goofier. The website you’re on now reflects this new changed me.
+          </p>
+          <p>
+            In some unexpected sense, I don’t feel like I have anything to prove to other people anymore. I just have things to prove to myself. I would like to use my talents, wealth, and connections to do great things in the world.
+          </p>
+          <p>
+            This thought comes to me often: If at age 15, being a beginner at everything, I could set myself on a path of such incredible growth, joy, intensity, then what, at age 31, is the equivalent beginner state? How do I get as much hard-won growth out of the next 15 years as I got out of the last 15?
+          </p>
+          <p>
+            There are seismic changes happening in education, in our climate, in politics, and in technology. I’m immensely enjoying being fully open to new possibilities. I’ll find something big to do when it’s time.
+          </p>
+        </div>
+        <div
+          class="BackToHome"
+        >
+          <a
+            class="NavBtn"
+            href="/"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: var(--writingBlue);
+          --dark-bg-color: var(--writingDarkBlue);
+        }
+
+        .PageHeader {
+          background-image: url(undefined);
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for great-engineer page 1`] = `
+<div>
+  <div
+    class="PageHeader Grid"
+  >
+    <div
+      class="MaxWidth Grid"
+    />
+  </div>
+  <div
+    class="ContentBlock"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card FirstCard FirstCard--writing CenterCard"
+        >
+          <h3>
+            What makes a great engineer?
+          </h3>
+          <p>
+            <em>
+              September 2023 · By Andrew Sutherland
+            </em>
+          </p>
+          <p>
+            I was recently asked what makes a great engineer, and I liked what I wrote so I decided to post it! Here is my list.
+          </p>
+          <h4>
+            Has learned from the consequences of their own actions
+          </h4>
+          <p>
+            A great engineer has worked on the same system for multiple years. They’ve seen systems evolve. They’ve learned what choices or shortcuts they made were worthwhile, and which have caused problems. They’ve seen their choices confuse other engineers. They’ve had to fix performance issues on code they wrote six months ago. You can’t get great without this iteration.
+          </p>
+          <h4>
+            Is obsessed with their tools
+          </h4>
+          <p>
+            One basic interview test is how fast and capable an engineer is with their editor. Do they know their keyboard shortcuts? Do they know their terminal well? A good engineer will not stand for a slow editing environment, slow save-refresh loops, slow tests, slow deploy processes, or slow code review processes. If you can’t work quickly, it’s very hard to do good work. A great engineer will stop what they’re doing (within reason) and fix problems with their tools before moving forward.
+          </p>
+          <h4>
+            Understands users deeply and personally
+          </h4>
+          <p>
+            They themselves are in the room when user testing. They reply to support tickets and get on video calls with users. They care! At Quizlet, many great engineers were previous Quizlet users and so had good default intuition. Even then, nothing beat visiting a classroom. They would see kids or teachers totally misunderstand a new interface they were building. They would see a slow-loading page cause a kid to start distracting another kid. They might see a bug in a bugtracker, but when they watch a kid hit it and get frustrated in front of them, a great engineer will often fix that same-day. A user-centered engineer takes time to develop their intuition so they can see well beyond what can be written explicitly in a product spec.
+          </p>
+          <h4>
+            Solves problems without asking permission
+          </h4>
+          <p>
+            Engineers should be proactive in bringing new ideas to the team. They might spend a weekend prototyping a new interface concept they thought of. They might come to their team and say, we can’t keep building on this page, it need to be rearchitected, and here’s how we should do it. When building a new login screen, they proactively cover every edge case not previously discussed or specced. They do the right thing without slowing down to ask for permission.
+          </p>
+          <h4>
+            Pushes for excellence and delight
+          </h4>
+          <p>
+            A great engineer will say when the product they’re building isn’t good enough yet. Annoyingly for management, often when a product is 95% done is when the real interesting work starts. When you’ve checked all the important boxes, but the product just doesn’t feel great yet, you want engineers to push for better. I saw this mistake happen sometimes at Quizlet: we’d ship when something was good enough. It wouldn’t get a ton of traction. We’d iterate a bit more, but not make major changes. Then people would say, well, that didn’t work. In consumer products, users need to be delighted or they’ll move on.
+          </p>
+          <h4>
+            Levels up those around them
+          </h4>
+          <p>
+            A great engineer makes other engineers great too. That means they’ll pair program or mentor other engineers both ad-hoc and formally. They’re great at code reviews - they push on conceptual problems with code, not just cosmetic problems. They’ll push on people to write better tests and to rewrite their code if it’s confusing. They’ll research new patterns or tools and educate their team on how to use them. They’ll write and maintain documentation.
+          </p>
+          <h4>
+            Goes spelunking
+          </h4>
+          <p>
+            Many problems have an easy solution and a hard solution. A great engineer will sometimes say we can live with a quick/expedient solution to a problem. But often they need to go spelunking: traversing different layers of code to find a root cause. They are unafraid to explore areas they’ve never touched before, and they won’t rest until they’ve found the root cause of an issue. What appears to be an occasional and simple UI glitch might go much deeper. It could be a problem caused by only-in-production hot cache keys concentrated on one server. You need engineers willing to traverse from the front-end layer (maybe the UI is making repeated requests and that’s the real problem) to the app layer (maybe the cache key distribution algorithm is wrong) to the server layer (maybe the network is configured to rate-limit more than expected).
+          </p>
+        </div>
+        <div
+          class="BackToHome"
+        >
+          <a
+            class="NavBtn"
+            href="/"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: var(--writingBlue);
+          --dark-bg-color: var(--writingDarkBlue);
+        }
+
+        .PageHeader {
+          background-image: url(undefined);
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for how-to-not-be-late page 1`] = `
+<div>
+  <div
+    class="PageHeader Grid"
+  >
+    <div
+      class="MaxWidth Grid"
+    />
+  </div>
+  <div
+    class="ContentBlock"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card FirstCard FirstCard--writing CenterCard"
+        >
+          <h3>
+            How to not be late
+          </h3>
+          <p>
+            <em>
+              November 2023 · By Andrew Sutherland
+            </em>
+          </p>
+          <p>
+            I’ve always been a running-a-little-late person. Usually not egregiously. Like, six minutes late. It’s not something I’m proud of. It’s rude.
+          </p>
+          <p>
+            At a certain point it got to be a problem. I wanted to fix it. So I made a pact with my friend Thompson. Every time I was not
+             
+            <em>
+              five minutes early
+            </em>
+             to our meetings, I would have to donate $500 to a charity of his choosing. That’s a painful amount of money! I learned real quick what my problem was. I bought this whole life lesson for $1,500.
+          </p>
+          <p>
+            Ok, scenario time. You have a coffee with a rando at 9am at the Blue Bottle in SOMA. It takes about 15 minutes to get there from your house. So in your head you say, I’ll leave around 8:40. Five minutes of buffer makes you a responsible man.
+          </p>
+          <p>
+            This is a shit plan. It is an eyeball-once-cut-twice plan. It is a plan made by an optimist and an optimizer. It’s a plan that means you’ll say hello to Mr. Rando at 9:06.
+          </p>
+          <p>
+            It’s a plan to be late.
+          </p>
+          <p>
+            Let’s correct this moron (me) and make an actual plan. Upon closer inspection, there are many things that can go wrong:
+          </p>
+          <ul>
+            <li>
+              The rideshare will arrive late. Their arrival estimates are terrible optimists, just like you.
+            </li>
+            <li>
+              You can’t find your keys. again.
+            </li>
+            <li>
+              You need to poop before you go.
+            </li>
+            <li>
+              You need to shower before you go.
+            </li>
+            <li>
+              You might get dropped off a block away.
+            </li>
+            <li>
+              You might hit above-average traffic.
+            </li>
+            <li>
+              You put the wrong Blue Bottle in SOMA in your calendar.
+            </li>
+            <li>
+              You might get stuck behind a garbage truck on a one-way street.
+            </li>
+          </ul>
+          <p>
+            Most of these things will not happen. But ONE will. Maybe even TWO. And your current "plan" assumes that NONE of them will happen.
+          </p>
+          <p>
+            So you need a better plan. When will you shower, and how long does that take? What does the maps app say about trip length? List every single step with their o’clocks:
+          </p>
+          <pre>
+            8:10 shower
+            <br />
+            8:20 get dressed, brush teeth, etc.
+            <br />
+            8:28 call lyft
+            <br />
+            8:34 lyft arrives 
+            <br />
+            8:52 lyft drops off
+            <br />
+            8:55 cross the st, walk into shop, etc.
+          </pre>
+          <p>
+            What you find is your default plan was 
+            <em>
+              optimistic
+            </em>
+             and your new plan is 
+            <em>
+              realistic
+            </em>
+            . There’s padding in there in case one thing takes a little extra time.
+          </p>
+          <p>
+            Lastly, the easiest way to be on time is to be early. Plan to be 5-10 minutes early to stuff. That sounds gross and non-optimal, I know. But having an extra moment to prepare for your meeting is actually good.
+          </p>
+          <p>
+            If you make an explicit plan, and you plan to be early, you will almost never be late. Hey, maybe you are fixable after all!
+          </p>
+          <p>
+            In summary:
+          </p>
+          <ol>
+            <li>
+              Your default plan is bad. Your mind will trick you into thinking it’s good.
+            </li>
+            <li>
+              Make an explicit step-by-step plan for timely arrival. With every step of that plan, make a generous estimate. Don’t choose the best case.
+            </li>
+            <li>
+              Plan to be early. Early! Early! Early! 
+            </li>
+          </ol>
+          <p>
+            P.S. You’re probably wondering -- Andrew, so you’re never late now, eh? And you’d be wrong. I’m still late sometimes -- less than I used to be, but still more than I’d like. And 100% of the time it’s because I reverted to default habits and didn’t make a plan.
+          </p>
+        </div>
+        <div
+          class="BackToHome"
+        >
+          <a
+            class="NavBtn"
+            href="/"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: var(--writingBlue);
+          --dark-bg-color: var(--writingDarkBlue);
+        }
+
+        .PageHeader {
+          background-image: url(undefined);
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for im-joining-aops page 1`] = `
+<div>
+  <div
+    class="PageHeader Grid"
+  >
+    <div
+      class="MaxWidth Grid"
+    />
+  </div>
+  <div
+    class="ContentBlock"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card FirstCard FirstCard--writing CenterCard"
+        >
+          <img
+            alt="Photo of Andrew and Ben holding up AoPS textbooks"
+            height="266"
+            src="/images/ben-andrew.webp"
+            style="width: 100%; height: auto;"
+            width="400"
+          />
+          <h3>
+            I'm joining 
+            <span
+              style="text-transform: none;"
+            >
+              AoPS
+            </span>
+             
+            to bring kids to the frontiers of science and technology
+          </h3>
+          <p>
+            <em>
+              March 2025 · By Andrew Sutherland
+            </em>
+          </p>
+          <p>
+            PERSONAL NEWS TIME! I am joining Art of Problem Solving as its new Chief Product Officer.
+             
+            <a
+              href="https://artofproblemsolving.com/"
+            >
+              AoPS
+            </a>
+             is an advanced math curriculum company that serves the most ambitious and motivated students in the world. Notably, every member of the United States team at the International Math Olympiad has been trained by AoPS. The company is mostly unknown today, but I’m certain it will be world-renowned in short order. I pop out of bed every morning buzzing with excitement for the task ahead of me.
+          </p>
+          <p>
+            The frontiers of science and technology are rapidly expanding. Revolutions are under way in artificial intelligence, biotechnology, and clean energy, among many other fields. We need to bring as many kids as possible to these frontiers, making them capable of shaping the craziness unfolding around them.
+          </p>
+          <p>
+            How do you bring kids to the frontiers? By helping millions of kids fall in love with math. We’re going to make them so
+             
+            obsessed they wake up at 8 A.M. on a Saturday morning to do math for fun.
+          </p>
+          <p>
+            AoPS has been quietly at work on this problem for a couple of decades. If you peek behind the curtain at the major AI labs, many of their researchers learned math with AoPS textbooks. For kids in elementary school, we make a comic book-style curriculum called 
+            <a
+              href="https://beastacademy.com"
+            >
+              Beast Academy
+            </a>
+            . Now it’s my job to scale up AoPS’s approach to problem solving.
+          </p>
+          <h4>
+            AoPS shows kids hard, 
+            <em>
+              interesting
+            </em>
+             problems
+          </h4>
+          <p>
+            I first heard about AoPS from a kid who was 
+            <em>
+              obsessed
+            </em>
+             
+            with math. I was teaching a class at MIT, and I had a funny freshman student. In high school, he woke up at 4 A.M. every morning to do three hours of math problems before school. He did this because he loved it, not because his parents asked him to. AoPS was the company that provided the textbooks, the community, and the hard problems that challenged him.
+          </p>
+          <p>
+            A few years later I met Richard Rusczyk, the founder of AoPS. He shared what he’d built, and I felt a special kinship and respect for him as a leader. As a fellow education company founder, I know what he’s done is really hard to do. I decided I wanted to join up with him.
+          </p>
+          <p>
+            Our country’s approach to math education has been busted for a long time. We spend too much time on explanations and algorithms. When kids don’t remember those, we remediate them with boring practice problems.
+          </p>
+          <p>
+            The AoPS approach is quite simple: show kids hard, interesting problems straight away. Nudge them with suggestions when they’re stuck. When they discover how rewarding it is to solve unfamiliar problems, they get hooked. We teach the 
+            <em>
+              art
+            </em>
+             
+            of problem solving, y’know?
+          </p>
+          <img
+            alt="Photo of Andrew, Ben, and Richard"
+            height="471"
+            src="/images/ben-andrew-richard.webp"
+            style="width: 100%; height: auto;"
+            width="400"
+          />
+          <h4>
+            A new era for AoPS
+          </h4>
+          <p>
+            I am joining in the same moment as
+             
+            <a
+              href="https://www.benkornell.com"
+            >
+              Ben Kornell
+            </a>
+            , who is taking the role of CEO. We are partnering to run the company, and we are excellent complements; he brings a deep background in operations and multi-site location management, and I bring a deep background in technology and product development. We share a love for creating great learning experiences.
+          </p>
+          <p>
+            We both feel deep gratitude and admiration to Richard, who is retiring as CEO and joining the board. I think he has done more for math education than just about anyone. I’m very excited to learn from him, and I will be working closely with him.
+          </p>
+          <h4>
+            A new era for Andrew
+          </h4>
+          <p>
+            After a few years of semi-retirement
+             
+            <a
+              href="/goodbye-quizlet"
+            >
+              post-Quizlet
+            </a>
+            , I was bored. I wanted to work on something difficult again. I wanted to put my experience with making learning tools back to work.
+          </p>
+          <p>
+            AoPS is uniquely set up to create the world’s best learning experience. It has curriculum developers, software engineers, teachers, buildings, classrooms, and direct relationships with parents and students. If we think simple pen-and-paper is the best way to work on a problem, we do that. If we want kids working on a whiteboard together on a hard problem, we do that. If we want kids solving problems adaptively with an AI, we do that.
+          </p>
+          <p>
+            AoPS today looks and feels a little old-school, but that masks an absolutely awesome learning experience. My job is to bring the product up to the same world-class standards as the curriculum we offer. I feel uniquely suited to lead AoPS in bringing its approach to the world.
+          </p>
+          <h4>
+            We're building the team
+          </h4>
+          <p>
+            AoPS has the magic of a mission-driven company. Having never raised venture capital, it is untainted by Silicon Valley nonsense. Ben and I feel a deep responsibility to retain the company’s sense of purpose while we grow.
+          </p>
+          <p>
+            I am leading the Engineering, Product, Design, and Marketing teams at AoPS. If you want to work for the world’s best education company, you should reach out. I am starting hiring with a
+             
+            <a
+              href="https://artofproblemsolving.com/careers/job/6517848003_vp_marketing"
+            >
+              VP of Marketing
+            </a>
+            ,
+             
+            <a
+              href="https://artofproblemsolving.com/careers/job/6518552003_senior_director_product_customer_experience"
+            >
+              two
+            </a>
+             
+            <a
+              href="https://artofproblemsolving.com/careers/job/6518599003_senior_director_product_learner_experience"
+            >
+              Senior Directors of Product
+            </a>
+            , and a
+             
+            <a
+              href="https://artofproblemsolving.com/careers/job/6517852003_senior_director_design"
+            >
+              Senior Director of Design
+            </a>
+            . These roles will all report directly to me. I will also be
+             
+            <a
+              href="https://artofproblemsolving.com/careers/job/4323747003_general_interest_aops_headquarters"
+            >
+              hiring
+            </a>
+             
+            for software engineers, designers, and product managers. Fun times ahead!
+          </p>
+          <p>
+            Woo yay ok bye for now!
+          </p>
+        </div>
+        <div
+          class="BackToHome"
+        >
+          <a
+            class="NavBtn"
+            href="/"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: var(--writingBlue);
+          --dark-bg-color: var(--writingDarkBlue);
+        }
+
+        .PageHeader {
+          background-image: url(undefined);
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for index page 1`] = `
+<div>
+  <style>
+    
+          :global(:root) {
+            --bg-color: var(--lightBlue);
+            --dark-bg-color: var(--darkLightBlue);
+          }
+        
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for investment-worksheet page 1`] = `
+<div>
+  <div
+    class="PageHeader Grid"
+  >
+    <div
+      class="MaxWidth Grid"
+    />
+  </div>
+  <div
+    class="ContentBlock"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card FirstCard FirstCard--writing CenterCard"
+        >
+          <h3>
+            How I decide on investments
+          </h3>
+          <p>
+            <em>
+              October 2023 · By Andrew Sutherland
+            </em>
+          </p>
+          <p>
+            I’ve made more than 100 investment decisions over the last 7 years. Most are nos, but some become
+             
+            <a
+              href="/investments"
+            >
+              investments
+            </a>
+            . They could be for-profit companies, non-profits, or political candidates or projects. Seeing a lot of opportunities has meant I needed a rigorous process. So I made my own worksheet. When I’m done filling it out, it’s clear to me if I want to invest or not. Writing is thinking, after all. This tool is nice because I can look later on to see if I made good decisions. Here are the questions I use:
+          </p>
+          <h4>
+            What are they building?
+          </h4>
+          <p>
+            I ask this one first because it’s helpful to me to describe in my own words what the thing is. This makes sure I actually understand what they’re doing.
+          </p>
+          <h4>
+            Are they building the world I want to live in?
+          </h4>
+          <p>
+            I want to live in a world with excellent education, excellent cities, and excellent computers. I want a world of abundance, and I want to see smaller gaps between rich and poor. If I can’t tell myself a story for how this investment works towards these goals, it’s not worth it for me.
+          </p>
+          <h4>
+            Would I want to work for this person?
+          </h4>
+          <p>
+            This is my favorite question, and the one most frequently dispositive. I see some really interesting ideas. But sometimes founders seem too bought into their own hype. They might be visionary but very hard to work with. Asking if I would work for someone is a good proxy for if I think high-caliber people would work for this person. At the end of the day, the only way to make something successful is by hiring great people to help you. I’ve avoided a number of companies that have later blown up because of this question. Conversely, I’ve made some great investments that were shaky on other fronts but the person was someone I’d want to work for.
+          </p>
+          <h4>
+            What does wild success look like? 
+          </h4>
+          <p>
+            If everything goes right, what happens? This is a useful exercise because things are usually small when you invest, but could become big. It wasn’t clear for years that Quizlet could be a massive education company. It wasn’t clear that Replit would be big. Imagining a shiny future helps me get excited about the opportunity.
+          </p>
+          <h4>
+            Does doing this deal aid my “Principal Agency”? How would I get involved?
+          </h4>
+          <p>
+            I aim to be a principal agent - to make things happen myself, not just help others make things happen. My interests are cities, computers, and education. If there’s something that would help me on my own projects, that’s exciting. If there’s something I can help a lot with, that’s exciting. If it’s interesting but I have no value to add besides money, it’s hard to justify. Other people can make that investment.
+          </p>
+          <h4>
+            Do I have a gender or other bias in this decision?
+          </h4>
+          <p>
+            Writing this down can help me see something I’m overlooking. It can be harder for women to network into fundraising circles that are mostly men. Someone who has conquered a lot of personal adversity but is just starting out in business, for example, could be a very good bet.
+          </p>
+          <h4>
+            What are the terms of this deal? How was it sourced?
+          </h4>
+          <p>
+            If someone I respect sent this to me, that carries weight. Writing about this might provoke me to negotiate for a better deal or understand its economics better. This is also just useful to write somewhere so I can see it later.
+          </p>
+          <h4>
+            What other pros and cons are there?
+          </h4>
+          <p>
+            Sometimes a thought doesn’t fit in any of the above buckets, but is still important. This is near the end so by this point my thoughts are flowing freely. I often have surprising insights here.
+          </p>
+          <h4>
+            What is the “Single Decisive Reason” to do this or not?
+          </h4>
+          <p>
+            Here I write my final decision in one simple sentence. I nicked this from Reid Hoffman via
+             
+            <a
+              href="https://blog.superhuman.com/single-decisive-reason-decision-making-for-fast-scaling-startups/"
+            >
+              Rahul Vohra
+            </a>
+            . Simply: “You should have one overwhelming reason to do something. When you have multiple, it’s often a fuzzy decision, not well made.”
+          </p>
+          <p>
+            Writing a singular reason often provides me a lot of clarity. It also is a great tie-in to the next part.
+          </p>
+          <h4>
+            Okay, now write the email:
+          </h4>
+          <p>
+            This isn’t a question, but it’s the last step of the worksheet. By now, my reasoning is clear. Almost all decisions mechanically require an email to share a decision, so I might as well write it now. I can usually scooch my single decisive reason into an email, along with a couple more sentences, and boom. Decision made!
+          </p>
+        </div>
+        <div
+          class="BackToHome"
+        >
+          <a
+            class="NavBtn"
+            href="/"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: var(--writingBlue);
+          --dark-bg-color: var(--writingDarkBlue);
+        }
+
+        .PageHeader {
+          background-image: url(undefined);
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for investments page 1`] = `
+<div>
+  <div
+    class="PageHeader Grid"
+  >
+    <div
+      class="MaxWidth Grid"
+    >
+      <h1
+        class="PageHeadline"
+      >
+        <span
+          class="PageHeadline-Small"
+        >
+          Here are my
+        </span>
+        Investments
+      </h1>
+    </div>
+  </div>
+  <div
+    class="ContentBlock"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card FirstCard"
+        >
+          <p>
+            Investing is my way to see the future. I invest in both for-profit and non-profit organizations, so you’ll see them mixed together in my portfolio below. The reasons I provide for investing are kinda post-hoc rationalizations. Honestly, my
+             
+            <a
+              href="/investment-worksheet"
+            >
+              primary criterion
+            </a>
+             for investing is whether I believe the leader is capable of greatness. My favorite areas to invest in are education, climate, housing, developer tools, and tools for thought.
+          </p>
+          <p>
+            If I would be a good investor for you, please send an email to
+             
+            <a
+              href="mailto:investments@asuth.com"
+            >
+              investments@asuth.com
+            </a>
+             
+            with the following: a description of a teacher who changed your life and information about your endeavor.
+          </p>
+        </div>
+        <div
+          class="Investments"
+        >
+          <div
+            class="InvestmentCard GreenCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Replit
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Amjad Masad
+                <br />
+                 
+                Developer Tools
+              </span>
+              <a
+                class="btn"
+                href="https://replit.com/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              Replit is building a programming environment in the browser. I invested because it’s incredibly important to make programming more accessible to everyone.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard SalmonCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Shyft Power
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Ugwem Eneyo
+                <br />
+                 
+                Climate Tech
+              </span>
+              <a
+                class="btn"
+                href="https://shyftpower.com/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              Shyft is building hardware and software that allow buildings to seamlessly switch between grid and non-grid energy sources. I invested because this could enable developing countries to leapfrog past old grid technologies.
+            </p>
+          </div>
+          <div
+            class="SpacerCard"
+          />
+          <div
+            class="SpacerCard"
+          />
+          <div
+            class="InvestmentCard YellowCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                ToMI
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Juan Manuel Lopera
+                <br />
+                 
+                Education Tech
+              </span>
+              <a
+                class="btn"
+                href="https://tomi.digital/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              
+        ToMI is building hardware and software that help teachers teach with digital tools even when they don’t have an internet connection. I invested because they are bringing digital technology to classrooms that have never had it before.
+        
+            </p>
+          </div>
+          <div
+            class="InvestmentCard GreenCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                VotingWorks
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Ben Adida
+                <br />
+                 
+                Civic Tech
+              </span>
+              <a
+                class="btn"
+                href="https://voting.works/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              VotingWorks is building next-generation, low-cost voting
+        systems. I invested because we need inexpensive voting machines
+        and auditing systems that the public can trust.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard SalmonCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Vanta
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Christina Cacioppo
+                <br />
+                 
+                Developer Tools
+              </span>
+              <a
+                class="btn"
+                href="https://www.vanta.com/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              
+        Vanta is building software to automate security on the Internet. I invested because it’s hard to build secure software and it can’t be done without significant automated systems to make sure you’re doing it right.
+        
+            </p>
+          </div>
+          <div
+            class="InvestmentCard YellowCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Vercel
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Guillermo Rauch
+                <br />
+                 
+                Developer Tools
+              </span>
+              <a
+                class="btn"
+                href="https://vercel.com/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              
+        Vercel is building a cloud-hosting platform for ultra-fast websites. I invested because they are removing a huge amount of complexity from building performant and secure websites.
+        
+            </p>
+          </div>
+          <div
+            class="SpacerCard"
+          />
+          <div
+            class="SpacerCard"
+          />
+          <div
+            class="InvestmentCard GreenCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Backer
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Jordan Lee
+                <br />
+                 
+                Education Tech
+              </span>
+              <a
+                class="btn"
+                href="https://backer.com/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              Backer is building software that makes it simple to create college savings accounts. I invested because they are making it easier for everyone, not just rich people, to save for college.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard SalmonCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                BusRight
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Keith Corso
+                <br />
+                 
+                Education Tech
+              </span>
+              <a
+                class="btn"
+                href="https://busright.com/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              
+      BusRight is building a modern platform for intelligent school bus routing and tracking. I invested because school buses are a huge public transportation system that could be run much more effectively.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard YellowCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Student Conservation Association
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Lidia Soto-Harmon
+                <br />
+                 
+                Youth Development
+              </span>
+              <a
+                class="btn"
+                href="https://www.thesca.org/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              
+      The SCA transformed my life when I was in high school. It taught me about service to a community and country, and about building lifelong bonds through hard work. I invested (and joined the board) because I wanted to give back to an organization that gave me so much.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard GreenCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                California Yimby
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Brian Hanlon
+                <br />
+                 
+                Housing Policy
+              </span>
+              <a
+                class="btn"
+                href="https://cayimby.org/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              
+        California is a neat place, but its anti-development housing policies push way too many people into housing instability and homelessness. Teachers can’t afford to live where they teach. I invested (and joined the board) because California YIMBY is leading the charge to create an abundant supply of housing for everyone.
+        
+            </p>
+          </div>
+          <div
+            class="SpacerCard"
+          />
+          <div
+            class="SpacerCard"
+          />
+          <div
+            class="InvestmentCard SalmonCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Abundance Network
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Misha Chellam
+                <br />
+                 
+                Housing Policy
+              </span>
+              <a
+                class="btn"
+                href="https://abundancenetwork.com/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              
+          I helped start Abundance Network, a network of mostly tech-related leaders working to create housing and energy abundance and end the politics of scarcity. I helped start this because many of the problems with our built environment are self-inflicted policy choices we can change.
+          
+            </p>
+          </div>
+          <div
+            class="InvestmentCard YellowCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                PrismsVR
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Anurupa Ganguly
+                <br />
+                 
+                Education Tech
+              </span>
+              <a
+                class="btn"
+                href="https://www.prismsvr.com/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              PrismsVR is building a virtual reality experience that helps math students develop their spatial reasoning. I invested because students need radical new ways to develop their math understanding and intuition.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard GreenCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Warp
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Zach Lloyd
+                <br />
+                 
+                Developer Tools
+              </span>
+              <a
+                class="btn"
+                href="https://warp.dev/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              Warp is building a modern developer terminal and nice related tools. I invested because the terminal is the home base for serious software development and it has been due for total reimagination.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard SalmonCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Synthesis
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Chrisman Frank
+                <br />
+                 
+                Education Tech
+              </span>
+              <a
+                class="btn"
+                href="https://www.synthesis.is/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              Synthesis is building multiplayer learning games that get students to discuss complex strategies and work in teams. I invested because I love games that prompt deep thought and discussion.
+            </p>
+          </div>
+          <div
+            class="SpacerCard"
+          />
+          <div
+            class="SpacerCard"
+          />
+          <div
+            class="InvestmentCard YellowCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Dynamicland
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Bret Victor
+                <br />
+                 
+                Spatial Computing
+              </span>
+              <a
+                class="btn"
+                href="https://dynamicland.org/"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              Dynamicland is building a more friendly and communal computing environment from the ground up. I invested because new models of computing, outside the bounds of shrink-wrapped consumer software, are desperately needed.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard GreenCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Charm Industrial
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Peter Reinhardt
+                <br />
+                 
+                Climate Tech
+              </span>
+              <a
+                class="btn"
+                href="https://charmindustrial.com"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              Charm Industrial is capturing CO
+              <sub>
+                2
+              </sub>
+               from the atmosphere, converting it to bio-oil, and pumping it underground. I invested because they are moving faster than anyone in building large-scale carbon removal technology.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard SalmonCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Terner Center
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Ben Metcalf
+                <br />
+                 
+                Housing Policy
+              </span>
+              <a
+                class="btn"
+                href="https://ternercenter.berkeley.edu"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              The Terner Center for Housing Innovation at UC Berkeley does the most rigorous research into the causes of and solutions to California’s housing crisis. I invested because we will make much better housing policy decisions if they’re backed by good research.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard YellowCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Exa
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Will Bryk
+                <br />
+                 
+                Developer Tools
+              </span>
+              <a
+                class="btn"
+                href="https://exa.ai"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              Exa is building web search infrastructure for large language models. I invested because accurate information retrieval is an essential part of any interesting AI experience.
+            </p>
+          </div>
+          <div
+            class="SpacerCard"
+          />
+          <div
+            class="SpacerCard"
+          />
+          <div
+            class="InvestmentCard GreenCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Kosmik
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Paul Rony
+                <br />
+                 
+                Spatial Computing
+              </span>
+              <a
+                class="btn"
+                href="https://www.kosmik.app"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              Kosmik is building a digital canvas that helps you think spatially. I invested because I want to see spatial reasoning become a core part of everyday computing.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard SalmonCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Sonic Sphere
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Ed Cooke
+                <br />
+                 
+                Spatial Computing
+              </span>
+              <a
+                class="btn"
+                href="https://www.sonic-sphere.com"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              Sonic Sphere is building spherical concert halls with mind-blowing many-channel audio. I invested because I want real-life and social computing to be better than the metaverse.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard YellowCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                MathDash
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Daniel Sun
+                <br />
+                 
+                Education Tech
+              </span>
+              <a
+                class="btn"
+                href="https://www.mathdash.com"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              MathDash helps you sharpen your competitive math skills. I invested because I love getting better at Chess via
+               
+              <a
+                href="https://chess.com"
+              >
+                Chess.com
+              </a>
+               and its ELO score, and I want to see the same thing happen for math.
+            </p>
+          </div>
+          <div
+            class="InvestmentCard GreenCard"
+          >
+            <div
+              class="InvestmentName"
+            >
+              <h3>
+                Infilla
+              </h3>
+            </div>
+            <div
+              class="InvestmentInfo"
+            >
+              <span>
+                Led by 
+                Jenny Song
+                <br />
+                 
+                Housing Tech
+              </span>
+              <a
+                class="btn"
+                href="https://www.infilla.com"
+              >
+                Visit
+              </a>
+            </div>
+            <p>
+              Infilla is building a platform to help city governments manage housing project applications and approvals. I invested because we need to build the internal capacity of city governments to approve more housing.
+            </p>
+          </div>
+          <div
+            class="SpacerCard"
+          />
+          <div
+            class="SpacerCard"
+          />
+        </div>
+        <div
+          class="BackToHome"
+        >
+          <a
+            class="NavBtn"
+            href="/"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+      :global(:root) {
+        --bg-color: var(--green);
+        --dark-bg-color: var(--dark-green);
+        --hero-url: url(/wallpapers/chairs@2x.jpg);
+      }
+
+      .PageHeader {
+        background-image: url(undefined);
+        background-position: 0 20px;
+      }
+
+      .InvestmentCard {
+        display: inline-block;
+        width: 36%;
+        background: #fff;
+        margin: 0 5% 80px 0;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .SpacerCard {
+        display: inline-block;
+        width: 14%;
+      }
+
+      @media only screen and (max-width: 850px) {
+        .InvestmentCard {
+          width: 47.5%;
+          margin: 0 5% 60px 0;
+        }
+
+        .InvestmentCard:nth-child(even) {
+          margin-right: 0;
+        }
+
+        .SpacerCard {
+          display: none;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .InvestmentCard {
+          width: 100%;
+          margin: 0 0 40px 0;
+        }
+        .SpacerCard {
+          display: none;
+        }
+      }
+
+      .Investments {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .InvestmentCard p {
+        padding: 25px;
+      }
+
+      .InvestmentCard h3 {
+        display: inline-block;
+        margin-bottom: 0;
+      }
+
+      .InvestmentName {
+        padding: 25px 25px 0 25px;
+      }
+
+      .InvestmentInfo {
+        padding: 15px 25px 25px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+        .InvestmentInfo span {
+          display: inline-block;
+          font-size: 0.8rem;
+        }
+
+        .InvestmentInfo .btn {
+          display inline-block;
+          text-transform: uppercase;
+          font: 12px var(--headline-font);
+          margin-left: 10px;
+          border: 1px solid #000;
+          padding: 4px 6px;
+          border-radius: 3px;
+        }
+          .btn:hover {
+            background: #000;
+          }
+
+          .GreenCard .btn:hover {
+            color: var(--green);
+          }
+
+          .SalmonCard .btn:hover {
+            color: var(--salmon);
+          }
+
+          .YellowCard .btn:hover {
+            color: var(--yellow);
+          }
+
+          .btn:active {
+            transform: rotate(3deg);
+          }
+
+      .GreenCard .InvestmentInfo, .GreenCard .InvestmentName {
+        background: var(--green);
+      }
+
+      .SalmonCard .InvestmentInfo, .SalmonCard .InvestmentName {
+        background: var(--salmon);
+      }
+
+      .YellowCard .InvestmentInfo, .YellowCard .InvestmentName {
+        background: var(--yellow);
+      }
+
+      ul {
+        list-style: square;
+      }
+
+      li {
+        margin-bottom: 20px;
+        list-style: dot;
+        margin-left: 20px;
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+    
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for memorial page 1`] = `
+<div>
+  <div
+    class="PageHeader"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card  CenterCard"
+        >
+          <h3>
+            Howard Sutherland Memorial
+          </h3>
+          <p>
+            Howard's Memorial was held at 10am on Saturday, July 13, 2024 at the
+             
+            <a
+              href="https://www.berkeleycityclub.com"
+            >
+              Berkeley City Club
+            </a>
+            .
+          </p>
+          <p>
+            <b>
+              <a
+                href="https://drive.google.com/file/d/1pOladLVT7sHVYA2o3GOZPQBwOuCqbsxt/view?usp=sharing"
+              >
+                Click here
+              </a>
+            </b>
+             
+            to view the recording of the ceremony.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: #8bd6f3;
+          --dark-bg-color: #7dbcdb;
+        }
+
+        .PageHeader {
+          height: auto;
+          background: #7dbcdb;
+          background-position: 155px -10px;
+        }
+
+        .CenterCard {
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+
+        :global(.LogoWrap),
+        :global(.Nav) {
+          display: none;
+        }
+
+        :global(.Page) {
+          top: 0 !important;
+        }
+        :global(.PageHeader) {
+          height: 100vh !important;
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for paper page 1`] = `
+<div>
+  <div
+    class="PageHeader Grid"
+  >
+    <div
+      class="MaxWidth Grid"
+    />
+  </div>
+  <div
+    class="ContentBlock"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card FirstCard FirstCard--writing CenterCard SpecialCard"
+        >
+          <img
+            alt="For the past year I have been researching PAPER as a medium, and explorings its potential in our digital world. It has many advantages. It's calm, it exists, it's expressive, it's cheap, it's static, and it has possibility. Of course, it can be harder to edit, share, manipulate and store. But paper can be imbued with computery advantages, and if that is done well, a paper operating system could be verrrry interesting. -Andrew"
+            class="SpecialImage"
+            src="/images/paper.jpg"
+            style="object-fit: contain;"
+          />
+        </div>
+        <div
+          class="BackToHome"
+        >
+          <a
+            class="NavBtn"
+            href="/"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: var(--writingBlue);
+          --dark-bg-color: var(--writingDarkBlue);
+        }
+
+        .PageHeader {
+          background-image: url(undefined);
+        }
+
+        .SpecialCard {
+          padding: 0;
+          height: 900px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          .SpecialCard {
+            height: 780px;
+          }
+        }
+
+        .SpecialImage {
+          width: 100% !important;
+          height: auto;
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for questions page 1`] = `
+<div>
+  <div
+    class="PageHeader Grid"
+  >
+    <div
+      class="MaxWidth Grid"
+    >
+      <h1
+        class="PageHeadline"
+      >
+        <span
+          class="PageHeadline-Small"
+        >
+          At 2AM, I ponder these
+        </span>
+        Questions
+      </h1>
+    </div>
+  </div>
+  <div
+    class="ContentBlock"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card FirstCard CenterCard"
+        >
+          <h3>
+            Your Instructions
+          </h3>
+          <p>
+            I’ve collected important questions and put them on this page, in the hopes that a kindly stranger (you!) might offer a compelling answer, or perhaps a promising lead or book recommendation. Please 
+            <a
+              href="/contact"
+            >
+              contact me
+            </a>
+             if you have something to share!
+          </p>
+        </div>
+        <div
+          class="LeftCard Card"
+        >
+          <div
+            class="CenterImage"
+          >
+            <img
+              alt="Coffee"
+              height="200"
+              src="/public/coffee.png"
+              width="200"
+            />
+          </div>
+          <h4>
+            How do you make teaching a high-status profession in the U.S.?
+          </h4>
+          <p>
+            Doctors and lawyers perform service jobs that are well-respected in society. Teachers are just as important, but they don’t get the same respect or pay. If teaching were a high-status profession, it would be more competitive to get into, it would pay better, and teachers would have more latitude to be creative and autonomous. Children would benefit enormously as a result.
+          </p>
+        </div>
+        <div
+          class="RightCard Card"
+        >
+          <div
+            class="CenterImage"
+          >
+            <img
+              alt="Homes"
+              height="225"
+              src="/public/homes.png"
+              width="225"
+            />
+          </div>
+          <h4>
+            How do you create a successful mass movement for greater housing density?
+          </h4>
+          <p>
+            Many well-meaning folks are against developing more housing, often because of misguided environmentalism, anti-developer sentiment, or anti-change conservatism. What efforts could convince a majority of Americans that making cities more dense is good for everyone? If you did this, we could ease rent burdens, reduce wealth gaps, lower carbon emissions, and live in a more egalitarian and integrated society.
+          </p>
+          <p>
+            My work on the board of
+             
+            <a
+              href="https://cayimby.org/"
+            >
+              California YIMBY’s
+            </a>
+             fits with this goal.
+          </p>
+        </div>
+        <div
+          class="LeftCard Card"
+        >
+          <div
+            class="CenterImage"
+          >
+            <img
+              alt="Computer"
+              height="180"
+              src="/public/computer.png"
+              width="180"
+            />
+          </div>
+          <h4>
+            How do you bring about universal programming literacy?
+          </h4>
+          <p>
+            I was lucky to teach myself programming starting around age 13. Most children never learn to program a computer, and increasingly live at the mercy of the relatively small priesthood of programmers. In a world run by software, programming literacy should be on par with math and reading as a basic skill taught to everyone. If we did this, we’d live in a more empowered society and we’d be more capable of understanding and shaping the changes brought by software.
+          </p>
+          <p>
+            Two of my favorite investments are working on this problem:
+             
+            <a
+              href="https://replit.com"
+            >
+              Replit
+            </a>
+             by lowering the barriers to entry to programming, and
+             
+            <a
+              href="https://dynamicland.org"
+            >
+              Dynamicland
+            </a>
+             by redefining computing itself.
+          </p>
+        </div>
+        <div
+          class="RightCard Card"
+        >
+          <div
+            class="CenterImage"
+          >
+            <img
+              alt="Stump"
+              height="180"
+              src="/public/stump.png"
+              width="180"
+            />
+          </div>
+          <h4>
+            How can I solve my chronic sinus infections?
+          </h4>
+          <p>
+            I have had low-grade sinus infections my whole life. I’ve tried sinus surgery and a variety of other things and nothing seems to help. This doesn’t stop me from doing most things, but it is an annoying issue I would love to fix.
+          </p>
+        </div>
+        <div
+          class="LeftCard Card ToastCard"
+        >
+          <img
+            alt="Toast"
+            class="Toast"
+            height="250"
+            src="/public/toast.png"
+            width="250"
+          />
+          <h4>
+            Why is buttery toast so unreasonably good?
+          </h4>
+          <p>
+            It just doesn’t make sense.
+          </p>
+        </div>
+        <div
+          class="BackToHome"
+        >
+          <a
+            class="NavBtn"
+            href="/"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: var(--breadPurple);
+          --dark-bg-color: var(--darkBreadPurple);
+        }
+
+        .PageHeader {
+          background-image: url(undefined);
+        }
+      
+  </style>
+</div>
+`;
+
+exports[`Page Snapshots > should match snapshot for writing page 1`] = `
+<div>
+  <div
+    class="PageHeader Grid"
+  >
+    <div
+      class="MaxWidth Grid"
+    >
+      <h1
+        class="PageHeadline"
+      >
+        <span
+          class="PageHeadline-Small"
+        >
+          My
+        </span>
+        Writing
+      </h1>
+    </div>
+  </div>
+  <div
+    class="ContentBlock"
+  >
+    <div
+      class="Content"
+    >
+      <div
+        class="MaxWidth"
+      >
+        <div
+          class="Card FirstCard CenterCard"
+        >
+          <em>
+            March 2025
+          </em>
+          <h3>
+            <a
+              href="/im-joining-aops"
+            >
+              I'm joining AoPS to bring kids to the frontiers of science and technology
+            </a>
+          </h3>
+          <br />
+          <em>
+            January 2024
+          </em>
+          <h3>
+            <a
+              href="/paper"
+            >
+              Paper
+            </a>
+          </h3>
+          <br />
+          <em>
+            December 2023
+          </em>
+          <h3>
+            <a
+              href="/building-a-demo-culture"
+            >
+              Giggles over mockups: Building a demo culture
+            </a>
+          </h3>
+          <br />
+          <em>
+            November 2023
+          </em>
+          <h3>
+            <a
+              href="/how-to-not-be-late"
+            >
+              How to not be late
+            </a>
+          </h3>
+          <br />
+          <em>
+            October 2023
+          </em>
+          <h3>
+            <a
+              href="/investment-worksheet"
+            >
+              How I decide on investments
+            </a>
+          </h3>
+          <br />
+          <em>
+            September 2023
+          </em>
+          <h3>
+            <a
+              href="/great-engineer"
+            >
+              What makes a great engineer?
+            </a>
+          </h3>
+          <br />
+          <em>
+            September 2021
+          </em>
+          <h3>
+            <a
+              href="/goodbye-quizlet"
+            >
+              Goodbye Quizlet, Hello World
+            </a>
+          </h3>
+          <br />
+          <p>
+            <em>
+              Hey, I bet you can’t spot the time I signed up for a once-a-month writing club!
+            </em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+        :global(:root) {
+          --bg-color: var(--writingBlue);
+          --dark-bg-color: var(--writingDarkBlue);
+        }
+
+        .PageHeader {
+          background-image: url(undefined);
+        }
+      
+  </style>
+</div>
+`;

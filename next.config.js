@@ -1,6 +1,12 @@
+const path = require("path");
+
 module.exports = {
   reactStrictMode: true,
-  // be accessibility friendly
+
+  turbopack: {
+    root: path.join(__dirname, ".."),
+  },
+
   i18n: {
     locales: ["en-US"],
     defaultLocale: "en-US",
