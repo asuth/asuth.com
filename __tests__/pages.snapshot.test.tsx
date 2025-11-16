@@ -1,11 +1,10 @@
 import { describe, it, expect } from "vitest";
 import { render } from "@testing-library/react";
 import React from "react";
-import "../../styles/globals.css";
 
 // Dynamically import all page files
 // @ts-expect-error - import.meta.glob is a Vite feature
-const pageModules = import.meta.glob("../**/*.{tsx,jsx}", {
+const pageModules = import.meta.glob("../pages/**/*.{tsx,jsx}", {
   eager: true,
   import: "default",
 });
@@ -15,7 +14,7 @@ const pageFiles = Object.entries(pageModules)
   .filter(([path]) => {
     // Exclude test files, _app, api routes, and files in subdirectories (except root pages)
     const fileName = path.split("/").pop() || "";
-    const isInSubdirectory = path.split("/").length > 2; // More than '../filename'
+    const isInSubdirectory = path.split("/").length > 3; // More than '../pages/filename'
 
     return (
       !path.includes("__tests__") &&
