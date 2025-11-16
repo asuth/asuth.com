@@ -71,14 +71,21 @@ const Transition: React.FC<TransitionKind> = ({ children, location }) => {
       status: "entering",
     });
 
-    // After one tick, mark new page as "entered" so CSS can animate it
+    // After browser paints the "entering" state, mark new page as "entered" so CSS can animate it
+    // Using double requestAnimationFrame ensures the entering state is rendered before transition
     let enterTimeout: number | undefined;
     if (typeof window !== "undefined") {
-      enterTimeout = window.setTimeout(() => {
-        setCurrent((curr) =>
-          curr && curr.key === location ? { ...curr, status: "entered" } : curr
-        );
-      }, 0);
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          enterTimeout = window.setTimeout(() => {
+            setCurrent((curr) =>
+              curr && curr.key === location
+                ? { ...curr, status: "entered" }
+                : curr
+            );
+          }, 10); // Small delay to ensure paint
+        });
+      });
     }
 
     // After EXIT_DURATION, remove the previous page
