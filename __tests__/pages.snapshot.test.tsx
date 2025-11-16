@@ -4,7 +4,7 @@ import React from "react";
 
 // Dynamically import all page files
 // @ts-expect-error - import.meta.glob is a Vite feature
-const pageModules = import.meta.glob("../pages/**/*.{tsx,jsx}", {
+const pageModules = import.meta.glob("../pages/**/*.tsx", {
   eager: true,
   import: "default",
 });
@@ -21,7 +21,7 @@ const pageFiles = Object.entries(pageModules)
       !path.includes("_app") &&
       !path.includes("/api/") &&
       !isInSubdirectory &&
-      (fileName.endsWith(".tsx") || fileName.endsWith(".jsx"))
+      fileName.endsWith(".tsx")
     );
   })
   .map(([path, module]) => {
@@ -30,7 +30,7 @@ const pageFiles = Object.entries(pageModules)
       path
         .split("/")
         .pop()
-        ?.replace(/\.(tsx|jsx)$/, "") || "";
+        ?.replace(/\.tsx$/, "") || "";
     const pageName = fileName === "index" ? "index" : fileName;
 
     return {
