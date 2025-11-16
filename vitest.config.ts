@@ -11,10 +11,13 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     setupFiles: ['./vitest.setup.ts'],
+    // Only include Vitest test files (exclude Playwright .spec.ts files)
+    include: ['**/*.test.{ts,tsx}'],
     exclude: [
       '**/node_modules/**',
       '**/.next/**',
       '**/dist/**',
+      '**/*.spec.ts', // Exclude Playwright test files (they use @playwright/test)
     ],
   },
   resolve: {

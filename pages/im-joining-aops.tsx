@@ -7,7 +7,7 @@ export default function () {
   return (
     <>
       <Meta
-        title="I'm joining AoPS to bring kids to the frontiers of science and technology
+        title="I’m joining AoPS to bring kids to the frontiers of science and technology
 
 "
         description="How do you bring kids to the frontiers? By making millions of
@@ -30,7 +30,7 @@ export default function () {
               />
 
               <h3>
-                I'm joining <span style={{ textTransform: "none" }}>AoPS</span>{" "}
+                I’m joining <span style={{ textTransform: "none" }}>AoPS</span>{" "}
                 to bring kids to the frontiers of science and technology
               </h3>
 

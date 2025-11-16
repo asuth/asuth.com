@@ -953,7 +953,7 @@ exports[`Page Snapshots > should match snapshot for im-joining-aops page 1`] = `
             width="400"
           />
           <h3>
-            I'm joining 
+            I’m joining 
             <span
               style="text-transform: none;"
             >
