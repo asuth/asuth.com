@@ -1,5 +1,5 @@
 import Link from "next/link";
-import hero from "/public/heros/writing.webp";
+import hero from "../public/heros/writing.webp";
 import Meta from "../components/meta";
 
 export default function () {
@@ -25,7 +25,7 @@ export default function () {
               <em>March 2025</em>
               <h3>
                 <Link href="/im-joining-aops">
-                  I'm joining AoPS to bring kids to the frontiers of science and
+                  I’m joining AoPS to bring kids to the frontiers of science and
                   technology
                 </Link>
               </h3>

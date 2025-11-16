@@ -2,12 +2,12 @@ import { Component } from "react";
 
 import Head from "next/head";
 
-import aboutHero from "/public/heros/about.webp";
-import questionsHero from "/public/heros/questions.webp";
-import investmentsHero from "/public/heros/investments.webp";
-import writingHero from "/public/heros/writing.webp";
-import contactHero from "/public/heros/contact.webp";
-import metaImage from "/public/metaweb.jpg";
+import aboutHero from "../public/heros/about.webp";
+import questionsHero from "../public/heros/questions.webp";
+import investmentsHero from "../public/heros/investments.webp";
+import writingHero from "../public/heros/writing.webp";
+import contactHero from "../public/heros/contact.webp";
+import metaImage from "../public/metaweb.jpg";
 import { withRouter, NextRouter } from "next/router";
 
 type NodeProps = {

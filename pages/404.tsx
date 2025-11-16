@@ -1,4 +1,4 @@
-import cd from "/public/cd.png";
+import cd from "../public/cd.png";
 import Image from "next/image";
 import Link from "next/link";
 import Meta from "../components/meta";

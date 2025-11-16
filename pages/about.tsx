@@ -1,6 +1,6 @@
-import hero from "/public/heros/about.webp";
-import underConstruction from "/public/under-construction.gif";
-import andrewAndJohnny from "/public/andrew-and-johnny.webp";
+import hero from "../public/heros/about.webp";
+import underConstruction from "../public/under-construction.gif";
+import andrewAndJohnny from "../public/andrew-and-johnny.webp";
 import Link from "next/link";
 import Image from "next/image";
 import Meta from "../components/meta";
@@ -113,6 +113,7 @@ export default function () {
                   src={underConstruction}
                   width={200}
                   height={152}
+                  unoptimized
                   alt="Old-school Under Construction gif"
                 />
               </div>

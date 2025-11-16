@@ -1,4 +1,4 @@
-import hero from "/public/heros/writing.webp";
+import hero from "../public/heros/writing.webp";
 import Link from "next/link";
 import Image from "next/image";
 import Meta from "../components/meta";

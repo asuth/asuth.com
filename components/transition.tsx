@@ -1,16 +1,25 @@
-import {
-  TransitionGroup,
-  Transition as ReactTransition,
-} from "react-transition-group";
+import React, {
+  ReactNode,
+  useEffect,
+  useRef,
+  useState,
+  CSSProperties,
+} from "react";
 
-import { ReactChild } from "react";
-
-type TransitionKind<RC> = {
-  children: RC;
+type TransitionKind = {
+  children: ReactNode;
   location: string;
 };
 
-const getTransitionStyles: { [key: string]: {} } = {
+type Status = "entering" | "entered" | "exiting" | "exited";
+
+type PageState = {
+  key: string;
+  child: ReactNode;
+  status: Status;
+};
+
+const getTransitionStyles: Record<Status, CSSProperties> = {
   entering: {
     opacity: 0,
     top: "100vh",
@@ -26,38 +35,99 @@ const getTransitionStyles: { [key: string]: {} } = {
   exited: {},
 };
 
-const Transition: React.FC<TransitionKind<ReactChild>> = ({
-  children,
-  location,
-}) => {
+const EXIT_DURATION = 300; // ms
+
+const Transition: React.FC<TransitionKind> = ({ children, location }) => {
+  const [current, setCurrent] = useState<PageState | null>(null);
+  const [prev, setPrev] = useState<PageState | null>(null);
+  const firstRenderRef = useRef(true);
+
+  // Handle first render and subsequent location changes
+  useEffect(() => {
+    // First render: just show the page as "entered"
+    if (firstRenderRef.current) {
+      firstRenderRef.current = false;
+      setCurrent({
+        key: location,
+        child: children,
+        status: "entered",
+      });
+      return;
+    }
+
+    // On later renders when location changes:
+    setPrev((oldPrev) => {
+      // Move the existing current page to prev (exiting)
+      if (current) {
+        return { ...current, status: "exiting" };
+      }
+      return oldPrev;
+    });
+
+    // New page starts as "entering"
+    setCurrent({
+      key: location,
+      child: children,
+      status: "entering",
+    });
+
+    // After browser paints the "entering" state, mark new page as "entered" so CSS can animate it
+    // Using double requestAnimationFrame ensures the entering state is rendered before transition
+    let enterTimeout: number | undefined;
+    if (typeof window !== "undefined") {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          enterTimeout = window.setTimeout(() => {
+            setCurrent((curr) =>
+              curr && curr.key === location
+                ? { ...curr, status: "entered" }
+                : curr
+            );
+          }, 10); // Small delay to ensure paint
+        });
+      });
+    }
+
+    // After EXIT_DURATION, remove the previous page
+    let exitTimeout: number | undefined;
+    if (typeof window !== "undefined") {
+      exitTimeout = window.setTimeout(() => {
+        setPrev(null);
+      }, EXIT_DURATION);
+    }
+
+    return () => {
+      if (enterTimeout) window.clearTimeout(enterTimeout);
+      if (exitTimeout) window.clearTimeout(exitTimeout);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location, children]); // re-run on route changes
+
+  const renderPage = (page: PageState | null) => {
+    if (!page) return null;
+
+    const { key, child, status } = page;
+
+    const isHomepage =
+      React.isValidElement(child) &&
+      // `as any` to avoid TS complaining about `type.name`
+      (child.type as any)?.name === "HomepageStub";
+
+    const style = isHomepage ? {} : getTransitionStyles[status];
+
+    return (
+      <div key={key} className="Page" style={style}>
+        {child}
+      </div>
+    );
+  };
+
   return (
-    <TransitionGroup>
-      <ReactTransition
-        key={location}
-        timeout={{
-          // don't wait to create the new element; don't totally understand why this needs to be zerod
-          enter: 0,
-          // don't destroy the element while it is animating away
-          exit: 300,
-        }}
-      >
-        {(status: string) => {
-          return (
-            <div
-              className="Page" /* + status + " " + children.type.name} */
-              style={{
-                ...getTransitionStyles[
-                  // @ts-ignore: Property 'type' does not exist on type 'ReactChild & ReactNode'.
-                  children.type.name === "HomepageStub" ? "" : status
-                ],
-              }}
-            >
-              {children}
-            </div>
-          );
-        }}
-      </ReactTransition>
-    </TransitionGroup>
+    <>
+      {renderPage(prev)}
+      {renderPage(current)}
+    </>
   );
 };
+
 export default Transition;

@@ -1,5 +1,5 @@
 import Meta from "../components/meta";
-import hero from "/public/heros/contact.webp";
+import hero from "../public/heros/contact.webp";
 
 export default function () {
   return (
@@ -11,7 +11,7 @@ export default function () {
       <div className="PageHeader">
         <div className="Content">
           <div className="MaxWidth">
-            <div className="Card  CenterCard">
+            <div className="Card CenterCard">
               <h3>Say hello, future friend</h3>
               <p>
                 The best way to reach me is by email at{" "}
