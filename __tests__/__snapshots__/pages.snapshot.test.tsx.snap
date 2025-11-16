@@ -494,7 +494,7 @@ exports[`Page Snapshots > should match snapshot for contact page 1`] = `
         class="MaxWidth"
       >
         <div
-          class="Card  CenterCard"
+          class="Card CenterCard"
         >
           <h3>
             Say hello, future friend
