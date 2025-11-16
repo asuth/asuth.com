@@ -19,6 +19,34 @@ export default defineConfig({
       '**/dist/**',
       '**/*.spec.ts', // Exclude Playwright test files (they use @playwright/test)
     ],
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'json', 'html', 'lcov'],
+      exclude: [
+        'node_modules/',
+        '.next/',
+        'dist/',
+        '**/*.test.{ts,tsx}',
+        '**/*.spec.ts',
+        '**/__tests__/**',
+        '**/__snapshots__/**',
+        '**/*.config.{js,ts,mjs}',
+        '**/vitest.setup.ts',
+        '**/next-env.d.ts',
+        '**/pages/_app.tsx', // App wrapper, typically not unit tested
+        '**/pages/api/**', // API routes tested separately
+      ],
+      include: [
+        'pages/**/*.{ts,tsx}',
+        'components/**/*.{ts,tsx}',
+      ],
+      thresholds: {
+        lines: 50,
+        functions: 50,
+        branches: 50,
+        statements: 50,
+      },
+    },
   },
   resolve: {
     alias: {

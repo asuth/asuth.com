@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run Vitest tests
-        run: npm test -- --run
+      - name: Run Vitest tests with coverage
+        run: npm run test:coverage
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
@@ -55,3 +55,20 @@ jobs:
           name: playwright-test-results
           path: test-results/
           retention-days: 30
+
+      - name: Upload coverage reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
+          retention-days: 30
+
+      - name: Comment coverage on PR
+        if: github.event_name == 'pull_request'
+        uses: romeovs/lcov-reporter-action@v0.3.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          lcov-file: ./coverage/lcov.info
+          delete-old-comments: true
+          fail-if-coverage-decreases: false
